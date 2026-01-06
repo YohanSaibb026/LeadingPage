@@ -1,9 +1,12 @@
 import React from 'react';
 import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star } from 'lucide-react';
+import { useTranslation, Trans } from 'react-i18next';
 import heroDish from './assets/hero-dish.png';
 import './App.css';
 
 function App() {
+    const { t } = useTranslation();
+
     return (
         <div className="landing-container">
             {/* Navigation */}
@@ -14,9 +17,9 @@ function App() {
                         <span>NutriTrack AI</span>
                     </div>
                     <div className="nav-links">
-                        <a href="#features">Recursos</a>
-                        <a href="#pricing">Preços</a>
-                        <button className="btn-primary-small">Baixar App</button>
+                        <a href="#features">{t('nav.features')}</a>
+                        <a href="#pricing">{t('nav.pricing')}</a>
+                        <button className="btn-primary-small">{t('nav.download')}</button>
                     </div>
                 </div>
             </nav>
@@ -24,12 +27,16 @@ function App() {
             {/* Hero Section */}
             <header className="hero">
                 <div className="hero-content">
-                    <div className="badge">Novidade: NutriTrack 2.0</div>
-                    <h1>Aprenda a comer com <span className="text-gradient">Inteligência</span></h1>
-                    <p>A psicologia é a chave para uma mudança duradoura na sua alimentação.</p>
+                    <div className="badge">{t('hero.badge')}</div>
+                    <h1>
+                        <Trans i18nKey="hero.title">
+                            Aprenda a comer com <span className="text-gradient">Inteligência</span>
+                        </Trans>
+                    </h1>
+                    <p>{t('hero.subtitle')}</p>
                     <div className="hero-btns">
-                        <button className="btn-primary">Continuar <ArrowRight size={18} /></button>
-                        <button className="btn-secondary">Ver Demonstração</button>
+                        <button className="btn-primary">{t('hero.continue')} <ArrowRight size={18} /></button>
+                        <button className="btn-secondary">{t('hero.demo')}</button>
                     </div>
                     <div className="social-proof">
                         <div className="stars">
@@ -39,7 +46,7 @@ function App() {
                             <Star size={16} fill="currentColor" />
                             <Star size={16} fill="currentColor" />
                         </div>
-                        <span>Usado por mais de 500+ chefs em casa</span>
+                        <span>{t('hero.social')}</span>
                     </div>
                 </div>
                 <div className="hero-image">
@@ -51,22 +58,22 @@ function App() {
 
             {/* Features Section */}
             <section id="features" className="features">
-                <h2 className="section-title">Por que o NutriTrack AI?</h2>
+                <h2 className="section-title">{t('features.title')}</h2>
                 <div className="feature-grid">
                     <div className="feature-card glass-morphism">
                         <div className="icon-wrapper"><Zap /></div>
-                        <h3>Geração Instantânea</h3>
-                        <p>Crie receitas personalizadas em segundos com nossa IA avançada.</p>
+                        <h3>{t('features.instant.title')}</h3>
+                        <p>{t('features.instant.desc')}</p>
                     </div>
                     <div className="feature-card glass-morphism">
                         <div className="icon-wrapper"><Smartphone /></div>
-                        <h3>Sempre com Você</h3>
-                        <p>Acesse suas receitas favoritas de qualquer lugar, online ou offline.</p>
+                        <h3>{t('features.always.title')}</h3>
+                        <p>{t('features.always.desc')}</p>
                     </div>
                     <div className="feature-card glass-morphism">
                         <div className="icon-wrapper"><ShieldCheck /></div>
-                        <h3>Dados Precisos</h3>
-                        <p>Cálculo de valores nutricionais exatos para cada porção.</p>
+                        <h3>{t('features.data.title')}</h3>
+                        <p>{t('features.data.desc')}</p>
                     </div>
                 </div>
             </section>
@@ -74,9 +81,9 @@ function App() {
             {/* CTA Section */}
             <section className="cta-section">
                 <div className="cta-card premium-gradient">
-                    <h2>Pronto para elevar sua culinária?</h2>
-                    <p>Junte-se a centenas de usuários que já estão otimizando sua rotina alimentar.</p>
-                    <button className="btn-white">Adquirir Acesso Vitalício</button>
+                    <h2>{t('cta.title')}</h2>
+                    <p>{t('cta.subtitle')}</p>
+                    <button className="btn-white">{t('cta.button')}</button>
                 </div>
             </section>
 
@@ -87,7 +94,7 @@ function App() {
                         <ChefHat />
                         <span>NutriTrack AI</span>
                     </div>
-                    <p>&copy; 2026 Sabores Exclusivos. Todos os direitos reservados.</p>
+                    <p>{t('footer.rights')}</p>
                 </div>
             </footer>
         </div>

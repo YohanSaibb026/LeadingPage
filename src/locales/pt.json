@@ -1,0 +1,38 @@
+{
+    "nav": {
+        "features": "Recursos",
+        "pricing": "Preços",
+        "download": "Baixar App"
+    },
+    "hero": {
+        "badge": "Novidade: NutriTrack 2.0",
+        "title": "Aprenda a comer com <1>Inteligência</1>",
+        "subtitle": "A psicologia é a chave para uma mudança duradoura na sua alimentação.",
+        "continue": "Continuar",
+        "demo": "Ver Demonstração",
+        "social": "Usado por mais de 500+ chefs em casa"
+    },
+    "features": {
+        "title": "Por que o NutriTrack AI?",
+        "instant": {
+            "title": "Geração Instantânea",
+            "desc": "Crie receitas personalizadas em segundos com nossa IA avançada."
+        },
+        "always": {
+            "title": "Sempre com Você",
+            "desc": "Acesse suas receitas favoritas de qualquer lugar, online ou offline."
+        },
+        "data": {
+            "title": "Dados Precisos",
+            "desc": "Cálculo de valores nutricionais exatos para cada porção."
+        }
+    },
+    "cta": {
+        "title": "Pronto para elevar sua culinária?",
+        "subtitle": "Junte-se a centenas de usuários que já estão otimizando sua rotina alimentar.",
+        "button": "Adquirir Acesso Vitalício"
+    },
+    "footer": {
+        "rights": "© 2026 Sabores Exclusivos. Todos os direitos reservados."
+    }
+}
