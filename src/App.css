@@ -169,7 +169,7 @@
 }
 
 .subtitle-main {
-    font-size: 45px;
+    font-size: 52px;
     color: var(--text-main);
     margin-bottom: 1.5rem;
     line-height: 1.1;
@@ -389,7 +389,7 @@
     }
 
     .subtitle-main {
-        font-size: 32px;
+        font-size: 38px;
         line-height: 1.1;
         margin-bottom: 1.5rem;
     }
