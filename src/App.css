@@ -159,6 +159,13 @@
     -webkit-text-fill-color: transparent;
 }
 
+.title-secondary {
+    font-size: 0.8em;
+    display: block;
+    margin-top: 0.5rem;
+    color: var(--text-main);
+}
+
 .hero-subtitle-container {
     margin-bottom: 3rem;
 }

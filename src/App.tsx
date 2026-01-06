@@ -30,7 +30,8 @@ function App() {
                     <div className="badge">{t('hero.badge')}</div>
                     <h1>
                         <Trans i18nKey="hero.title">
-                            <span className="text-gradient">8 em cada 10 pessoas</span> desistem nos primeiros 2 meses quando tentam ganhar peso e construir músculos
+                            <span className="text-gradient">8 em cada 10 pessoas desistem</span>
+                            <span className="title-secondary">nos primeiros 2 meses ao tentar ganhar peso e construir músculos</span>
                         </Trans>
                     </h1>
                     <div className="hero-subtitle-container">
