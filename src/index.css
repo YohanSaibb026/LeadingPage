@@ -1,16 +1,17 @@
 :root {
-    --primary: #f97316;
-    --primary-hover: #ea580c;
-    --bg-dark: #0f172a;
-    --bg-card: #1e293b;
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --glass: rgba(30, 41, 59, 0.7);
-    --border-glass: rgba(255, 255, 255, 0.1);
+    --primary: #fb513b;
+    --primary-hover: #e04532;
+    --hero-bg: #f6f4ee;
+    --bg-dark: #f6f4ee;
+    --bg-card: #ffffff;
+    --text-main: #191717;
+    --text-muted: #4a4a4a;
+    --glass: rgba(255, 255, 255, 0.8);
+    --border-glass: rgba(0, 0, 0, 0.05);
     font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-    color-scheme: dark;
+    color-scheme: light;
     background-color: var(--bg-dark);
     color: var(--text-main);
     font-synthesis: none;

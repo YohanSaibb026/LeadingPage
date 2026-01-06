@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star } from 'lucide-react';
+import heroDish from './assets/hero-dish.png';
 import './App.css';
 
 function App() {
@@ -24,10 +25,10 @@ function App() {
             <header className="hero">
                 <div className="hero-content">
                     <div className="badge">Novidade: NutriTrack 2.0</div>
-                    <h1>Transforme suas Receitas com <span className="text-gradient">Inteligência Artificial</span></h1>
-                    <p>O companheiro definitivo para quem ama cozinhar e cuida da saúde. Receitas curadas, macros automáticos e muito mais.</p>
+                    <h1>Aprenda a comer com <span className="text-gradient">Inteligência</span></h1>
+                    <p>A psicologia é a chave para uma mudança duradoura na sua alimentação.</p>
                     <div className="hero-btns">
-                        <button className="btn-primary">Começar Agora <ArrowRight size={18} /></button>
+                        <button className="btn-primary">Continuar <ArrowRight size={18} /></button>
                         <button className="btn-secondary">Ver Demonstração</button>
                     </div>
                     <div className="social-proof">
@@ -42,14 +43,8 @@ function App() {
                     </div>
                 </div>
                 <div className="hero-image">
-                    <div className="app-mockup glass-morphism">
-                        {/* Simulating an app screen */}
-                        <div className="mockup-header"></div>
-                        <div className="mockup-content">
-                            <div className="mockup-card"></div>
-                            <div className="mockup-card"></div>
-                            <div className="mockup-card"></div>
-                        </div>
+                    <div className="image-container">
+                        <img src={heroDish} alt="Gourmet healthy dish" />
                     </div>
                 </div>
             </header>
