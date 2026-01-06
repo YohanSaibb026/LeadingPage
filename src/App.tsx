@@ -30,7 +30,7 @@ function App() {
                     <div className="badge">{t('hero.badge')}</div>
                     <h1>
                         <Trans i18nKey="hero.title">
-                            Aprenda a comer com <span className="text-gradient">Inteligência</span>
+                            <span className="text-gradient">8 em cada 10 pessoas</span> desistem nos primeiros 2 meses quando tentam ganhar peso e construir músculos
                         </Trans>
                     </h1>
                     <p>{t('hero.subtitle')}</p>
