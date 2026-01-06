@@ -184,7 +184,8 @@
 }
 
 .complaints-list li {
-    font-size: 28px;
+    font-size: 36px;
+    /* 0.8em of 45px */
     color: var(--text-main);
     line-height: 1.3;
     font-family: 'Merriweather', serif;
@@ -391,6 +392,11 @@
         font-size: 32px;
         line-height: 1.1;
         margin-bottom: 1.5rem;
+    }
+
+    .complaints-list li {
+        font-size: 25.6px;
+        /* 0.8em of 32px */
     }
 
     .hero-subtitle-container {
