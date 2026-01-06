@@ -161,8 +161,7 @@
 
 .title-secondary {
     font-size: 0.8em;
-    display: block;
-    margin-top: 0.5rem;
+    display: inline;
     color: var(--text-main);
 }
 
