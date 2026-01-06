@@ -7,7 +7,11 @@
     "hero": {
         "badge": "Novidade: NutriTrack 2.0",
         "title": "<0>8 em cada 10 pessoas</0> desistem nos primeiros 2 meses quando tentam ganhar peso e construir músculos",
-        "subtitle": "A psicologia é a chave para uma mudança duradoura na sua alimentação.",
+        "subtitle": "A principal queixa ouvida nos consultórios são:",
+        "complaints": [
+            "Desmotivação por falta de ideias do que comer",
+            "Ficar doentes por comer em excesso os alimentos errados"
+        ],
         "continue": "Continuar",
         "demo": "Ver Demonstração",
         "social": "Usado por mais de 500+ chefs em casa"

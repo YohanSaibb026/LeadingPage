@@ -7,7 +7,11 @@
     "hero": {
         "badge": "Novedad: NutriTrack 2.0",
         "title": "<0>8 de cada 10 personas</0> abandonan en los primeros 2 meses cuando intentan ganar peso y ganar músculo",
-        "subtitle": "La psicología es la clave para un cambio duradero en tu alimentación.",
+        "subtitle": "La principal queja escuchada en los consultorios es:",
+        "complaints": [
+            "Desmotivación por falta de ideas sobre qué comer",
+            "Enfermarse por comer en exceso los alimentos incorrectos"
+        ],
         "continue": "Continuar",
         "demo": "Ver Demostración",
         "social": "Usado por más de 500+ chefs en casa"

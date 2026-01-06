@@ -33,7 +33,17 @@ function App() {
                             <span className="text-gradient">8 em cada 10 pessoas</span> desistem nos primeiros 2 meses quando tentam ganhar peso e construir músculos
                         </Trans>
                     </h1>
-                    <p>{t('hero.subtitle')}</p>
+                    <div className="hero-subtitle-container">
+                        <p className="subtitle-main">{t('hero.subtitle')}</p>
+                        <ul className="complaints-list">
+                            {(t('hero.complaints', { returnObjects: true }) as string[]).map((item, index) => (
+                                <li key={index}>
+                                    <span className="bullet">.</span>
+                                    {item}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                     <div className="hero-btns">
                         <button className="btn-primary">{t('hero.continue')} <ArrowRight size={18} /></button>
                         <button className="btn-secondary">{t('hero.demo')}</button>
