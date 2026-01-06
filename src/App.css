@@ -153,10 +153,8 @@
 }
 
 .text-gradient {
-    background: linear-gradient(135deg, var(--primary) 0%, #fb923c 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--primary);
+    font-weight: 700;
 }
 
 .title-secondary {
@@ -166,15 +164,17 @@
 }
 
 .hero-subtitle-container {
+    margin-top: 4rem;
     margin-bottom: 3rem;
 }
 
 .subtitle-main {
-    font-size: 32px;
+    font-size: 45px;
     color: var(--text-main);
-    margin-bottom: 1rem;
-    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
     font-family: 'Merriweather', serif;
+    font-weight: 400;
 }
 
 .complaints-list {
@@ -385,6 +385,16 @@
     .hero p {
         font-size: 24px;
         margin-bottom: 2rem;
+    }
+
+    .subtitle-main {
+        font-size: 32px;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-subtitle-container {
+        margin-top: 3rem;
     }
 
     .hero-btns {
