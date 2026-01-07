@@ -1,11 +1,12 @@
-import React from 'react';
-import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart } from 'lucide-react';
+import React, { useState } from 'react';
+import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart, ChevronDown } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
 import heroDish from './assets/hero-dish.png';
 import './App.css';
 
 function App() {
     const { t } = useTranslation();
+    const [openFaq, setOpenFaq] = useState<number | null>(null);
 
     const stories = [
         { name: 'Sarah L.', avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop', content: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&h=1422&fit=crop' },
@@ -127,10 +128,25 @@ function App() {
                         <h3>{t('features.instant.title')}</h3>
                         <p>{t('features.instant.desc')}</p>
                     </div>
-                    <div className="feature-card glass-morphism">
+                    <div className="feature-card glass-morphism faq-card">
                         <div className="icon-wrapper"><Smartphone /></div>
-                        <h3>{t('features.always.title')}</h3>
-                        <p>{t('features.always.desc')}</p>
+                        <h3>{t('features.faq_section.title')}</h3>
+                        <div className="faq-accordion">
+                            {[0].map((idx) => (
+                                <div key={idx} className={`faq-item ${openFaq === idx ? 'open' : ''}`}>
+                                    <button
+                                        className="faq-question"
+                                        onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
+                                    >
+                                        <span>{t(`features.faq_section.items.${idx}.q`)}</span>
+                                        <ChevronDown size={18} className="faq-chevron" />
+                                    </button>
+                                    <div className="faq-answer">
+                                        <p>{t(`features.faq_section.items.${idx}.a`)}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                     <div className="feature-card glass-morphism">
                         <div className="icon-wrapper"><ShieldCheck /></div>

@@ -25,6 +25,15 @@
             "title": "Os mais recomendados cafés da manhãs, lanches e shakes, em um só lugar",
             "desc": "Após ouvirmos centenas de clientes, entendemos que a falta de tempo e a dificuldade em variar o cardápio são os maiores obstáculos de um dieta. Unimos toda nossa experiência em nutrição para que você possa parar de se preocupar com o preparo e foque no que realmente importa: Seus resultados."
         },
+        "faq_section": {
+            "title": "Sempre com Você",
+            "items": {
+                "0": {
+                    "q": "Porque cafés da manhã, lanches e shakes?",
+                    "a": "Enquanto apps de culinária geral focam em refeições complexas e com ingredientes caros, nós nos especializamos na praticidade. E como a primeira refeição do dia impacta diretamente sua capacidade de atingir o superávit calórico e influencia suas refeições seguintes, trazemos as melhores combinações para você crescer com saúde"
+                }
+            }
+        },
         "always": {
             "title": "Sempre com Você",
             "desc": "Acesse suas receitas favoritas de qualquer lugar, online ou offline."
