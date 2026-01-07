@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send } from 'lucide-react';
+import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
 import heroDish from './assets/hero-dish.png';
 import './App.css';
@@ -95,6 +95,10 @@ function App() {
                                     <span className="user-name">{story.name}</span>
                                     <span className="post-time">8h</span>
                                 </div>
+                                <div className="header-actions">
+                                    <Pause size={16} color="white" fill="white" />
+                                    <MoreHorizontal size={18} color="white" />
+                                </div>
                             </div>
 
                             <img src={story.content} alt={story.name} className="card-story-content" />
@@ -102,9 +106,12 @@ function App() {
                             {/* Story Footer */}
                             <div className="card-story-footer">
                                 <div className="footer-input">
-                                    <span>Enviar mensagem...</span>
+                                    <span>Responder a {story.name}...</span>
                                 </div>
-                                <Send size={18} color="white" />
+                                <div className="footer-actions">
+                                    <Heart size={20} color="white" />
+                                    <Send size={20} color="white" />
+                                </div>
                             </div>
                         </div>
                     ))}
