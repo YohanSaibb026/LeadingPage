@@ -16,6 +16,9 @@
         "demo": "Ver Demonstração",
         "social": "Usado por mais de 500+ chefs em casa"
     },
+    "reviews": {
+        "title": "O que nossos usuários dizem"
+    },
     "features": {
         "title": "Por que o NutriTrack AI?",
         "instant": {

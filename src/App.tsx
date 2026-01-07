@@ -7,6 +7,15 @@ import './App.css';
 function App() {
     const { t } = useTranslation();
 
+    const stories = [
+        { name: 'Sarah L.', img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop' },
+        { name: 'Mike D.', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop' },
+        { name: 'Anya B.', img: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop' },
+        { name: 'João P.', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop' },
+        { name: 'Maria K.', img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop' },
+        { name: 'Lucas R.', img: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop' },
+    ];
+
     return (
         <div className="landing-container">
             {/* Navigation */}
@@ -66,6 +75,21 @@ function App() {
                     </div>
                 </div>
             </header>
+
+            {/* Stories Section */}
+            <section className="reviews-stories">
+                <h2>{t('reviews.title')}</h2>
+                <div className="stories-wrapper">
+                    {stories.map((story, index) => (
+                        <div key={index} className="story-item">
+                            <div className="story-ring">
+                                <img src={story.img} alt={story.name} className="story-avatar" />
+                            </div>
+                            <span className="story-name">{story.name}</span>
+                        </div>
+                    ))}
+                </div>
+            </section>
 
             {/* Features Section */}
             <section id="features" className="features">
