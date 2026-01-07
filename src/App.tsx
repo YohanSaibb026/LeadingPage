@@ -20,7 +20,7 @@ function App() {
                 <div className="nav-content">
                     <div className="logo">
                         <ChefHat className="logo-icon" />
-                        <span>NutriTrack AI</span>
+                        <span>Sabores Exclusivos</span>
                     </div>
                     <div className="nav-links">
                         <a href="#features">{t('nav.features')}</a>
@@ -154,7 +154,7 @@ function App() {
                 <div className="footer-content">
                     <div className="footer-logo">
                         <ChefHat />
-                        <span>NutriTrack AI</span>
+                        <span>Sabores Exclusivos</span>
                     </div>
                     <p>{t('footer.rights')}</p>
                 </div>
