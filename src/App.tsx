@@ -1,20 +1,59 @@
-import React from 'react';
-import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, X, Send } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
 import heroDish from './assets/hero-dish.png';
 import './App.css';
 
 function App() {
     const { t } = useTranslation();
+    const [activeStoryIndex, setActiveStoryIndex] = useState<number | null>(null);
+    const [progress, setProgress] = useState(0);
 
     const stories = [
-        { name: 'Sarah L.', img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop' },
-        { name: 'Mike D.', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop' },
-        { name: 'Anya B.', img: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop' },
-        { name: 'João P.', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop' },
-        { name: 'Maria K.', img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop' },
-        { name: 'Lucas R.', img: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop' },
+        { name: 'Sarah L.', avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop', content: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&h=1422&fit=crop' },
+        { name: 'Mike D.', avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop', content: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&h=1422&fit=crop' },
+        { name: 'Anya B.', avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop', content: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&h=1422&fit=crop' },
+        { name: 'João P.', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop', content: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1422&fit=crop' },
+        { name: 'Maria K.', avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop', content: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&h=1422&fit=crop' },
+        { name: 'Lucas R.', avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop', content: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&h=1422&fit=crop' },
     ];
+
+    useEffect(() => {
+        let timer: ReturnType<typeof setInterval>;
+        if (activeStoryIndex !== null) {
+            setProgress(0);
+            timer = setInterval(() => {
+                setProgress((prev) => {
+                    if (prev >= 100) {
+                        handleNextStory();
+                        return 0;
+                    }
+                    return prev + 1;
+                });
+            }, 50);
+        }
+        return () => clearInterval(timer);
+    }, [activeStoryIndex]);
+
+    const handleNextStory = () => {
+        if (activeStoryIndex !== null) {
+            if (activeStoryIndex < stories.length - 1) {
+                setActiveStoryIndex(activeStoryIndex + 1);
+            } else {
+                setActiveStoryIndex(null);
+            }
+        }
+    };
+
+    const handlePrevStory = () => {
+        if (activeStoryIndex !== null) {
+            if (activeStoryIndex > 0) {
+                setActiveStoryIndex(activeStoryIndex - 1);
+            } else {
+                setProgress(0);
+            }
+        }
+    };
 
     return (
         <div className="landing-container">
@@ -81,15 +120,65 @@ function App() {
                 <h2>{t('reviews.title')}</h2>
                 <div className="stories-wrapper">
                     {stories.map((story, index) => (
-                        <div key={index} className="story-item">
+                        <div key={index} className="story-item" onClick={() => setActiveStoryIndex(index)}>
                             <div className="story-ring">
-                                <img src={story.img} alt={story.name} className="story-avatar" />
+                                <img src={story.avatar} alt={story.name} className="story-avatar" />
                             </div>
                             <span className="story-name">{story.name}</span>
                         </div>
                     ))}
                 </div>
             </section>
+
+            {/* Story Viewer Overlay */}
+            {activeStoryIndex !== null && (
+                <div className="story-overlay">
+                    <div className="story-container">
+                        {/* Progress Bars */}
+                        <div className="story-progress-container">
+                            {stories.map((_, idx) => (
+                                <div key={idx} className="story-progress-bg">
+                                    <div
+                                        className="story-progress-fill"
+                                        style={{
+                                            width: idx < activeStoryIndex ? '100%' : idx === activeStoryIndex ? `${progress}%` : '0%'
+                                        }}
+                                    />
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Header */}
+                        <div className="story-header">
+                            <div className="story-user">
+                                <img src={stories[activeStoryIndex].avatar} alt="" />
+                                <span>{stories[activeStoryIndex].name}</span>
+                                <span className="story-time">8h</span>
+                            </div>
+                            <button className="story-close" onClick={() => setActiveStoryIndex(null)}>
+                                <X size={24} color="white" />
+                            </button>
+                        </div>
+
+                        {/* Content */}
+                        <div className="story-content-wrapper" onClick={(e) => {
+                            const x = e.clientX / window.innerWidth;
+                            if (x < 0.3) handlePrevStory();
+                            else handleNextStory();
+                        }}>
+                            <img src={stories[activeStoryIndex].content} alt="Story content" className="story-image-full" />
+                        </div>
+
+                        {/* Footer */}
+                        <div className="story-footer">
+                            <div className="story-input">
+                                <span>Enviar mensagem...</span>
+                            </div>
+                            <Send size={20} color="white" />
+                        </div>
+                    </div>
+                </div>
+            )}
 
             {/* Features Section */}
             <section id="features" className="features">
