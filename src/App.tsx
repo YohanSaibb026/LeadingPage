@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart, ChevronDown } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
 import heroDish from './assets/hero-dish.png';
+import meal1 from './assets/meal-1.jpg';
 import './App.css';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     const [openFaq, setOpenFaq] = useState<number | null>(null);
 
     const stories = [
-        { name: 'Sarah L.', avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop', content: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&h=1422&fit=crop' },
+        { name: 'Sarah L.', avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop', content: meal1 },
         { name: 'Mike D.', avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop', content: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&h=1422&fit=crop' },
         { name: 'Anya B.', avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop', content: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&h=1422&fit=crop' },
     ];
