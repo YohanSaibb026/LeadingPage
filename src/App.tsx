@@ -128,36 +128,30 @@ function App() {
                         <h3>{t('features.instant.title')}</h3>
                         <p>{t('features.instant.desc')}</p>
                     </div>
-                    <div className="feature-card glass-morphism">
+                    <div className="feature-card glass-morphism faq-card">
                         <div className="icon-wrapper"><Smartphone /></div>
-                        <h3>{t('features.always.title')}</h3>
-                        <p>{t('features.always.desc')}</p>
+                        <h3>{t('features.faq_section.title')}</h3>
+                        <div className="faq-accordion">
+                            {[0].map((idx) => (
+                                <div key={idx} className={`faq-item ${openFaq === idx ? 'open' : ''}`}>
+                                    <button
+                                        className="faq-question"
+                                        onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
+                                    >
+                                        <span>{t(`features.faq_section.items.${idx}.q`)}</span>
+                                        <ChevronDown size={18} className="faq-chevron" />
+                                    </button>
+                                    <div className="faq-answer">
+                                        <p>{t(`features.faq_section.items.${idx}.a`)}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                     <div className="feature-card glass-morphism">
                         <div className="icon-wrapper"><ShieldCheck /></div>
                         <h3>{t('features.data.title')}</h3>
                         <p>{t('features.data.desc')}</p>
-                    </div>
-                </div>
-
-                {/* FAQ Section (Minimalist Style) */}
-                <div className="faq-section">
-                    <h3>{t('features.faq_section.title')}</h3>
-                    <div className="faq-accordion">
-                        {[0].map((idx) => (
-                            <div key={idx} className={`faq-item ${openFaq === idx ? 'open' : ''}`}>
-                                <button
-                                    className="faq-question"
-                                    onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
-                                >
-                                    <span>{t(`features.faq_section.items.${idx}.q`)}</span>
-                                    <ChevronDown size={18} className="faq-chevron" />
-                                </button>
-                                <div className="faq-answer">
-                                    <p>{t(`features.faq_section.items.${idx}.a`)}</p>
-                                </div>
-                            </div>
-                        ))}
                     </div>
                 </div>
             </section>
