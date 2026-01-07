@@ -138,7 +138,7 @@ function App() {
                         <h3>{t('features.faq_section.title')}</h3>
                         <div className="faq-accordion">
                             {[0, 1, 2].map((idx) => (
-                                <div key={idx} className={`faq - item ${openFaq === idx ? 'open' : ''} `}>
+                                <div key={idx} className={`faq-item ${openFaq === idx ? 'open' : ''}`}>
                                     <button
                                         className="faq-question"
                                         onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
