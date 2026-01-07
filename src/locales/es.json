@@ -35,6 +35,10 @@
                 "1": {
                     "q": "¿Cuesta caro tener una dieta?",
                     "a": "¡De ninguna manera! Ganarás peso usando ingredientes que ya forman parte de tu día a día como plátano, avena y leche. El secreto de la App está en transformar estos artículos básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor y sin gastar un centavo más."
+                },
+                "2": {
+                    "q": "¿Es necesario comer en grandes quantidades para crecer?",
+                    "a": "Es un error pensar así. Comer grandes quantidades de alimentos inadecuados trae problemas a nuestro cuerpo, como falta de apetito, náuseas y malestar. Con nuestras recetas, te aseguras una comida nutritiva desde temprano, de forma ligera. Así, no necesitas obligarte a comer platos gigantescos en el almuerzo o la cena para cumplir tus objetivos."
                 }
             }
         },
