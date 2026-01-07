@@ -1,3 +1,4 @@
+```
 import React, { useState } from 'react';
 import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart, ChevronDown } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
@@ -136,16 +137,16 @@ function App() {
                         <h3>{t('features.faq_section.title')}</h3>
                         <div className="faq-accordion">
                             {[0, 1, 2].map((idx) => (
-                                <div key={idx} className={`faq-item ${openFaq === idx ? 'open' : ''}`}>
+                                <div key={idx} className={`faq - item ${ openFaq === idx ? 'open' : '' } `}>
                                     <button
                                         className="faq-question"
                                         onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
                                     >
-                                        <span>{t(`features.faq_section.items.${idx}.q`)}</span>
+                                        <span>{t(`features.faq_section.items.${ idx }.q`)}</span>
                                         <ChevronDown size={18} className="faq-chevron" />
                                     </button>
                                     <div className="faq-answer">
-                                        <p>{t(`features.faq_section.items.${idx}.a`)}</p>
+                                        <p>{t(`features.faq_section.items.${ idx }.a`)}</p>
                                     </div>
                                 </div>
                             ))}
