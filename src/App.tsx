@@ -1,4 +1,3 @@
-```
 import React, { useState } from 'react';
 import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart, ChevronDown } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
@@ -6,6 +5,7 @@ import heroDish from './assets/hero-dish.png';
 import meal1 from './assets/meal-1.jpg';
 import meal2 from './assets/meal-2.jpg';
 import meal3 from './assets/meal-3.jpg';
+import meal4 from './assets/meal-4.jpg';
 import './App.css';
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
         { name: 'Sarah L.', avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop', content: meal1 },
         { name: 'Mike D.', avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop', content: meal2 },
         { name: 'Anya B.', avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop', content: meal3 },
+        { name: 'João P.', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop', content: meal4 },
     ];
 
     return (
@@ -137,16 +138,16 @@ function App() {
                         <h3>{t('features.faq_section.title')}</h3>
                         <div className="faq-accordion">
                             {[0, 1, 2].map((idx) => (
-                                <div key={idx} className={`faq - item ${ openFaq === idx ? 'open' : '' } `}>
+                                <div key={idx} className={`faq - item ${openFaq === idx ? 'open' : ''} `}>
                                     <button
                                         className="faq-question"
                                         onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
                                     >
-                                        <span>{t(`features.faq_section.items.${ idx }.q`)}</span>
+                                        <span>{t(`features.faq_section.items.${idx}.q`)}</span>
                                         <ChevronDown size={18} className="faq-chevron" />
                                     </button>
                                     <div className="faq-answer">
-                                        <p>{t(`features.faq_section.items.${ idx }.a`)}</p>
+                                        <p>{t(`features.faq_section.items.${idx}.a`)}</p>
                                     </div>
                                 </div>
                             ))}
