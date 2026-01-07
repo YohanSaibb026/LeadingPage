@@ -6,6 +6,8 @@ import meal1 from './assets/meal-1.jpg';
 import meal2 from './assets/meal-2.jpg';
 import meal3 from './assets/meal-3.jpg';
 import meal4 from './assets/meal-4.jpg';
+import meal5 from './assets/meal-5.jpg';
+import meal6 from './assets/meal-6.jpg';
 import './App.css';
 
 function App() {
@@ -14,9 +16,11 @@ function App() {
 
     const stories = [
         { name: 'Sarah L.', avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop', content: meal1 },
-        { name: 'Mike D.', avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop', content: meal2 },
+        { name: 'Mike D.', avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop', content: meal2 },
         { name: 'Anya B.', avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop', content: meal3 },
         { name: 'João P.', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop', content: meal4 },
+        { name: 'Ricardo M.', avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop', content: meal5 },
+        { name: 'Carla S.', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop', content: meal6 },
     ];
 
     return (
