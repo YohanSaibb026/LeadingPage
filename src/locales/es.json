@@ -25,9 +25,18 @@
             "title": "Los desayunos, meriendas y batidos más recomendados, en un solo lugar",
             "desc": "Tras escuchar a cientos de clientes, entendemos que la falta de tiempo y la dificultad para variar el menú son los mayores obstáculos de una dieta. Hemos unido toda nuestra experiencia en nutrición para que puedas dejar de preocuparte por la preparación y te centres en lo que realmente importa: Tus resultados."
         },
-        "always": {
+        "faq_section": {
             "title": "Siempre Contigo",
-            "desc": "Accede a tus recetas favoritas desde cualquier lugar, online u offline."
+            "items": {
+                "0": {
+                    "q": "¿Por qué desayunos, meriendas y batidos?",
+                    "a": "Mientras que las aplicaciones de cocina general se centran en comidas complejas con ingredientes caros, nosotros nos especializamos en la practicidad. Y como la primera comida del día influye directamente en tu capacidad para alcanzar el superávit calórico e influye en tus comidas posteriores, te traemos las mejores combinaciones para que crezcas con salud."
+                },
+                "1": {
+                    "q": "¿Cuesta caro tener una dieta?",
+                    "a": "¡De ninguna manera! Ganarás peso usando ingredientes que ya forman parte de tu día a día como plátano, avena y leche. El secreto de la App está en transformar estos artículos básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor y sin gastar un centavo más."
+                }
+            }
         },
         "data": {
             "title": "Datos Precisos",
