@@ -391,8 +391,11 @@
 /* Transformation Card Styling */
 .transformation-card {
     grid-column: 1 / -1;
-    /* Make it full width in the grid */
     text-align: center;
+    max-width: 100%;
+    /* Prevent grid blowout */
+    overflow: hidden;
+    /* Ensure no child overflow affects parent */
 }
 
 .transformation-card h3 {
@@ -407,10 +410,15 @@
     display: flex;
     overflow-x: auto;
     gap: 1rem;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
+    /* Add horizontal padding for peek effect */
     margin-top: 1rem;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    width: 100%;
+    /* Constrain width */
+    box-sizing: border-box;
+    /* Include padding in width */
 }
 
 .transformations-grid::-webkit-scrollbar {
@@ -418,7 +426,10 @@
 }
 
 .transform-item {
-    flex: 0 0 250px;
+    flex: 0 0 280px;
+    /* Match story card width */
+    height: 480px;
+    /* Consistently tall for vertical photos */
     scroll-snap-align: center;
     border-radius: 16px;
     overflow: hidden;
