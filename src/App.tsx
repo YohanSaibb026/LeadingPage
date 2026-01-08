@@ -224,7 +224,19 @@ function App() {
                                 }}
                             />
                         </p>
-                        <p className="price-value highlight">{t('features.pricing.app_price')}</p>
+                        <p className="price-value highlight strike">{t('features.pricing.app_price')}</p>
+                    </div>
+                </div>
+
+                {/* Promotion Card */}
+                <div className="promotion-card glass-morphism">
+                    <h3 className="promo-title">{t('features.pricing.promotion.title')}</h3>
+                    <p className="promo-subtitle">{t('features.pricing.promotion.subtitle')}</p>
+                    <div className="promo-divider"></div>
+                    <p className="promo-label">{t('features.pricing.promotion.label')}</p>
+                    <div className="promo-price-container">
+                        <span className="promo-from">{t('features.pricing.promotion.price_from')}</span>
+                        <span className="promo-to">{t('features.pricing.promotion.price_to')}</span>
                     </div>
                 </div>
             </section>
