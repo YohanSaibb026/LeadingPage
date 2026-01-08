@@ -224,7 +224,7 @@ function App() {
                                 }}
                             />
                         </p>
-                        <p className="price-value highlight strike">{t('features.pricing.app_price')}</p>
+                        <p className="price-value strike">{t('features.pricing.app_price')}</p>
                     </div>
                 </div>
 

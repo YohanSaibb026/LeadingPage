@@ -526,11 +526,27 @@
 
 .price-label {
     font-size: 1.6rem;
+    font-weight: 700;
+    /* Added bold to match second card */
     color: var(--text-main);
     margin-bottom: 0.8rem;
     line-height: 1.6;
     display: block;
-    /* Ensure it handles mixed content well */
+}
+
+/* ... brand-badge styles ... */
+
+.promo-label {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #F97316;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+    /* Added underline */
+    text-underline-offset: 4px;
+    /* Space it out a bit */
 }
 
 .brand-badge {
