@@ -90,10 +90,8 @@ function App() {
                         <span>{t('hero.social')}</span>
                     </div>
                 </div>
-                <div className="hero-image">
-                    <div className="image-container">
-                        <img src={heroDish} alt="Gourmet healthy dish" />
-                    </div>
+                <div className="hero-image-wrapper">
+                    <img src={heroApp} alt="App Sabores Exclusivos Interface" className="hero-phone-mockup" />
                 </div>
             </header>
 
