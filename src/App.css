@@ -405,22 +405,30 @@
 
 .transformations-grid {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
     margin-top: 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.transformations-grid::-webkit-scrollbar {
+    display: none;
 }
 
 .transform-item {
-    width: 100%;
-    border-radius: 12px;
+    flex: 0 0 250px;
+    scroll-snap-align: center;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     background: #000;
 }
 
 .transform-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     object-fit: cover;
 }
