@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart, ChevronDown } from 'lucide-react';
+import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart, ChevronDown, CheckCircle2 } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
 import heroDish from './assets/hero-dish.png';
 import meal1 from './assets/meal-1.jpg';
