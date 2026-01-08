@@ -49,6 +49,15 @@
         "transformations": {
             "title": "Transformações Reais",
             "desc": "Mais do que receitas, entregamos resultados. Veja a evolução de quem seguiu nossos métodos."
+        },
+        "target_audience": {
+            "title": "Para quem é o Sabores Exclusivos?",
+            "items": [
+                "Para quem quer ganhar massa muscular sem comer comida sem graça",
+                "Para quem tem a rotina corrida e precisa de receitas práticas",
+                "Para quem cansou de frango com batata doce todo dia",
+                "Para quem busca resultados reais sem sofrimento"
+            ]
         }
     },
     "cta": {

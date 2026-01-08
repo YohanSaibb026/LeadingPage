@@ -446,6 +446,54 @@
 }
 
 /* CTA */
+.target-audience {
+    padding: 80px 2rem;
+    background-color: var(--bg-card);
+    /* Slightly different bg to separate sections */
+}
+
+.audience-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.audience-list {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.audience-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-glass);
+    border-radius: 16px;
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.audience-item:hover {
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.audience-item p {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin: 0;
+    font-weight: 500;
+}
+
+.check-icon {
+    color: #10B981;
+    /* Green color for success/check */
+    flex-shrink: 0;
+}
+
 .cta-section {
     padding: 100px 2rem;
     max-width: 1200px;
