@@ -209,7 +209,19 @@ function App() {
                     </div>
 
                     <div className="price-row new-price">
-                        <p className="price-label">{t('features.pricing.app_access')}</p>
+                        <p className="price-label">
+                            <Trans
+                                i18nKey="features.pricing.app_access"
+                                components={{
+                                    1: (
+                                        <span className="brand-badge">
+                                            <ChefHat size={20} className="badge-icon" />
+                                            Sabores Exclusivos
+                                        </span>
+                                    )
+                                }}
+                            />
+                        </p>
                         <p className="price-value highlight">{t('features.pricing.app_price')}</p>
                     </div>
                 </div>

@@ -523,12 +523,33 @@
 }
 
 .price-label {
-    font-size: 1.5rem;
-    /* Increased from 1.2rem */
+    font-size: 1.6rem;
     color: var(--text-main);
-    /* Brighter color for readability */
     margin-bottom: 0.8rem;
-    line-height: 1.4;
+    line-height: 1.6;
+    display: block;
+    /* Ensure it handles mixed content well */
+}
+
+.brand-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--text-main);
+    /* Black rectangle effect */
+    color: var(--text-main);
+    padding: 0.2rem 0.8rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0 0.4rem;
+    vertical-align: middle;
+}
+
+.badge-icon {
+    color: #F97316;
+    /* Orange brand color */
 }
 
 .price-value {
@@ -541,15 +562,14 @@
     color: var(--text-secondary);
     opacity: 0.6;
     font-size: 2rem;
-    /* Increased from 1.5rem */
     font-weight: 800;
-    /* Made bolder */
 }
 
 .price-value.highlight {
     color: #10B981;
     /* Success Green */
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    /* Decreased from 2.5rem */
     background: linear-gradient(to right, #10B981, #34D399);
     -webkit-background-clip: text;
     background-clip: text;
