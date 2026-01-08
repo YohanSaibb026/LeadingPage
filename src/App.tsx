@@ -15,6 +15,13 @@ import transform4 from './assets/transform-4.jpg';
 import transform5 from './assets/transform-5.jpg';
 import './App.css';
 
+const BrandBadge = ({ children }: { children?: React.ReactNode }) => (
+    <span className="brand-badge">
+        <ChefHat size={20} className="badge-icon" />
+        {children}
+    </span>
+);
+
 function App() {
     const { t } = useTranslation();
     const [openFaq, setOpenFaq] = useState<number | null>(null);
