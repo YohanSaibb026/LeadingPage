@@ -586,13 +586,83 @@
     opacity: 0.3;
 }
 
-.price-divider span {
+/* Promotion Card */
+.pricing-comparison {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.promotion-card {
+    padding: 2.5rem 2rem;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    border: 2px solid var(--text-main);
+    /* Black border like the badge/first card request implies contrast */
+    border-radius: 30px;
     background: var(--bg-card);
-    padding: 0 1rem;
-    font-size: 0.9rem;
-    font-weight: bold;
+    /* Match the base card background */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    /* Match the lift effect */
+    position: relative;
+    overflow: hidden;
+}
+
+.promo-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.promo-subtitle {
+    font-size: 1.1rem;
     color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.promo-divider {
+    height: 1px;
+    background: var(--border-glass);
+    margin: 1.5rem 0;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.promo-label {
+    font-size: 1.2rem;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #F97316;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.promo-price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.promo-from {
+    font-size: 1.4rem;
+    color: var(--text-secondary);
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.promo-to {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #10B981;
+    background: linear-gradient(to right, #10B981, #34D399);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* CTA */
