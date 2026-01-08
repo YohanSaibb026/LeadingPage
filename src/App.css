@@ -503,23 +503,32 @@
 }
 
 .price-container {
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     width: 100%;
     max-width: 500px;
     text-align: center;
-    border: 1px solid var(--border-glass);
+    border: 2px solid var(--border-glass);
+    /* Thicker border */
+    border-radius: 30px;
+    /* More rounded */
+    background: rgba(255, 255, 255, 0.03);
+    /* Subtle background fill */
     position: relative;
-    /* Remove transparent background to use the glass-morphism class correctly */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    /* Lift it up */
 }
 
 .price-row {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
 .price-label {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    /* Increased from 1.2rem */
+    color: var(--text-main);
+    /* Brighter color for readability */
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
 }
 
 .price-value {
