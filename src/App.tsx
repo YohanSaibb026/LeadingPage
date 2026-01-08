@@ -194,6 +194,25 @@ function App() {
                 </div>
             </section>
 
+            {/* Price Comparison Section */}
+            <section className="pricing-comparison">
+                <div className="price-container glass-morphism">
+                    <div className="price-row old-price">
+                        <p className="price-label">{t('features.pricing.consultation')}</p>
+                        <p className="price-value strike">{t('features.pricing.consultation_price')}</p>
+                    </div>
+
+                    <div className="price-divider">
+                        <span>VS</span>
+                    </div>
+
+                    <div className="price-row new-price">
+                        <p className="price-label">{t('features.pricing.app_access')}</p>
+                        <p className="price-value highlight">{t('features.pricing.app_price')}</p>
+                    </div>
+                </div>
+            </section>
+
             {/* CTA Section */}
             <section className="cta-section">
                 <div className="cta-card premium-gradient">
@@ -218,4 +237,4 @@ function App() {
 }
 
 export default App;
- 
+

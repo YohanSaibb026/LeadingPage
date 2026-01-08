@@ -57,6 +57,12 @@
                 "Para quem deseja se sentir confortável, tendo uma vasta variedade de receitas estratégicas na palma da mão para atingir seu objetivo.",
                 "Para quem busca destacar-se dos demais, dominando dezenas de receitas deliciosas que poucos conhecem, feitas com os mesmos ingredientes simples."
             ]
+        },
+        "pricing": {
+            "consultation": "Preço de uma consulta por sessão",
+            "consultation_price": "R$ 180 - R$ 220",
+            "app_access": "App Sabores Exclusivos com livre acesso",
+            "app_price": "R$ 40,00"
         }
     },
     "cta": {

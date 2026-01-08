@@ -494,6 +494,74 @@
     flex-shrink: 0;
 }
 
+/* Pricing Comparison */
+.pricing-comparison {
+    padding: 2rem 2rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-card);
+}
+
+.price-container {
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    border: 1px solid var(--border-glass);
+    position: relative;
+    /* Remove transparent background to use the glass-morphism class correctly */
+}
+
+.price-row {
+    margin: 1rem 0;
+}
+
+.price-label {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.price-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.price-value.strike {
+    text-decoration: line-through;
+    color: var(--text-secondary);
+    opacity: 0.6;
+    font-size: 1.5rem;
+}
+
+.price-value.highlight {
+    color: #10B981;
+    /* Success Green */
+    font-size: 2.5rem;
+    background: linear-gradient(to right, #10B981, #34D399);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.price-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0;
+    opacity: 0.3;
+}
+
+.price-divider span {
+    background: var(--bg-card);
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+/* CTA */
 .cta-section {
     padding: 100px 2rem;
     max-width: 1200px;
