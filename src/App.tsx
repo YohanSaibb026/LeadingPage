@@ -213,12 +213,7 @@ function App() {
                             <Trans
                                 i18nKey="features.pricing.app_access"
                                 components={{
-                                    1: (
-                                        <span className="brand-badge">
-                                            <ChefHat size={20} className="badge-icon" />
-                                            Sabores Exclusivos
-                                        </span>
-                                    )
+                                    1: <BrandBadge />
                                 }}
                             />
                         </p>
