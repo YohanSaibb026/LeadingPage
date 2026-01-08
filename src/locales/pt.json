@@ -59,7 +59,7 @@
             ]
         },
         "pricing": {
-            "consultation": "Preço de uma consulta por sessão",
+            "consultation": "Preço médio de uma consulta por <1>sessão</1>",
             "consultation_price": "R$ 180 - R$ 220",
             "app_access": "App Sabores Exclusivos com livre acesso",
             "app_price": "R$ 40,00"

@@ -198,7 +198,9 @@ function App() {
             <section className="pricing-comparison">
                 <div className="price-container glass-morphism">
                     <div className="price-row old-price">
-                        <p className="price-label">{t('features.pricing.consultation')}</p>
+                        <p className="price-label">
+                            <Trans i18nKey="features.pricing.consultation" components={{ 1: <u style={{ textDecorationThickness: '2px' }} /> }} />
+                        </p>
                         <p className="price-value strike">{t('features.pricing.consultation_price')}</p>
                     </div>
 

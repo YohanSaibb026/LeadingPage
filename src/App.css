@@ -517,7 +517,7 @@
 }
 
 .price-label {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--text-secondary);
     margin-bottom: 0.5rem;
 }
@@ -531,7 +531,10 @@
     text-decoration: line-through;
     color: var(--text-secondary);
     opacity: 0.6;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    /* Increased from 1.5rem */
+    font-weight: 800;
+    /* Made bolder */
 }
 
 .price-value.highlight {
