@@ -11,6 +11,7 @@ import meal6 from './assets/meal-6.jpg';
 import transform1 from './assets/transform-1.jpg';
 import transform2 from './assets/transform-2.jpg';
 import transform3 from './assets/transform-3.jpg';
+import transform4 from './assets/transform-4.jpg';
 import './App.css';
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
         { name: 'Carla S.', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop', content: meal6 },
     ];
 
-    const transformations = [transform1, transform2, transform3];
+    const transformations = [transform1, transform2, transform3, transform4];
 
     return (
         <div className="landing-container">
