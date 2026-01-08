@@ -46,9 +46,9 @@
             "title": "Sempre com Você",
             "desc": "Acesse suas receitas favoritas de qualquer lugar, online ou offline."
         },
-        "data": {
-            "title": "Dados Precisos",
-            "desc": "Cálculo de valores nutricionais exatos para cada porção."
+        "transformations": {
+            "title": "Transformações Reais",
+            "desc": "Mais do que receitas, entregamos resultados. Veja a evolução de quem seguiu nossos métodos."
         }
     },
     "cta": {

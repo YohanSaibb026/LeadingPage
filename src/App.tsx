@@ -8,6 +8,9 @@ import meal3 from './assets/meal-3.jpg';
 import meal4 from './assets/meal-4.jpg';
 import meal5 from './assets/meal-5.jpg';
 import meal6 from './assets/meal-6.jpg';
+import transform1 from './assets/transform-1.jpg';
+import transform2 from './assets/transform-2.jpg';
+import transform3 from './assets/transform-3.jpg';
 import './App.css';
 
 function App() {
@@ -22,6 +25,8 @@ function App() {
         { name: 'Ricardo M.', avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop', content: meal5 },
         { name: 'Carla S.', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop', content: meal6 },
     ];
+
+    const transformations = [transform1, transform2, transform3];
 
     return (
         <div className="landing-container">
@@ -157,10 +162,17 @@ function App() {
                             ))}
                         </div>
                     </div>
-                    <div className="feature-card glass-morphism">
-                        <div className="icon-wrapper"><ShieldCheck /></div>
-                        <h3>{t('features.data.title')}</h3>
-                        <p>{t('features.data.desc')}</p>
+                    <div className="feature-card glass-morphism transformation-card">
+                        <div className="icon-wrapper"><Star /></div>
+                        <h3>{t('features.transformations.title')}</h3>
+                        <p>{t('features.transformations.desc')}</p>
+                        <div className="transformations-grid">
+                            {transformations.map((img, i) => (
+                                <div key={i} className="transform-item">
+                                    <img src={img} alt={`Transformation ${i + 1}`} />
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
