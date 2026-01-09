@@ -193,6 +193,16 @@
     display: flex;
     gap: 0.5rem;
     align-items: flex-start;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.complaints-list li:last-child {
+    border-bottom: none;
+}
+
+.complaints-list li:first-child {
+    padding-top: 0;
 }
 
 .complaints-list .bullet {
@@ -1051,6 +1061,11 @@
     .complaints-list li {
         font-size: 24px;
         /* Balanced mobile size */
+        padding: 1.25rem 0;
+    }
+
+    .complaints-list li:first-child {
+        padding-top: 0;
     }
 
     .hero-subtitle-container {
