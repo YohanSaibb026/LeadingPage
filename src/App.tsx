@@ -109,7 +109,7 @@ function App() {
                             <span className="score">4.9/5</span>
                             <div className="stars-row">
                                 {[1, 2, 3, 4, 5].map((star) => (
-                                    <Star key={star} size={18} color="#F59E0B" fill="#F59E0B" />
+                                    <i key={star} className="fa-solid fa-star"></i>
                                 ))}
                             </div>
                             <p className="trust-text">{t('hero.social')}</p>
