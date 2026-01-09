@@ -104,32 +104,18 @@ function App() {
 
                 </div>
                 <div className="hero-image-wrapper">
-                    {/* Card Container - Rebuilt from scratch */}
-                    <div className="hero-mockup-card" ref={heroCardRef}>
-
-                        {/* Rating Header */}
-                        <div className={`mockup-header ${isHeroVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
-                            <div className="rating-badge">
-                                <span className="score">4.9/5</span>
-                            </div>
+                    {/* Clean Rebuild of Hero Card */}
+                    <div className="mockup-card">
+                        <div className="mockup-header">
+                            <span className="rating-number">4.9/5</span>
                             <div className="rating-stars">
                                 {[1, 2, 3, 4, 5].map((star) => (
-                                    <i key={star} className="fa-solid fa-star text-amber-400"></i>
+                                    <i key={star} className="fa-solid fa-star"></i>
                                 ))}
                             </div>
-                            <p className="social-text">
-                                {t('hero.social')}
-                            </p>
+                            <p className="rating-text">Usado por mais de 500+ chefs em casa</p>
                         </div>
-
-                        {/* Phone Image */}
-                        <div className={`mockup-image-container ${isHeroVisible ? 'animate-fade-in-up delay-100' : 'opacity-0'}`}>
-                            <img
-                                src={heroApp}
-                                alt="App Interface"
-                                className="main-mockup"
-                            />
-                        </div>
+                        <img src={heroApp} alt="App Interface" className="mockup-img" />
                     </div>
                 </div>
             </header>

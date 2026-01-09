@@ -264,91 +264,76 @@
     object-fit: cover;
 }
 
-/* --- NEW HERO MOCKUP CARD (Clean Rebuild) --- */
+/* --- FINAL REBUILD: HERO MOCKUP CARD --- */
 
-.hero-mockup-card {
-    background: #ffffff;
-    border-radius: 60px;
-    padding: 3.5rem 2rem 0;
-    /* Padding Top for the text */
-    margin: 3rem auto 0;
+.mockup-card {
+    background-color: #fff;
+    border-radius: 48px;
+    /* Smooth rounded corners */
+    padding-top: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 3rem;
     width: 100%;
-    max-width: 780px;
-
+    max-width: 650px;
+    /* Balanced width */
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-
-    /* Subtle border + Premium Shadow */
-    border: 1px solid rgba(0, 0, 0, 0.04);
-    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+    /* Clean shadow */
+    border: 1px solid rgba(0, 0, 0, 0.02);
     overflow: hidden;
-    /* Clips the bottom of the phone if needed */
 }
 
-/* Header Text Section */
 .mockup-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
-    /* Tighter gap */
+    gap: 0.35rem;
+    /* Tight spacing */
     margin-bottom: 2rem;
     text-align: center;
-    z-index: 10;
 }
 
-.rating-badge .score {
+.rating-number {
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
-    /* Smaller, more elegant size */
-    font-weight: 700;
-    /* Bold but not extra bold */
+    /* Matches "small font" request */
+    font-weight: 800;
+    /* Extra Bold */
     color: #0f172a;
     /* Slate 900 */
-    line-height: 1.2;
-    letter-spacing: -0.01em;
+    line-height: 1;
 }
 
 .rating-stars {
     display: flex;
-    gap: 0.25rem;
-    font-size: 1.1rem;
-    color: #fbbf24;
+    gap: 0.2rem;
+    font-size: 1rem;
+    color: #FBBF24;
     /* Amber 400 */
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.1rem;
 }
 
-.social-text {
+.rating-text {
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #475569;
     /* Slate 600 */
-    font-weight: 400;
-    /* Regular weight */
+    font-weight: 500;
 }
 
-/* Image Section */
-.mockup-image-container {
+.mockup-img {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -4%;
-    /* Slight overlap/tuck at bottom */
-}
-
-.main-mockup {
-    width: 100%;
-    max-width: 680px;
-    /* Large size */
+    max-width: 580px;
     height: auto;
-    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
-    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.main-mockup:hover {
-    transform: translateY(-5px);
+    display: block;
+    margin-bottom: -20px;
+    /* Slight overlap */
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
 }
 
 /* Entrance Animations */
