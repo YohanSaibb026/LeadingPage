@@ -97,10 +97,7 @@ function App() {
                             ))}
                         </ul>
                     </div>
-                    <div className="hero-btns">
-                        <button className="btn-primary">{t('hero.continue')} <ArrowRight size={18} /></button>
-                        <button className="btn-secondary">{t('hero.demo')}</button>
-                    </div>
+                    {/* Hero buttons removed to streamline flow to reviews */}
 
                 </div>
                 <div className="hero-image-wrapper">
