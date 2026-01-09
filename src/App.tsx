@@ -104,20 +104,31 @@ function App() {
 
                 </div>
                 <div className="hero-image-wrapper">
-                    <div className="hero-card" ref={heroCardRef}>
-                        <div className={`reviews-container ${isHeroVisible ? 'animate-slide-down' : 'opacity-0'}`}>
-                            <span className="rating-score">4.9/5</span>
-                            <div className="flex gap-1 mb-2">
+                    {/* Card Container - Rebuilt from scratch */}
+                    <div className="hero-mockup-card" ref={heroCardRef}>
+
+                        {/* Rating Header */}
+                        <div className={`mockup-header ${isHeroVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
+                            <div className="rating-badge">
+                                <span className="score">4.9/5</span>
+                            </div>
+                            <div className="rating-stars">
                                 {[1, 2, 3, 4, 5].map((star) => (
-                                    <i key={star} className="fa-solid fa-star text-yellow-400 text-base"></i>
+                                    <i key={star} className="fa-solid fa-star text-amber-400"></i>
                                 ))}
                             </div>
-                            <p className="text-slate-600 font-medium text-sm text-center">
+                            <p className="social-text">
                                 {t('hero.social')}
                             </p>
                         </div>
-                        <div className={`w-full flex justify-center ${isHeroVisible ? 'animate-slide-up' : 'opacity-0'}`}>
-                            <img src={heroApp} alt="App Sabores Exclusivos Interface" className="hero-phone-mockup" />
+
+                        {/* Phone Image */}
+                        <div className={`mockup-image-container ${isHeroVisible ? 'animate-fade-in-up delay-100' : 'opacity-0'}`}>
+                            <img
+                                src={heroApp}
+                                alt="App Interface"
+                                className="main-mockup"
+                            />
                         </div>
                     </div>
                 </div>
