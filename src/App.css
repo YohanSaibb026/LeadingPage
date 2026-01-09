@@ -267,9 +267,11 @@
 /* --- HERO EVALUATION CARD --- */
 
 .mockup-card {
+    box-sizing: border-box;
+    /* Prevents padding from increasing width */
     background-color: #ffffff;
     border-radius: 40px;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     padding-left: 2rem;
     /* Increased from 1.5rem for better side framing */
     padding-right: 2rem;
@@ -277,7 +279,8 @@
     /* Added to increase card height */
     margin-top: 3rem;
     max-width: 680px;
-    width: 100%;
+    width: 92%;
+    /* Prevents touching screen edges on mobile */
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -295,7 +298,7 @@
     align-items: center;
     gap: 0.25rem;
     /* Very tight spacing */
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     /* Reduced spacing (Retângulo preto) */
 }
 
@@ -315,7 +318,7 @@
     color: #F59E0B;
     /* Amber 500 - Richer Gold */
     font-size: 1rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.15rem;
 }
 
 .trust-text {
@@ -331,9 +334,10 @@
 }
 
 .hero-phone-mockup {
-    width: 85%;
+    width: 100%;
+    /* Restored to full card width */
     /* Reduced from 100% to prevent "too wide" look */
-    max-width: 550px;
+    max-width: 600px;
     height: auto;
     display: block;
     margin-bottom: -40px;
