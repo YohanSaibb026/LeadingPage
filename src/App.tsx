@@ -104,18 +104,7 @@ function App() {
 
                 </div>
                 <div className="hero-image-wrapper">
-                    <div className="mockup-card">
-                        <div className="rating-header">
-                            <span className="score">4.9/5</span>
-                            <div className="stars-row">
-                                {[1, 2, 3, 4, 5].map((star) => (
-                                    <i key={star} className="fa-solid fa-star"></i>
-                                ))}
-                            </div>
-                            <p className="trust-text">{t('hero.social')}</p>
-                        </div>
-                        <img src={heroApp} alt="App Sabores Exclusivos Interface" className="hero-phone-mockup" />
-                    </div>
+                    {/* Mockup area removed - starting fresh */}
                 </div>
             </header>
 
