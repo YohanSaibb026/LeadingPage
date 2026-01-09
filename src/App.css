@@ -1029,7 +1029,8 @@
 .showroom-card {
     background-color: #ffffff;
     border-radius: 60px;
-    padding: 3rem 1.5rem 0;
+    padding: 3.5rem 0.75rem 0;
+    /* Reduced horizontal padding, increased top */
     width: 100%;
     max-width: 650px;
     display: flex;
@@ -1079,7 +1080,8 @@
 
 .showroom-img {
     width: 100%;
-    max-width: 550px;
+    max-width: 610px;
+    /* Increased from 550px to fill the card more */
     height: auto;
     display: block;
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.12));
