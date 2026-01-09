@@ -270,8 +270,9 @@
     background-color: #ffffff;
     border-radius: 40px;
     padding-top: 2rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 2rem;
+    /* Increased from 1.5rem for better side framing */
+    padding-right: 2rem;
     padding-bottom: 3rem;
     /* Added to increase card height */
     margin-top: 3rem;
@@ -330,8 +331,9 @@
 }
 
 .hero-phone-mockup {
-    width: 100%;
-    max-width: 600px;
+    width: 85%;
+    /* Reduced from 100% to prevent "too wide" look */
+    max-width: 550px;
     height: auto;
     display: block;
     margin-bottom: -40px;
