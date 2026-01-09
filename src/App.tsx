@@ -87,15 +87,17 @@ function App() {
                         </Trans>
                     </h1>
                     <div className="hero-subtitle-container">
-                        <p className="subtitle-main">{t('hero.subtitle')}</p>
-                        <ul className="complaints-list">
-                            {(t('hero.complaints', { returnObjects: true }) as string[]).map((item, index) => (
-                                <li key={index}>
-                                    <span className="bullet">.</span>
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
+                        <div className="complaints-card">
+                            <p className="subtitle-main">{t('hero.subtitle')}</p>
+                            <ul className="complaints-list">
+                                {(t('hero.complaints', { returnObjects: true }) as string[]).map((item, index) => (
+                                    <li key={index}>
+                                        <span className="bullet">.</span>
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
                     {/* Hero buttons removed to streamline flow to reviews */}
 

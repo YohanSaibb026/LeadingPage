@@ -124,7 +124,8 @@
     max-width: 1400px;
     margin: 0 auto;
     background-color: var(--hero-bg);
-    min-height: 80vh;
+    min-height: auto;
+    padding-bottom: 2rem;
 }
 
 .hero-content {
@@ -164,8 +165,16 @@
 }
 
 .hero-subtitle-container {
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.complaints-card {
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    padding: 2.5rem 2rem;
+    max-width: 100%;
 }
 
 .subtitle-main {
@@ -868,6 +877,11 @@
 .reviews-stories {
     padding: 4rem 1.5rem;
     width: 100%;
+    margin-top: -40px;
+}
+
+.stories-header {
+    margin-bottom: 1.5rem;
 }
 
 .reviews-stories h2 {
@@ -1070,7 +1084,13 @@
     }
 
     .hero-subtitle-container {
-        margin-top: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .complaints-card {
+        padding: 1.5rem 1rem;
+        border-radius: 30px;
     }
 
     .hero-btns {
