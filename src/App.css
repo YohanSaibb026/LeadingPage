@@ -266,45 +266,60 @@
 
 /* Hero Card */
 .hero-card {
-    background-color: #F8F7F5;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    border-radius: 40px;
-    padding: 2.5rem 2rem 0;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    /* Faint border */
+    border-radius: 60px;
+    /* Much rounder */
+    padding: 3rem 2rem 0;
+    /* More top spacing */
     margin: 2rem auto 0;
-    max-width: 700px;
+    max-width: 800px;
+    /* Larger card */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.08);
+    /* Soft, premium shadow */
 }
 
 .rating-score {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    /* Bigger, bolder */
     font-weight: 800;
     color: #1e293b;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Merriweather', serif;
+    /* Optional: if matching heading font */
+    line-height: 1;
 }
 
 .reviews-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     position: relative;
     z-index: 10;
 }
 
 .hero-phone-mockup {
     width: 100%;
-    max-width: 620px;
+    max-width: 720px;
+    /* Much bigger mockup */
     height: auto;
     display: block;
-    margin-bottom: -15px;
-    /* Slight overlap with bottom */
-    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.12));
+    margin-bottom: -30px;
+    filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.15));
     transition: transform 0.5s ease;
+}
+
+/* Slight overlap with bottom */
+filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.12));
+transition: transform 0.5s ease;
 }
 
 /* Animations */
