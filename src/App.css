@@ -268,14 +268,11 @@
 .hero-card {
     background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.03);
-    /* Faint border */
     border-radius: 60px;
-    /* Much rounder */
-    padding: 3rem 2rem 0;
-    /* More top spacing */
+    padding: 3.5rem 2rem 0;
+    /* Generous top padding */
     margin: 2rem auto 0;
     max-width: 800px;
-    /* Larger card */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -283,25 +280,28 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.08);
-    /* Soft, premium shadow */
+    /* Soft shadow */
 }
 
 .rating-score {
-    font-size: 1.5rem;
-    /* Bigger, bolder */
+    font-size: 2rem;
+    /* Large and bold as requested */
     font-weight: 800;
-    color: #1e293b;
+    color: #0f172a;
+    /* Dark slate */
     margin-bottom: 0.5rem;
-    font-family: 'Merriweather', serif;
-    /* Optional: if matching heading font */
+    font-family: 'Inter', sans-serif;
+    /* Ensuring sans-serif match */
     line-height: 1;
+    letter-spacing: -0.02em;
 }
 
 .reviews-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    /* Space between text and phone */
     position: relative;
     z-index: 10;
 }
@@ -309,17 +309,11 @@
 .hero-phone-mockup {
     width: 100%;
     max-width: 720px;
-    /* Much bigger mockup */
     height: auto;
     display: block;
     margin-bottom: -30px;
     filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.15));
     transition: transform 0.5s ease;
-}
-
-/* Slight overlap with bottom */
-filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.12));
-transition: transform 0.5s ease;
 }
 
 /* Animations */
