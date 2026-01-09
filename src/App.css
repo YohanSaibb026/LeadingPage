@@ -1018,6 +1018,45 @@
     opacity: 0.9;
 }
 
+/* App Showroom */
+.app-showroom {
+    padding: 2rem 1.5rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--hero-bg);
+}
+
+.showroom-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.showroom-img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.15));
+    transition: transform 0.5s ease;
+}
+
+.showroom-img:hover {
+    transform: translateY(-10px);
+}
+
+@media (max-width: 480px) {
+    .app-showroom {
+        padding: 1rem 1rem 3rem;
+    }
+
+    .showroom-img {
+        max-width: 100%;
+    }
+}
+
+
 /* Story Overlay Removed */
 
 @media (max-width: 968px) {

@@ -3,6 +3,7 @@ import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, M
 import { useTranslation, Trans } from 'react-i18next';
 import heroDish from './assets/hero-dish.png';
 import heroApp from './assets/hero-app-mockup.png';
+import appShowroom from './assets/app-showroom.png';
 import meal1 from './assets/meal-1.jpg';
 import meal2 from './assets/meal-2.jpg';
 import meal3 from './assets/meal-3.jpg';
@@ -149,6 +150,13 @@ function App() {
                             </div>
                         </div>
                     ))}
+                </div>
+            </section>
+
+            {/* App Interface Showroom */}
+            <section className="app-showroom">
+                <div className="showroom-container">
+                    <img src={appShowroom} alt="App Sabores Exclusivos Interface" className="showroom-img" />
                 </div>
             </section>
 
