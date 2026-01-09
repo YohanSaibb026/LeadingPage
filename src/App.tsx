@@ -38,6 +38,27 @@ function App() {
 
     const transformations = [transform1, transform2, transform3, transform4, transform5];
 
+    const [isHeroVisible, setIsHeroVisible] = useState(false);
+    const heroCardRef = React.useRef<HTMLDivElement>(null);
+
+    React.useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsHeroVisible(true);
+                    observer.disconnect(); // Animate once
+                }
+            },
+            { threshold: 0.2 } // Trigger when 20% visible
+        );
+
+        if (heroCardRef.current) {
+            observer.observe(heroCardRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <div className="landing-container">
             {/* Navigation */}
@@ -92,8 +113,8 @@ function App() {
                     </div>
                 </div>
                 <div className="hero-image-wrapper">
-                    <div className="hero-card">
-                        <div className="reviews-container animate-slide-down">
+                    <div className="hero-card" ref={heroCardRef}>
+                        <div className={`reviews-container ${isHeroVisible ? 'animate-slide-down' : 'opacity-0'}`}>
                             <span className="rating-score">4.9/5</span>
                             <div className="flex gap-1 mb-1">
                                 {[1, 2, 3, 4, 5].map((star) => (
@@ -104,7 +125,7 @@ function App() {
                                 {t('hero.reviews')}
                             </p>
                         </div>
-                        <div className="animate-slide-up w-full flex justify-center">
+                        <div className={`w-full flex justify-center ${isHeroVisible ? 'animate-slide-up' : 'opacity-0'}`}>
                             <img src={heroApp} alt="App Sabores Exclusivos Interface" className="hero-phone-mockup" />
                         </div>
                     </div>
