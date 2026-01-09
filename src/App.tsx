@@ -101,28 +101,19 @@ function App() {
                         <button className="btn-primary">{t('hero.continue')} <ArrowRight size={18} /></button>
                         <button className="btn-secondary">{t('hero.demo')}</button>
                     </div>
-                    <div className="social-proof">
-                        <div className="stars">
-                            <Star size={16} fill="currentColor" />
-                            <Star size={16} fill="currentColor" />
-                            <Star size={16} fill="currentColor" />
-                            <Star size={16} fill="currentColor" />
-                            <Star size={16} fill="currentColor" />
-                        </div>
-                        <span>{t('hero.social')}</span>
-                    </div>
+
                 </div>
                 <div className="hero-image-wrapper">
                     <div className="hero-card" ref={heroCardRef}>
                         <div className={`reviews-container ${isHeroVisible ? 'animate-slide-down' : 'opacity-0'}`}>
                             <span className="rating-score">4.9/5</span>
-                            <div className="flex gap-1 mb-1">
+                            <div className="flex gap-1 mb-2">
                                 {[1, 2, 3, 4, 5].map((star) => (
-                                    <i key={star} className="fa-solid fa-star text-yellow-400 text-sm"></i>
+                                    <i key={star} className="fa-solid fa-star text-yellow-400 text-base"></i>
                                 ))}
                             </div>
-                            <p className="text-slate-500 font-medium text-xs">
-                                {t('hero.reviews')}
+                            <p className="text-slate-600 font-medium text-sm text-center">
+                                {t('hero.social')}
                             </p>
                         </div>
                         <div className={`w-full flex justify-center ${isHeroVisible ? 'animate-slide-up' : 'opacity-0'}`}>
