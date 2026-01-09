@@ -104,19 +104,7 @@ function App() {
 
                 </div>
                 <div className="hero-image-wrapper">
-                    {/* Clean Rebuild of Hero Card */}
-                    <div className="mockup-card">
-                        <div className="mockup-header">
-                            <span className="rating-number">4.9/5</span>
-                            <div className="rating-stars">
-                                {[1, 2, 3, 4, 5].map((star) => (
-                                    <i key={star} className="fa-solid fa-star"></i>
-                                ))}
-                            </div>
-                            <p className="rating-text">Usado por mais de 500+ chefs em casa</p>
-                        </div>
-                        <img src={heroApp} alt="App Interface" className="mockup-img" />
-                    </div>
+                    <img src={heroApp} alt="App Sabores Exclusivos Interface" className="hero-phone-mockup" />
                 </div>
             </header>
 
