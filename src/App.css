@@ -268,28 +268,27 @@
 
 .mockup-card {
     box-sizing: border-box;
-    /* Prevents padding from increasing width */
     background-color: #ffffff;
     border-radius: 40px;
     padding-top: 2.5rem;
-    padding-left: 2rem;
-    /* Increased from 1.5rem for better side framing */
-    padding-right: 2rem;
+    padding-left: 1.5rem;
+    /* Slightly reduced side padding for small screens */
+    padding-right: 1.5rem;
     padding-bottom: 3rem;
-    /* Added to increase card height */
     margin-top: 3rem;
+
+    width: 90vw;
+    /* Strict viewport-based width to prevent overflow */
     max-width: 680px;
-    width: 92%;
-    /* Prevents touching screen edges on mobile */
+    /* Cap width on desktop */
+
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.05);
-    /* Very soft shadow */
     overflow: hidden;
-    /* Ensures rounded corners contain content */
 }
 
 .rating-header {
@@ -297,18 +296,14 @@
     flex-direction: column;
     align-items: center;
     gap: 0.25rem;
-    /* Very tight spacing */
     margin-bottom: 1rem;
-    /* Reduced spacing (Retângulo preto) */
 }
 
 .score {
     font-family: 'Inter', sans-serif;
     font-size: 1.25rem;
-    /* ~20px - Balanced size */
     font-weight: 700;
     color: #1e293b;
-    /* Slate 800 */
     line-height: 1.2;
 }
 
@@ -316,7 +311,6 @@
     display: flex;
     gap: 0.25rem;
     color: #F59E0B;
-    /* Amber 500 - Richer Gold */
     font-size: 1rem;
     margin-bottom: 0.15rem;
 }
@@ -324,24 +318,19 @@
 .trust-text {
     font-family: 'Inter', sans-serif;
     font-size: 0.85rem;
-    /* Reduced size (Círculo rosa) */
     color: #64748b;
-    /* Slate 500 */
     font-weight: 500;
     text-align: center;
     white-space: nowrap;
-    /* Forces single line */
 }
 
 .hero-phone-mockup {
     width: 100%;
-    /* Restored to full card width */
-    /* Reduced from 100% to prevent "too wide" look */
-    max-width: 600px;
+    max-width: 100%;
+    /* Ensure image never exceeds container */
     height: auto;
     display: block;
     margin-bottom: -40px;
-    /* Moves image further down to overlap slightly if needed, or set to 0 */
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.12));
     animation: float 6s ease-in-out infinite;
 }
