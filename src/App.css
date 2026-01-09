@@ -264,10 +264,70 @@
     object-fit: cover;
 }
 
+/* --- HERO EVALUATION CARD --- */
+
+.mockup-card {
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 3rem;
+    max-width: 680px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.05);
+    /* Very soft shadow */
+}
+
+.rating-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    /* Very tight spacing */
+    margin-bottom: 1.5rem;
+}
+
+.score {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    /* ~20px - Balanced size */
+    font-weight: 700;
+    color: #1e293b;
+    /* Slate 800 */
+    line-height: 1.2;
+}
+
+.stars-row {
+    display: flex;
+    gap: 0.25rem;
+    color: #F59E0B;
+    /* Amber 500 - Richer Gold */
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.trust-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #64748b;
+    /* Slate 500 */
+    font-weight: 500;
+    text-align: center;
+}
+
 .hero-phone-mockup {
     width: 100%;
-    max-width: 620px;
+    max-width: 600px;
     height: auto;
+    display: block;
+    margin-bottom: -15px;
+    /* Slight tuck */
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.12));
     animation: float 6s ease-in-out infinite;
 }
