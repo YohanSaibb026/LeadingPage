@@ -174,15 +174,18 @@ function App() {
             {/* Features Section */}
             <section id="features" className="features">
                 <h2 className="section-title">{t('features.title')}</h2>
-                <div className="feature-grid">
-                    <div className="feature-card glass-morphism">
-                        <div className="icon-wrapper"><Zap /></div>
-                        <h3>{t('features.instant.title')}</h3>
-                        <p>{t('features.instant.desc')}</p>
+                <div className="feature-column">
+                    {/* Feature Card 1: Main Proposition */}
+                    <div className="feature-card white-card">
+                        <div className="icon-wrapper glass-orange"><Zap /></div>
+                        <h3 className="card-title-serif">{t('features.instant.title')}</h3>
+                        <p className="card-desc-sans">{t('features.instant.desc')}</p>
                     </div>
-                    <div className="feature-card glass-morphism faq-card">
-                        <div className="icon-wrapper"><Smartphone /></div>
-                        <h3>{t('features.faq_section.title')}</h3>
+
+                    {/* Feature Card 2: FAQ / Social Proof */}
+                    <div className="feature-card white-card">
+                        <div className="icon-wrapper glass-orange"><Smartphone /></div>
+                        <h3 className="card-title-serif">{t('features.faq_section.title')}</h3>
                         <div className="faq-accordion">
                             {[0, 1, 2].map((idx) => (
                                 <div key={idx} className={`faq-item ${openFaq === idx ? 'open' : ''}`}>
@@ -191,7 +194,7 @@ function App() {
                                         onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
                                     >
                                         <span>{t(`features.faq_section.items.${idx}.q`)}</span>
-                                        <ChevronDown size={18} className="faq-chevron" />
+                                        <ChevronDown size={18} className={`faq-chevron ${openFaq === idx ? 'rotated' : ''}`} />
                                     </button>
                                     <div className="faq-answer">
                                         <p>{t(`features.faq_section.items.${idx}.a`)}</p>
@@ -200,10 +203,12 @@ function App() {
                             ))}
                         </div>
                     </div>
-                    <div className="feature-card glass-morphism transformation-card">
-                        <div className="icon-wrapper"><Star /></div>
-                        <h3>{t('features.transformations.title')}</h3>
-                        <p>{t('features.transformations.desc')}</p>
+
+                    {/* Feature Card 3: Transformations (Optional or refined) */}
+                    <div className="feature-card white-card transformation-section">
+                        <div className="icon-wrapper glass-orange"><Star /></div>
+                        <h3 className="card-title-serif">{t('features.transformations.title')}</h3>
+                        <p className="card-desc-sans">{t('features.transformations.desc')}</p>
                         <div className="transformations-grid">
                             {transformations.map((img, i) => (
                                 <div key={i} className="transform-item">
