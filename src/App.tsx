@@ -155,8 +155,19 @@ function App() {
 
             {/* App Interface Showroom */}
             <section className="app-showroom">
-                <div className="showroom-container">
-                    <img src={appShowroom} alt="App Sabores Exclusivos Interface" className="showroom-img" />
+                <div className="showroom-card">
+                    <div className="showroom-evaluation">
+                        <span className="eval-score">4.9/5</span>
+                        <div className="eval-stars">
+                            {[1, 2, 3, 4, 5].map((star) => (
+                                <Star key={star} size={18} fill="#F59E0B" color="#F59E0B" />
+                            ))}
+                        </div>
+                        <p className="eval-text">{t('hero.social')}</p>
+                    </div>
+                    <div className="showroom-img-wrapper">
+                        <img src={appShowroom} alt="App Sabores Exclusivos Interface" className="showroom-img" />
+                    </div>
                 </div>
             </section>
 
