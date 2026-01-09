@@ -92,7 +92,22 @@ function App() {
                     </div>
                 </div>
                 <div className="hero-image-wrapper">
-                    <img src={heroApp} alt="App Sabores Exclusivos Interface" className="hero-phone-mockup" />
+                    <div className="hero-card">
+                        <div className="reviews-container animate-slide-down">
+                            <span className="rating-score">4.9/5</span>
+                            <div className="flex gap-1 mb-1">
+                                {[1, 2, 3, 4, 5].map((star) => (
+                                    <i key={star} className="fa-solid fa-star text-yellow-400 text-sm"></i>
+                                ))}
+                            </div>
+                            <p className="text-slate-500 font-medium text-xs">
+                                {t('hero.reviews')}
+                            </p>
+                        </div>
+                        <div className="animate-slide-up w-full flex justify-center">
+                            <img src={heroApp} alt="App Sabores Exclusivos Interface" className="hero-phone-mockup" />
+                        </div>
+                    </div>
                 </div>
             </header>
 
