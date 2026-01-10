@@ -17,6 +17,7 @@ import transform4 from './assets/transform-4.jpg';
 import transform5 from './assets/transform-5.jpg';
 import shakeStory from './assets/shake-story.jpg';
 import avatarThiago from './assets/avatar-thiago.jpg';
+import avatarDani from './assets/avatar-dani.jpg';
 import './App.css';
 
 const BrandBadge = ({ children }: { children?: React.ReactNode }) => (
@@ -32,7 +33,7 @@ function App() {
 
     const stories = [
         { name: 'Thiago A.', avatar: avatarThiago, content: meal1 },
-        { name: 'Pablo B.', avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop', content: shakeStory },
+        { name: 'Dani C.', avatar: avatarDani, content: shakeStory },
         { name: 'Mike D.', avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop', content: meal2 },
         { name: 'Anya B.', avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop', content: meal3 },
         { name: 'João P.', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop', content: meal4 },
