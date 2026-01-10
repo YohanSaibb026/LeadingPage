@@ -564,16 +564,15 @@
 .transformations-grid {
     display: flex;
     overflow-x: auto;
-    gap: 1rem;
-    padding: 1rem 1rem;
-    /* Add horizontal padding for peek effect */
-    margin-top: 1rem;
+    gap: 1.25rem;
+    padding: 1.5rem 2rem;
+    /* Vertical 1.5rem, Horizontal matches card padding */
+    margin: 1rem -2rem 0;
+    /* Bleed out of the card's 2rem padding */
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    width: 100%;
-    /* Constrain width */
+    width: auto;
     box-sizing: border-box;
-    /* Include padding in width */
 }
 
 .transformations-grid::-webkit-scrollbar {
