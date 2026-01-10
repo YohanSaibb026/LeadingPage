@@ -32,7 +32,7 @@ function App() {
     const handleTransformScroll = (e: React.UIEvent<HTMLDivElement>) => {
         const container = e.currentTarget;
         const scrollPosition = container.scrollLeft;
-        const cardWidth = container.offsetWidth * 0.85; // matches card width in css
+        const cardWidth = container.offsetWidth * 0.92; // matches 92% in css
         const index = Math.round(scrollPosition / cardWidth);
         if (index !== activeTransformIndex) {
             setActiveTransformIndex(index);
