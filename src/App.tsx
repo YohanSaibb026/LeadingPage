@@ -27,17 +27,6 @@ const BrandBadge = ({ children }: { children?: React.ReactNode }) => (
 function App() {
     const { t } = useTranslation();
     const [openFaq, setOpenFaq] = useState<number | null>(null);
-    const [activeTransformIndex, setActiveTransformIndex] = useState(0);
-
-    const handleTransformScroll = (e: React.UIEvent<HTMLDivElement>) => {
-        const container = e.currentTarget;
-        const scrollPosition = container.scrollLeft;
-        const cardWidth = container.offsetWidth * 0.92; // matches 92% in css
-        const index = Math.round(scrollPosition / cardWidth);
-        if (index !== activeTransformIndex) {
-            setActiveTransformIndex(index);
-        }
-    };
 
     const stories = [
         { name: 'Sarah L.', avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop', content: meal1 },
@@ -215,20 +204,11 @@ function App() {
                         <div className="icon-wrapper"><Star /></div>
                         <h3>{t('features.transformations.title')}</h3>
                         <p>{t('features.transformations.desc')}</p>
-                        <div className="transformations-grid" onScroll={handleTransformScroll}>
+                        <div className="transformations-grid">
                             {transformations.map((img, i) => (
                                 <div key={i} className="transform-item">
-                                    <img src={img} alt="" className="transform-bg-blur" />
-                                    <img src={img} alt={`Transformation ${i + 1}`} className="transform-img-main" />
+                                    <img src={img} alt={`Transformation ${i + 1}`} />
                                 </div>
-                            ))}
-                        </div>
-                        <div className="transform-pagination">
-                            {transformations.map((_, i) => (
-                                <div
-                                    key={i}
-                                    className={`pagination-dot ${activeTransformIndex === i ? 'active' : ''}`}
-                                />
                             ))}
                         </div>
                     </div>
