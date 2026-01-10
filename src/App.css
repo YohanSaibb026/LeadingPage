@@ -564,16 +564,13 @@
 .transformations-grid {
     display: flex;
     overflow-x: auto;
-    gap: 1rem;
-    padding: 1rem 1rem;
-    /* Add horizontal padding for peek effect */
+    gap: 1.25rem;
+    padding: 1.5rem 1.5rem;
     margin-top: 1rem;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     width: 100%;
-    /* Constrain width */
     box-sizing: border-box;
-    /* Include padding in width */
 }
 
 .transformations-grid::-webkit-scrollbar {
@@ -581,14 +578,15 @@
 }
 
 .transform-item {
-    flex: 0 0 280px;
-    /* Match story card width */
-    height: 480px;
-    /* Consistently tall for vertical photos */
+    flex: 0 0 85%;
+    /* Peek effect: reveals 15% of the next card */
+    max-width: 320px;
+    /* Limit on larger screens */
+    height: 520px;
     scroll-snap-align: center;
-    border-radius: 16px;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
     background: #000;
 }
 
@@ -597,7 +595,30 @@
     height: 100%;
     display: block;
     object-fit: contain;
-    /* Ensures the whole image is visible without cropping */
+}
+
+/* Pagination Dots */
+.transform-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.pagination-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.pagination-dot.active {
+    background-color: var(--primary);
+    transform: scale(1.2);
+    width: 20px;
+    border-radius: 4px;
 }
 
 /* CTA */
