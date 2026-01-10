@@ -21,6 +21,7 @@ import avatarDani from './assets/avatar-dani.jpg';
 import avatarNicolas from './assets/avatar-nicolas.jpg';
 import avatarLucia from './assets/avatar-lucia.jpg';
 import avatarPablo from './assets/avatar-pablo.jpg';
+import avatarCamilla from './assets/avatar-camilla.jpg';
 import './App.css';
 
 const BrandBadge = ({ children }: { children?: React.ReactNode }) => (
@@ -40,7 +41,7 @@ function App() {
         { name: 'Nicolás N.', avatar: avatarNicolas, content: meal2 },
         { name: 'Lucia S.', avatar: avatarLucia, content: meal3 },
         { name: 'Pablo B.', avatar: avatarPablo, content: meal4 },
-        { name: 'Ricardo M.', avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop', content: meal5 },
+        { name: 'Camilla B.', avatar: avatarCamilla, content: meal5 },
         { name: 'Carla S.', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop', content: meal6 },
     ];
 
