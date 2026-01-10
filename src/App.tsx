@@ -218,7 +218,8 @@ function App() {
                         <div className="transformations-grid" onScroll={handleTransformScroll}>
                             {transformations.map((img, i) => (
                                 <div key={i} className="transform-item">
-                                    <img src={img} alt={`Transformation ${i + 1}`} />
+                                    <img src={img} alt="" className="transform-bg-blur" />
+                                    <img src={img} alt={`Transformation ${i + 1}`} className="transform-img-main" />
                                 </div>
                             ))}
                         </div>
