@@ -41,10 +41,10 @@ function App() {
 
     const transformations = [
         { image: transform1, name: 'Sofia A.', stats: '51kg - 56kg', duration: '4 meses' },
-        { image: transform2, name: 'Elena S.', stats: '62kg - 58kg', duration: '3 meses' },
-        { image: transform3, name: 'Paula M.', stats: '55kg - 61kg', duration: '5 meses' },
-        { image: transform4, name: 'Bia R.', stats: '68kg - 62kg', duration: '6 meses' },
-        { image: transform5, name: 'Julia V.', stats: '50kg - 54kg', duration: '3 meses' },
+        { image: transform2, name: 'Antonio S.', stats: '57kg - 73kg', duration: '1 ano' },
+        { image: transform3, name: 'Miguel C.', stats: '60kg - 72kg', duration: '11 meses' },
+        { image: transform4, name: 'Rosa L.', stats: '52kg - 59kg', duration: '7 meses' },
+        { image: transform5, name: 'Juan R.', stats: '52kg - 74kg', duration: '1 ano 2 meses' },
     ];
 
     const [isHeroVisible, setIsHeroVisible] = useState(false);
