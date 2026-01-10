@@ -39,7 +39,13 @@ function App() {
         { name: 'Carla S.', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop', content: meal6 },
     ];
 
-    const transformations = [transform1, transform2, transform3, transform4, transform5];
+    const transformations = [
+        { image: transform1, name: 'Sofia A.', stats: '51kg - 56kg', duration: '4 meses' },
+        { image: transform2, name: 'Elena S.', stats: '62kg - 58kg', duration: '3 meses' },
+        { image: transform3, name: 'Paula M.', stats: '55kg - 61kg', duration: '5 meses' },
+        { image: transform4, name: 'Bia R.', stats: '68kg - 62kg', duration: '6 meses' },
+        { image: transform5, name: 'Julia V.', stats: '50kg - 54kg', duration: '3 meses' },
+    ];
 
     const [isHeroVisible, setIsHeroVisible] = useState(false);
     const heroCardRef = React.useRef<HTMLDivElement>(null);
@@ -207,9 +213,16 @@ function App() {
                         <h3>{t('features.transformations.title')}</h3>
                         <p>{t('features.transformations.desc')}</p>
                         <div className="transformations-grid">
-                            {transformations.map((img, i) => (
-                                <div key={i} className="transform-item">
-                                    <img src={img} alt={`Transformation ${i + 1}`} />
+                            {transformations.map((item, i) => (
+                                <div key={i} className="transform-item-wrapper">
+                                    <div className="transform-item">
+                                        <img src={item.image} alt={`Transformation ${i + 1}`} />
+                                    </div>
+                                    <div className="transform-info">
+                                        <span className="transform-name">{item.name}</span>
+                                        <span className="transform-stats">{item.stats}</span>
+                                        <span className="transform-duration">{item.duration}</span>
+                                    </div>
                                 </div>
                             ))}
                         </div>
