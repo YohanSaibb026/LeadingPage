@@ -125,10 +125,12 @@ function App() {
 
             <section className="punchline-divider">
                 <div className="punchline-content">
+                    <div className="punchline-line"></div>
                     <div className="punchline-decorator">
                         <ChefHat size={32} strokeWidth={1.5} />
                     </div>
                     <p>{t('hero.punchline')}</p>
+                    <div className="punchline-line" style={{ marginTop: '2.5rem' }}></div>
                 </div>
             </section>
 
