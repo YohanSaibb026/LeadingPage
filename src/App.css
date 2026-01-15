@@ -125,7 +125,7 @@
     margin: 0 auto;
     background-color: var(--hero-bg);
     min-height: auto;
-    padding-bottom: 0.5rem;
+    padding-bottom: 2rem;
 }
 
 .hero-content {
@@ -1298,7 +1298,7 @@
 
 /* Punchline Divider */
 .punchline-divider {
-    padding: 1rem 1.5rem 3.5rem;
+    padding: 3.5rem 1.5rem;
     background: linear-gradient(180deg, var(--hero-bg) 0%, rgba(255, 255, 255, 0.4) 50%, var(--hero-bg) 100%);
     text-align: center;
     position: relative;
@@ -1323,16 +1323,10 @@
 
 .punchline-decorator::before,
 .punchline-decorator::after {
-    display: none;
-    /* Removing the small lines for the new design */
-}
-
-.punchline-line {
+    content: "";
     height: 1px;
-    width: 100%;
-    max-width: 400px;
-    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), transparent);
-    margin: 1.5rem auto;
+    width: 60px;
+    background: linear-gradient(to right, transparent, var(--primary), transparent);
 }
 
 .punchline-content p {
