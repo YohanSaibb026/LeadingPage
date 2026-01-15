@@ -23,6 +23,7 @@ import avatarLucia from './assets/avatar-lucia.jpg';
 import avatarPablo from './assets/avatar-pablo.jpg';
 import avatarCamilla from './assets/avatar-camilla.jpg';
 import avatarGina from './assets/avatar-gina.jpg';
+import mealGina from './assets/meal-gina.jpg';
 import './App.css';
 
 const BrandBadge = ({ children }: { children?: React.ReactNode }) => (
@@ -43,7 +44,7 @@ function App() {
         { name: 'Lucia S.', avatar: avatarLucia, content: meal3 },
         { name: 'Pablo B.', avatar: avatarPablo, content: meal4 },
         { name: 'Camilla B.', avatar: avatarCamilla, content: meal5 },
-        { name: 'Gina F.', avatar: avatarGina, content: meal6 },
+        { name: 'Gina F.', avatar: avatarGina, content: mealGina },
     ];
 
     const transformations = [
