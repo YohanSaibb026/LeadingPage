@@ -96,7 +96,6 @@ function App() {
             {/* Hero Section */}
             <header className="hero">
                 <div className="hero-content">
-                    <div className="badge">{t('hero.badge')}</div>
                     <h1>
                         <Trans i18nKey="hero.title">
                             <span className="text-gradient">8 em cada 10 pessoas desistem</span>
@@ -123,6 +122,12 @@ function App() {
                     {/* Mockup area removed - starting fresh */}
                 </div>
             </header>
+
+            <section className="punchline-divider">
+                <div className="punchline-content">
+                    <p>{t('hero.punchline')}</p>
+                </div>
+            </section>
 
             {/* Stories Section */}
             <section className="reviews-stories">

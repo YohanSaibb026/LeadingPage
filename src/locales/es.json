@@ -5,7 +5,6 @@
         "download": "Descargar App"
     },
     "hero": {
-        "badge": "Novedad: NutriTrack 2.0",
         "title": "<0>8 de cada 10 personas abandonan</0> <1>en los primeros 3 meses al intentar ganar peso y ganar músculo</1>",
         "subtitle": "Las quejas más comunes escuchadas en los consultorios son",
         "complaints": [
@@ -13,6 +12,7 @@
             "Malestar tras comer en exceso alimentos no recomendados",
             "Pensar que una dieta para subir de peso o ganar músculo es cara"
         ],
+        "punchline": "Las recetas más recomendadas, con los mismos ingredientes simples que ya tienes en casa",
         "continue": "Continuar",
         "demo": "Ver Demostración",
         "social": "Usado por más de 500+ chefs en casa"

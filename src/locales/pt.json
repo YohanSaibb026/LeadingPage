@@ -5,7 +5,6 @@
         "download": "Baixar App"
     },
     "hero": {
-        "badge": "Novidade: NutriTrack 2.0",
         "title": "<0>8 em cada 10 pessoas desistem</0> <1>nos primeiros 3 meses ao tentar ganhar peso e construir músculos</1>",
         "subtitle": "As queixas mais comuns ouvidas nos consultórios são",
         "complaints": [
@@ -13,6 +12,7 @@
             "Mal-estar após comer excesso de alimentos não aconselhados",
             "Pensar que uma dieta para aumentar peso custa caro"
         ],
+        "punchline": "As receitas mais recomendadas, com os mesmos ingredientes simples que você já tem em casa",
         "continue": "Continuar",
         "demo": "Ver Demonstração",
         "social": "Usado por mais de 500+ chefs em casa"
