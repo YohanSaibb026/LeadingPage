@@ -1181,8 +1181,8 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 100px 1rem 60px;
-        gap: 3rem;
+        padding: 80px 1rem 0rem;
+        gap: 2rem;
     }
 
     .hero-content {
@@ -1341,7 +1341,7 @@
 
 @media (max-width: 768px) {
     .punchline-divider {
-        padding: 2.5rem 1.2rem;
+        padding: 0.5rem 1.2rem 2.5rem;
     }
 
     .punchline-decorator {
