@@ -125,6 +125,9 @@ function App() {
 
             <section className="punchline-divider">
                 <div className="punchline-content">
+                    <div className="punchline-decorator">
+                        <ChefHat size={32} strokeWidth={1.5} />
+                    </div>
                     <p>{t('hero.punchline')}</p>
                 </div>
             </section>

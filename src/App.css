@@ -1298,31 +1298,62 @@
 
 /* Punchline Divider */
 .punchline-divider {
-    padding: 4rem 2rem;
-    background: var(--hero-bg);
+    padding: 6rem 1.5rem;
+    background: linear-gradient(180deg, var(--hero-bg) 0%, rgba(255, 255, 255, 0.4) 50%, var(--hero-bg) 100%);
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .punchline-content {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
+    position: relative;
+}
+
+.punchline-decorator {
+    color: var(--primary);
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    opacity: 0.8;
+}
+
+.punchline-decorator::before,
+.punchline-decorator::after {
+    content: "";
+    height: 1px;
+    width: 60px;
+    background: linear-gradient(to right, transparent, var(--primary), transparent);
 }
 
 .punchline-content p {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-family: 'Merriweather', serif;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.4;
     color: var(--text-main);
     margin: 0;
+    letter-spacing: -0.01em;
 }
 
 @media (max-width: 768px) {
     .punchline-divider {
-        padding: 3rem 1.5rem;
+        padding: 4rem 1.2rem;
+    }
+
+    .punchline-decorator {
+        margin-bottom: 1.5rem;
+    }
+
+    .punchline-decorator::before,
+    .punchline-decorator::after {
+        width: 30px;
     }
 
     .punchline-content p {
-        font-size: 1.6rem;
+        font-size: 1.75rem;
     }
 }
