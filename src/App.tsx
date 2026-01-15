@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart, ChevronDown, CheckCircle2 } from 'lucide-react';
+import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart, ChevronDown, CheckCircle2, Lock } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
 import heroDish from './assets/hero-dish.png';
 import heroApp from './assets/hero-app-mockup.png';
@@ -304,9 +304,28 @@ function App() {
             {/* CTA Section */}
             <section className="cta-section">
                 <div className="cta-card premium-gradient">
+                    <Zap size={48} className="cta-icon" style={{ marginBottom: '2rem', opacity: 0.8 }} />
                     <h2>{t('cta.title')}</h2>
                     <p>{t('cta.subtitle')}</p>
-                    <button className="btn-white">{t('cta.button')}</button>
+                    <button className="btn-cta-premium">
+                        {t('cta.button')}
+                        <ArrowRight size={20} />
+                    </button>
+
+                    <div className="cta-guarantees">
+                        <div className="cta-guarantee-item">
+                            <Lock size={16} />
+                            <span>{t('cta.guarantees.secure')}</span>
+                        </div>
+                        <div className="cta-guarantee-item">
+                            <Zap size={16} />
+                            <span>{t('cta.guarantees.access')}</span>
+                        </div>
+                        <div className="cta-guarantee-item">
+                            <ShieldCheck size={16} />
+                            <span>{t('cta.guarantees.warranty')}</span>
+                        </div>
+                    </div>
                 </div>
             </section>
 

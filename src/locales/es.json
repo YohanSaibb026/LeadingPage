@@ -70,9 +70,14 @@
         }
     },
     "cta": {
-        "title": "¿Listo para elevar tu cocina?",
-        "subtitle": "Únete a cientos de usuarios que ya están optimizando su rutina alimentaria.",
-        "button": "Adquirir Acceso Vitalicio"
+        "title": "Tu transformación comienza con la próxima comida",
+        "subtitle": "Acceso de por vida a Sabores Exclusivos. Todo lo que necesitas para ganar peso y desarrollar músculo de forma sabrosa y práctica.",
+        "button": "Quiero mi Acceso de Por Vida Ahora",
+        "guarantees": {
+            "secure": "Pago 100% Seguro",
+            "access": "Acceso Inmediato",
+            "warranty": "Garantía de 7 días"
+        }
     },
     "footer": {
         "rights": "© 2026 Sabores Exclusivos. Todos los derechos reservados."
