@@ -995,11 +995,68 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        background: rgba(0, 0, 0, 0.2);
-        padding: 0.75rem 1.5rem;
-        border-radius: 16px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(8px);
+        background: rgba(0, 0, 0, 0.4);
+        padding: 1rem 2rem;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cta-timer::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(90deg,
+                transparent,
+                rgba(255, 255, 255, 0.05),
+                transparent);
+        animation: shine 4s infinite linear;
+    }
+
+    @keyframes shine {
+        to {
+            left: 100%;
+        }
+    }
+
+    .animate-pop {
+        animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    @keyframes pop {
+        0% {
+            transform: scale(0.8);
+            opacity: 0.5;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes pulse-soft {
+
+        0%,
+        100% {
+            transform: scale(1);
+            opacity: 0.9;
+        }
+
+        50% {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+    }
+
+    .animate-pulse {
+        animation: pulse-soft 2s infinite ease-in-out;
     }
 
     .timer-unit {

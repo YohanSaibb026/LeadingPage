@@ -34,71 +34,65 @@ const BrandBadge = ({ children }: { children?: React.ReactNode }) => (
 );
 
 const CountdownTimer = ({ urgencyText }: { urgencyText: string }) => {
-    const calculateTimeLeft = () => {
-        // Set target to specific date: 2 days and 6 hours from now for demonstration
-        // Or a fixed future date
-        const targetDate = new Date();
-        targetDate.setDate(targetDate.getDate() + 2);
-        targetDate.setHours(targetDate.getHours() + 6);
+    // Memoize the target date so it doesn't change on re-renders
+    const [targetDate] = useState(() => {
+        const date = new Date();
+        date.setDate(date.getDate() + 2);
+        date.setHours(date.getHours() + 6);
+        date.setMinutes(date.getMinutes() + 0);
+        date.setSeconds(date.getSeconds() + 0);
+        return date;
+    });
 
+    const calculateTimeLeft = () => {
         const now = new Date();
         const difference = +targetDate - +now;
 
-        let timeLeft = {
-            days: 0,
-            hours: 0,
-            minutes: 0,
-            seconds: 0
-        };
-
-        if (difference > 0) {
-            timeLeft = {
-                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-                minutes: Math.floor((difference / 1000 / 60) % 60),
-                seconds: Math.floor((difference / 1000) % 60)
-            };
+        if (difference <= 0) {
+            return { days: 0, hours: 0, minutes: 0, seconds: 0 };
         }
 
-        return timeLeft;
+        return {
+            days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+            hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+            minutes: Math.floor((difference / 1000 / 60) % 60),
+            seconds: Math.floor((difference / 1000) % 60)
+        };
     };
 
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
     useEffect(() => {
         const timer = setInterval(() => {
-            setTimeLeft(calculateTimeLeft());
+            const next = calculateTimeLeft();
+            setTimeLeft(next);
         }, 1000);
 
         return () => clearInterval(timer);
     }, []);
 
+    // Simple digit display with animation key
+    const Digit = ({ value, label }: { value: number | string, label: string }) => (
+        <div className="timer-unit">
+            <span key={value} className="timer-value animate-pop">{value}</span>
+            <span className="timer-suffix">{label}</span>
+        </div>
+    );
+
     return (
         <div className="cta-timer-wrapper">
             <p className="timer-label">
-                <Clock size={16} />
+                <Clock size={16} className="animate-pulse" />
                 {urgencyText}
             </p>
             <div className="cta-timer">
-                <div className="timer-unit">
-                    <span className="timer-value">{timeLeft.days}</span>
-                    <span className="timer-suffix">d</span>
-                </div>
+                <Digit value={timeLeft.days} label="d" />
                 <div className="timer-separator">:</div>
-                <div className="timer-unit">
-                    <span className="timer-value">{timeLeft.hours.toString().padStart(2, '0')}</span>
-                    <span className="timer-suffix">h</span>
-                </div>
+                <Digit value={timeLeft.hours.toString().padStart(2, '0')} label="h" />
                 <div className="timer-separator">:</div>
-                <div className="timer-unit">
-                    <span className="timer-value">{timeLeft.minutes.toString().padStart(2, '0')}</span>
-                    <span className="timer-suffix">m</span>
-                </div>
+                <Digit value={timeLeft.minutes.toString().padStart(2, '0')} label="m" />
                 <div className="timer-separator">:</div>
-                <div className="timer-unit">
-                    <span className="timer-value">{timeLeft.seconds.toString().padStart(2, '0')}</span>
-                    <span className="timer-suffix">s</span>
-                </div>
+                <Digit value={timeLeft.seconds.toString().padStart(2, '0')} label="s" />
             </div>
         </div>
     );
