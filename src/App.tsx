@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart, ChevronDown, CheckCircle2, Lock } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart, ChevronDown, CheckCircle2, Lock, Clock } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
 import heroDish from './assets/hero-dish.png';
 import heroApp from './assets/hero-app-mockup.png';
@@ -32,6 +32,77 @@ const BrandBadge = ({ children }: { children?: React.ReactNode }) => (
         {children}
     </span>
 );
+
+const CountdownTimer = ({ urgencyText }: { urgencyText: string }) => {
+    const calculateTimeLeft = () => {
+        // Set target to specific date: 2 days and 6 hours from now for demonstration
+        // Or a fixed future date
+        const targetDate = new Date();
+        targetDate.setDate(targetDate.getDate() + 2);
+        targetDate.setHours(targetDate.getHours() + 6);
+
+        const now = new Date();
+        const difference = +targetDate - +now;
+
+        let timeLeft = {
+            days: 0,
+            hours: 0,
+            minutes: 0,
+            seconds: 0
+        };
+
+        if (difference > 0) {
+            timeLeft = {
+                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                minutes: Math.floor((difference / 1000 / 60) % 60),
+                seconds: Math.floor((difference / 1000) % 60)
+            };
+        }
+
+        return timeLeft;
+    };
+
+    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setTimeLeft(calculateTimeLeft());
+        }, 1000);
+
+        return () => clearInterval(timer);
+    }, []);
+
+    return (
+        <div className="cta-timer-wrapper">
+            <p className="timer-label">
+                <Clock size={16} />
+                {urgencyText}
+            </p>
+            <div className="cta-timer">
+                <div className="timer-unit">
+                    <span className="timer-value">{timeLeft.days}</span>
+                    <span className="timer-suffix">d</span>
+                </div>
+                <div className="timer-separator">:</div>
+                <div className="timer-unit">
+                    <span className="timer-value">{timeLeft.hours.toString().padStart(2, '0')}</span>
+                    <span className="timer-suffix">h</span>
+                </div>
+                <div className="timer-separator">:</div>
+                <div className="timer-unit">
+                    <span className="timer-value">{timeLeft.minutes.toString().padStart(2, '0')}</span>
+                    <span className="timer-suffix">m</span>
+                </div>
+                <div className="timer-separator">:</div>
+                <div className="timer-unit">
+                    <span className="timer-value">{timeLeft.seconds.toString().padStart(2, '0')}</span>
+                    <span className="timer-suffix">s</span>
+                </div>
+            </div>
+        </div>
+    );
+};
 
 function App() {
     const { t } = useTranslation();
@@ -307,6 +378,9 @@ function App() {
                     <Zap size={48} className="cta-icon" style={{ marginBottom: '2rem', opacity: 0.8 }} />
                     <h2>{t('cta.title')}</h2>
                     <p>{t('cta.subtitle')}</p>
+
+                    <CountdownTimer urgencyText={t('cta.urgency')} />
+
                     <button className="btn-cta-premium">
                         {t('cta.button')}
                         <ArrowRight size={20} />

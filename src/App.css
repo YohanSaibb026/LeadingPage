@@ -971,6 +971,75 @@
 }
 
 @media (max-width: 640px) {
+    .cta-timer-wrapper {
+        margin-bottom: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .timer-label {
+        font-size: 0.95rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 0 !important;
+    }
+
+    .cta-timer {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(0, 0, 0, 0.2);
+        padding: 0.75rem 1.5rem;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+    }
+
+    .timer-unit {
+        display: flex;
+        align-items: baseline;
+        gap: 1px;
+    }
+
+    .timer-value {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 800;
+        min-width: 1.5ch;
+        text-align: center;
+    }
+
+    .timer-suffix {
+        font-size: 0.8rem;
+        font-weight: 600;
+        opacity: 0.7;
+        text-transform: lowercase;
+    }
+
+    .timer-separator {
+        font-size: 1.5rem;
+        font-weight: 800;
+        opacity: 0.5;
+        margin-bottom: 4px;
+    }
+
+    @media (max-width: 640px) {
+        .timer-value {
+            font-size: 1.4rem;
+        }
+
+        .cta-timer {
+            padding: 0.5rem 1rem;
+        }
+    }
+
     .cta-guarantees {
         gap: 1rem;
     }

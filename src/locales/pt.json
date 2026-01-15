@@ -81,7 +81,8 @@
             "secure": "Pagamento 100% Seguro",
             "access": "Acesso Imediato",
             "warranty": "Garantia de 7 dias"
-        }
+        },
+        "urgency": "A oferta expira em:"
     },
     "footer": {
         "rights": "© 2026 Sabores Exclusivos. Todos os direitos reservados."
