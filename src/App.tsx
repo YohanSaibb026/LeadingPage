@@ -34,14 +34,28 @@ const BrandBadge = ({ children }: { children?: React.ReactNode }) => (
 );
 
 const CountdownTimer = ({ urgencyText }: { urgencyText: string }) => {
-    // Memoize the target date so it doesn't change on re-renders
+    // Persistent target date logic
     const [targetDate] = useState(() => {
-        const date = new Date();
-        date.setDate(date.getDate() + 2);
-        date.setHours(date.getHours() + 6);
-        date.setMinutes(date.getMinutes() + 0);
-        date.setSeconds(date.getSeconds() + 0);
-        return date;
+        const STORAGE_KEY = 'sabores_promo_end_date';
+        const savedDate = localStorage.getItem(STORAGE_KEY);
+
+        if (savedDate) {
+            const date = new Date(savedDate);
+            // If the saved date is in the past, reset it for the new visit (or handle as expired)
+            if (date > new Date()) {
+                return date;
+            }
+        }
+
+        // Calculate new target: 2 days and 6 hours from now
+        const newTarget = new Date();
+        newTarget.setDate(newTarget.getDate() + 2);
+        newTarget.setHours(newTarget.getHours() + 6);
+        newTarget.setMinutes(newTarget.getMinutes() + 0);
+        newTarget.setSeconds(newTarget.getSeconds() + 0);
+
+        localStorage.setItem(STORAGE_KEY, newTarget.toISOString());
+        return newTarget;
     });
 
     const calculateTimeLeft = () => {
