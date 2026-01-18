@@ -298,6 +298,20 @@ function App() {
         document.addEventListener('contextmenu', handleContextMenu);
         document.addEventListener('keydown', handleKeyDown);
 
+        // Security Console Message
+        console.log(
+            "%c🛑 PARE!",
+            "color: red; font-family: sans-serif; font-size: 4.5em; font-weight: bolder; text-shadow: #000 1px 1px;"
+        );
+        console.log(
+            "%cEste é um recurso do navegador voltado para desenvolvedores. Se alguém pediu para você copiar e colar algo aqui para 'ganhar algo' ou 'hackear' o site, é um golpe!",
+            "font-family: sans-serif; font-size: 1.5em; font-weight: bold;"
+        );
+        console.log(
+            "%cCopyright © 2026 Sabores Exclusivos. Todos os direitos reservados.",
+            "font-family: sans-serif; font-size: 1em; color: gray;"
+        );
+
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
@@ -388,7 +402,7 @@ function App() {
 
                             {/* Story User Info */}
                             <div className="card-story-user">
-                                <img src={story.avatar} alt="" />
+                                <img src={story.avatar} alt="" draggable="false" />
                                 <div className="user-details">
                                     <span className="user-name">{story.name}</span>
                                     <span className="post-time">8h</span>
@@ -399,7 +413,7 @@ function App() {
                                 </div>
                             </div>
 
-                            <img src={story.content} alt={story.name} className="card-story-content" />
+                            <img src={story.content} alt={story.name} className="card-story-content" draggable="false" />
 
                             {/* Story Footer */}
                             <div className="card-story-footer">
@@ -429,7 +443,7 @@ function App() {
                         <p className="eval-text">{t('hero.social')}</p>
                     </div>
                     <div className="showroom-img-wrapper">
-                        <img src={appShowroom} alt="App Sabores Exclusivos Interface" className="showroom-img" />
+                        <img src={appShowroom} alt="App Sabores Exclusivos Interface" className="showroom-img" draggable="false" />
                     </div>
                 </div>
             </section>
@@ -473,7 +487,7 @@ function App() {
                             {transformations.map((item, i) => (
                                 <div key={i} className="transform-item-wrapper">
                                     <div className="transform-item">
-                                        <img src={item.image} alt={`Transformation ${i + 1}`} />
+                                        <img src={item.image} alt={`Transformation ${i + 1}`} draggable="false" />
                                     </div>
                                     <div className="transform-info">
                                         <span className="transform-name">{item.name}</span>
