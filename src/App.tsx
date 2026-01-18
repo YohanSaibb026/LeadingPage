@@ -112,6 +112,139 @@ const CountdownTimer = ({ urgencyText }: { urgencyText: string }) => {
     );
 };
 
+const BMRCalculator = () => {
+    const { t } = useTranslation();
+    const [gender, setGender] = useState<'male' | 'female'>('male');
+    const [age, setAge] = useState('');
+    const [weight, setWeight] = useState('');
+    const [height, setHeight] = useState('');
+    const [activity, setActivity] = useState('1.2');
+    const [results, setResults] = useState<{ bmr: number; tdee: number; bulk: number } | null>(null);
+
+    const calculate = () => {
+        if (!age || !weight || !height) return;
+
+        const w = parseFloat(weight);
+        const h = parseFloat(height);
+        const a = parseInt(age);
+
+        // Mifflin-St Jeor Formula
+        let bmr = (10 * w) + (6.25 * h) - (5 * a);
+        if (gender === 'male') {
+            bmr += 5;
+        } else {
+            bmr -= 161;
+        }
+
+        const tdee = bmr * parseFloat(activity);
+        const bulk = tdee + 300;
+
+        setResults({
+            bmr: Math.round(bmr),
+            tdee: Math.round(tdee),
+            bulk: Math.round(bulk)
+        });
+    };
+
+    return (
+        <section className="bmr-calculator-section">
+            <div className="calculator-container glass-morphism">
+                <div className="calculator-header">
+                    <h2>{t('features.calculator.title')}</h2>
+                    <p>{t('features.calculator.subtitle')}</p>
+                </div>
+
+                <div className="calculator-grid">
+                    <div className="input-group">
+                        <label>{t('features.calculator.gender')}</label>
+                        <div className="gender-toggle">
+                            <button
+                                className={`gender-btn ${gender === 'male' ? 'active' : ''}`}
+                                onClick={() => setGender('male')}
+                            >
+                                {t('features.calculator.male')}
+                            </button>
+                            <button
+                                className={`gender-btn ${gender === 'female' ? 'active' : ''}`}
+                                onClick={() => setGender('female')}
+                            >
+                                {t('features.calculator.female')}
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="input-row">
+                        <div className="input-group">
+                            <label>{t('features.calculator.age')}</label>
+                            <input
+                                type="number"
+                                value={age}
+                                onChange={(e) => setAge(e.target.value)}
+                                placeholder="25"
+                            />
+                        </div>
+                        <div className="input-group">
+                            <label>{t('features.calculator.weight')}</label>
+                            <input
+                                type="number"
+                                value={weight}
+                                onChange={(e) => setWeight(e.target.value)}
+                                placeholder="70"
+                            />
+                        </div>
+                        <div className="input-group">
+                            <label>{t('features.calculator.height')}</label>
+                            <input
+                                type="number"
+                                value={height}
+                                onChange={(e) => setHeight(e.target.value)}
+                                placeholder="175"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="input-group">
+                        <label>{t('features.calculator.activity')}</label>
+                        <select value={activity} onChange={(e) => setActivity(e.target.value)}>
+                            <option value="1.2">{t('features.calculator.activity_levels.sedentary')}</option>
+                            <option value="1.375">{t('features.calculator.activity_levels.light')}</option>
+                            <option value="1.55">{t('features.calculator.activity_levels.moderate')}</option>
+                            <option value="1.725">{t('features.calculator.activity_levels.active')}</option>
+                            <option value="1.9">{t('features.calculator.activity_levels.extra')}</option>
+                        </select>
+                    </div>
+
+                    <button className="btn-calculate" onClick={calculate}>
+                        {t('features.calculator.calculate')}
+                        <Zap size={18} />
+                    </button>
+                </div>
+
+                {results && (
+                    <div className="results-card animate-fade-in">
+                        <h3>{t('features.calculator.results.title')}</h3>
+                        <div className="results-grid">
+                            <div className="result-item">
+                                <span className="result-label">{t('features.calculator.results.bmr')}</span>
+                                <span className="result-value">{results.bmr} <small>{t('features.calculator.results.unit')}</small></span>
+                            </div>
+                            <div className="result-item highlight">
+                                <span className="result-label">{t('features.calculator.results.tdee')}</span>
+                                <span className="result-value">{results.tdee} <small>{t('features.calculator.results.unit')}</small></span>
+                            </div>
+                            <div className="result-item premium">
+                                <span className="result-label">{t('features.calculator.results.bulk')}</span>
+                                <span className="result-value">{results.bulk} <small>{t('features.calculator.results.unit')}</small></span>
+                            </div>
+                        </div>
+                        <p className="results-disclaimer">{t('features.calculator.results.disclaimer')}</p>
+                    </div>
+                )}
+            </div>
+        </section>
+    );
+};
+
 function App() {
     const { t } = useTranslation();
     const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -273,6 +406,8 @@ function App() {
                     </div>
                 </div>
             </section>
+
+            <BMRCalculator />
 
             {/* Features Section */}
             <section id="features" className="features">

@@ -1556,3 +1556,208 @@
         font-size: 1.35rem;
     }
 }
+/* BMR Calculator Styles */
+.bmr-calculator-section {
+    padding: 6rem 2rem;
+    background: radial-gradient(circle at center, rgba(255, 107, 0, 0.05) 0%, transparent 70%);
+}
+
+.calculator-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.calculator-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.calculator-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #fff 0%, #aaa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.calculator-header p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.1rem;
+}
+
+.calculator-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.input-group label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.gender-toggle {
+    display: flex;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.3rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gender-toggle .gender-btn {
+    flex: 1;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.gender-toggle .gender-btn.active {
+    background: var(--primary);
+    box-shadow: 0 4px 12px rgba(255, 107, 0, 0.3);
+}
+
+.input-group input,
+.input-group select {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.btn-calculate {
+    margin-top: 1rem;
+    padding: 1.2rem;
+    border-radius: 16px;
+    background: var(--primary-gradient);
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-calculate:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 107, 0, 0.4);
+}
+
+.results-card {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.results-card h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.result-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.result-item.highlight {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.result-item.premium {
+    background: var(--primary-gradient);
+    border: none;
+    box-shadow: 0 10px 25px -5px rgba(255, 107, 0, 0.4);
+}
+
+.result-label {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.premium .result-label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.result-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+}
+
+.result-value small {
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.results-disclaimer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 640px) {
+    .input-row {
+        grid-template-columns: 1fr;
+    }
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+    .calculator-container {
+        padding: 1.5rem;
+    }
+    .calculator-header h2 {
+        font-size: 1.8rem;
+    }
+}

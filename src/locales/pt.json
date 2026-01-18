@@ -71,6 +71,33 @@
                 "price_from": "De R$ 40,00",
                 "price_to": "por R$ 27,90"
             }
+        },
+        "calculator": {
+            "title": "Descubra sua meta para crescer",
+            "subtitle": "Calcule sua Taxa Metabólica Basal e veja quanto você precisa consumir para ganhar músculos.",
+            "gender": "Gênero",
+            "male": "Masculino",
+            "female": "Feminino",
+            "age": "Idade",
+            "weight": "Peso (kg)",
+            "height": "Altura (cm)",
+            "activity": "Nível de Atividade",
+            "activity_levels": {
+                "sedentary": "Sedentário (pouco ou nenhum exercício)",
+                "light": "Levemente ativo (1-3 dias/semana)",
+                "moderate": "Moderadamente ativo (3-5 dias/semana)",
+                "active": "Altamente ativo (6-7 dias/semana)",
+                "extra": "Extremamente ativo (treino pesado/atleta)"
+            },
+            "calculate": "Calcular Meta",
+            "results": {
+                "title": "Seus Resultados",
+                "bmr": "Seu BMR:",
+                "tdee": "Manter Peso:",
+                "bulk": "Para Crescer:",
+                "unit": "kcal",
+                "disclaimer": "Valores estimados com base na fórmula de Mifflin-St Jeor."
+            }
         }
     },
     "cta": {
