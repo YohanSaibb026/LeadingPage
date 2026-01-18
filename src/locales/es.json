@@ -88,7 +88,7 @@
             "calculate": "Calcular Meta",
             "results": {
                 "title": "Tus Resultados",
-                "bmr": "Tu BMR:",
+                "bmr": "Tu cuerpo necesita:",
                 "tdee": "Mantener Peso:",
                 "bulk": "Para Crecer:",
                 "unit": "kcal",
