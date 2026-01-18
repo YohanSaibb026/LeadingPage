@@ -91,6 +91,7 @@
                 "bmr": "Tu cuerpo necesita:",
                 "tdee": "Mantener Peso:",
                 "bulk": "Para Crecer:",
+                "breakfast_recommendation": "Recomendación en el desayuno:",
                 "unit": "kcal",
                 "disclaimer": "Valores estimados basados en la fórmula Mifflin-St Jeor."
             }

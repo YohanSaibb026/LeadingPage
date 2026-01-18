@@ -119,7 +119,7 @@ const BMRCalculator = () => {
     const [weight, setWeight] = useState('');
     const [height, setHeight] = useState('');
     const [activity, setActivity] = useState('1.2');
-    const [results, setResults] = useState<{ bmr: number; tdee: number; bulk: number } | null>(null);
+    const [results, setResults] = useState<{ bmr: number; tdee: number; bulk: number; breakfast: number } | null>(null);
 
     const calculate = () => {
         if (!age || !weight || !height) return;
@@ -138,11 +138,13 @@ const BMRCalculator = () => {
 
         const tdee = bmr * parseFloat(activity);
         const bulk = tdee + 300;
+        const breakfast = bulk * 0.25;
 
         setResults({
             bmr: Math.round(bmr),
             tdee: Math.round(tdee),
-            bulk: Math.round(bulk)
+            bulk: Math.round(bulk),
+            breakfast: Math.round(breakfast)
         });
     };
 
@@ -236,6 +238,10 @@ const BMRCalculator = () => {
                                 <span className="result-label">{t('features.calculator.results.bulk')}</span>
                                 <span className="result-value">{results.bulk} <small>{t('features.calculator.results.unit')}</small></span>
                             </div>
+                        </div>
+                        <div className="breakfast-recommendation">
+                            <ChefHat size={18} className="recommendation-icon" />
+                            <span>{t('features.calculator.results.breakfast_recommendation')} <strong>{results.breakfast} {t('features.calculator.results.unit')}</strong></span>
                         </div>
                         <p className="results-disclaimer">{t('features.calculator.results.disclaimer')}</p>
                     </div>
