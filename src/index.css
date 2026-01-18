@@ -8,6 +8,7 @@
     --text-muted: #4a4a4a;
     --glass: rgba(255, 255, 255, 0.8);
     --border-glass: rgba(0, 0, 0, 0.05);
+    --primary-gradient: linear-gradient(135deg, var(--primary) 0%, #fb923c 100%);
     font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
