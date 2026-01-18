@@ -277,6 +277,27 @@ function App() {
     const heroCardRef = React.useRef<HTMLDivElement>(null);
 
     React.useEffect(() => {
+        // Disable right-click
+        const handleContextMenu = (e: MouseEvent) => {
+            e.preventDefault();
+        };
+
+        // Disable specific shortcuts (F12, Ctrl+U, Ctrl+Shift+I, etc.)
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (
+                e.key === 'F12' ||
+                (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+                (e.ctrlKey && e.shiftKey && e.key === 'J') ||
+                (e.ctrlKey && e.key === 'u') ||
+                (e.ctrlKey && e.key === 's')
+            ) {
+                e.preventDefault();
+            }
+        };
+
+        document.addEventListener('contextmenu', handleContextMenu);
+        document.addEventListener('keydown', handleKeyDown);
+
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
