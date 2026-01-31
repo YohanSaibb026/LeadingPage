@@ -341,7 +341,14 @@ function App() {
                     <div className="nav-links">
                         <a href="#features">{t('nav.features')}</a>
                         <a href="#pricing">{t('nav.pricing')}</a>
-                        <button className="btn-primary-small">{t('nav.download')}</button>
+                        <a
+                            href="https://pay.hotmart.com/V104194764B"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-primary-small"
+                        >
+                            {t('nav.download')}
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -565,10 +572,15 @@ function App() {
 
                     <CountdownTimer urgencyText={t('cta.urgency')} />
 
-                    <button className="btn-cta-premium">
+                    <a
+                        href="https://pay.hotmart.com/V104194764B"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-cta-premium"
+                    >
                         {t('cta.button')}
                         <ArrowRight size={20} />
-                    </button>
+                    </a>
 
                     <div className="cta-guarantees">
                         <div className="cta-guarantee-item">
