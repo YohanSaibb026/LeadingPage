@@ -25,6 +25,12 @@
     user-select: none;
 }
 
+a,
+button {
+    user-select: auto;
+    -webkit-user-select: auto;
+}
+
 * {
     margin: 0;
     padding: 0;

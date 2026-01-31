@@ -343,8 +343,6 @@ function App() {
                         <a href="#pricing">{t('nav.pricing')}</a>
                         <a
                             href="https://pay.hotmart.com/V104194764B"
-                            target="_blank"
-                            rel="noopener noreferrer"
                             className="btn-primary-small"
                         >
                             {t('nav.download')}
@@ -375,8 +373,16 @@ function App() {
                             </ul>
                         </div>
                     </div>
-                    {/* Hero buttons removed to streamline flow to reviews */}
-
+                    <div className="hero-buttons" style={{ marginTop: '2.5rem', display: 'flex', gap: '1rem' }}>
+                        <a
+                            href="https://pay.hotmart.com/V104194764B"
+                            className="btn-cta-premium"
+                            style={{ padding: '1.2rem 2.5rem' }}
+                        >
+                            {t('cta.button')}
+                            <ArrowRight size={20} />
+                        </a>
+                    </div>
                 </div>
                 <div className="hero-image-wrapper">
                     {/* Mockup area removed - starting fresh */}
@@ -560,6 +566,15 @@ function App() {
                         <span className="promo-from">{t('features.pricing.promotion.price_from')}</span>
                         <span className="promo-to">{t('features.pricing.promotion.price_to')}</span>
                     </div>
+
+                    <a
+                        href="https://pay.hotmart.com/V104194764B"
+                        className="btn-cta-premium"
+                        style={{ marginTop: '2rem', width: '100%', justifyContent: 'center' }}
+                    >
+                        {t('cta.button')}
+                        <ArrowRight size={20} />
+                    </a>
                 </div>
             </section>
 
@@ -574,8 +589,6 @@ function App() {
 
                     <a
                         href="https://pay.hotmart.com/V104194764B"
-                        target="_blank"
-                        rel="noopener noreferrer"
                         className="btn-cta-premium"
                     >
                         {t('cta.button')}
