@@ -5,12 +5,12 @@
         "download": "Descargar App"
     },
     "hero": {
-        "title": "<0>8 de cada 10 personas abandonan</0> <1>en los primeiros 3 meses al intentar ganar peso y ganhar músculo</1>",
+        "title": "<0>8 de cada 10 personas se rinden</0> <1>en los primeros 3 meses al intentar subir de peso y ganar músculo</1>",
         "subtitle": "Las quejas más comunes escuchadas en los consultorios son",
         "complaints": [
             "Sentirse desmotivado por falta de ideas sobre qué comer",
             "Malestar tras comer en exceso alimentos no recomendados",
-            "Pensar que una dieta para subir de peso o ganhar músculo es cara"
+            "Pensar que una dieta para subir de peso o ganar músculo es cara"
         ],
         "punchline": "Las recetas más recomendadas con los mismos ingredientes simples que ya tienes en casa",
         "continue": "Continuar",
@@ -24,22 +24,22 @@
         "title": "¿Por qué Sabores Exclusivos?",
         "instant": {
             "title": "Los desayunos, meriendas y batidos más recomendados, en un solo lugar",
-            "desc": "Tras escuchar a cientos de visitantes, entendemos que la falta de tiempo y la dificultad para variar el menú son los mayores obstáculos de uma dieta. Hemos unido toda nuestra experiencia en nutrición para que puedas dejar de preocuparte por la preparación y te centres en lo que realmente importa: Tus resultados."
+            "desc": "Tras escuchar a cientos de visitantes, entendemos que la falta de tiempo y la dificultad para variar el menú son los mayores obstáculos de una dieta. Hemos unido toda nuestra experiencia en nutrición para que puedas dejar de preocuparte por la preparación y te centres en lo que realmente importa: Tus resultados."
         },
         "faq_section": {
             "title": "Siempre Contigo",
             "items": {
                 "0": {
                     "q": "¿Por qué desayunos, meriendas y batidos?",
-                    "a": "Mientras que las aplicaciones de cocina general se centran en comidas complejas con ingredientes caros, nosotros nos especializamos en la practicidad. Y como la primeira comida del día influye directamente en tu capacidad para alcanzar el superávit calórico e influye en tus comidas posteriores, te traemos las mejores combinaciones para que crezcas con salud."
+                    "a": "Mientras que las aplicaciones de cocina general se centran en comidas complejas con ingredientes caros, nosotros nos especializamos en la practicidad. Y como la primera comida del día influye directamente en tu capacidad para alcanzar el superávit calórico e influye en tus comidas posteriores, te traemos las mejores combinaciones para que crezcas con salud."
                 },
                 "1": {
                     "q": "¿Cuesta caro tener una dieta?",
-                    "a": "¡De ninguna manera! Ganarás peso usando ingredientes que ya forman parte de tu día a día como plátano, avena y leche. El secreto de la App está en transformar estos artículos básicos en dezenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor y sin gastar un centavo más."
+                    "a": "¡De ninguna manera! Ganarás peso usando ingredientes que ya forman parte de tu día a día como plátano, avena y leche. El secreto de la App está en transformar estos artículos básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor y sin gastar un centavo más."
                 },
                 "2": {
-                    "q": "¿Es necesario comer en grandes quantidades para crecer?",
-                    "a": "Es un error pensar así. Comer grandes quantidades de alimentos inadecuados trae problemas a nuestro cuerpo, como falta de apetito, náuseas y malestar. Con nuestras recetas, te aseguras uma comida nutritiva desde temprano, de forma ligera. Así, no necesitas obligarte a comer platos gigantescos en el almuerzo o la cena para cumplir tus objetivos."
+                    "q": "¿Es necesario comer en grandes cantidades para crecer?",
+                    "a": "Es un error pensar así. Comer grandes cantidades de alimentos inadecuados trae problemas a nuestro cuerpo, como falta de apetito, náuseas y malestar. Con nuestras recetas, te aseguras una comida nutritiva desde temprano, de forma ligera. Así, no necesitas obligarte a comer platos gigantescos en el almuerzo o la cena para cumplir tus objetivos."
                 }
             }
         },
@@ -51,12 +51,12 @@
             "title": "¿Para quién es Sabores Exclusivos?",
             "items": [
                 "Personas que desean eliminar la duda al cocinar, basta de perder tiempo planeando qué comer.",
-                "Para quienes desean sentirse cómodos, teniendo uma gran variedade de recetas estratégicas en la palma de su mano para lograr su objetivo.",
-                "Para quienes buscan destacarse de los demás, dominando dezenas de recetas deliciosas que pocos conocen, hechas con los mismos ingredientes simples."
+                "Para quienes desean sentirse cómodos, teniendo una gran variedad de recetas estratégicas en la palma de su mano para lograr su objetivo.",
+                "Para quienes buscan destacarse de los demás, dominando decenas de recetas deliciosas que pocos conocen, hechas con los mismos ingredientes simples."
             ]
         },
         "pricing": {
-            "consultation": "Precio promedio de uma consulta por <1>sesión</1>",
+            "consultation": "Precio promedio de una consulta por <1>sesión</1>",
             "consultation_price": "US$ 40 - US$ 75",
             "app_access": "App <1>Sabores Exclusivos</1> con acceso libre",
             "app_price": "US$ 12.99",
@@ -77,7 +77,7 @@
             "age": "Edad",
             "weight": "Peso (kg)",
             "height": "Altura (cm)",
-            "activity": "Nivel de Actividade",
+            "activity": "Nivel de Actividad",
             "activity_levels": {
                 "sedentary": "Sedentario (poco o nada de ejercicio)",
                 "light": "Ligeramente activo (1-3 días/semana)",
@@ -99,7 +99,7 @@
     },
     "cta": {
         "title": "Eleva tu experiencia culinaria hoy",
-        "subtitle": "Acceso de por vida a Sabores Exclusivos. Todo lo que necesitas para ganhar peso e desenvolver músculo de forma sabrosa y práctica.",
+        "subtitle": "Acceso de por vida a Sabores Exclusivos. Todo lo que necesitas para ganar peso y desarrollar músculo de forma sabrosa y práctica.",
         "button": "Quiero mi Acceso de Por Vida Ahora",
         "guarantees": {
             "secure": "Pago 100% Seguro",
@@ -110,6 +110,6 @@
         "tax_disclaimer": "Pueden aplicarse impuestos locales según el país"
     },
     "footer": {
-        "rights": "© 2026 Sabores Exclusivos. Todos os direitos reservados."
+        "rights": "© 2026 Sabores Exclusivos. Todos los derechos reservados."
     }
 }
