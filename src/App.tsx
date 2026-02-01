@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart, ChevronDown, CheckCircle2, Lock, Clock } from 'lucide-react';
+import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart, ChevronDown, CheckCircle2, Lock, Clock, Globe } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
 import heroDish from './assets/hero-dish.png';
 import heroApp from './assets/hero-app-mockup.png';
@@ -595,9 +595,6 @@ function App() {
                         <ArrowRight size={20} />
                     </a>
 
-                    <hr className="cta-separator" />
-                    <p className="cta-tax-disclaimer">{t('cta.tax_disclaimer')}</p>
-
                     <div className="cta-guarantees">
                         <div className="cta-guarantee-item">
                             <Lock size={16} />
@@ -610,6 +607,10 @@ function App() {
                         <div className="cta-guarantee-item">
                             <ShieldCheck size={16} />
                             <span>{t('cta.guarantees.warranty')}</span>
+                        </div>
+                        <div className="cta-guarantee-item tax-bubble">
+                            <Globe size={16} />
+                            <span>{t('cta.tax_disclaimer')}</span>
                         </div>
                     </div>
                 </div>

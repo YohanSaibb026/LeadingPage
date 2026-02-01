@@ -948,22 +948,6 @@
     transform: translateY(-1px);
 }
 
-.cta-separator {
-    height: 1px;
-    background: rgba(0, 0, 0, 0.4);
-    margin: 2.5rem auto 1rem;
-    width: 100%;
-    border: none;
-}
-
-.cta-tax-disclaimer {
-    font-size: 0.8rem;
-    color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 2rem;
-    font-style: italic;
-    font-weight: 500;
-}
-
 .cta-guarantees {
     display: flex;
     justify-content: center;
