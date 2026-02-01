@@ -79,11 +79,11 @@
             "height": "Altura (cm)",
             "activity": "Nivel de Actividad",
             "activity_levels": {
-                "sedentary": "Sedentario (poco o nada de ejercicio)",
+                "sedentary": "Sedentario (poco o ningún ejercicio)",
                 "light": "Ligeramente activo (1-3 días/semana)",
                 "moderate": "Moderadamente activo (3-5 días/semana)",
                 "active": "Altamente activo (6-7 días/semana)",
-                "extra": "Extremamente activo (entrenamiento pesado/atleta)"
+                "extra": "Extremadamente activo (entrenamiento intenso/atleta)"
             },
             "calculate": "Calcular Meta",
             "results": {
