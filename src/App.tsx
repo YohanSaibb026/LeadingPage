@@ -36,7 +36,7 @@ const BrandBadge = ({ children }: { children?: React.ReactNode }) => (
 const CountdownTimer = ({ urgencyText }: { urgencyText: string }) => {
     // Persistent target date logic
     const [targetDate] = useState(() => {
-        const STORAGE_KEY = 'sabores_promo_end_date';
+        const STORAGE_KEY = 'sabores_promo_end_date_v4'; // Forcing 4-day reset
         const savedDate = localStorage.getItem(STORAGE_KEY);
 
         if (savedDate) {
@@ -47,10 +47,10 @@ const CountdownTimer = ({ urgencyText }: { urgencyText: string }) => {
             }
         }
 
-        // Calculate new target: 2 days and 6 hours from now
+        // Calculate new target: 4 days from now
         const newTarget = new Date();
-        newTarget.setDate(newTarget.getDate() + 2);
-        newTarget.setHours(newTarget.getHours() + 6);
+        newTarget.setDate(newTarget.getDate() + 4);
+        newTarget.setHours(newTarget.getHours() + 0);
         newTarget.setMinutes(newTarget.getMinutes() + 0);
         newTarget.setSeconds(newTarget.getSeconds() + 0);
 
@@ -341,12 +341,6 @@ function App() {
                     <div className="nav-links">
                         <a href="#features">{t('nav.features')}</a>
                         <a href="#pricing">{t('nav.pricing')}</a>
-                        <a
-                            href="https://pay.hotmart.com/V104194764B"
-                            className="btn-primary-small"
-                        >
-                            {t('nav.download')}
-                        </a>
                     </div>
                 </div>
             </nav>
@@ -372,16 +366,6 @@ function App() {
                                 ))}
                             </ul>
                         </div>
-                    </div>
-                    <div className="hero-buttons" style={{ marginTop: '2.5rem', display: 'flex', gap: '1rem' }}>
-                        <a
-                            href="https://pay.hotmart.com/V104194764B"
-                            className="btn-cta-premium"
-                            style={{ padding: '1.2rem 2.5rem' }}
-                        >
-                            {t('cta.button')}
-                            <ArrowRight size={20} />
-                        </a>
                     </div>
                 </div>
                 <div className="hero-image-wrapper">
@@ -567,14 +551,6 @@ function App() {
                         <span className="promo-to">{t('features.pricing.promotion.price_to')}</span>
                     </div>
 
-                    <a
-                        href="https://pay.hotmart.com/V104194764B"
-                        className="btn-cta-premium"
-                        style={{ marginTop: '2rem', width: '100%', justifyContent: 'center' }}
-                    >
-                        {t('cta.button')}
-                        <ArrowRight size={20} />
-                    </a>
                 </div>
             </section>
 
