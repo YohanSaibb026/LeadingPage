@@ -18,7 +18,12 @@ i18n
             'es-AR': { translation: esARTranslations },
             'es-CO': { translation: esCOTranslations },
         },
-        fallbackLng: 'pt',
+        fallbackLng: {
+            'es-CL': ['es-AR'],
+            'es-UY': ['es-AR'],
+            'es': ['es-CO'],
+            'default': ['es-CO']
+        },
         nonExplicitSupportedLngs: true,
         interpolation: {
             escapeValue: false,
