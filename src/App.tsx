@@ -254,6 +254,7 @@ const BMRCalculator = () => {
 function App() {
     const { t } = useTranslation();
     const [openFaq, setOpenFaq] = useState<number | null>(null);
+    const [activeTransformIndex, setActiveTransformIndex] = useState(0);
 
     const stories = [
         { name: 'Nicolás N.', avatar: avatarNicolas, content: meal2 },
@@ -328,6 +329,15 @@ function App() {
 
         return () => observer.disconnect();
     }, []);
+
+    const handleTransformScroll = (e: React.UIEvent<HTMLDivElement>) => {
+        const container = e.currentTarget;
+        const scrollLeft = container.scrollLeft;
+        const width = container.offsetWidth;
+        const itemWidth = 280 + 20; // item width + gap
+        const index = Math.round(scrollLeft / itemWidth);
+        setActiveTransformIndex(index);
+    };
 
     return (
         <div className="landing-container">
@@ -480,7 +490,7 @@ function App() {
                         <div className="icon-wrapper"><Star /></div>
                         <h3>{t('features.transformations.title')}</h3>
                         <p>{t('features.transformations.desc')}</p>
-                        <div className="transformations-grid">
+                        <div className="transformations-grid" onScroll={handleTransformScroll}>
                             {transformations.map((item, i) => (
                                 <div key={i} className="transform-item-wrapper">
                                     <div className="transform-item">
@@ -492,6 +502,14 @@ function App() {
                                         <span className="transform-duration">{item.duration}</span>
                                     </div>
                                 </div>
+                            ))}
+                        </div>
+                        <div className="pagination-dots">
+                            {transformations.map((_, i) => (
+                                <div
+                                    key={i}
+                                    className={`dot ${activeTransformIndex === i ? 'active' : ''}`}
+                                />
                             ))}
                         </div>
                     </div>
