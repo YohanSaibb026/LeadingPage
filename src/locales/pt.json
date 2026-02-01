@@ -110,7 +110,8 @@
             "access": "Acesso Imediato",
             "warranty": "Garantia de 7 dias"
         },
-        "urgency": "A oferta expira em:"
+        "urgency": "A oferta expira em:",
+        "tax_disclaimer": "Impostos locais podem ser adicionados conforme o país"
     },
     "footer": {
         "rights": "© 2026 Sabores Exclusivos. Todos os direitos reservados."

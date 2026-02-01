@@ -595,6 +595,9 @@ function App() {
                         <ArrowRight size={20} />
                     </a>
 
+                    <hr className="cta-separator" />
+                    <p className="cta-tax-disclaimer">{t('cta.tax_disclaimer')}</p>
+
                     <div className="cta-guarantees">
                         <div className="cta-guarantee-item">
                             <Lock size={16} />
