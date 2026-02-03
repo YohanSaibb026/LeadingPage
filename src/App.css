@@ -1568,6 +1568,7 @@
     color: var(--text-main);
     margin: 0;
     letter-spacing: -0.01em;
+    white-space: pre-wrap;
 }
 
 @media (max-width: 768px) {
