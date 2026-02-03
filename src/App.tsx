@@ -392,7 +392,16 @@ function App() {
                         muted
                         loop
                         playsInline
+                        preload="auto"
+                        disablePictureInPicture
+                        onPause={(e) => e.currentTarget.play()}
+                        onPlay={(e) => {
+                            e.currentTarget.muted = true;
+                            e.currentTarget.play();
+                        }}
+                        onEnded={(e) => e.currentTarget.play()}
                         className="punchline-video"
+                        style={{ pointerEvents: 'none' }}
                     />
                     <div className="punchline-video-overlay"></div>
                 </div>
