@@ -384,17 +384,7 @@ function App() {
                 </div>
             </header>
 
-            <section className="punchline-text-top">
-                <div className="punchline-header-content">
-                    <div className="punchline-decorator">
-                        <ChefHat size={32} strokeWidth={1.5} />
-                    </div>
-                    <h2 className="punchline-title">{t('hero.punchline_header')}</h2>
-                    <p className="punchline-body-text">{t('hero.punchline_body')}</p>
-                </div>
-            </section>
-
-            <section className="punchline-video-divider">
+            <section className="punchline-divider">
                 <div className="punchline-video-wrapper">
                     <video
                         src={cardVideo}
@@ -405,6 +395,12 @@ function App() {
                         className="punchline-video"
                     />
                     <div className="punchline-video-overlay"></div>
+                </div>
+                <div className="punchline-content">
+                    <div className="punchline-decorator">
+                        <ChefHat size={32} strokeWidth={1.5} />
+                    </div>
+                    <p>{t('hero.punchline')}</p>
                 </div>
             </section>
 
