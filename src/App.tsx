@@ -24,6 +24,7 @@ import avatarPablo from './assets/avatar-pablo.jpg';
 import avatarCamilla from './assets/avatar-camilla.jpg';
 import avatarGina from './assets/avatar-gina.jpg';
 import mealGina from './assets/meal-gina.jpg';
+import cardVideo from './assets/CARD.webm';
 import './App.css';
 
 const BrandBadge = ({ children }: { children?: React.ReactNode }) => (
@@ -384,6 +385,17 @@ function App() {
             </header>
 
             <section className="punchline-divider">
+                <div className="punchline-video-wrapper">
+                    <video
+                        src={cardVideo}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="punchline-video"
+                    />
+                    <div className="punchline-video-overlay"></div>
+                </div>
                 <div className="punchline-content">
                     <div className="punchline-decorator">
                         <ChefHat size={32} strokeWidth={1.5} />
