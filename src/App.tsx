@@ -258,7 +258,7 @@ function App() {
     const [activeTransformIndex, setActiveTransformIndex] = useState(0);
 
     const stories = [
-        { name: 'Nicolás N.', avatar: avatarNicolas, content: meal2 },
+        { name: 'Nicolás N.', avatar: avatarNicolas, content: meal2, testimonialKey: 'nicolas' },
         { name: 'Dani C.', avatar: avatarDani, content: shakeStory },
         { name: 'Thiago A.', avatar: avatarThiago, content: meal1 },
         { name: 'Lucia S.', avatar: avatarLucia, content: meal3 },
@@ -408,39 +408,46 @@ function App() {
                 </div>
                 <div className="story-cards-grid">
                     {stories.map((story, index) => (
-                        <div key={index} className="story-card">
-                            {/* Instagram-style Bars */}
-                            <div className="card-story-progress">
-                                <div className="progress-segment active"></div>
-                                <div className="progress-segment"></div>
-                                <div className="progress-segment"></div>
-                            </div>
+                        <div key={index} className="story-card-item">
+                            <div className="story-card">
+                                {/* Instagram-style Bars */}
+                                <div className="card-story-progress">
+                                    <div className="progress-segment active"></div>
+                                    <div className="progress-segment"></div>
+                                    <div className="progress-segment"></div>
+                                </div>
 
-                            {/* Story User Info */}
-                            <div className="card-story-user">
-                                <img src={story.avatar} alt="" draggable="false" />
-                                <div className="user-details">
-                                    <span className="user-name">{story.name}</span>
-                                    <span className="post-time">8h</span>
+                                {/* Story User Info */}
+                                <div className="card-story-user">
+                                    <img src={story.avatar} alt="" draggable="false" />
+                                    <div className="user-details">
+                                        <span className="user-name">{story.name}</span>
+                                        <span className="post-time">8h</span>
+                                    </div>
+                                    <div className="header-actions">
+                                        <Pause size={16} color="white" fill="white" />
+                                        <MoreHorizontal size={18} color="white" />
+                                    </div>
                                 </div>
-                                <div className="header-actions">
-                                    <Pause size={16} color="white" fill="white" />
-                                    <MoreHorizontal size={18} color="white" />
+
+                                <img src={story.content} alt={story.name} className="card-story-content" draggable="false" />
+
+                                {/* Story Footer */}
+                                <div className="card-story-footer">
+                                    <div className="footer-input">
+                                        <span>Responder a {story.name}...</span>
+                                    </div>
+                                    <div className="footer-actions">
+                                        <Heart size={20} color="white" />
+                                        <Send size={20} color="white" />
+                                    </div>
                                 </div>
                             </div>
-
-                            <img src={story.content} alt={story.name} className="card-story-content" draggable="false" />
-
-                            {/* Story Footer */}
-                            <div className="card-story-footer">
-                                <div className="footer-input">
-                                    <span>Responder a {story.name}...</span>
+                            {story.testimonialKey && (
+                                <div className="story-testimonial">
+                                    <p>{t(`reviews.items.${story.testimonialKey}`)}</p>
                                 </div>
-                                <div className="footer-actions">
-                                    <Heart size={20} color="white" />
-                                    <Send size={20} color="white" />
-                                </div>
-                            </div>
+                            )}
                         </div>
                     ))}
                 </div>
