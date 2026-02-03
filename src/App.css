@@ -1252,13 +1252,24 @@
 }
 
 .punchline-external-title {
-    font-size: 2rem;
+    font-size: 1.65rem;
     font-family: 'Merriweather', serif;
     font-weight: 700;
     line-height: 1.4;
     color: var(--text-main);
     margin-top: 1rem;
     white-space: pre-wrap;
+}
+
+@media (max-width: 768px) {
+    .punchline-external-title {
+        font-size: 1.4rem;
+        padding: 0 0.5rem;
+    }
+
+    .punchline-external-header {
+        margin-bottom: 2rem;
+    }
 }
 
 .showroom-card {
