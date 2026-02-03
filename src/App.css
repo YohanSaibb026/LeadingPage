@@ -1481,9 +1481,9 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg,
-            rgba(10, 25, 47, 0.6) 0%,
-            rgba(10, 25, 47, 0.2) 50%,
-            rgba(10, 25, 47, 0.6) 100%);
+            rgba(6, 26, 29, 0.6) 0%,
+            rgba(6, 26, 29, 0.2) 50%,
+            rgba(6, 26, 29, 0.6) 100%);
     z-index: 1;
 }
 
@@ -1790,7 +1790,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: rgba(249, 115, 22, 0.2);
+    background: rgba(128, 203, 196, 0.2);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
