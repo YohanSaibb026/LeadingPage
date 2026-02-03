@@ -16,6 +16,10 @@
     justify-content: center;
     z-index: 1000;
     padding: 0 2rem;
+    background: rgba(246, 244, 238, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .nav-content {
@@ -33,6 +37,7 @@
     font-family: 'Merriweather', serif;
     font-weight: 700;
     font-size: 1.25rem;
+    color: #191717;
 }
 
 .logo-icon {
@@ -1542,17 +1547,17 @@
 /* BMR Calculator Styles - Compact Light Theme */
 .bmr-calculator-section {
     padding: 3rem 1rem;
-    background: #fdfcf8;
+    background: var(--bg-dark);
 }
 
 .calculator-container {
     max-width: 600px;
     margin: 0 auto;
     padding: 2rem 1.5rem;
-    background: white;
+    background: var(--bg-card);
     border-radius: 24px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .calculator-header {
@@ -1626,13 +1631,20 @@
 
 .input-group input,
 .input-group select {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 0.8rem;
     border-radius: 10px;
     color: var(--text-main);
     font-size: 0.95rem;
     transition: all 0.2s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .btn-calculate {
@@ -1750,7 +1762,7 @@
 .breakfast-recommendation {
     margin-top: 1.5rem;
     padding: 1rem;
-    background: white;
+    background: rgba(251, 81, 59, 0.1);
     border: 1px dashed var(--primary);
     border-radius: 12px;
     display: flex;
