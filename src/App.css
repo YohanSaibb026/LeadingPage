@@ -16,7 +16,7 @@
     justify-content: center;
     z-index: 1000;
     padding: 0 2rem;
-    background: rgba(253, 252, 248, 0.9);
+    background: #fdfcf8;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -478,12 +478,12 @@
 .faq-accordion {
     display: flex;
     flex-direction: column;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid var(--border-glass);
     width: 100%;
 }
 
 .faq-item {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--border-glass);
     background: transparent;
 }
 
@@ -497,7 +497,7 @@
     align-items: center;
     cursor: pointer;
     text-align: left;
-    color: #1e293b;
+    color: var(--text-main);
     font-family: 'Inter', sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
@@ -517,7 +517,7 @@
 .faq-chevron {
     flex-shrink: 0;
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    color: #94a3b8;
+    color: var(--text-muted);
 }
 
 .faq-item.open .faq-chevron {
@@ -645,7 +645,7 @@
     /* Reduced from 2rem 2rem 0 */
     display: flex;
     justify-content: center;
-    background-color: var(--bg-card);
+    background-color: var(--bg-dark);
     flex-direction: column;
     align-items: center;
 }
