@@ -620,21 +620,21 @@
     font-family: 'Merriweather', serif;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #1e293b;
+    color: #ffffff;
 }
 
 .transform-stats {
     font-family: 'Inter', sans-serif;
     font-size: 1.1rem;
     font-weight: 800;
-    color: #0f172a;
+    color: #ffffff;
 }
 
 .transform-duration {
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
     font-weight: 500;
-    color: #64748b;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 /* CTA */
