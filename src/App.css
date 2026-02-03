@@ -1123,6 +1123,7 @@
 
 .story-card-item {
     flex: 0 0 280px;
+    width: 280px;
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
@@ -1140,17 +1141,32 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0 0.5rem;
+}
+
 .story-testimonial-refined {
     font-family: 'Merriweather', serif;
     font-style: italic;
     font-weight: 400;
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     color: #ffffff;
     text-align: center;
-    line-height: 1.5;
-    max-width: 280px;
+    line-height: 1.6;
+    width: 200px;
     margin: 0 auto;
-    padding: 0 0.5rem;
+}
+
+.testimonial-author {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    text-transform: none;
 }
 
 .card-story-progress {

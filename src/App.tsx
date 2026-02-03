@@ -444,9 +444,14 @@ function App() {
                                 </div>
                             </div>
                             {story.testimonialKey && (
-                                <p className="story-testimonial-refined">
-                                    {t(`reviews.items.${story.testimonialKey}`)}
-                                </p>
+                                <div className="testimonial-container">
+                                    <p className="story-testimonial-refined">
+                                        {t(`reviews.items.${story.testimonialKey}`)}
+                                    </p>
+                                    <span className="testimonial-author">
+                                        {story.name}
+                                    </span>
+                                </div>
                             )}
                         </div>
                     ))}
