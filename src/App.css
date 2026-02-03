@@ -1124,8 +1124,8 @@
 }
 
 .story-card-item {
-    flex: 0 0 320px;
-    width: 320px;
+    flex: 0 0 300px;
+    width: 300px;
     flex-shrink: 0;
     scroll-snap-align: center;
     display: flex;
@@ -1135,7 +1135,7 @@
 
 .story-card {
     width: 100%;
-    height: 570px;
+    height: 533px;
     position: relative;
     background: #000;
     border-radius: 16px;
@@ -1170,6 +1170,7 @@
     color: rgba(255, 255, 255, 0.7);
     font-weight: 500;
     text-transform: none;
+    font-style: italic;
 }
 
 .card-story-progress {
@@ -1449,8 +1450,8 @@
     }
 
     .story-card-item {
-        flex: 0 0 320px;
-        width: 320px;
+        flex: 0 0 300px;
+        width: 300px;
         scroll-snap-align: center;
     }
 
