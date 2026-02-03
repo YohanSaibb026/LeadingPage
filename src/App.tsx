@@ -264,7 +264,7 @@ function App() {
         { name: 'Lucia S.', avatar: avatarLucia, content: meal3, testimonialKey: 'lucia' },
         { name: 'Pablo B.', avatar: avatarPablo, content: meal4 },
         { name: 'Camilla B.', avatar: avatarCamilla, content: meal5, testimonialKey: 'camilla' },
-        { name: 'Gina F.', avatar: avatarGina, content: mealGina },
+        { name: 'Gina F.', avatar: avatarGina, content: mealGina, testimonialKey: 'gina' },
     ];
 
     const transformations = [
