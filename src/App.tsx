@@ -397,10 +397,7 @@ function App() {
                     <div className="punchline-video-overlay"></div>
                 </div>
                 <div className="punchline-content">
-                    <div className="punchline-decorator">
-                        <ChefHat size={32} strokeWidth={1.5} />
-                    </div>
-                    <p>{t('hero.punchline')}</p>
+                    {/* Clean video as requested */}
                 </div>
             </section>
 
@@ -451,6 +448,12 @@ function App() {
 
             {/* App Interface Showroom */}
             <section className="app-showroom">
+                <div className="punchline-external-header">
+                    <div className="punchline-decorator">
+                        <ChefHat size={32} strokeWidth={1.5} />
+                    </div>
+                    <h2 className="punchline-external-title">{t('hero.punchline_header')}</h2>
+                </div>
                 <div className="showroom-card">
                     <div className="showroom-evaluation">
                         <span className="eval-score">4.9/5</span>
