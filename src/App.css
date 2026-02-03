@@ -1272,6 +1272,34 @@
     }
 }
 
+.punchline-external-footer {
+    text-align: center;
+    margin-top: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.punchline-external-footer-title {
+    font-size: 1.65rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--text-main);
+    white-space: pre-wrap;
+}
+
+@media (max-width: 768px) {
+    .punchline-external-footer-title {
+        font-size: 1.4rem;
+        padding: 0 0.5rem;
+    }
+
+    .punchline-external-footer {
+        margin-top: 2rem;
+    }
+}
+
 .showroom-card {
     background-color: #ffffff;
     border-radius: 60px;

@@ -468,6 +468,10 @@ function App() {
                         <img src={appShowroom} alt="App Sabores Exclusivos Interface" className="showroom-img" draggable="false" />
                     </div>
                 </div>
+
+                <div className="punchline-external-footer">
+                    <h2 className="punchline-external-footer-title">{t('hero.punchline_footer')}</h2>
+                </div>
             </section>
 
             <BMRCalculator />
