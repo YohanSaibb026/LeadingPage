@@ -1121,9 +1121,16 @@
     display: none;
 }
 
-.story-card {
+.story-card-item {
     flex: 0 0 280px;
     scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.story-card {
+    width: 100%;
     position: relative;
     aspect-ratio: 9/16;
     background: #000;
@@ -1131,6 +1138,19 @@
     overflow: hidden;
     cursor: default;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.story-testimonial-refined {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.15rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 0 0.5rem;
 }
 
 .card-story-progress {

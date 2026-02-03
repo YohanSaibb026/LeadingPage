@@ -20,7 +20,10 @@
         "social": "Usado por mais de 500+ chefs em casa"
     },
     "reviews": {
-        "title": "Algumas experiências de nossos usuários"
+        "title": "Algumas experiências de nossos usuários",
+        "items": {
+            "nicolas": "\"Estas comidas saudáveis mudaram completamente a forma como levo meu dia\""
+        }
     },
     "features": {
         "title": "Por que Sabores Exclusivos?",
