@@ -260,7 +260,7 @@ function App() {
     const stories = [
         { name: 'Nicolás N.', avatar: avatarNicolas, content: meal2, testimonialKey: 'nicolas' },
         { name: 'Dani C.', avatar: avatarDani, content: shakeStory, testimonialKey: 'dani' },
-        { name: 'Thiago A.', avatar: avatarThiago, content: meal1 },
+        { name: 'Thiago A.', avatar: avatarThiago, content: meal1, testimonialKey: 'thiago' },
         { name: 'Lucia S.', avatar: avatarLucia, content: meal3 },
         { name: 'Pablo B.', avatar: avatarPablo, content: meal4 },
         { name: 'Camilla B.', avatar: avatarCamilla, content: meal5 },
