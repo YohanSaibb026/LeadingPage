@@ -1111,8 +1111,8 @@
 .story-cards-grid {
     display: flex;
     overflow-x: auto;
-    padding-bottom: 3rem;
-    /* More space for testimonials */
+    padding-bottom: 1rem;
+    /* Less space for closer section */
     gap: 1.5rem;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
@@ -1278,7 +1278,7 @@
 
 /* App Showroom & Evaluation Card */
 .app-showroom {
-    padding: 2rem 1rem 4rem;
+    padding: 0.5rem 1rem 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
