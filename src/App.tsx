@@ -258,13 +258,13 @@ function App() {
     const [activeTransformIndex, setActiveTransformIndex] = useState(0);
 
     const stories = [
-        { name: 'Nicolás N.', avatar: avatarNicolas, content: meal2, testimonialKey: 'nicolas' },
-        { name: 'Dani C.', avatar: avatarDani, content: shakeStory, testimonialKey: 'dani' },
-        { name: 'Thiago A.', avatar: avatarThiago, content: meal1, testimonialKey: 'thiago' },
-        { name: 'Lucia S.', avatar: avatarLucia, content: meal3, testimonialKey: 'lucia' },
-        { name: 'Pablo B.', avatar: avatarPablo, content: meal4, testimonialKey: 'pablo' },
-        { name: 'Camilla B.', avatar: avatarCamilla, content: meal5, testimonialKey: 'camilla' },
-        { name: 'Gina F.', avatar: avatarGina, content: mealGina, testimonialKey: 'gina' },
+        { name: 'Nicolás N.', fullName: 'Nicolás Navas', avatar: avatarNicolas, content: meal2, testimonialKey: 'nicolas' },
+        { name: 'Dani C.', fullName: 'Dani Castro', avatar: avatarDani, content: shakeStory, testimonialKey: 'dani' },
+        { name: 'Thiago A.', fullName: 'Thiago Aguirre', avatar: avatarThiago, content: meal1, testimonialKey: 'thiago' },
+        { name: 'Lucia S.', fullName: 'Lucia Sánchez', avatar: avatarLucia, content: meal3, testimonialKey: 'lucia' },
+        { name: 'Pablo B.', fullName: 'Pablo Barrios', avatar: avatarPablo, content: meal4, testimonialKey: 'pablo' },
+        { name: 'Camilla B.', fullName: 'Camilla Beltrán', avatar: avatarCamilla, content: meal5, testimonialKey: 'camilla' },
+        { name: 'Gina F.', fullName: 'Gina Fonseca', avatar: avatarGina, content: mealGina, testimonialKey: 'gina' },
     ];
 
     const transformations = [
@@ -458,7 +458,7 @@ function App() {
                                         {t(`reviews.items.${story.testimonialKey}`)}
                                     </p>
                                     <span className="testimonial-author">
-                                        {story.name}
+                                        {story.fullName}
                                     </span>
                                 </div>
                             )}
