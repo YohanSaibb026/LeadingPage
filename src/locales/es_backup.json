@@ -13,8 +13,8 @@
             "Pensar que una dieta para subir de peso o ganar músculo es cara"
         ],
         "punchline_header": "¿Tienes dudas a la hora de cocinar?\nYa no pierdas tempo planeando qué comer.",
-        "punchline_body": "Las recetas más recomendadas con los mismos ingredientes simples que ya tienes en casa",
-        "punchline_footer": "Ten una gran variedad de recetas en la palma de tu mano, domina las recetas más deliciosas, hechas con los mismos ingredientes simples y alcanza tu objetivo.",
+        "punchline_body": "Las receitas más recomendadas con los mismos ingredientes simples que ya tienes en casa",
+        "punchline_footer": "Ten una gran variedad de receitas en la palma de tu mano, domina las receitas más deliciosas, hechas con os mesmos ingredientes simples y alcanza tu objetivo.",
         "continue": "Continuar",
         "demo": "Ver Demostración",
         "social": "Usado por más de 500+ chefs en casa"
@@ -25,8 +25,8 @@
             "nicolas": "\"Estas comidas saludables cambiaron por completo la forma en que llevo mi día\"",
             "dani": "\"Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad\"",
             "thiago": "\"Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener\"",
-            "lucia": "\"Always tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá também\"",
-            "camilla": "\"Las recetas son perfectas, les agrego mi toque y quedan maravillosas\"",
+            "lucia": "\"Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá também\"",
+            "camilla": "\"Las receitas son perfectas, les agrego mi toque y quedan maravillosas\"",
             "gina": "\"Puedo decir que ya tengo mi comida favorita\"",
             "pablo": "\"Sin duda, fue una gran elección la que hice y me trajo resultados\""
         }
@@ -50,7 +50,7 @@
                 },
                 "2": {
                     "q": "¿Es necesario comer en grandes cantidades para crecer?",
-                    "a": "Este pensamiento es un error común. Comer en exceso los alimentos equivocados causa náuseas, malestar y falta de apetito. Nuestras recetas son estratégicas y garantizan una alta carga de nutrientes de forma ligera. Así, evitas el sacrificio de tener que forzarte a comer platos enormes en el almuerzo o la cena."
+                    "a": "Este pensamiento es un error común. Comer en exceso los alimentos equivocados causa náuseas, malestar y falta de apetito. Nuestras receitas son estratégicas y garantizan una alta carga de nutrientes de forma ligera. Así, evitas el sacrificio de tener que forzarte a comer platos enormes en el almuerzo o la cena."
                 }
             }
         },
@@ -63,7 +63,7 @@
             "items": [
                 "Personas que desean eliminar la duda al cocinar, basta de perder tiempo planeando qué comer.",
                 "Para quienes desean sentirse cómodos, teniendo una gran variedad de receitas estratégicas en la palma de su mano para lograr su objetivo.",
-                "Para quienes buscan destacarse de los demás, dominando decenas de receitas deliciosas que pocos conocen, hechas con los mismos ingredientes simples."
+                "Para quienes buscan destacarse de los demás, dominando decenas de receitas deliciosas que pocos conocen, hechas con os mesmos ingredientes simples."
             ]
         },
         "pricing": {
@@ -88,7 +88,7 @@
             "age": "Edad",
             "weight": "Peso (kg)",
             "height": "Altura (cm)",
-            "activity": "Nivel de Actividad",
+            "activity": "Nivel de Actividade",
             "activity_levels": {
                 "sedentary": "Sedentario (poco o ningún ejercicio)",
                 "light": "Ligeramente activo (1-3 días/semana)",
@@ -121,7 +121,7 @@
         "tax_disclaimer": "Pueden aplicarse impuestos locales según el país"
     },
     "footer": {
-        "rights": "© 2026 Sabores Exclusivos. Todos os direitos reservados."
+        "rights": "© 2026 Sabores Exclusivos. Todos los derechos reservados."
     },
     "quiz": {
         "step_indicator": "Paso {{current}} de {{total}}",
@@ -133,9 +133,9 @@
         "calculating_title": "Analizando tus datos...",
         "calculating_desc": "Armando tu plan personalizado basado en tu metabolismo.",
         "results_title": "¡Plan Calculado con Éxito!",
-        "results_subtitle": "Basado en tus datos, esto es lo que tu cuerpo necesita:",
+        "results_subtitle": "Basado en tus datos, esto é lo que tu cuerpo necesita:",
         "bmr_label": "Metabolismo Basal",
-        "tdee_label": "Gasto Diario (TDEE)",
+        "tdee_label": "Gasto Diário (TDEE)",
         "bulk_label": "Meta para Ganar Peso",
         "breakfast_recommendation": "Tu desayuno ideal debe tener <strong>{{calories}} kcal</strong> para alcanzar esta meta.",
         "cta_text": "¿Quieres las receitas exactas y el paso a paso para llegar a este resultado sin error?",
@@ -163,7 +163,7 @@
         "step6_title": "¿Ya has intentado subir de peso antes?",
         "step6_options": {
             "first": "Es mi primera vez",
-            "failed": "Ya lo intenté y não funcionó"
+            "failed": "Ya lo intenté y no funcionó"
         },
         "step7_failed_title": "¿Qué crees que falló anteriormente?",
         "step7_failed_options": {
