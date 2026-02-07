@@ -239,7 +239,9 @@ export default function Quiz() {
                                     <p>
                                         {specGoal === '5_10kg'
                                             ? t('quiz.step5_tips.bulk_5_10kg')
-                                            : (mainGoal === 'bulk' ? t('quiz.step5_tips.bulk') : t('quiz.step5_tips.muscle'))}
+                                            : specGoal === '10kg_plus'
+                                                ? t('quiz.step5_tips.bulk_10kg_plus')
+                                                : (mainGoal === 'bulk' ? t('quiz.step5_tips.bulk') : t('quiz.step5_tips.muscle'))}
                                     </p>
                                 </div>
                                 <button className="btn-quiz-next" onClick={nextStep}>
