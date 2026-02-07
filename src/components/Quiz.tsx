@@ -236,7 +236,11 @@ export default function Quiz() {
                             <div className="quiz-tips-step animate-fade-in">
                                 <div className="tip-box">
                                     <ChefHat className="tip-icon" size={32} />
-                                    <p>{mainGoal === 'bulk' ? t('quiz.step5_tips.bulk') : t('quiz.step5_tips.muscle')}</p>
+                                    <p>
+                                        {specGoal === '5_10kg'
+                                            ? t('quiz.step5_tips.bulk_5_10kg')
+                                            : (mainGoal === 'bulk' ? t('quiz.step5_tips.bulk') : t('quiz.step5_tips.muscle'))}
+                                    </p>
                                 </div>
                                 <button className="btn-quiz-next" onClick={nextStep}>
                                     {t('quiz.btn_continue')} <ArrowRight size={20} />
