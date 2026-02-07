@@ -42,7 +42,7 @@
             "items": {
                 "0": {
                     "q": "¿Por qué desayunos, meriendas y batidos?",
-                    "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las mejores combinaciones para que no tengas que andar buscando calorías el resto del día."
+                    "a": "Mientras otras apps se enfocan en comidas caras e complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las mejores combinaciones para que no tengas que andar buscando calorías el resto del día."
                 },
                 "1": {
                     "q": "¿Cuesta caro tener una dieta?",
@@ -110,17 +110,35 @@
     },
     "cta": {
         "title": "Eleva tu experiencia culinaria hoy",
-        "subtitle": "Acceso vitalicio a Sabores Exclusivos. Todo lo que necesitas para subir de peso y construir músculo de forma sabrosa y práctica.",
+        "subtitle": "Acceso vitalicio a Sabores Exclusivos. Todo lo que necesitas para subir de peso e construir músculo de forma sabrosa y práctica.",
         "button": "Quiero mi acceso ilimitado ahora",
         "guarantees": {
             "secure": "Pago 100% Seguro",
             "access": "Acceso Inmediato",
-            "warranty": "Garantía de 7 días"
+            "warranty": "Garantía de 7 dias"
         },
         "urgency": "La oferta expira en:",
         "tax_disclaimer": "Pueden aplicarse impuestos locales según el país"
     },
     "footer": {
         "rights": "© 2026 Sabores Exclusivos. Todos los derechos reservados."
+    },
+    "quiz": {
+        "step_indicator": "Paso {{current}} de {{total}}",
+        "gender_male": "Masculino",
+        "gender_female": "Femenino",
+        "btn_continue": "Continuar",
+        "btn_back": "Volver",
+        "btn_results": "Ver Resultado",
+        "calculating_title": "Analizando tus datos...",
+        "calculating_desc": "Armando tu plan personalizado basado en tu metabolismo.",
+        "results_title": "¡Plan Calculado con Éxito!",
+        "results_subtitle": "Basado en tus datos, esto es lo que tu cuerpo necesita:",
+        "bmr_label": "Metabolismo Basal",
+        "tdee_label": "Gasto Diario (TDEE)",
+        "bulk_label": "Meta para Ganar Peso",
+        "breakfast_recommendation": "Tu desayuno ideal debe tener <strong>{{calories}} kcal</strong> para alcanzar esta meta.",
+        "cta_text": "¿Quieres las recetas exactas y el paso a paso para llegar a este resultado sin error?",
+        "cta_button": "Acceder al Club Sabores Exclusivos"
     }
 }

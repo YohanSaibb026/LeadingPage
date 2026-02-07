@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChefHat, ArrowRight, Zap, CheckCircle2, ChevronDown, User, Calendar, Smartphone, Globe, Clock, ShieldCheck, Play } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 export default function Quiz() {
     const { t } = useTranslation();
@@ -68,8 +68,8 @@ export default function Quiz() {
                         <div className="premium-spinner"></div>
                         <Zap className="spinner-icon animate-pulse" size={32} />
                     </div>
-                    <h2>Analisando seus dados...</h2>
-                    <p>Montando seu plano personalizado com base no seu metabolismo.</p>
+                    <h2>{t('quiz.calculating_title')}</h2>
+                    <p>{t('quiz.calculating_desc')}</p>
                 </div>
             </div>
         );
@@ -80,33 +80,37 @@ export default function Quiz() {
             <div className="quiz-container animate-fade-in">
                 <div className="results-hero glass-morphism">
                     <CheckCircle2 color="#10B981" size={48} />
-                    <h1>Plano Calculado com Sucesso!</h1>
-                    <p>Com base nos seus dados, aqui está o que seu corpo precisa:</p>
+                    <h1>{t('quiz.results_title')}</h1>
+                    <p>{t('quiz.results_subtitle')}</p>
 
                     <div className="quiz-results-grid">
                         <div className="quiz-result-card">
-                            <span>Metabolismo Basal</span>
+                            <span>{t('quiz.bmr_label')}</span>
                             <h3>{results.bmr} <small>kcal</small></h3>
                         </div>
                         <div className="quiz-result-card highlight">
-                            <span>Gasto Diário (TDEE)</span>
+                            <span>{t('quiz.tdee_label')}</span>
                             <h3>{results.tdee} <small>kcal</small></h3>
                         </div>
                         <div className="quiz-result-card premium">
-                            <span>Meta para Ganho</span>
+                            <span>{t('quiz.bulk_label')}</span>
                             <h3>{results.bulk} <small>kcal</small></h3>
                         </div>
                     </div>
 
                     <div className="breakfast-callout">
                         <ChefHat size={24} />
-                        <p>Seu café da manhã ideal deve ter <strong>{results.breakfast} kcal</strong> para atingir essa meta.</p>
+                        <p>
+                            <Trans i18nKey="quiz.breakfast_recommendation" values={{ calories: results.breakfast }}>
+                                Seu café da manhã ideal deve ter <strong>{results.breakfast} kcal</strong> para atingir essa meta.
+                            </Trans>
+                        </p>
                     </div>
 
                     <div className="final-cta-box">
-                        <p>Quer as receitas exatas e o passo a passo para chegar nesse resultado sem erro?</p>
-                        <a href="https://clubsaboresexclusivos.com" className="btn-cta-premium">
-                            Acessar Clube Sabores Exclusivos
+                        <p>{t('quiz.cta_text')}</p>
+                        <a href="https://pay.hotmart.com/V104194764B" className="btn-cta-premium" onClick={() => { if (typeof window !== 'undefined' && (window as any).fbq) (window as any).fbq('track', 'InitiateCheckout'); }}>
+                            {t('quiz.cta_button')}
                             <ArrowRight size={20} />
                         </a>
                     </div>
@@ -122,7 +126,7 @@ export default function Quiz() {
                 <div className="progress-bar-container">
                     <div className="progress-bar-fill" style={{ width: `${progress}%` }}></div>
                 </div>
-                <span className="step-indicator">Passo {step + 1} de {steps.length}</span>
+                <span className="step-indicator">{t('quiz.step_indicator', { current: step + 1, total: steps.length })}</span>
             </nav>
 
             <main className="quiz-content animate-slide-up">
@@ -136,10 +140,10 @@ export default function Quiz() {
                         {step === 0 && (
                             <div className="gender-options">
                                 <button className={`option-btn ${gender === 'male' ? 'active' : ''}`} onClick={() => { setGender('male'); nextStep(); }}>
-                                    Masculino
+                                    {t('quiz.gender_male')}
                                 </button>
                                 <button className={`option-btn ${gender === 'female' ? 'active' : ''}`} onClick={() => { setGender('female'); nextStep(); }}>
-                                    Feminino
+                                    {t('quiz.gender_female')}
                                 </button>
                             </div>
                         )}
@@ -147,21 +151,21 @@ export default function Quiz() {
                         {step === 1 && (
                             <div className="input-step">
                                 <input type="number" value={age} onChange={(e) => setAge(e.target.value)} placeholder="Ex: 25" autoFocus onKeyDown={(e) => e.key === 'Enter' && age && nextStep()} />
-                                <button className="btn-quiz-next" disabled={!age} onClick={nextStep}>Continuar <ChevronDown size={20} style={{ transform: 'rotate(-90deg)' }} /></button>
+                                <button className="btn-quiz-next" disabled={!age} onClick={nextStep}>{t('quiz.btn_continue')} <ChevronDown size={20} style={{ transform: 'rotate(-90deg)' }} /></button>
                             </div>
                         )}
 
                         {step === 2 && (
                             <div className="input-step">
                                 <input type="number" value={weight} onChange={(e) => setWeight(e.target.value)} placeholder="Ex: 70 (kg)" autoFocus onKeyDown={(e) => e.key === 'Enter' && weight && nextStep()} />
-                                <button className="btn-quiz-next" disabled={!weight} onClick={nextStep}>Continuar <ChevronDown size={20} style={{ transform: 'rotate(-90deg)' }} /></button>
+                                <button className="btn-quiz-next" disabled={!weight} onClick={nextStep}>{t('quiz.btn_continue')} <ChevronDown size={20} style={{ transform: 'rotate(-90deg)' }} /></button>
                             </div>
                         )}
 
                         {step === 3 && (
                             <div className="input-step">
                                 <input type="number" value={height} onChange={(e) => setHeight(e.target.value)} placeholder="Ex: 175 (cm)" autoFocus onKeyDown={(e) => e.key === 'Enter' && height && nextStep()} />
-                                <button className="btn-quiz-next" disabled={!height} onClick={nextStep}>Continuar <ChevronDown size={20} style={{ transform: 'rotate(-90deg)' }} /></button>
+                                <button className="btn-quiz-next" disabled={!height} onClick={nextStep}>{t('quiz.btn_continue')} <ChevronDown size={20} style={{ transform: 'rotate(-90deg)' }} /></button>
                             </div>
                         )}
 
@@ -174,13 +178,13 @@ export default function Quiz() {
                                     <option value="1.725">{t('features.calculator.activity_levels.active')}</option>
                                     <option value="1.9">{t('features.calculator.activity_levels.extra')}</option>
                                 </select>
-                                <button className="btn-quiz-next" onClick={nextStep}>Ver Resultado <Play size={20} /></button>
+                                <button className="btn-quiz-next" onClick={nextStep}>{t('quiz.btn_results')} <Play size={20} /></button>
                             </div>
                         )}
                     </div>
 
                     {step > 0 && (
-                        <button className="btn-quiz-back" onClick={prevStep}>Voltar</button>
+                        <button className="btn-quiz-back" onClick={prevStep}>{t('quiz.btn_back')}</button>
                     )}
                 </div>
             </main>

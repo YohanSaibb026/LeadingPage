@@ -35,7 +35,7 @@
         "title": "¿Por qué Sabores Exclusivos?",
         "instant": {
             "title": "Los desayunos, meriendas y batidos más recomendados, en un solo lugar",
-            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales han traído a nuestros alumnos."
+            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que mais resultados reales han traído a nuestros alumnos."
         },
         "faq_section": {
             "title": "Siempre Contigo",
@@ -74,7 +74,7 @@
             "promotion": {
                 "title": "La decisión que te separa de tu objetivo",
                 "subtitle": "Asegura tu transformación en los próximos 6 meses y conoce tu mejor versión.",
-                "label": "Promoción por tiempo limitado",
+                "label": "Promoción por tempo limitado",
                 "price_from": "De US$ 12.99",
                 "price_to": "por US$ 5.49"
             }
@@ -122,5 +122,23 @@
     },
     "footer": {
         "rights": "© 2026 Sabores Exclusivos. Todos los derechos reservados."
+    },
+    "quiz": {
+        "step_indicator": "Paso {{current}} de {{total}}",
+        "gender_male": "Masculino",
+        "gender_female": "Femenino",
+        "btn_continue": "Continuar",
+        "btn_back": "Volver",
+        "btn_results": "Ver Resultado",
+        "calculating_title": "Analizando tus datos...",
+        "calculating_desc": "Armando tu plan personalizado basado en tu metabolismo.",
+        "results_title": "¡Plan Calculado con Éxito!",
+        "results_subtitle": "Basado en tus datos, esto es lo que tu cuerpo necesita:",
+        "bmr_label": "Metabolismo Basal",
+        "tdee_label": "Gasto Diario (TDEE)",
+        "bulk_label": "Meta para Ganar Peso",
+        "breakfast_recommendation": "Tu desayuno ideal debe tener <strong>{{calories}} kcal</strong> para alcanzar esta meta.",
+        "cta_text": "¿Quieres las recetas exactas y el paso a paso para llegar a este resultado sin error?",
+        "cta_button": "Acceder al Club Sabores Exclusivos"
     }
 }
