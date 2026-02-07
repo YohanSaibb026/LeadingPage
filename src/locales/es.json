@@ -46,7 +46,7 @@
                 },
                 "1": {
                     "q": "¿Cuesta caro tener una dieta?",
-                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de la App está en transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor."
+                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de la App está em transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor."
                 },
                 "2": {
                     "q": "¿Es necesario comer en grandes cantidades para crecer?",
@@ -63,7 +63,7 @@
             "items": [
                 "Personas que desean eliminar la duda al cocinar, basta de perder tiempo planeando qué comer.",
                 "Para quienes desean sentirse cómodos, teniendo una gran variedad de receitas estratégicas en la palma de su mano para lograr su objetivo.",
-                "Para quienes buscan destacarse de los demás, dominando decenas de receitas deliciosas que pocos conocen, hechas con los mismos ingredientes simples."
+                "Para quienes buscan destacarse de los demás, dominando decenas de receitas deliciosas que pocos conocen, hechas con os mesmos ingredientes simples."
             ]
         },
         "pricing": {
@@ -173,6 +173,9 @@
             "abandono": "⏳ Abandoné el proceso a mitad del camino",
             "desconocimiento": "❓ No sabía qué ni cuánto comer",
             "motivacion": "😕 No veía resultados y perdí motivación"
+        },
+        "step7_failure_tips": {
+            "malestar": "El malestar suele aparecer cuando se come en exceso o durante mucho tiempo alimentos poco adecuados. Esto genera pesadez, náuseas y incomodidad. Es algo muy común, y por eso es importante tener un plan claro desde el desayuno."
         },
         "step7_first_title": "Como es tu primera vez, aquí tienes un consejo:",
         "step7_first_tip": "Cuando es la primera vez, lo más importante es tener un plan estratégico. Evita errores comunes como comer en grandes cantidades en todas las comidas y aprende a sustituir alimentos que frenen tu progreso, empezando por el desayuno."

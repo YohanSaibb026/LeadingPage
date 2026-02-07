@@ -17,7 +17,7 @@ export default function Quiz() {
     const [isCalculating, setIsCalculating] = useState(false);
     const [results, setResults] = useState<{ bmr: number; tdee: number; bulk: number; breakfast: number } | null>(null);
 
-    const stepsCount = 7;
+    const stepsCount = 8;
 
     const nextStep = () => {
         if (step < stepsCount - 1) {
@@ -270,7 +270,7 @@ export default function Quiz() {
                                             <p>{t('quiz.step7_first_tip')}</p>
                                         </div>
                                         <button className="btn-quiz-next" onClick={nextStep}>
-                                            {t('quiz.btn_results')} <CheckCircle2 size={20} />
+                                            {t('quiz.btn_continue')} <ArrowRight size={20} />
                                         </button>
                                     </div>
                                 ) : (
@@ -287,6 +287,36 @@ export default function Quiz() {
                                         </button>
                                         <button className="activity-option-card" onClick={() => { setFailReason('motivacion'); nextStep(); }}>
                                             {t('quiz.step7_failed_options.motivacion')}
+                                        </button>
+                                    </div>
+                                )}
+                            </div>
+                        )}
+
+                        {step === 7 && (
+                            <div className="quiz-step-branch animate-fade-in">
+                                {history === 'first' ? (
+                                    <div className="tips-step">
+                                        <div className="tip-box">
+                                            <h3>{t('quiz.calculating_title')}</h3>
+                                            <p>{t('quiz.calculating_desc')}</p>
+                                        </div>
+                                        <button className="btn-quiz-next" onClick={nextStep}>
+                                            {t('quiz.btn_results')} <CheckCircle2 size={20} />
+                                        </button>
+                                    </div>
+                                ) : (
+                                    <div className="tips-step">
+                                        <div className="tip-box">
+                                            <h3>{t('quiz.step7_failed_title')}</h3>
+                                            {failReason === 'malestar' ? (
+                                                <p>{t('quiz.step7_failure_tips.malestar')}</p>
+                                            ) : (
+                                                <p>{t('quiz.step5_tips.' + mainGoal)}</p>
+                                            )}
+                                        </div>
+                                        <button className="btn-quiz-next" onClick={nextStep}>
+                                            {t('quiz.btn_results')} <CheckCircle2 size={20} />
                                         </button>
                                     </div>
                                 )}
