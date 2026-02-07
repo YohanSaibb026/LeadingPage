@@ -24,7 +24,7 @@
         "items": {
             "nicolas": "\"Essas refeições saudáveis mudaram completamente a forma como levo o meu dia\"",
             "dani": "\"Os smoothies já viraram parte da minha rotina todos os dias na faculdade\"",
-            "thiago": "\"Conhecer os temperos deu sabores a alimentos simples que nunca imaginei que poderiam ter\"",
+            "tiago": "\"Conhecer os temperos deu sabores a alimentos simples que nunca imaginei que poderiam ter\"",
             "lucia": "\"Sempre tive dificuldade para variar o café da manhã sem perder tempo. Hoje ficou tão fácil e tão gostoso que acabo fazendo pra mim e pra minha mãe também\"",
             "camilla": "\"As receitas são perfeitas, coloco o meu toque e ficam maravilhosas\"",
             "gina": "\"Posso dizer que já tenho a minha comida favorita\"",
@@ -46,7 +46,7 @@
                 },
                 "1": {
                     "q": "Custa caro ter uma dieta?",
-                    "a": "De maneira alguma! Você vai ganhar massa usando ingredientes que já fazem parte do seu dia a dia. O segredo do App está em transformar ingredientes básicos em dezenas de combinações diferentes, para você atingir seu objetivo sem cansar do sabor."
+                    "a": "De maneira alguma! Você vai ganhar massa usando ingredientes que já fazem parte do seu dia a dia. O segredo do App está em transformar ingredientes básicos em dezenas de combinações diferentes, para que apresente seu objetivo sem cansar do sabor."
                 },
                 "2": {
                     "q": "É necessário comer em grandes quantidades para crescer?",
@@ -88,13 +88,13 @@
             "age": "Idade",
             "weight": "Peso (kg)",
             "height": "Altura (cm)",
-            "activity": "Nível de Atividade",
+            "activity": "Nivel de Atividade",
             "activity_levels": {
                 "sedentary": "Sedentário (pouco ou nenhum exercício)",
                 "light": "Levemente ativo (1-3 dias/semana)",
                 "moderate": "Moderadamente ativo (3-5 dias/semana)",
                 "active": "Altamente ativo (6-7 dias/semana)",
-                "extra": "Extremamente ativo (treino intenso/atleta)"
+                "extra": "Extremadamente ativo (treino intenso/atleta)"
             },
             "calculate": "Calcular Meta",
             "results": {
@@ -153,7 +153,7 @@
         },
         "spec_options_bulk": {
             "5_10kg": "➕ Ganhar de 5 a 10 kg e parecer visivelmente mais forte",
-            "10kg_plus": "➕ Ganar mais de 10 kg e transformar completamente minha aparência"
+            "10kg_plus": "➕ Ganhar mais de 10 kg e transformar completamente minha aparência"
         },
         "step5_title": "Dica rápida para seu perfil:",
         "step5_tips": {
@@ -175,9 +175,10 @@
             "motivacion": "😕 Não via resultados e perdi a motivação"
         },
         "step7_failure_tips": {
-            "malestar": "O mal-estar costuma aparecer quando se come em excesso ou por muito tempo alimentos pouco adequados. Isso gera peso, náuseas e desconforto. É algo muito comum, por isso é importante ter um plano claro desde o café da manhã."
+            "malestar": "O mal-estar costuma aparecer quando se come em excesso ou por muito tempo alimentos pouco adequados. Isso gera peso, náuseas e desconforto. É algo muito comum, por isso é importante ter um plano claro desde o café da manhã.",
+            "desconocimiento": "Não ter um plano gera erros e frustração. Ter uma estratégia de receitas com os mesmos ingredientes que você já usa evita a desmotivação. Saber o que comer, em que momento e em que quantidades simplifica todo o processo."
         },
         "step7_first_title": "Como é sua primeira vez, aqui vai uma dica:",
-        "step7_first_tip": "Quando é a primeira vez, o mais importante é ter um plano estratégico. Evite erros comuns como comer demais em todas as refeições e aprenda a substituir alimentos que barram seu progresso."
+        "step7_first_tip": "Quando é a primeira vez, lo mais importante é ter um plano estratégico. Evite erros comuns como comer em grandes quantidades em todas as refeições e aprenda a substituir alimentos que barram seu progresso."
     }
 }

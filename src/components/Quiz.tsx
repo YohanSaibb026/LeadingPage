@@ -311,6 +311,8 @@ export default function Quiz() {
                                             <h3>{t('quiz.step7_failed_title')}</h3>
                                             {failReason === 'malestar' ? (
                                                 <p>{t('quiz.step7_failure_tips.malestar')}</p>
+                                            ) : failReason === 'desconocimiento' ? (
+                                                <p>{t('quiz.step7_failure_tips.desconocimiento')}</p>
                                             ) : (
                                                 <p>{t('quiz.step5_tips.' + mainGoal)}</p>
                                             )}
