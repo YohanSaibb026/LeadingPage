@@ -10,16 +10,17 @@ export default function Quiz() {
     const [weight, setWeight] = useState('');
     const [height, setHeight] = useState('');
     const [activity, setActivity] = useState('1.2');
+    const [mainGoal, setMainGoal] = useState<string>('');
+    const [specGoal, setSpecGoal] = useState<string>('');
+    const [history, setHistory] = useState<string>('');
+    const [failReason, setFailReason] = useState<string>('');
     const [isCalculating, setIsCalculating] = useState(false);
     const [results, setResults] = useState<{ bmr: number; tdee: number; bulk: number; breakfast: number } | null>(null);
 
-    const steps = [
-        { title: t('features.calculator.title'), icon: <User size={24} /> },
-        { title: t('features.calculator.activity'), icon: <Globe size={24} /> }
-    ];
+    const stepsCount = 7;
 
     const nextStep = () => {
-        if (step < steps.length - 1) {
+        if (step < stepsCount - 1) {
             setStep(step + 1);
         } else {
             calculate();
@@ -47,11 +48,11 @@ export default function Quiz() {
                 breakfast: Math.round(breakfast)
             });
             setIsCalculating(false);
-            setStep(steps.length); // Results step
+            setStep(stepsCount); // Result state
         }, 2500);
     };
 
-    const progress = ((step) / (steps.length)) * 100;
+    const progress = ((step) / (stepsCount)) * 100;
 
     if (isCalculating) {
         return (
@@ -74,7 +75,18 @@ export default function Quiz() {
                 <div className="results-hero glass-morphism">
                     <CheckCircle2 color="#10B981" size={48} />
                     <h1>{t('quiz.results_title')}</h1>
-                    <p>{t('quiz.results_subtitle')}</p>
+
+                    {history === 'failed' ? (
+                        <div className="failure-feedback animate-slide-up">
+                            <p className="premium-accent">{t('quiz.results_subtitle')}</p>
+                            <div className="tips-box-mini">
+                                <strong>{t('quiz.step7_failed_title')}</strong>
+                                <p>{t('quiz.step5_tips.' + mainGoal)}</p>
+                            </div>
+                        </div>
+                    ) : (
+                        <p>{t('quiz.results_subtitle')}</p>
+                    )}
 
                     <div className="quiz-results-grid">
                         <div className="quiz-result-card">
@@ -119,14 +131,14 @@ export default function Quiz() {
                 <div className="progress-bar-container">
                     <div className="progress-bar-fill" style={{ width: `${progress}%` }}></div>
                 </div>
-                <span className="step-indicator">{t('quiz.step_indicator', { current: step + 1, total: steps.length })}</span>
+                <span className="step-indicator">{t('quiz.step_indicator', { current: step + 1, total: stepsCount })}</span>
             </nav>
 
             <main className="quiz-content animate-slide-up">
                 <div className="quiz-card glass-morphism">
                     <div className="quiz-header">
-                        {steps[step].icon}
-                        <h2>{steps[step].title}</h2>
+                        <User size={24} color="var(--primary)" />
+                        <h2>{t(`quiz.step${step + 1}_title`, { defaultValue: t('features.calculator.title') })}</h2>
                     </div>
 
                     <div className="quiz-body">
@@ -172,15 +184,86 @@ export default function Quiz() {
                                         <button
                                             key={opt.val}
                                             className={`activity-option-card ${activity === opt.val ? 'active' : ''}`}
-                                            onClick={() => setActivity(opt.val)}
+                                            onClick={() => { setActivity(opt.val); nextStep(); }}
                                         >
                                             {opt.label}
                                         </button>
                                     ))}
                                 </div>
-                                <button className="btn-quiz-next premium" onClick={nextStep}>
-                                    {t('features.calculator.calculate')} <Zap size={20} />
+                            </div>
+                        )}
+
+                        {step === 2 && (
+                            <div className="activity-options-list">
+                                <button className={`activity-option-card ${mainGoal === 'bulk' ? 'active' : ''}`} onClick={() => { setMainGoal('bulk'); nextStep(); }}>
+                                    {t('quiz.step3_options.bulk')}
                                 </button>
+                                <button className={`activity-option-card ${mainGoal === 'muscle' ? 'active' : ''}`} onClick={() => { setMainGoal('muscle'); nextStep(); }}>
+                                    {t('quiz.step3_options.muscle')}
+                                </button>
+                            </div>
+                        )}
+
+                        {step === 3 && (
+                            <div className="activity-options-list">
+                                <button className={`activity-option-card ${specGoal === 'skinny' ? 'active' : ''}`} onClick={() => { setSpecGoal('skinny'); nextStep(); }}>
+                                    {t('quiz.spec_options.bulk_skinny')}
+                                </button>
+                                <button className={`activity-option-card ${specGoal === 'lean' ? 'active' : ''}`} onClick={() => { setSpecGoal('lean'); nextStep(); }}>
+                                    {t('quiz.spec_options.muscle_lean')}
+                                </button>
+                            </div>
+                        )}
+
+                        {step === 4 && (
+                            <div className="quiz-tips-step animate-fade-in">
+                                <div className="tip-box">
+                                    <ChefHat className="tip-icon" size={32} />
+                                    <p>{mainGoal === 'bulk' ? t('quiz.step5_tips.bulk') : t('quiz.step5_tips.muscle')}</p>
+                                </div>
+                                <button className="btn-quiz-next" onClick={nextStep}>
+                                    {t('quiz.btn_continue')} <ArrowRight size={20} />
+                                </button>
+                            </div>
+                        )}
+
+                        {step === 5 && (
+                            <div className="activity-options-list">
+                                <button className={`activity-option-card ${history === 'first' ? 'active' : ''}`} onClick={() => { setHistory('first'); nextStep(); }}>
+                                    {t('quiz.step6_options.first')}
+                                </button>
+                                <button className={`activity-option-card ${history === 'failed' ? 'active' : ''}`} onClick={() => { setHistory('failed'); nextStep(); }}>
+                                    {t('quiz.step6_options.failed')}
+                                </button>
+                            </div>
+                        )}
+
+                        {step === 6 && (
+                            <div className="quiz-step-branch animate-fade-in">
+                                {history === 'first' ? (
+                                    <div className="tips-step">
+                                        <div className="tip-box">
+                                            <h3>{t('quiz.step7_first_title')}</h3>
+                                            <p>{t('quiz.step7_first_tip')}</p>
+                                        </div>
+                                        <button className="btn-quiz-next" onClick={nextStep}>
+                                            {t('quiz.btn_results')} <CheckCircle2 size={20} />
+                                        </button>
+                                    </div>
+                                ) : (
+                                    <div className="activity-options-list">
+                                        <h3 className="step-title-small">{t('quiz.step7_failed_title')}</h3>
+                                        <button className="activity-option-card" onClick={() => { setFailReason('diet'); nextStep(); }}>
+                                            {t('quiz.step7_failed_options.diet')}
+                                        </button>
+                                        <button className="activity-option-card" onClick={() => { setFailReason('consistency'); nextStep(); }}>
+                                            {t('quiz.step7_failed_options.consistency')}
+                                        </button>
+                                        <button className="activity-option-card" onClick={() => { setFailReason('training'); nextStep(); }}>
+                                            {t('quiz.step7_failed_options.training')}
+                                        </button>
+                                    </div>
+                                )}
                             </div>
                         )}
                     </div>

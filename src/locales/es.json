@@ -139,6 +139,34 @@
         "bulk_label": "Meta para Ganar Peso",
         "breakfast_recommendation": "Tu desayuno ideal debe tener <strong>{{calories}} kcal</strong> para alcanzar esta meta.",
         "cta_text": "¿Quieres las recetas exactas y el paso a paso para llegar a este resultado sin error?",
-        "cta_button": "Acceder al Club Sabores Exclusivos"
+        "cta_button": "Acceder al Club Sabores Exclusivos",
+        "step3_title": "¿Cuál es tu objetivo principal?",
+        "step3_options": {
+            "bulk": "Subir de peso y dejar de verme muy delgado",
+            "muscle": "Subir de peso desarrollando músculo"
+        },
+        "step4_title": "Más detalles sobre tu meta:",
+        "spec_options": {
+            "bulk_skinny": "Subir peso / apariencia magra",
+            "muscle_lean": "Subir peso / músculo"
+        },
+        "step5_title": "Consejo rápido para tu perfil:",
+        "step5_tips": {
+            "bulk": "El secreto es la densidad calórica. Prioriza batidos y snacks prácticos entre comidas.",
+            "muscle": "Enfócate en el aporte proteico y el excedente calórico limpio para no ganar grasa."
+        },
+        "step6_title": "¿Ya has intentado subir de peso antes?",
+        "step6_options": {
+            "first": "Es mi primera vez",
+            "failed": "Ya lo intenté y no funcionó"
+        },
+        "step7_failed_title": "¿Qué crees que falló anteriormente?",
+        "step7_failed_options": {
+            "diet": "No podía comer lo suficiente",
+            "consistency": "Falta de constancia en la rutina",
+            "training": "El entrenamiento no daba resultados"
+        },
+        "step7_first_title": "Como es tu primera vez, aquí tienes un consejo:",
+        "step7_first_tip": "La consistencia es más importante que la perfección. Empieza con 3 comidas sólidas y 2 batidos."
     }
 }

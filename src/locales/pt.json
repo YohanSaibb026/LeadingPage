@@ -143,6 +143,34 @@
         "bulk_label": "Meta para Ganho",
         "breakfast_recommendation": "Seu café da manhã ideal deve ter <strong>{{calories}} kcal</strong> para atingir essa meta.",
         "cta_text": "Quer as receitas exatas e o passo a passo para chegar nesse resultado sem erro?",
-        "cta_button": "Acessar Clube Sabores Exclusivos"
+        "cta_button": "Acessar Clube Sabores Exclusivos",
+        "step3_title": "Qual é o seu objetivo principal?",
+        "step3_options": {
+            "bulk": "Subir de peso e deixar de me ver muito magro(a)",
+            "muscle": "Subir de peso desenvolvendo músculos"
+        },
+        "step4_title": "Mais detalhes sobre sua meta:",
+        "spec_options": {
+            "bulk_skinny": "Ganhar peso rápido (aparência magra)",
+            "muscle_lean": "Ganhar massa magra com definição"
+        },
+        "step5_title": "Dica rápida para seu perfil:",
+        "step5_tips": {
+            "bulk": "O segredo é a densidade calórica. Priorize shakes e lanches práticos entre as refeições.",
+            "muscle": "Foque no aporte proteico e no excedente calórico limpo para não ganhar gordura."
+        },
+        "step6_title": "Você já tentou ganhar peso antes?",
+        "step6_options": {
+            "first": "É a minha primeira vez",
+            "failed": "Já tentei e não funcionou"
+        },
+        "step7_failed_title": "O que você acha que deu errado antes?",
+        "step7_failed_options": {
+            "diet": "Não conseguia comer o suficiente",
+            "consistency": "Falta de constância na rotina",
+            "training": "O treino não dava o resultado esperado"
+        },
+        "step7_first_title": "Como é o seu primeiro passo, aqui vai uma dica:",
+        "step7_first_tip": "A consistência é mais importante que a perfeição. Comece com 3 refeições sólidas e 2 shakes."
     }
 }
