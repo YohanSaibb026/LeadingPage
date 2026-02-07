@@ -138,7 +138,11 @@ export default function Quiz() {
                 <div className="quiz-card glass-morphism">
                     <div className="quiz-header">
                         <User size={24} color="var(--primary)" />
-                        <h2>{t(`quiz.step${step + 1}_title`, { defaultValue: t('features.calculator.title') })}</h2>
+                        <h2>
+                            {step === 3 && mainGoal === 'bulk'
+                                ? t('quiz.step4_title_bulk', { defaultValue: t('quiz.step4_title') })
+                                : t(`quiz.step${step + 1}_title`, { defaultValue: t('features.calculator.title') })}
+                        </h2>
                     </div>
 
                     <div className="quiz-body">
@@ -206,12 +210,25 @@ export default function Quiz() {
 
                         {step === 3 && (
                             <div className="activity-options-list">
-                                <button className={`activity-option-card ${specGoal === 'skinny' ? 'active' : ''}`} onClick={() => { setSpecGoal('skinny'); nextStep(); }}>
-                                    {t('quiz.spec_options.bulk_skinny')}
-                                </button>
-                                <button className={`activity-option-card ${specGoal === 'lean' ? 'active' : ''}`} onClick={() => { setSpecGoal('lean'); nextStep(); }}>
-                                    {t('quiz.spec_options.muscle_lean')}
-                                </button>
+                                {mainGoal === 'bulk' ? (
+                                    <>
+                                        <button className={`activity-option-card ${specGoal === '5_10kg' ? 'active' : ''}`} onClick={() => { setSpecGoal('5_10kg'); nextStep(); }}>
+                                            {t('quiz.spec_options_bulk.5_10kg')}
+                                        </button>
+                                        <button className={`activity-option-card ${specGoal === '10kg_plus' ? 'active' : ''}`} onClick={() => { setSpecGoal('10kg_plus'); nextStep(); }}>
+                                            {t('quiz.spec_options_bulk.10kg_plus')}
+                                        </button>
+                                    </>
+                                ) : (
+                                    <>
+                                        <button className={`activity-option-card ${specGoal === 'skinny' ? 'active' : ''}`} onClick={() => { setSpecGoal('skinny'); nextStep(); }}>
+                                            {t('quiz.spec_options.bulk_skinny')}
+                                        </button>
+                                        <button className={`activity-option-card ${specGoal === 'lean' ? 'active' : ''}`} onClick={() => { setSpecGoal('lean'); nextStep(); }}>
+                                            {t('quiz.spec_options.muscle_lean')}
+                                        </button>
+                                    </>
+                                )}
                             </div>
                         )}
 
