@@ -15,8 +15,7 @@ export default function Quiz() {
 
     const steps = [
         { title: t('features.calculator.title'), icon: <User size={24} /> },
-        { title: t('features.calculator.activity'), icon: <Globe size={24} /> },
-        { title: t('quiz.results_title'), icon: <CheckCircle2 size={24} /> }
+        { title: t('features.calculator.activity'), icon: <Globe size={24} /> }
     ];
 
     const nextStep = () => {
@@ -25,10 +24,6 @@ export default function Quiz() {
         } else {
             calculate();
         }
-    };
-
-    const prevStep = () => {
-        if (step > 0) setStep(step - 1);
     };
 
     const calculate = () => {
@@ -189,10 +184,6 @@ export default function Quiz() {
                             </div>
                         )}
                     </div>
-
-                    {step > 0 && (
-                        <button className="btn-quiz-back" onClick={prevStep}>{t('quiz.btn_back')}</button>
-                    )}
                 </div>
             </main>
         </div>
