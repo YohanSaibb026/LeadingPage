@@ -14,11 +14,9 @@ export default function Quiz() {
     const [results, setResults] = useState<{ bmr: number; tdee: number; bulk: number; breakfast: number } | null>(null);
 
     const steps = [
-        { title: t('features.calculator.gender'), icon: <User size={24} /> },
-        { title: t('features.calculator.age'), icon: <Calendar size={24} /> },
-        { title: t('features.calculator.weight'), icon: <Zap size={24} /> },
-        { title: t('features.calculator.height'), icon: <ShieldCheck size={24} /> },
-        { title: t('features.calculator.activity'), icon: <Globe size={24} /> }
+        { title: t('features.calculator.title'), icon: <User size={24} /> },
+        { title: t('features.calculator.activity'), icon: <Globe size={24} /> },
+        { title: t('quiz.results_title'), icon: <CheckCircle2 size={24} /> }
     ];
 
     const nextStep = () => {
@@ -138,47 +136,56 @@ export default function Quiz() {
 
                     <div className="quiz-body">
                         {step === 0 && (
-                            <div className="gender-options">
-                                <button className={`option-btn ${gender === 'male' ? 'active' : ''}`} onClick={() => { setGender('male'); nextStep(); }}>
-                                    {t('quiz.gender_male')}
-                                </button>
-                                <button className={`option-btn ${gender === 'female' ? 'active' : ''}`} onClick={() => { setGender('female'); nextStep(); }}>
-                                    {t('quiz.gender_female')}
+                            <div className="quiz-step-physics">
+                                <div className="input-group full-width">
+                                    <label>{t('features.calculator.gender')}</label>
+                                    <div className="gender-toggle-quiz">
+                                        <button className={`gender-btn ${gender === 'male' ? 'active' : ''}`} onClick={() => setGender('male')}>{t('quiz.gender_male')}</button>
+                                        <button className={`gender-btn ${gender === 'female' ? 'active' : ''}`} onClick={() => setGender('female')}>{t('quiz.gender_female')}</button>
+                                    </div>
+                                </div>
+                                <div className="physics-grid">
+                                    <div className="input-group">
+                                        <label>{t('features.calculator.age')}</label>
+                                        <input type="number" value={age} onChange={(e) => setAge(e.target.value)} placeholder="25" />
+                                    </div>
+                                    <div className="input-group">
+                                        <label>{t('features.calculator.weight')}</label>
+                                        <input type="number" value={weight} onChange={(e) => setWeight(e.target.value)} placeholder="70" />
+                                    </div>
+                                    <div className="input-group">
+                                        <label>{t('features.calculator.height')}</label>
+                                        <input type="number" value={height} onChange={(e) => setHeight(e.target.value)} placeholder="175" />
+                                    </div>
+                                </div>
+                                <button className="btn-quiz-next" disabled={!age || !weight || !height} onClick={nextStep}>
+                                    {t('quiz.btn_continue')} <ArrowRight size={20} />
                                 </button>
                             </div>
                         )}
 
                         {step === 1 && (
-                            <div className="input-step">
-                                <input type="number" value={age} onChange={(e) => setAge(e.target.value)} placeholder="Ex: 25" autoFocus onKeyDown={(e) => e.key === 'Enter' && age && nextStep()} />
-                                <button className="btn-quiz-next" disabled={!age} onClick={nextStep}>{t('quiz.btn_continue')} <ChevronDown size={20} style={{ transform: 'rotate(-90deg)' }} /></button>
-                            </div>
-                        )}
-
-                        {step === 2 && (
-                            <div className="input-step">
-                                <input type="number" value={weight} onChange={(e) => setWeight(e.target.value)} placeholder="Ex: 70 (kg)" autoFocus onKeyDown={(e) => e.key === 'Enter' && weight && nextStep()} />
-                                <button className="btn-quiz-next" disabled={!weight} onClick={nextStep}>{t('quiz.btn_continue')} <ChevronDown size={20} style={{ transform: 'rotate(-90deg)' }} /></button>
-                            </div>
-                        )}
-
-                        {step === 3 && (
-                            <div className="input-step">
-                                <input type="number" value={height} onChange={(e) => setHeight(e.target.value)} placeholder="Ex: 175 (cm)" autoFocus onKeyDown={(e) => e.key === 'Enter' && height && nextStep()} />
-                                <button className="btn-quiz-next" disabled={!height} onClick={nextStep}>{t('quiz.btn_continue')} <ChevronDown size={20} style={{ transform: 'rotate(-90deg)' }} /></button>
-                            </div>
-                        )}
-
-                        {step === 4 && (
-                            <div className="select-step">
-                                <select value={activity} onChange={(e) => setActivity(e.target.value)}>
-                                    <option value="1.2">{t('features.calculator.activity_levels.sedentary')}</option>
-                                    <option value="1.375">{t('features.calculator.activity_levels.light')}</option>
-                                    <option value="1.55">{t('features.calculator.activity_levels.moderate')}</option>
-                                    <option value="1.725">{t('features.calculator.activity_levels.active')}</option>
-                                    <option value="1.9">{t('features.calculator.activity_levels.extra')}</option>
-                                </select>
-                                <button className="btn-quiz-next" onClick={nextStep}>{t('quiz.btn_results')} <Play size={20} /></button>
+                            <div className="activity-list-step">
+                                <div className="activity-options-list">
+                                    {[
+                                        { val: '1.2', label: t('features.calculator.activity_levels.sedentary') },
+                                        { val: '1.375', label: t('features.calculator.activity_levels.light') },
+                                        { val: '1.55', label: t('features.calculator.activity_levels.moderate') },
+                                        { val: '1.725', label: t('features.calculator.activity_levels.active') },
+                                        { val: '1.9', label: t('features.calculator.activity_levels.extra') }
+                                    ].map((opt) => (
+                                        <button
+                                            key={opt.val}
+                                            className={`activity-option-card ${activity === opt.val ? 'active' : ''}`}
+                                            onClick={() => setActivity(opt.val)}
+                                        >
+                                            {opt.label}
+                                        </button>
+                                    ))}
+                                </div>
+                                <button className="btn-quiz-next premium" onClick={nextStep}>
+                                    {t('features.calculator.calculate')} <Zap size={20} />
+                                </button>
                             </div>
                         )}
                     </div>
