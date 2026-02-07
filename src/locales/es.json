@@ -169,9 +169,10 @@
         },
         "step7_failed_title": "¿Qué crees que falló anteriormente?",
         "step7_failed_options": {
-            "diet": "No podía comer lo suficiente",
-            "consistency": "Falta de constancia en la rutina",
-            "training": "El entrenamiento no daba resultados"
+            "malestar": "🤢 La alimentación me causó malestar",
+            "abandono": "⏳ Abandoné el proceso a mitad del camino",
+            "desconocimiento": "❓ No sabía qué ni cuánto comer",
+            "motivacion": "😕 No veía resultados y perdí motivación"
         },
         "step7_first_title": "Como es tu primera vez, aquí tienes un consejo:",
         "step7_first_tip": "Cuando es la primera vez, lo más importante es tener un plan estratégico. Evita errores comunes como comer en grandes cantidades en todas las comidas y aprende a sustituir alimentos que frenen tu progreso, empezando por el desayuno."

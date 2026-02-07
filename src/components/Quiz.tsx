@@ -276,14 +276,17 @@ export default function Quiz() {
                                 ) : (
                                     <div className="activity-options-list">
                                         <h3 className="step-title-small">{t('quiz.step7_failed_title')}</h3>
-                                        <button className="activity-option-card" onClick={() => { setFailReason('diet'); nextStep(); }}>
-                                            {t('quiz.step7_failed_options.diet')}
+                                        <button className="activity-option-card" onClick={() => { setFailReason('malestar'); nextStep(); }}>
+                                            {t('quiz.step7_failed_options.malestar')}
                                         </button>
-                                        <button className="activity-option-card" onClick={() => { setFailReason('consistency'); nextStep(); }}>
-                                            {t('quiz.step7_failed_options.consistency')}
+                                        <button className="activity-option-card" onClick={() => { setFailReason('abandono'); nextStep(); }}>
+                                            {t('quiz.step7_failed_options.abandono')}
                                         </button>
-                                        <button className="activity-option-card" onClick={() => { setFailReason('training'); nextStep(); }}>
-                                            {t('quiz.step7_failed_options.training')}
+                                        <button className="activity-option-card" onClick={() => { setFailReason('desconocimiento'); nextStep(); }}>
+                                            {t('quiz.step7_failed_options.desconocimiento')}
+                                        </button>
+                                        <button className="activity-option-card" onClick={() => { setFailReason('motivacion'); nextStep(); }}>
+                                            {t('quiz.step7_failed_options.motivacion')}
                                         </button>
                                     </div>
                                 )}
