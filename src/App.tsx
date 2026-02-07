@@ -610,6 +610,11 @@ function App() {
                     <a
                         href="https://pay.hotmart.com/V104194764B"
                         className="btn-cta-premium"
+                        onClick={() => {
+                            if (typeof window !== 'undefined' && (window as any).fbq) {
+                                (window as any).fbq('track', 'InitiateCheckout');
+                            }
+                        }}
                     >
                         {t('cta.button')}
                         <ArrowRight size={20} />
