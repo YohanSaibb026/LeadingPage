@@ -162,10 +162,10 @@
             "bulk_5_10kg": "La mejor estrategia es crear un superávit calórico inteligente, usando los carbohidratos como base y las grasas como complemento, priorizando las primeras comidas del día, especialmente el desayuno y el almuerzo.",
             "bulk_10kg_plus": "Para subir de peso de forma saludable, es clave tener un método claro. Cuando el proceso es más largo, esto evita frustración, malestar y abandono."
         },
-        "step6_title": "¿Ya has intentado subir de peso antes?",
+        "step6_title": "¿Ya intentaste subir de peso antes?",
         "step6_options": {
-            "first": "Es mi primera vez",
-            "failed": "Ya lo intenté y não funcionó"
+            "first": "🔹 Es mi primera vez intentando subir de peso",
+            "failed": "🔹 Ya lo intenté antes y tuve dificultades"
         },
         "step7_failed_title": "¿Qué crees que falló anteriormente?",
         "step7_failed_options": {
