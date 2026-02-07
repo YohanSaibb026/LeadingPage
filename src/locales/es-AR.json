@@ -122,5 +122,62 @@
     },
     "footer": {
         "rights": "© 2026 Sabores Exclusivos. Todos los derechos reservados."
+    },
+    "quiz": {
+        "step_indicator": "Paso {{current}} de {{total}}",
+        "gender_male": "Masculino",
+        "gender_female": "Femenino",
+        "btn_continue": "Continuar",
+        "btn_back": "Volver",
+        "btn_results": "Ver Resultado",
+        "calculating_title": "Analizando tus datos...",
+        "calculating_desc": "Armando tu plan personalizado basado en tu metabolismo.",
+        "results_title": "¡Plan Calculado con Éxito!",
+        "results_subtitle": "Basado en tus datos, esto es lo que tu cuerpo necesita:",
+        "bmr_label": "Metabolismo Basal",
+        "tdee_label": "Gasto Diario (TDEE)",
+        "bulk_label": "Meta para Ganar Peso",
+        "breakfast_recommendation": "Tu desayuno ideal debe tener <strong>{{calories}} kcal</strong> para alcanzar esta meta.",
+        "cta_text": "¿Quieres las receitas exactas y el paso a paso para llegar a este resultado sin error?",
+        "cta_button": "Acceder al Club Sabores Exclusivos",
+        "step3_title": "¿Cuál es tu objetivo principal?",
+        "step3_options": {
+            "bulk": "Ganar peso y perder la aparência delgada",
+            "muscle": "Ganar peso desarrollando músculo"
+        },
+        "step4_title": "Más detalles sobre tu meta:",
+        "step4_title_bulk": "¿Qué cambio te gustaría hacer?",
+        "spec_options": {
+            "bulk_skinny": "Subir peso / apariencia magra",
+            "muscle_lean": "Subir peso / músculo"
+        },
+        "spec_options_bulk": {
+            "5_10kg": "➕ Ganar de 5 a 10 kg y verme visiblemente más fuerte",
+            "10kg_plus": "➕ Ganar más de 10 kg y transformar por completo mi apariencia"
+        },
+        "step5_title": "Consejo rápido para tu perfil:",
+        "step5_tips": {
+            "bulk": "El secreto es la densidad calórica. Prioriza batidos y snacks prácticos entre comidas.",
+            "muscle": "Enfócate en el aporte proteico y el excedente calórico limpio para no ganar grasa.",
+            "bulk_5_10kg": "La mejor estrategia es crear un superávit calórico inteligente, usando los carbohidratos como base y las grasas como complemento, priorizando las primeras comidas del día, especialmente el desayuno y el almuerzo.",
+            "bulk_10kg_plus": "Para subir de peso de forma saludable, es clave tener un método claro. Cuando el proceso es más largo, esto evita frustración, malestar y abandono."
+        },
+        "step6_title": "¿Ya intentaste subir de peso antes?",
+        "step6_options": {
+            "first": "🔹 Es mi primera vez intentando subir de peso",
+            "failed": "🔹 Ya lo intenté antes y tuve dificultades"
+        },
+        "step7_failed_title": "¿Qué crees que falló anteriormente?",
+        "step7_failed_options": {
+            "malestar": "🤢 La alimentación me causó malestar",
+            "abandono": "⏳ Abandoné el proceso a mitad del camino",
+            "desconocimiento": "❓ No sabía qué ni cuánto comer",
+            "motivacion": "😕 No veía resultados y perdí motivación"
+        },
+        "step7_failure_tips": {
+            "malestar": "El malestar suele aparecer cuando se come en exceso o durante mucho tiempo alimentos poco adecuados. Esto genera pesadez, náuseas y incomodidad. Es algo muy común, y por eso é importante tener un plan claro desde el desayuno."
+        },
+        "step7_first_title": "Como es tu primera vez, aquí tienes un consejo:",
+        "step7_first_tip": "Cuando es la primera vez, lo más importante es tener un plan estratégico. Evita errores comunes como comer en grandes cantidades en todas las comidas y aprende a sustituir alimentos que frenen tu progreso, empezando por el desayuno."
     }
 }

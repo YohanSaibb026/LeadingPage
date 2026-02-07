@@ -5,15 +5,15 @@
         "download": "Baixar App"
     },
     "hero": {
-        "title": "<0>8 em cada 10 pessoas desistem</0> <1>nos primeiros 3 meses ao tentar ganhar peso e construir músculos</1>",
-        "subtitle": "As queixas mais comuns ouvidas nos consultórios são",
+        "title": "<0>8 em cada 10 pessoas desistem</0> <1>nos primeiros 3 meses ao tentar ganhar peso e massa muscular</1>",
+        "subtitle": "As queixas mais comuns ouvidas em consultórios são",
         "complaints": [
-            "Sentir-se desmotivado por falta de ideias do que comer",
-            "Mal-estar após comer excesso de alimentos não aconselhados",
-            "Pensar que uma dieta para aumentar peso custa caro"
+            "Sentir-se desmotivado por falta de ideias sobre o que comer",
+            "Mal-estar após comer demais alimentos não recomendados",
+            "Pensar que uma dieta para ganhar peso ou massa é cara"
         ],
-        "punchline_header": "Você tem dúvidas na hora de cozinhar?\nNão perca mais tempo planejando o que comer.",
-        "punchline_body": "Tenha uma grande variedade de receitas na palma da sua mão e destaque-se dos demais dominando dezenas de receitas deliciosas, feitas com os mesmos ingredientes simples.",
+        "punchline_header": "Tem dúvidas na hora de cozinhar?\nNão perca mais tempo planejando o que comer.",
+        "punchline_body": "As receitas mais recomendadas com os mesmos ingredientes simples que você já tem em casa",
         "punchline_footer": "Tenha uma grande variedade de receitas na palma da sua mão, domine as receitas mais deliciosas, feitas com os mesmos ingredientes simples e alcance seu objetivo.",
         "continue": "Continuar",
         "demo": "Ver Demonstração",
@@ -22,73 +22,69 @@
     "reviews": {
         "title": "Algumas experiências de nossos usuários",
         "items": {
-            "nicolas": "\"Estas comidas saudáveis mudaram completamente a forma como levo meu dia\"",
-            "dani": "\"Os smoothies já viraram parte da minha rotina todos os dias na universidade\"",
-            "thiago": "\"Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter\"",
-            "lucia": "\"Sempre tive dificuldade para variar o café da manhã sem perder tempo. Hoje se tornou tão fácil e tão delicioso que acabo fazendo para mim e para minha mãe também\"",
-            "camilla": "\"As receitas são perfeitas, adiciono meu toque e ficam maravilhosas\"",
-            "gina": "\"Posso dizer que já tenho minha comida favorita\"",
-            "pablo": "\"Sem dúvida, foi uma grande escolha que fiz e que me trouxe resultados\""
+            "nicolas": "\"Essas refeições saudáveis mudaram completamente a forma como levo o meu dia\"",
+            "dani": "\"Os smoothies já viraram parte da minha rotina todos os dias na faculdade\"",
+            "thiago": "\"Conhecer os temperos deu sabores a alimentos simples que nunca imaginei que poderiam ter\"",
+            "lucia": "\"Sempre tive dificuldade para variar o café da manhã sem perder tempo. Hoje ficou tão fácil e tão gostoso que acabo fazendo pra mim e pra minha mãe também\"",
+            "camilla": "\"As receitas são perfeitas, coloco o meu toque e ficam maravilhosas\"",
+            "gina": "\"Posso dizer que já tenho a minha comida favorita\"",
+            "pablo": "\"Sem dúvida, foi uma ótima escolha a que fiz e me trouxe resultados\""
         }
     },
     "features": {
         "title": "Por que Sabores Exclusivos?",
         "instant": {
             "title": "Os cafés da manhã, lanches e shakes mais recomendados, em um só lugar",
-            "desc": "Com dois anos de experiência e centenas de feedbacks reais, pudemos entender que o maior desafio é se reinventar dentro de uma rotina. Unimos nossa bagagem em nutrição para criar um App com as receitas que mais trouxeram resultados reais para nossos alunos. "
+            "desc": "Com dois anos de experiência e centenas de feedbacks reais, conseguimos entender que o maior desafio é se reinventar dentro de uma rotina. Unimos nossa experiência em nutrição para criar um App com as receitas que mais resultados reais trouxeram aos nossos alunos."
         },
         "faq_section": {
             "title": "Sempre com Você",
             "items": {
                 "0": {
-                    "q": "Porque cafés da manhã, lanches e shakes ?",
-                    "a": "Enquanto outros apps focam em refeições caras e complexas, nós focamos no que é prático. Como a primeira refeição do dia impacta diretamente sua meta de nutrientes, trazemos as melhores combinações para você não precisar 'correr atrás' de calorias no resto do dia"
+                    "q": "Por que cafés da manhã, lanches e shakes?",
+                    "a": "Enquanto outros apps focam em refeições caras e complexas, nós focamos no prático. Como a primeira refeição do dia impacta diretamente sua meta de nutrientes, trazemos as melhores combinações para você não precisar ficar caçando calorias no resto do dia."
                 },
                 "1": {
-                    "q": "Ter uma dieta custa caro ?",
-                    "a": "De jeito nenhum! Você vai ganhar músculos usando ingredientes que já fazem parte do seu dia a dia. O segredo do App está em transformar itens básicos em dezenas de combinações diferentes, para que você alcance seu objetivo sem enjoar do sabor"
+                    "q": "Custa caro ter uma dieta?",
+                    "a": "De maneira alguma! Você vai ganhar massa usando ingredientes que já fazem parte do seu dia a dia. O segredo do App está em transformar ingredientes básicos em dezenas de combinações diferentes, para você atingir seu objetivo sem cansar do sabor."
                 },
                 "2": {
-                    "q": "É necessário comer tudo em grandes quantidades se quiser crescer ?",
-                    "a": "Este pensamento é um erro comum. Comer demais os alimentos errados causa enjoos, indisposição e falta de apetite. Nossas receitas são estratégicas, garantem uma carga alta de nutrientes de forma leve. Assim, você evita o sacrifício de ter que 'empurrar' pratos enormes no almoço ou jantar"
+                    "q": "É necessário comer em grandes quantidades para crescer?",
+                    "a": "Este pensamento é um erro comum. Comer demais os alimentos errados causa enjoo, mal-estar e falta de apetite. Nossas receitas são estratégicas e garantem uma alta carga de nutrientes de forma leve. Assim, você evita o sacrifício de ter que se forçar a comer pratos enormes no almoço ou jantar."
                 }
             }
         },
-        "always": {
-            "title": "Sempre com Você",
-            "desc": "Acesse suas receitas favoritas de qualquer lugar, online ou offline."
-        },
         "transformations": {
             "title": "Transformações Reais",
-            "desc": "Mais do que receitas, entregamos resultados. Veja a evolução de quem seguiu nossos métodos."
+            "desc": "Mais que receitas, entregamos resultados. Veja a evolução de quem seguiu nossos métodos."
         },
         "target_audience": {
             "title": "Para quem é o Sabores Exclusivos?",
             "items": [
-                "Pessoas que desejam eliminar a dúvida na hora de cozinhar, chega de perder tempo planejando o que comer.",
-                "Para quem deseja se sentir confortável, tendo uma vasta variedade de receitas estratégicas na palma da mão para atingir seu objetivo.",
-                "Para quem busca destacar-se dos demais, dominando dezenas de receitas deliciosas que poucos conhecem, feitas com os mesmos ingredientes simples."
+                "Pessoas que desejam eliminar a dúvida ao cozinhar, chega de perder tempo planejando o que comer.",
+                "Para quem deseja se sentir confortável, tendo uma grande variedade de receitas estratégicas na palma da sua mão para conquistar seu objetivo.",
+                "Para quem busca se destacar dos demais, dominando dezenas de receitas deliciosas que poucos conhecem, feitas com os mesmos ingredientes simples."
             ]
         },
         "pricing": {
             "consultation": "Preço médio de uma consulta por <1>sessão</1>",
-            "consultation_price": "R$ 180 - R$ 220",
+            "consultation_price": "R$ 150 - R$ 300",
             "app_access": "App <1>Sabores Exclusivos</1> com acesso ilimitado",
-            "app_price": "R$ 40,00",
+            "app_price": "R$ 67,00",
             "promotion": {
-                "title": "A decisão que separa você do seu objetivo",
+                "title": "A decisão que te separa do seu objetivo",
                 "subtitle": "Garanta sua transformação nos próximos 6 meses e conheça sua melhor versão.",
                 "label": "Promoção por tempo limitado",
-                "price_from": "De R$ 40,00",
-                "price_to": "por R$ 27,90"
+                "price_from": "De R$ 67,00",
+                "price_to": "por R$ 29,90"
             }
         },
         "calculator": {
-            "title": "Descube sua meta para crescer",
-            "subtitle": "Calcule sua Taxa Metabólica Basal e veja quanto você precisa consumir para ganhar músculos.",
+            "title": "Descubra sua meta para crescer",
+            "subtitle": "Calcule sua Taxa Metabólica Basal e veja quanto você precisa consumir para ganhar massa.",
             "gender": "Gênero",
             "male": "Masculino",
-            "female": "Femenino",
+            "female": "Feminino",
             "age": "Idade",
             "weight": "Peso (kg)",
             "height": "Altura (cm)",
@@ -98,24 +94,24 @@
                 "light": "Levemente ativo (1-3 dias/semana)",
                 "moderate": "Moderadamente ativo (3-5 dias/semana)",
                 "active": "Altamente ativo (6-7 dias/semana)",
-                "extra": "Extremamente ativo (treino pesado/atleta)"
+                "extra": "Extremamente ativo (treino intenso/atleta)"
             },
             "calculate": "Calcular Meta",
             "results": {
                 "title": "Seus Resultados",
-                "bmr": "Seu corpo necessita:",
+                "bmr": "Seu corpo precisa de:",
                 "tdee": "Manter Peso:",
                 "bulk": "Para Crescer:",
                 "breakfast_recommendation": "Recomendação no café da manhã:",
                 "unit": "kcal",
-                "disclaimer": "Valores estimados com base na fórmula de Mifflin-St Jeor."
+                "disclaimer": "Valores estimados baseados na fórmula Mifflin-St Jeor."
             }
         }
     },
     "cta": {
-        "title": "Eleve sua experiência culinaria hoje",
-        "subtitle": "Acesso vitalício ao Sabores Exclusivos. Tudo o que você precisa para ganhar peso e construir músculos de forma saborosa e prática.",
-        "button": "Quero meu Acesso Vitalício Agora",
+        "title": "Eleve sua experiência culinária hoje",
+        "subtitle": "Acesso vitalício ao Sabores Exclusivos. Tudo o que você precisa para ganhar peso e construir massa de forma saborosa e prática.",
+        "button": "Quero meu acesso ilimitado agora",
         "guarantees": {
             "secure": "Pagamento 100% Seguro",
             "access": "Acesso Imediato",
@@ -149,28 +145,39 @@
             "bulk": "Subir de peso e deixar de me ver muito magro(a)",
             "muscle": "Subir de peso desenvolvendo músculos"
         },
+        "step4_title_bulk": "Que mudança você gostaria de fazer?",
         "step4_title": "Mais detalhes sobre sua meta:",
         "spec_options": {
             "bulk_skinny": "Ganhar peso rápido (aparência magra)",
             "muscle_lean": "Ganhar massa magra com definição"
         },
+        "spec_options_bulk": {
+            "5_10kg": "➕ Ganhar de 5 a 10 kg e parecer visivelmente mais forte",
+            "10kg_plus": "➕ Ganar mais de 10 kg e transformar completamente minha aparência"
+        },
         "step5_title": "Dica rápida para seu perfil:",
         "step5_tips": {
             "bulk": "O segredo é a densidade calórica. Priorize shakes e lanches práticos entre as refeições.",
-            "muscle": "Foque no aporte proteico e no excedente calórico limpo para não ganhar gordura."
+            "muscle": "Foque no aporte proteico e no excedente calórico limpo para não ganhar gordura.",
+            "bulk_5_10kg": "A melhor estratégia é criar um superávit calórico inteligente, usando carboidratos como base e gorduras como complemento, priorizando as primeiras refeições do dia.",
+            "bulk_10kg_plus": "Para ganhar peso de forma saudável, é fundamental ter um método claro. Quando o processo é mais longo, isso evita frustração e abandono."
         },
         "step6_title": "Você já tentou ganhar peso antes?",
         "step6_options": {
-            "first": "É a minha primeira vez",
-            "failed": "Já tentei e não funcionou"
+            "first": "🔹 É a minha primeira vez tentando ganhar peso",
+            "failed": "🔹 Já tentei antes e tive dificuldades"
         },
         "step7_failed_title": "O que você acha que deu errado antes?",
         "step7_failed_options": {
-            "diet": "Não conseguia comer o suficiente",
-            "consistency": "Falta de constância na rotina",
-            "training": "O treino não dava o resultado esperado"
+            "malestar": "🤢 A alimentação me causou mal-estar",
+            "abandono": "⏳ Abandonei o processo no meio do caminho",
+            "desconocimiento": "❓ Não sabia o que nem quanto comer",
+            "motivacion": "😕 Não via resultados e perdi a motivação"
         },
-        "step7_first_title": "Como é o seu primeiro passo, aqui vai uma dica:",
-        "step7_first_tip": "A consistência é mais importante que a perfeição. Comece com 3 refeições sólidas e 2 shakes."
+        "step7_failure_tips": {
+            "malestar": "O mal-estar costuma aparecer quando se come em excesso ou por muito tempo alimentos pouco adequados. Isso gera peso, náuseas e desconforto. É algo muito comum, por isso é importante ter um plano claro desde o café da manhã."
+        },
+        "step7_first_title": "Como é sua primeira vez, aqui vai uma dica:",
+        "step7_first_tip": "Quando é a primeira vez, o mais importante é ter um plano estratégico. Evite erros comuns como comer demais em todas as refeições e aprenda a substituir alimentos que barram seu progresso."
     }
 }
