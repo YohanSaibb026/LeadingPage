@@ -147,20 +147,27 @@
         },
         "step4_title": "Más detalles sobre tu meta:",
         "step4_title_bulk": "¿Qué cambio te gustaría hacer?",
+        "step4_title_muscle": "¿Qué prioridad tenés con el músculo?",
         "spec_options": {
             "bulk_skinny": "Subir peso / apariencia magra",
             "muscle_lean": "Subir peso / músculo"
         },
         "spec_options_bulk": {
-            "5_10kg": "➕ Ganar de 5 a 10 kg y verme visiblemente más fuerte",
+            "5_10kg": "➕ Ganar de 5 a 10 kg and verme visiblemente más fuerte",
             "10kg_plus": "➕ Ganar más de 10 kg e transformar por completo mi apariencia"
+        },
+        "spec_options_muscle": {
+            "specific": "💪 Desarrollar músculos específicos",
+            "balanced": "🏋️ Desarrollar el cuerpo de forma equilibrada"
         },
         "step5_title": "Consejo rápido para tu perfil:",
         "step5_tips": {
             "bulk": "El secreto es la densidad calórica. Prioriza batidos e snacks prácticos entre comidas.",
             "muscle": "Enfócate en el aporte proteico e el excedente calórico limpio para no ganar grasa.",
             "bulk_5_10kg": "La mejor estrategia es crear un superávit calórico inteligente, usando los carbohidratos como base y las grasas como complemento, priorizando las primeras comidas del día, especialmente el desayuno e el almuerzo.",
-            "bulk_10kg_plus": "Para subir de peso de forma saludable, es clave tener un método claro. Cuando el proceso es más largo, esto evita frustración, malestar e abandono."
+            "bulk_10kg_plus": "Para subir de peso de forma saludable, es clave tener un método claro. Cuando el proceso es más largo, esto evita frustración, malestar e abandono.",
+            "muscle_specific": "Para desarrollar músculos específicos, el excedente calórico debe ir acompañado de un estímulo enfocado. No saltes comidas y asegurate de dormir al menos 7-8 horas para que el excedente calórico se transforme en músculo.",
+            "muscle_balanced": "El desarrollo equilibrado requiere una base sólida de nutrientes. Asegurate de variar tus fuentes de proteína y no descuides los micronutrientes, que son los que permiten que tu cuerpo funcione y crezca de forma armoniosa."
         },
         "step6_title": "¿Ya intentaste subir de peso antes?",
         "step6_options": {
@@ -177,7 +184,7 @@
         "step7_failure_tips": {
             "malestar": "El malestar suele aparecer cuando se come en exceso o durante mucho tiempo alimentos poco adecuados. Esto genera pesadez, náuseas y incomodidad. Es algo muy común, y por eso é importante tener un plan claro desde el desayuno.",
             "desconocimiento": "No tener un plan genera errores e frustración. Tener una estrategia de recetas con los mismos ingredientes que ya usas evita la desmotivación. Saber qué comer, en qué momento e en qué cantidades simplifica todo el proceso.",
-            "abandono": "En procesos largos, abandonar es común cuando no hay un método claro. Por eso, un plan estructurado desde el inicio hace que el progreso sea más visible y fácil de mantener.",
+            "abandono": "En procesos largos, abandonar es común cuando no hay un método claro. Por eso, un plan estruturado desde el inicio hace que el progreso sea más visible y fácil de mantener.",
             "motivacion": "Cuando te esfuerzas y no ves resultados, la motivación cae. Por eso, tener un plan claro y saber cómo ejecutarlo marca la diferencia. Ajustes estratégicos en la alimentación, desde la primera comida del día, acompañados de un buen descanso, ayudan a ver cambios reales más rápido."
         },
         "step7_first_title": "Como es tu primera vez, aquí tienes un consejo:",

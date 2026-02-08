@@ -141,7 +141,9 @@ export default function Quiz() {
                         <h2>
                             {step === 3 && mainGoal === 'bulk'
                                 ? t('quiz.step4_title_bulk', { defaultValue: t('quiz.step4_title') })
-                                : t(`quiz.step${step + 1}_title`, { defaultValue: t('features.calculator.title') })}
+                                : step === 3 && mainGoal === 'muscle'
+                                    ? t('quiz.step4_title_muscle', { defaultValue: t('quiz.step4_title') })
+                                    : t(`quiz.step${step + 1}_title`, { defaultValue: t('features.calculator.title') })}
                         </h2>
                     </div>
 
@@ -219,6 +221,15 @@ export default function Quiz() {
                                             {t('quiz.spec_options_bulk.10kg_plus')}
                                         </button>
                                     </>
+                                ) : mainGoal === 'muscle' ? (
+                                    <>
+                                        <button className={`activity-option-card ${specGoal === 'specific' ? 'active' : ''}`} onClick={() => { setSpecGoal('specific'); nextStep(); }}>
+                                            {t('quiz.spec_options_muscle.specific')}
+                                        </button>
+                                        <button className={`activity-option-card ${specGoal === 'balanced' ? 'active' : ''}`} onClick={() => { setSpecGoal('balanced'); nextStep(); }}>
+                                            {t('quiz.spec_options_muscle.balanced')}
+                                        </button>
+                                    </>
                                 ) : (
                                     <>
                                         <button className={`activity-option-card ${specGoal === 'skinny' ? 'active' : ''}`} onClick={() => { setSpecGoal('skinny'); nextStep(); }}>
@@ -241,7 +252,11 @@ export default function Quiz() {
                                             ? t('quiz.step5_tips.bulk_5_10kg')
                                             : specGoal === '10kg_plus'
                                                 ? t('quiz.step5_tips.bulk_10kg_plus')
-                                                : (mainGoal === 'bulk' ? t('quiz.step5_tips.bulk') : t('quiz.step5_tips.muscle'))}
+                                                : specGoal === 'specific'
+                                                    ? t('quiz.step5_tips.muscle_specific')
+                                                    : specGoal === 'balanced'
+                                                        ? t('quiz.step5_tips.muscle_balanced')
+                                                        : (mainGoal === 'bulk' ? t('quiz.step5_tips.bulk') : t('quiz.step5_tips.muscle'))}
                                     </p>
                                 </div>
                                 <button className="btn-quiz-next" onClick={nextStep}>

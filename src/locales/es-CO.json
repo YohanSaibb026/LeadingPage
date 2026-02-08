@@ -147,6 +147,7 @@
         },
         "step4_title": "Más detalles sobre tu meta:",
         "step4_title_bulk": "¿Qué cambio te gustaría hacer?",
+        "step4_title_muscle": "¿Qué prioridad tenés con el músculo?",
         "spec_options": {
             "bulk_skinny": "Subir peso / apariencia magra",
             "muscle_lean": "Subir peso / músculo"
@@ -155,12 +156,18 @@
             "5_10kg": "➕ Ganar de 5 a 10 kg y verme visiblemente más fuerte",
             "10kg_plus": "➕ Ganar más de 10 kg e transformar por completo mi apariencia"
         },
+        "spec_options_muscle": {
+            "specific": "💪 Desarrollar músculos específicos",
+            "balanced": "🏋️ Desarrollar el cuerpo de forma equilibrada"
+        },
         "step5_title": "Consejo rápido para tu perfil:",
         "step5_tips": {
             "bulk": "El secreto es la densidad calórica. Prioriza batidos e snacks prácticos entre comidas.",
             "muscle": "Enfócate en el aporte proteico e el excedente calórico limpio para no ganar grasa.",
             "bulk_5_10kg": "La mejor estrategia es crear un superávit calórico inteligente, usando los carbohidratos como base e las grasas como complemento, priorizando las primeras comidas del día, especialmente el desayuno e el almuerzo.",
-            "bulk_10kg_plus": "Para subir de peso de forma saludable, es clave tener un método claro. Cuando el proceso es más largo, esto evita frustración, malestar e abandono."
+            "bulk_10kg_plus": "Para subir de peso de forma saludable, es clave tener un método claro. Cuando el proceso es más largo, esto evita frustración, malestar e abandono.",
+            "muscle_specific": "Para desarrollar músculos específicos, el excedente calórico debe ir acompañado de un estímulo enfocado. No saltes comidas y priorizá el consumo de carbohidratos complejos antes del entrenamiento para tener la energía necesaria.",
+            "muscle_balanced": "El desarrollo equilibrado requiere una base sólida de nutrientes. Asegurate de variar tus fuentes de proteína y no descuides los micronutrientes, que son los que permiten que tu cuerpo funcione y crezca de forma armoniosa."
         },
         "step6_title": "¿Ya intentaste subir de peso antes?",
         "step6_options": {

@@ -109,12 +109,12 @@
         }
     },
     "cta": {
-        "title": "Eleve sua experiência culinária hoje",
+        "title": "Eleve sua experiência culinaria hoje",
         "subtitle": "Acesso vitalício ao Sabores Exclusivos. Tudo o que você precisa para ganhar peso e construir massa de forma saborosa e prática.",
         "button": "Quero meu acesso ilimitado agora",
         "guarantees": {
             "secure": "Pagamento 100% Seguro",
-            "access": "Acesso Imediato",
+            "access": "Acesso Inmediato",
             "warranty": "Garantia de 7 dias"
         },
         "urgency": "A oferta expira em:",
@@ -135,7 +135,7 @@
         "results_title": "Plano Calculado com Sucesso!",
         "results_subtitle": "Com base nos seus dados, aqui está o que seu corpo precisa:",
         "bmr_label": "Metabolismo Basal",
-        "tdee_label": "Gasto Diário (TDEE)",
+        "tdee_label": "Gasto Diario (TDEE)",
         "bulk_label": "Meta para Ganho",
         "breakfast_recommendation": "Seu café da manhã ideal deve ter <strong>{{calories}} kcal</strong> para atingir essa meta.",
         "cta_text": "Quer as receitas exatas e o passo a passo para chegar nesse resultado sem erro?",
@@ -145,8 +145,9 @@
             "bulk": "Subir de peso e deixar de me ver muito magro(a)",
             "muscle": "Subir de peso desenvolvendo músculos"
         },
-        "step4_title_bulk": "Que mudança você gostaria de fazer?",
         "step4_title": "Mais detalhes sobre sua meta:",
+        "step4_title_bulk": "Que mudança você gostaria de fazer?",
+        "step4_title_muscle": "Qual é sua prioridade com o músculo?",
         "spec_options": {
             "bulk_skinny": "Ganhar peso rápido (aparência magra)",
             "muscle_lean": "Ganhar massa magra com definição"
@@ -155,12 +156,18 @@
             "5_10kg": "➕ Ganar de 5 a 10 kg e parecer visivelmente mais forte",
             "10kg_plus": "➕ Ganar mais de 10 kg e transformar completamente minha aparência"
         },
+        "spec_options_muscle": {
+            "specific": "💪 Desenvolver músculos específicos",
+            "balanced": "🏋️ Desenvolver o corpo de forma equilibrada"
+        },
         "step5_title": "Dica rápida para seu perfil:",
         "step5_tips": {
             "bulk": "O segredo é a densidade calórica. Priorize shakes e lanches práticos entre as refeições.",
             "muscle": "Foque no aporte proteico e no excedente calórico limpo para não ganhar gordura.",
             "bulk_5_10kg": "A melhor estratégia é criar um superávit calórico inteligente, usando carboidratos como base e gorduras como complemento, priorizando as primeiras refeições do dia.",
-            "bulk_10kg_plus": "Para ganhar peso de forma saudável, é fundamental ter um método claro. Quando o processo é mais longo, isso evita frustração e abandono."
+            "bulk_10kg_plus": "Para ganhar peso de forma saudável, é fundamental ter um método claro. Quando o processo é mais longo, isso evita frustração e abandono.",
+            "muscle_specific": "Para desenvolver músculos específicos, o excedente calórico deve ser acompanhado de um estímulo focado. Não pule refeições e priorize o consumo de carboidratos complexos antes do treino para ter a energia necessária.",
+            "muscle_balanced": "O desenvolvimento equilibrado exige uma base sólida de nutrientes. Certifique-se de variar suas fontes de proteína e não descuide dos micronutrientes, que permitem que seu corpo funcione e cresça de forma harmoniosa."
         },
         "step6_title": "Você já tentou ganhar peso antes?",
         "step6_options": {
@@ -176,11 +183,11 @@
         },
         "step7_failure_tips": {
             "malestar": "O mal-estar costuma aparecer quando se come em excesso ou por muito tempo alimentos pouco adequados. Isso gera peso, náuseas e desconforto. É algo muito comum, por isso é importante ter um plano claro desde o café da manhã.",
-            "desconocimiento": "Não ter um plano gera erros e frustração. Ter uma estratégia de receitas com os mesmos ingredientes que você já usa evita a desmotivação. Saber o que comer, em que momento e em que quantidades simplifica todo o processo.",
+            "desconocimiento": "Não ter um plan gera erros e frustração. Ter uma estratégia de receitas com os mesmos ingredientes que você já usa evita a desmotivação. Saber o que comer, em que momento e em que quantidades simplifica todo o processo.",
             "abandono": "Em processos largos, abandonar é comum quando não há um método claro. Por isso, um plano estruturado desde o início faz com que o progresso seja mais visível e fácil de manter.",
             "motivacion": "Quando te esfuerzas y no ves resultados, la motivación cae. Por eso, tener un plan claro y saber cómo ejecutarlo marca la diferencia. Ajustes estratégicos en la alimentación, desde la primera comida del día, acompañados de un buen descanso, ayudan a ver cambios reales más rápido."
         },
         "step7_first_title": "Como é sua primeira vez, aqui vai uma dica:",
-        "step7_first_tip": "Quando é a primeira vez, lo mais importante é ter um plano estratégico. Evite erros comuns como comer em grandes quantidades em todas as refeições e aprenda a substituir alimentos que barram seu progresso."
+        "step7_first_tip": "Quando é a primeira vez, lo mais importante é ter um plano estratégico. Evite erros comunes como comer em grandes quantidades em todas as refeições e aprenda a substituir alimentos que barram seu progresso."
     }
 }
