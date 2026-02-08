@@ -88,17 +88,30 @@ export default function Quiz() {
                         <p>{t('quiz.results_subtitle')}</p>
                     )}
 
+                    <div className="goal-summary-badge animate-slide-up">
+                        <Zap size={18} fill="var(--primary)" color="var(--primary)" />
+                        <span>
+                            {t('quiz.results_summary.title')} <strong>
+                                {specGoal === '5_10kg' ? t('quiz.results_summary.bulk_5_10kg') :
+                                    specGoal === '10kg_plus' ? t('quiz.results_summary.bulk_10kg_plus') :
+                                        specGoal === 'specific' ? t('quiz.results_summary.muscle_specific') :
+                                            specGoal === 'balanced' ? t('quiz.results_summary.muscle_balanced') :
+                                                t(`quiz.step3_options.${mainGoal}`)}
+                            </strong>
+                        </span>
+                    </div>
+
                     <div className="quiz-results-grid">
                         <div className="quiz-result-card">
-                            <span>{t('quiz.bmr_label')}</span>
+                            <span>{t('quiz.calorie_cards.bmr')}</span>
                             <h3>{results.bmr} <small>kcal</small></h3>
                         </div>
                         <div className="quiz-result-card highlight">
-                            <span>{t('quiz.tdee_label')}</span>
+                            <span>{t('quiz.calorie_cards.maintenance')}</span>
                             <h3>{results.tdee} <small>kcal</small></h3>
                         </div>
                         <div className="quiz-result-card premium">
-                            <span>{t('quiz.bulk_label')}</span>
+                            <span>{t('quiz.calorie_cards.growth')}</span>
                             <h3>{results.bulk} <small>kcal</small></h3>
                         </div>
                     </div>
@@ -107,13 +120,14 @@ export default function Quiz() {
                         <ChefHat size={24} />
                         <p>
                             <Trans i18nKey="quiz.breakfast_recommendation" values={{ calories: results.breakfast }}>
-                                Seu café da manhã ideal deve ter <strong>{results.breakfast} kcal</strong> para atingir essa meta.
+                                Tu desayuno ideal debe tener <strong>{results.breakfast} kcal</strong> para alcanzar esta meta.
                             </Trans>
                         </p>
                     </div>
 
                     <div className="final-cta-box">
-                        <p>{t('quiz.cta_text')}</p>
+                        <p className="cta-promo-badge">{t('quiz.cta_promo')}</p>
+                        <p className="cta-description">{t('quiz.cta_text')}</p>
                         <a href="https://pay.hotmart.com/V104194764B" className="btn-cta-premium" onClick={() => { if (typeof window !== 'undefined' && (window as any).fbq) (window as any).fbq('track', 'InitiateCheckout'); }}>
                             {t('quiz.cta_button')}
                             <ArrowRight size={20} />

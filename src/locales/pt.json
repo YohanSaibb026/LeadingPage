@@ -134,12 +134,25 @@
         "calculating_desc": "Montando seu plano personalizado com base no seu metabolismo.",
         "results_title": "Plano Calculado com Sucesso!",
         "results_subtitle": "Com base nos seus dados, aqui está o que seu corpo precisa:",
+        "results_summary": {
+            "title": "Seu Objetivo Selecionado:",
+            "bulk_5_10kg": "Ganhar de 5 a 20 kg e parecer visivelmente mais forte",
+            "bulk_10kg_plus": "Ganhar mais de 10 kg e transformar sua aparência",
+            "muscle_specific": "Desenvolver músculos específicos (Glúteos e Pernas)",
+            "muscle_balanced": "Desenvolver o corpo de forma equilibrada"
+        },
+        "calorie_cards": {
+            "bmr": "Metabolismo Basal",
+            "maintenance": "Manter Peso",
+            "growth": "Meta para Ganho"
+        },
         "bmr_label": "Metabolismo Basal",
         "tdee_label": "Gasto Diario (TDEE)",
         "bulk_label": "Meta para Ganho",
         "breakfast_recommendation": "Seu café da manhã ideal deve ter <strong>{{calories}} kcal</strong> para atingir essa meta.",
         "cta_text": "Quer as receitas exatas e o passo a passo para chegar nesse resultado sem erro?",
-        "cta_button": "Acessar Clube Sabores Exclusivos",
+        "cta_button": "¡SIM, QUERO MEU PLANO PERSONALIZADO!",
+        "cta_promo": "Aproveite 57% de desconto hoje mesmo!",
         "step3_title": "Qual é o seu objetivo principal?",
         "step3_options": {
             "bulk": "Subir de peso e deixar de me ver muito magro(a)",
