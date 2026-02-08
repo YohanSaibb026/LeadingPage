@@ -9,7 +9,7 @@ export default function Quiz() {
     const [age, setAge] = useState('');
     const [weight, setWeight] = useState('');
     const [height, setHeight] = useState('');
-    const [activity, setActivity] = useState('1.2');
+    const [activity, setActivity] = useState('');
     const [mainGoal, setMainGoal] = useState<string>('');
     const [specGoal, setSpecGoal] = useState<string>('');
     const [history, setHistory] = useState<string>('');
@@ -190,12 +190,20 @@ export default function Quiz() {
                                         <button
                                             key={opt.val}
                                             className={`activity-option-card ${activity === opt.val ? 'active' : ''}`}
-                                            onClick={() => { setActivity(opt.val); nextStep(); }}
+                                            onClick={() => setActivity(opt.val)}
                                         >
                                             {opt.label}
                                         </button>
                                     ))}
                                 </div>
+                                <button
+                                    className="btn-quiz-next"
+                                    disabled={!activity}
+                                    onClick={nextStep}
+                                    style={{ marginTop: '1rem' }}
+                                >
+                                    {t('quiz.btn_continue')} <ArrowRight size={20} />
+                                </button>
                             </div>
                         )}
 
