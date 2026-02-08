@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// Build trigger: Reversion to 25/01 stable version
 import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart, ChevronDown, CheckCircle2, Lock, Clock } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
 import heroDish from './assets/hero-dish.png';
