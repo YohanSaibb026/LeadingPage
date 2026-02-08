@@ -55,7 +55,7 @@
             }
         },
         "transformations": {
-            "title": "Transformações Reais",
+            "title": "Transformações Reales",
             "desc": "Mais que receitas, entregamos resultados. Veja a evolução de quem seguiu nossos métodos."
         },
         "target_audience": {
@@ -152,8 +152,8 @@
             "muscle_lean": "Ganhar massa magra com definição"
         },
         "spec_options_bulk": {
-            "5_10kg": "➕ Ganhar de 5 a 10 kg e parecer visivelmente mais forte",
-            "10kg_plus": "➕ Ganhar mais de 10 kg e transformar completamente minha aparência"
+            "5_10kg": "➕ Ganar de 5 a 10 kg e parecer visivelmente mais forte",
+            "10kg_plus": "➕ Ganar mais de 10 kg e transformar completamente minha aparência"
         },
         "step5_title": "Dica rápida para seu perfil:",
         "step5_tips": {
@@ -177,7 +177,8 @@
         "step7_failure_tips": {
             "malestar": "O mal-estar costuma aparecer quando se come em excesso ou por muito tempo alimentos pouco adequados. Isso gera peso, náuseas e desconforto. É algo muito comum, por isso é importante ter um plano claro desde o café da manhã.",
             "desconocimiento": "Não ter um plano gera erros e frustração. Ter uma estratégia de receitas com os mesmos ingredientes que você já usa evita a desmotivação. Saber o que comer, em que momento e em que quantidades simplifica todo o processo.",
-            "abandono": "Em processos longos, abandonar é comum quando não há um método claro. Por isso, um plano estruturado desde o início faz com que o progresso seja mais visível e fácil de manter."
+            "abandono": "Em processos largos, abandonar é comum quando não há um método claro. Por isso, um plano estruturado desde o início faz com que o progresso seja mais visível e fácil de manter.",
+            "motivacion": "Quando te esfuerzas y no ves resultados, la motivación cae. Por eso, tener un plan claro y saber cómo ejecutarlo marca la diferencia. Ajustes estratégicos en la alimentación, desde la primera comida del día, acompañados de un buen descanso, ayudan a ver cambios reales más rápido."
         },
         "step7_first_title": "Como é sua primeira vez, aqui vai uma dica:",
         "step7_first_tip": "Quando é a primeira vez, lo mais importante é ter um plano estratégico. Evite erros comuns como comer em grandes quantidades em todas as refeições e aprenda a substituir alimentos que barram seu progresso."
