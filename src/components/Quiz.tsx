@@ -56,7 +56,7 @@ export default function Quiz() {
 
     if (isCalculating) {
         return (
-            <div className="quiz-container full-screen flex-center">
+            <div className="quiz-container full-screen flex-center light-mode-quiz">
                 <div className="calculating-overlay animate-fade-in">
                     <div className="spinner-wrapper">
                         <div className="premium-spinner"></div>
@@ -71,7 +71,7 @@ export default function Quiz() {
 
     if (results) {
         return (
-            <div className="quiz-container animate-fade-in">
+            <div className="quiz-container animate-fade-in light-mode-quiz">
                 <div className="results-hero glass-morphism">
                     <CheckCircle2 color="#10B981" size={48} />
                     <h1>{t('quiz.results_title')}</h1>
@@ -125,7 +125,7 @@ export default function Quiz() {
     }
 
     return (
-        <div className="quiz-container">
+        <div className="quiz-container light-mode-quiz">
             <nav className="quiz-nav">
                 <ChefHat size={32} />
                 <div className="progress-bar-container">
