@@ -84,7 +84,7 @@
             "subtitle": "Calcule sua Taxa Metabólica Basal e veja quanto você precisa consumir para ganhar massa.",
             "gender": "Gênero",
             "male": "Masculino",
-            "female": "Feminino",
+            "female": "Femenino",
             "age": "Idade",
             "weight": "Peso (kg)",
             "height": "Altura (cm)",
@@ -128,7 +128,7 @@
         "gender_male": "Masculino",
         "gender_female": "Feminino",
         "btn_continue": "Continuar",
-        "btn_back": "Voltar",
+        "btn_back": "Volver",
         "btn_results": "Ver Resultado",
         "calculating_title": "Analisando seus dados...",
         "calculating_desc": "Montando seu plano personalizado com base no seu metabolismo.",
@@ -176,7 +176,8 @@
         },
         "step7_failure_tips": {
             "malestar": "O mal-estar costuma aparecer quando se come em excesso ou por muito tempo alimentos pouco adequados. Isso gera peso, náuseas e desconforto. É algo muito comum, por isso é importante ter um plano claro desde o café da manhã.",
-            "desconocimiento": "Não ter um plano gera erros e frustração. Ter uma estratégia de receitas com os mesmos ingredientes que você já usa evita a desmotivação. Saber o que comer, em que momento e em que quantidades simplifica todo o processo."
+            "desconocimiento": "Não ter um plano gera erros e frustração. Ter uma estratégia de receitas com os mesmos ingredientes que você já usa evita a desmotivação. Saber o que comer, em que momento e em que quantidades simplifica todo o processo.",
+            "abandono": "Em processos longos, abandonar é comum quando não há um método claro. Por isso, um plano estruturado desde o início faz com que o progresso seja mais visível e fácil de manter."
         },
         "step7_first_title": "Como é sua primeira vez, aqui vai uma dica:",
         "step7_first_tip": "Quando é a primeira vez, lo mais importante é ter um plano estratégico. Evite erros comuns como comer em grandes quantidades em todas as refeições e aprenda a substituir alimentos que barram seu progresso."
