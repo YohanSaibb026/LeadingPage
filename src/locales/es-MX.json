@@ -26,7 +26,7 @@
             "dani": "\"Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad\"",
             "thiago": "\"Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener\"",
             "lucia": "\"Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también\"",
-            "camilla": "\"Las recetas son perfectas, les agrego mi toque y quedan maravillosas\"",
+            "camilla": "\"Las recetas son perfectas, les agrego mi toque y quedan maravilosas\"",
             "gina": "\"Puedo decir que ya tengo mi comida favorita\"",
             "pablo": "\"Sin duda, fue una gran elección la que hice y me trajo resultados\""
         }
@@ -134,25 +134,12 @@
         "calculating_desc": "Armando tu plan personalizado basado en tu metabolismo.",
         "results_title": "¡Plan Calculado con Éxito!",
         "results_subtitle": "Basado en tus datos, esto es lo que tu cuerpo necesita:",
-        "results_summary": {
-            "title": "Tu Objetivo Seleccionado:",
-            "bulk_5_10kg": "Ganar de 5 a 20 kg y verse visiblemente más fuerte",
-            "bulk_10kg_plus": "Ganar más de 10 kg e transformar tu apariencia",
-            "muscle_specific": "Desarrollar músculos específicos (Glúteos y Piernas)",
-            "muscle_balanced": "Desarrollar el cuerpo de forma equilibrada"
-        },
-        "calorie_cards": {
-            "bmr": "Metabolismo Basal",
-            "maintenance": "Mantener Peso",
-            "growth": "Meta para Crecer"
-        },
         "bmr_label": "Metabolismo Basal",
         "tdee_label": "Gasto Diario (TDEE)",
         "bulk_label": "Meta para Ganar Peso",
         "breakfast_recommendation": "Tu desayuno ideal debe tener <strong>{{calories}} kcal</strong> para alcanzar esta meta.",
-        "cta_text": "¿Quieres las recetas exactas y el paso a paso para llegar a este resultado sin error?",
-        "cta_button": "¡SÍ, QUIERO MI PLAN PERSONALIZADO!",
-        "cta_promo": "¡Aprovecha el 57% de descuento hoy mismo!",
+        "cta_text": "¿Quieres las receitas exactas y el paso a paso para llegar a este resultado sin error?",
+        "cta_button": "Acceder al Club Sabores Exclusivos",
         "step3_title": "¿Cuál es tu objetivo principal?",
         "step3_options": {
             "bulk": "Ganar peso y perder la aparência delgada",
@@ -180,7 +167,7 @@
             "bulk_5_10kg": "La mejor estrategia es crear un superávit calórico inteligente, usando los carbohidratos como base y las grasas como complemento, priorizando las primeras comidas del día, especialmente el desayuno e el almuerzo.",
             "bulk_10kg_plus": "Para subir de peso de forma saludable, es clave tener un método claro. Cuando el proceso es más largo, esto evita frustración, malestar e abandono.",
             "muscle_specific": "Cuando el objetivo es desarrollar músculos específicos, como glúteos y piernas, la estrategia adecuada lo es todo.\nUna alimentación inteligente, con los carbohidratos como base y las grasas como apoyo, te ayuda a desarrollar los músculos que quieres sin acumular grasa innecesaria.",
-            "muscle_balanced": "Para desarrollar todo el cuerpo de forma equilibrada, además de ejercicios variados, una estrategia alimentaria bien definida marca la diferencia.\n\nSin un plan, es común exagerar en alimentos inadecuados o comer de forma incorrecta, lo que retrasa los resultados y puede causar malestar.\nTener un plan estructurado desde el desayuno ayuda a evitar estos problemas."
+            "muscle_balanced": "Para desarrollar todo el cuerpo de forma equilibrada, además de ejercicios variados, una estrategia alimentaria bien definida marca la diferencia.\n\nSin un plan, es común exagerar en alimentos inadecuados o comer de forma incorrecta, lo que retrasa los resultados y puede causar malestar.\nTener un plan estruturado desde el inicio hace que el progreso sea más visible y fácil de mantener."
         },
         "step6_title": "¿Ya intentaste subir de peso antes?",
         "step6_options": {
@@ -197,7 +184,7 @@
         "step7_failure_tips": {
             "malestar": "El malestar suele aparecer cuando se come en exceso o durante mucho tiempo alimentos poco adecuados. Esto genera pesadez, náuseas y incomodidad. Es algo muy común, y por eso é importante tener un plan claro desde el desayuno.",
             "desconocimiento": "No tener un plan genera errores e frustración. Tener una estrategia de recetas con los mismos ingredientes que ya usas evita la desmotivación. Saber qué comer, en qué momento e en qué cantidades simplifica todo el proceso.",
-            "abandono": "En procesos largos, abandonar es común cuando no hay un método claro. Por eso, un plan estruturado desde el inicio hace que el progreso sea más visible y fácil de mantener.",
+            "abandono": "En procesos largos, abandonar es común cuando no há un método claro. Por eso, un plan estruturado desde el inicio hace que el progreso sea mais visible y fácil de mantener.",
             "motivacion": "Cuando te esfuerzas y no ves resultados, la motivación cae. Por eso, tener un plan claro y saber cómo ejecutarlo marca la diferencia. Ajustes estratégicos en la alimentación, desde la primera comida del día, acompañados de un buen descanso, ayudan a ver cambios reales más rápido."
         },
         "step7_first_title": "Como es tu primera vez, aquí tienes un consejo:",

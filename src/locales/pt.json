@@ -134,18 +134,6 @@
         "calculating_desc": "Montando seu plano personalizado com base no seu metabolismo.",
         "results_title": "Plano Calculado com Sucesso!",
         "results_subtitle": "Com base nos seus dados, aqui está o que seu corpo precisa:",
-        "results_summary": {
-            "title": "Seu Objetivo Selecionado:",
-            "bulk_5_10kg": "Ganhar de 5 a 20 kg e parecer visivelmente mais forte",
-            "bulk_10kg_plus": "Ganhar mais de 10 kg e transformar sua aparência",
-            "muscle_specific": "Desenvolver músculos específicos (Glúteos e Pernas)",
-            "muscle_balanced": "Desenvolver o corpo de forma equilibrada"
-        },
-        "calorie_cards": {
-            "bmr": "Metabolismo Basal",
-            "maintenance": "Manter Peso",
-            "growth": "Meta para Ganho"
-        },
         "bmr_label": "Metabolismo Basal",
         "tdee_label": "Gasto Diario (TDEE)",
         "bulk_label": "Meta para Ganho",

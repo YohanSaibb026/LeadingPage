@@ -12,7 +12,7 @@
             "Malestar después de comer en exceso alimentos no recomendados",
             "Pensar que una dieta para subir de peso o ganar músculo es cara"
         ],
-        "punchline_header": "¿Tenés dudas a la hora de cocinar?\nDejá de perder tempo planeando qué comer.",
+        "punchline_header": "¿Tenús dudas a la hora de cocinar?\nDejá de perder tempo planeando qué comer.",
         "punchline_body": "Tené una gran variedad de recetas en la palma de tu mano e destacate de los demás dominando decenas de recetas deliciosas, hechas con los mismos ingredientes simples",
         "punchline_footer": "Tené una gran variedad de recetas en la palma de tu mano, dominá las recetas más deliciosas, hechas con los mismos ingredientes simples y alcanzá tu objetivo.",
         "continue": "Continuar",
@@ -134,25 +134,12 @@
         "calculating_desc": "Armando tu plan personalizado basado en tu metabolismo.",
         "results_title": "¡Plan Calculado con Éxito!",
         "results_subtitle": "Basado en tus datos, esto es lo que tu cuerpo necesita:",
-        "results_summary": {
-            "title": "Tu Objetivo Seleccionado:",
-            "bulk_5_10kg": "Ganar de 5 a 20 kg y verse visiblemente más fuerte",
-            "bulk_10kg_plus": "Ganar más de 10 kg y transformar tu apariencia",
-            "muscle_specific": "Desarrollar músculos específicos (Glúteos y Piernas)",
-            "muscle_balanced": "Desarrollar el cuerpo de forma equilibrada"
-        },
-        "calorie_cards": {
-            "bmr": "Metabolismo Basal",
-            "maintenance": "Mantener Peso",
-            "growth": "Meta para Crecer"
-        },
         "bmr_label": "Metabolismo Basal",
         "tdee_label": "Gasto Diario (TDEE)",
         "bulk_label": "Meta para Ganar Peso",
         "breakfast_recommendation": "Tu desayuno ideal debe tener <strong>{{calories}} kcal</strong> para alcanzar esta meta.",
-        "cta_text": "¿Quieres las recetas exactas y el paso a paso para llegar a este resultado sin error?",
-        "cta_button": "¡SÍ, QUIERO MI PLAN PERSONALIZADO!",
-        "cta_promo": "¡Aprovecha el 57% de desconto hoy mismo!",
+        "cta_text": "¿Quieres las receitas exactas y el paso a paso para llegar a este resultado sin error?",
+        "cta_button": "Acceder al Club Sabores Exclusivos",
         "step3_title": "¿Cuál es tu objetivo principal?",
         "step3_options": {
             "bulk": "Ganar peso y perder la aparência delgada",
