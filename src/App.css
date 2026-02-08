@@ -3927,18 +3927,23 @@
 }
 
 .light-mode-quiz .activity-option-card {
-    background: #f9fafb !important;
+    background: #FFFFFF !important;
     border: 1px solid #e5e7eb !important;
     color: #4b5563 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02) !important;
 }
 
 .light-mode-quiz .activity-option-card:hover {
-    background: #f3f4f6 !important;
+    background: #f9fafb !important;
+    border-color: #d1d5db !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05) !important;
 }
 
 .light-mode-quiz .activity-option-card.active {
-    background: rgba(251, 81, 59, 0.05) !important;
+    background: rgba(251, 81, 59, 0.04) !important;
+    border: 2px solid var(--primary) !important;
     color: var(--primary) !important;
+    box-shadow: 0 4px 12px rgba(251, 81, 59, 0.1) !important;
 }
 
 .light-mode-quiz .tip-box p,
@@ -3998,4 +4003,23 @@
     .option-btn {
         padding: 1.5rem 1rem;
     }
+}
+/* Professional Button Upgrades */
+.activity-option-card {
+    padding: 1.25rem 1.5rem !important;
+    border-radius: 16px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    font-size: 1.1rem !important;
+}
+
+.activity-option-card:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+.activity-option-card.active {
+    border: 2px solid var(--primary) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 15px rgba(251, 81, 59, 0.2) !important;
 }
