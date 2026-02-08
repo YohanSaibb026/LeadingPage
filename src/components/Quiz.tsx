@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ChefHat, ArrowRight, Zap, CheckCircle2, ChevronDown, User, Calendar, Smartphone, Globe, Clock, ShieldCheck, Play } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
+import bulkImg from '../assets/goal-bulk.jpg';
+import muscleImg from '../assets/goal-muscle.jpg';
 
 export default function Quiz() {
     const { t } = useTranslation();
@@ -209,11 +211,19 @@ export default function Quiz() {
 
                         {step === 2 && (
                             <div className="activity-options-list">
-                                <button className={`activity-option-card ${mainGoal === 'bulk' ? 'active' : ''}`} onClick={() => { setMainGoal('bulk'); nextStep(); }}>
-                                    {t('quiz.step3_options.bulk')}
+                                <button
+                                    className={`activity-option-card with-image ${mainGoal === 'bulk' ? 'active' : ''}`}
+                                    onClick={() => { setMainGoal('bulk'); nextStep(); }}
+                                >
+                                    <img src={bulkImg} alt="" className="option-image" />
+                                    <span className="option-text">{t('quiz.step3_options.bulk')}</span>
                                 </button>
-                                <button className={`activity-option-card ${mainGoal === 'muscle' ? 'active' : ''}`} onClick={() => { setMainGoal('muscle'); nextStep(); }}>
-                                    {t('quiz.step3_options.muscle')}
+                                <button
+                                    className={`activity-option-card with-image ${mainGoal === 'muscle' ? 'active' : ''}`}
+                                    onClick={() => { setMainGoal('muscle'); nextStep(); }}
+                                >
+                                    <img src={muscleImg} alt="" className="option-image" />
+                                    <span className="option-text">{t('quiz.step3_options.muscle')}</span>
                                 </button>
                             </div>
                         )}

@@ -4023,3 +4023,39 @@
     transform: translateY(-2px) !important;
     box-shadow: 0 4px 15px rgba(251, 81, 59, 0.2) !important;
 }
+
+/* Button Image Styles */
+.activity-option-card.with-image {
+    display: flex !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
+    padding: 0.8rem 1.2rem !important;
+}
+
+.option-image {
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 12px !important;
+    object-fit: cover !important;
+    flex-shrink: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.light-mode-quiz .option-image {
+    border: 1px solid #e5e7eb !important;
+}
+
+.option-text {
+    flex: 1;
+    font-family: 'Outfit', sans-serif;
+}
+
+.light-mode-quiz .with-image {
+    background: #FFFFFF !important;
+    border: 1px solid #e5e7eb !important;
+}
+
+.option-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
