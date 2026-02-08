@@ -94,7 +94,7 @@
                 "light": "Levemente ativo (1-3 dias/semana)",
                 "moderate": "Moderadamente ativo (3-5 dias/semana)",
                 "active": "Altamente ativo (6-7 dias/semana)",
-                "extra": "Extremadamente ativo (treino intenso/atleta)"
+                "extra": "Extremamente ativo (treino intenso/atleta)"
             },
             "calculate": "Calcular Meta",
             "results": {
@@ -166,7 +166,7 @@
             "muscle": "Foque no aporte proteico e no excedente calórico limpo para não ganhar gordura.",
             "bulk_5_10kg": "A melhor estratégia é criar um superávit calórico inteligente, usando carboidratos como base e gorduras como complemento, priorizando as primeiras refeições do dia.",
             "bulk_10kg_plus": "Para ganhar peso de forma saudável, é fundamental ter um método claro. Quando o processo é mais longo, isso evita frustração e abandono.",
-            "muscle_specific": "Para desenvolver músculos específicos, o excedente calórico deve ser acompanhado de um estímulo focado. Não pule refeições e priorize o consumo de carboidratos complexos antes do treino para ter a energia necessária.",
+            "muscle_specific": "Quando o objetivo é desenvolver músculos específicos, como glúteos e pernas, uma alimentação estratégica faz a diferença.\nUma abordagem inteligente, com carboidratos como base e gorduras como apoio, favorece o desenvolvimento muscular de forma eficiente e equilibrada.",
             "muscle_balanced": "O desenvolvimento equilibrado exige uma base sólida de nutrientes. Certifique-se de variar suas fontes de proteína e não descuide dos micronutrientes, que permitem que seu corpo funcione e cresça de forma harmoniosa."
         },
         "step6_title": "Você já tentou ganhar peso antes?",
@@ -185,7 +185,7 @@
             "malestar": "O mal-estar costuma aparecer quando se come em excesso ou por muito tempo alimentos pouco adequados. Isso gera peso, náuseas e desconforto. É algo muito comum, por isso é importante ter um plano claro desde o café da manhã.",
             "desconocimiento": "Não ter um plan gera erros e frustração. Ter uma estratégia de receitas com os mesmos ingredientes que você já usa evita a desmotivação. Saber o que comer, em que momento e em que quantidades simplifica todo o processo.",
             "abandono": "Em processos largos, abandonar é comum quando não há um método claro. Por isso, um plano estruturado desde o início faz com que o progresso seja mais visível e fácil de manter.",
-            "motivacion": "Quando te esfuerzas y no ves resultados, la motivación cae. Por eso, tener un plan claro y saber cómo ejecutarlo marca la diferencia. Ajustes estratégicos en la alimentación, desde la primera comida del día, acompañados de un buen descanso, ayudan a ver cambios reales más rápido."
+            "motivacion": "Quando te esfuerzas y no ves resultados, la motivación cae. Por eso, tener un plan claro y saber cómo ejecutarlo marca la diferencia. Ajustes estratégicos en la alimentación, desde la primeira comida del día, acompanhados de um bom descanso, ajudam a ver mudanças mais rápido."
         },
         "step7_first_title": "Como é sua primeira vez, aqui vai uma dica:",
         "step7_first_tip": "Quando é a primeira vez, lo mais importante é ter um plano estratégico. Evite erros comunes como comer em grandes quantidades em todas as refeições e aprenda a substituir alimentos que barram seu progresso."
