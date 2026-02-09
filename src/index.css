@@ -1,11 +1,11 @@
 :root {
     --primary: #fb513b;
     --primary-hover: #e04532;
-    --hero-bg: #1e293b;
-    --bg-dark: #1e293b;
-    --bg-card: #334155;
+    --hero-bg: #004D40;
+    --bg-dark: #004D40;
+    --bg-card: #00695C;
     --text-main: #f8fafc;
-    --text-muted: #94a3b8;
+    --text-muted: #80CBC4;
     --glass: rgba(255, 255, 255, 0.05);
     --border-glass: rgba(255, 255, 255, 0.1);
     --primary-gradient: linear-gradient(135deg, var(--primary) 0%, #fb923c 100%);

@@ -289,7 +289,7 @@
 /* --- HERO EVALUATION CARD --- */
 
 .mockup-card {
-    background-color: var(--bg-card);
+    background-color: #ffffff;
     border-radius: 40px;
     padding-top: 2rem;
     padding-left: 1rem;
@@ -302,7 +302,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.1);
     /* Very soft shadow */
 }
 
@@ -1242,7 +1242,7 @@
 }
 
 .showroom-card {
-    background-color: var(--bg-card);
+    background-color: #ffffff;
     border-radius: 60px;
     padding: 3.5rem 0.75rem 0;
     /* Reduced horizontal padding, increased top */
@@ -1251,7 +1251,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.1);
     /* Soft, premium shadow */
     overflow: hidden;
 }
@@ -1269,7 +1269,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     font-weight: 800;
-    color: var(--text-main);
+    color: #1e293b;
     line-height: 1;
 }
 
