@@ -433,6 +433,16 @@ function App() {
 
             <VideoPlayer />
 
+            <section className="video-caption-section">
+                <div className="caption-content">
+                    <div className="caption-decorator">
+                        <ChefHat size={32} strokeWidth={1.5} />
+                    </div>
+                    <h3 className="caption-title">Tem duvidas na hora de cozinhar?</h3>
+                    <p className="caption-subtitle">Não perca tempo planejando o que comer</p>
+                </div>
+            </section>
+
             {/* Stories Section */}
             <section className="reviews-stories">
                 <div className="stories-header">

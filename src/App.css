@@ -1483,6 +1483,69 @@
     user-select: none;
 }
 
+/* Video Caption Section */
+.video-caption-section {
+    padding: 4rem 1.5rem;
+    text-align: center;
+    background-color: var(--hero-bg);
+}
+
+.caption-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.caption-decorator {
+    color: var(--primary);
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    opacity: 0.8;
+}
+
+.caption-decorator::before,
+.caption-decorator::after {
+    content: "";
+    height: 1px;
+    width: 60px;
+    background: linear-gradient(to right, transparent, var(--primary), transparent);
+}
+
+.caption-title {
+    font-size: 1.8rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--text-main);
+    margin: 0 0 1rem;
+    letter-spacing: -0.01em;
+}
+
+.caption-subtitle {
+    font-size: 1.25rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: var(--text-main);
+    margin: 0;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .video-caption-section {
+        padding: 3rem 1.2rem;
+    }
+
+    .caption-title {
+        font-size: 1.4rem;
+    }
+
+    .caption-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
 /* BMR Calculator Styles */
 /* BMR Calculator Styles - Compact Light Theme */
 .bmr-calculator-section {
