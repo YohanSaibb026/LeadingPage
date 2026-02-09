@@ -502,20 +502,6 @@ function App() {
                 </div>
             </section>
 
-            {/* Target Audience Section */}
-            <section className="target-audience">
-                <div className="audience-content">
-                    <h2 className="section-title">{t('features.target_audience.title')}</h2>
-                    <div className="audience-list">
-                        {[0, 1, 2].map((idx) => (
-                            <div key={idx} className="audience-item">
-                                <CheckCircle2 className="check-icon" size={24} />
-                                <p>{t(`features.target_audience.items.${idx}`)}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
 
             {/* Price Comparison Section */}
             <section className="pricing-comparison">

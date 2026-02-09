@@ -170,8 +170,8 @@
 }
 
 .complaints-card {
-    background: rgba(0, 0, 0, 0.02);
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 40px;
     padding: 2.5rem 2rem;
     max-width: 100%;
@@ -289,7 +289,7 @@
 /* --- HERO EVALUATION CARD --- */
 
 .mockup-card {
-    background-color: #ffffff;
+    background-color: var(--bg-card);
     border-radius: 40px;
     padding-top: 2rem;
     padding-left: 1rem;
@@ -302,7 +302,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.2);
     /* Very soft shadow */
 }
 
@@ -495,7 +495,7 @@
     align-items: center;
     cursor: pointer;
     text-align: left;
-    color: #1e293b;
+    color: var(--text-main);
     font-family: 'Inter', sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
@@ -618,71 +618,23 @@
     font-family: 'Merriweather', serif;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #1e293b;
+    color: var(--text-main);
 }
 
 .transform-stats {
     font-family: 'Inter', sans-serif;
     font-size: 1.1rem;
     font-weight: 800;
-    color: #0f172a;
+    color: var(--text-main);
 }
 
 .transform-duration {
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
     font-weight: 500;
-    color: #64748b;
+    color: var(--text-muted);
 }
 
-/* CTA */
-.target-audience {
-    padding: 80px 2rem;
-    background-color: var(--bg-card);
-    /* Slightly different bg to separate sections */
-}
-
-.audience-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.audience-list {
-    display: grid;
-    gap: 1.5rem;
-    margin-top: 3rem;
-}
-
-.audience-item {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--border-glass);
-    border-radius: 16px;
-    text-align: left;
-    transition: transform 0.2s ease;
-}
-
-.audience-item:hover {
-    transform: translateX(10px);
-    background: rgba(255, 255, 255, 0.05);
-}
-
-.audience-item p {
-    font-size: 0.95rem;
-    color: var(--text-main);
-    margin: 0;
-    font-weight: 500;
-}
-
-.check-icon {
-    color: #10B981;
-    /* Green color for success/check */
-    flex-shrink: 0;
-}
 
 /* Pricing Comparison */
 .pricing-comparison {
@@ -1290,7 +1242,7 @@
 }
 
 .showroom-card {
-    background-color: #ffffff;
+    background-color: var(--bg-card);
     border-radius: 60px;
     padding: 3.5rem 0.75rem 0;
     /* Reduced horizontal padding, increased top */
@@ -1299,7 +1251,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.2);
     /* Soft, premium shadow */
     overflow: hidden;
 }
@@ -1317,7 +1269,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     font-weight: 800;
-    color: #1e293b;
+    color: var(--text-main);
     line-height: 1;
 }
 
@@ -1498,7 +1450,7 @@
 /* Punchline Divider */
 .punchline-divider {
     padding: 0.5rem 1.5rem 3.5rem;
-    background: linear-gradient(180deg, var(--hero-bg) 0%, rgba(255, 255, 255, 0.4) 50%, var(--hero-bg) 100%);
+    background: linear-gradient(180deg, var(--hero-bg) 0%, rgba(255, 255, 255, 0.05) 50%, var(--hero-bg) 100%);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -1561,17 +1513,17 @@
 /* BMR Calculator Styles - Compact Light Theme */
 .bmr-calculator-section {
     padding: 3rem 1rem;
-    background: #fdfcf8;
+    background: var(--bg-dark);
 }
 
 .calculator-container {
     max-width: 600px;
     margin: 0 auto;
     padding: 2rem 1.5rem;
-    background: white;
+    background: var(--bg-card);
     border-radius: 24px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--border-glass);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .calculator-header {
@@ -1765,6 +1717,7 @@
         font-size: 1.5rem;
     }
 }
+
 .breakfast-recommendation {
     margin-top: 1.5rem;
     padding: 1rem;
