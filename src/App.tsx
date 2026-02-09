@@ -25,7 +25,61 @@ import avatarPablo from './assets/avatar-pablo.jpg';
 import avatarCamilla from './assets/avatar-camilla.jpg';
 import avatarGina from './assets/avatar-gina.jpg';
 import mealGina from './assets/meal-gina.jpg';
+import videoCard from './assets/CARD.webm';
 import './App.css';
+
+const VideoPlayer = () => {
+    const videoRef = React.useRef<HTMLVideoElement>(null);
+
+    const handlePlay = () => {
+        if (videoRef.current && videoRef.current.paused) {
+            videoRef.current.play().catch(console.error);
+        }
+    };
+
+    React.useEffect(() => {
+        const video = videoRef.current;
+        if (!video) return;
+
+        // Force playback on mount and visibility change
+        const checkPlayback = () => {
+            if (document.visibilityState === 'visible' && video.paused) {
+                video.play().catch(console.error);
+            }
+        };
+
+        document.addEventListener('visibilitychange', checkPlayback);
+        window.addEventListener('focus', checkPlayback);
+
+        // Initial play attempt
+        video.play().catch(console.error);
+
+        return () => {
+            document.removeEventListener('visibilitychange', checkPlayback);
+            window.removeEventListener('focus', checkPlayback);
+        };
+    }, []);
+
+    return (
+        <section className="video-section">
+            <div className="video-wrapper">
+                <video
+                    ref={videoRef}
+                    src={videoCard}
+                    loop
+                    muted
+                    autoPlay
+                    playsInline
+                    preload="auto"
+                    disablePictureInPicture
+                    onPause={handlePlay}
+                    onContextMenu={(e) => e.preventDefault()}
+                    className="video-element"
+                />
+            </div>
+        </section>
+    );
+};
 
 const BrandBadge = ({ children }: { children?: React.ReactNode }) => (
     <span className="brand-badge">
@@ -377,14 +431,7 @@ function App() {
                 </div>
             </header>
 
-            <section className="punchline-divider">
-                <div className="punchline-content">
-                    <div className="punchline-decorator">
-                        <ChefHat size={32} strokeWidth={1.5} />
-                    </div>
-                    <p>{t('hero.punchline')}</p>
-                </div>
-            </section>
+            <VideoPlayer />
 
             {/* Stories Section */}
             <section className="reviews-stories">

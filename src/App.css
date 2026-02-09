@@ -1447,66 +1447,29 @@
     }
 }
 
-/* Punchline Divider */
-.punchline-divider {
-    padding: 0.5rem 1.5rem 3.5rem;
-    background: linear-gradient(180deg, var(--hero-bg) 0%, rgba(255, 255, 255, 0.05) 50%, var(--hero-bg) 100%);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.punchline-content {
-    max-width: 900px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.punchline-decorator {
-    color: var(--primary);
-    margin-bottom: 2rem;
+/* Video Section */
+.video-section {
+    padding: 0 1.5rem 4rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    opacity: 0.8;
+    background-color: var(--hero-bg);
 }
 
-.punchline-decorator::before,
-.punchline-decorator::after {
-    content: "";
-    height: 1px;
-    width: 60px;
-    background: linear-gradient(to right, transparent, var(--primary), transparent);
+.video-wrapper {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.2);
+    background: #000;
 }
 
-.punchline-content p {
-    font-size: 1.8rem;
-    font-family: 'Merriweather', serif;
-    font-weight: 700;
-    line-height: 1.4;
-    color: var(--text-main);
-    margin: 0;
-    letter-spacing: -0.01em;
-}
-
-@media (max-width: 768px) {
-    .punchline-divider {
-        padding: 0.5rem 1.2rem 2.5rem;
-    }
-
-    .punchline-decorator {
-        margin-bottom: 1.5rem;
-    }
-
-    .punchline-decorator::before,
-    .punchline-decorator::after {
-        width: 30px;
-    }
-
-    .punchline-content p {
-        font-size: 1.35rem;
-    }
+.video-element {
+    width: 100%;
+    height: auto;
+    display: block;
+    pointer-events: none;
+    user-select: none;
 }
 
 /* BMR Calculator Styles */
