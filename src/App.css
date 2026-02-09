@@ -170,16 +170,16 @@
 .complaints-card {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 28px;
-    padding: 1.2rem 1.5rem;
-    max-width: 650px;
+    border-radius: 32px;
+    padding: 2rem;
+    max-width: 750px;
     margin: 0 auto;
 }
 
 .subtitle-main {
-    font-size: 20px;
+    font-size: 22px;
     color: var(--text-main);
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
     line-height: 1.3;
     font-family: 'Merriweather', serif;
     font-weight: 700;
@@ -192,16 +192,16 @@
 }
 
 .complaints-list li {
-    font-size: 16px;
+    font-size: 18px;
     color: var(--text-main);
     line-height: 1.4;
     font-family: 'Merriweather', serif;
     display: flex;
-    gap: 0.6rem;
+    gap: 0.75rem;
     align-items: center;
     justify-content: center;
-    padding: 0.6rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .complaints-list li:last-child {
@@ -215,9 +215,9 @@
 .complaints-list .bullet {
     color: var(--primary);
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 0;
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.2rem;
 }
 
 .hero-btns {
@@ -1362,19 +1362,19 @@
     }
 
     .hero h1 {
-        font-size: 28px;
+        font-size: 32px;
         margin-bottom: 1.5rem;
     }
 
     .subtitle-main {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1.3;
         margin-bottom: 1rem;
     }
 
     .complaints-list li {
-        font-size: 14px;
-        padding: 0.5rem 0;
+        font-size: 16px;
+        padding: 0.7rem 0;
         justify-content: center;
     }
 
@@ -1388,8 +1388,8 @@
     }
 
     .complaints-card {
-        padding: 1rem;
-        border-radius: 24px;
+        padding: 1.5rem 1rem;
+        border-radius: 30px;
     }
 
     .hero-btns {
