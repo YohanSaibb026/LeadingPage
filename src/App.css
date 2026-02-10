@@ -1161,7 +1161,8 @@
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
-    min-width: 280px;
+    width: 300px;
+    min-width: 300px;
     scroll-snap-align: center;
 }
 
@@ -1181,8 +1182,8 @@
 
 .story-text-content {
     text-align: center;
-    max-width: 280px;
-    padding: 0 1rem;
+    width: 100%;
+    padding: 0 0.5rem;
 }
 
 .story-quote {
@@ -1210,8 +1211,7 @@
 }
 
 .story-card {
-    flex: 0 0 280px;
-    scroll-snap-align: center;
+    width: 100%;
     position: relative;
     aspect-ratio: 9/16;
     background: #000;
