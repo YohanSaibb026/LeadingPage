@@ -1633,11 +1633,11 @@
 }
 
 .showroom-caption {
-    font-size: 2.0rem;
-    /* Reduced per user request */
+    font-size: 2.2rem;
+    /* Restore slightly larger for the main part to create contrast */
     font-family: 'Merriweather', serif;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.2;
     color: var(--text-main);
     max-width: 1000px;
     margin: 4rem auto 2rem;
@@ -1650,10 +1650,23 @@
     padding: 0 1.5rem;
 }
 
+.caption-detail {
+    font-size: 1.8rem;
+    font-weight: 600;
+    opacity: 0.9;
+    display: block;
+    /* Force new line as seen in user's underline pattern if helpful, or keep inline for flow */
+    margin-top: 0.5rem;
+}
+
 @media (max-width: 768px) {
     .showroom-caption {
         font-size: 1.8rem;
         margin-top: 3rem;
+    }
+
+    .caption-detail {
+        font-size: 1.5rem;
     }
 }
 

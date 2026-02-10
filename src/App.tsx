@@ -496,7 +496,7 @@ function App() {
                 </div>
 
                 <h2 className="showroom-caption reveal reveal-delay-1">
-                    Cafés da manhã e Smoothies deliciosos para ganhar massa muscular — simples, práticos e com ingredientes do dia a dia
+                    Cafés da manhã e Smoothies <span className="caption-detail">deliciosos para ganhar massa muscular — simples, práticos e com ingredientes do dia a dia</span>
                 </h2>
             </section>
 
