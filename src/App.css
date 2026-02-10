@@ -163,6 +163,7 @@
     display: inline;
     color: var(--text-main);
     font-weight: 400;
+    font-size: 34px;
 }
 
 .hero-subtitle-container {
@@ -1370,6 +1371,14 @@
         font-size: 30px;
         margin-bottom: 1rem;
         font-weight: 700;
+    }
+
+    .text-gradient {
+        font-size: 34px;
+    }
+
+    .title-secondary {
+        font-size: 26px;
     }
 
     .hero-image {
