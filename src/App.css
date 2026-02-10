@@ -145,22 +145,24 @@
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 1.2;
     color: var(--text-main);
     margin-bottom: 2rem;
-    font-weight: 400;
-}
-
-.text-gradient {
-    color: var(--primary);
     font-weight: 700;
 }
 
+.text-gradient {
+    background: linear-gradient(to right, var(--primary), #ff8a71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: inherit;
+}
+
 .title-secondary {
-    font-size: 0.8em;
     display: inline;
     color: var(--text-main);
+    font-weight: inherit;
 }
 
 .hero-subtitle-container {
@@ -751,13 +753,11 @@
     background: linear-gradient(to right, var(--primary), #ff8a71);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 700;
-    font-size: 44px;
+    font-weight: inherit;
 }
 
 .title-secondary {
-    font-weight: 300;
-    font-size: 40px;
+    font-weight: inherit;
 }
 
 .price-divider {
@@ -1367,17 +1367,9 @@
     }
 
     .hero h1 {
-        font-size: 38px;
+        font-size: 30px;
         margin-bottom: 1rem;
-        font-weight: 300;
-    }
-
-    .text-gradient {
-        font-size: 40px;
-    }
-
-    .title-secondary {
-        font-size: 36px;
+        font-weight: 700;
     }
 
     .hero-image {
