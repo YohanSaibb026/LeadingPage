@@ -495,10 +495,10 @@ function App() {
                     </div>
                 </div>
 
-                <h2 className="showroom-caption reveal reveal-delay-1">
-                    Cafés da manhã e Smoothies <br />
-                    <span className="caption-detail">deliciosos para ganhar massa muscular — simples, práticos e com ingredientes do dia a dia</span>
-                </h2>
+                <div className="reveal reveal-delay-1">
+                    <h2 className="showroom-caption-main">Cafés da manhã e Smoothies</h2>
+                    <p className="showroom-caption-detail">deliciosos para ganhar massa muscular — simples, práticos e com ingredientes do dia a dia</p>
+                </div>
             </section>
 
             <BMRCalculator />
