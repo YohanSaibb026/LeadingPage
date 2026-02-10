@@ -307,6 +307,7 @@ const BMRCalculator = () => {
 function App() {
     const { t } = useTranslation();
     const [openFaq, setOpenFaq] = useState<number | null>(null);
+    const [activeTransform, setActiveTransform] = useState(0);
 
     const stories = [
         { name: 'Nicolás N.', fullName: 'Nicolás Navas', avatar: avatarNicolas, content: meal2, quote: 'Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter' },
@@ -536,7 +537,16 @@ function App() {
                         <div className="icon-wrapper"><Star /></div>
                         <h3>{t('features.transformations.title')}</h3>
                         <p>{t('features.transformations.desc')}</p>
-                        <div className="transformations-grid">
+                        <div
+                            className="transformations-grid"
+                            onScroll={(e) => {
+                                const container = e.currentTarget;
+                                const scrollLeft = container.scrollLeft;
+                                const itemWidth = container.offsetWidth;
+                                const index = Math.round(scrollLeft / itemWidth);
+                                setActiveTransform(index);
+                            }}
+                        >
                             {transformations.map((item, i) => (
                                 <div key={i} className="transform-item-wrapper">
                                     <div className="transform-item">
@@ -548,6 +558,14 @@ function App() {
                                         <span className="transform-duration">{item.duration}</span>
                                     </div>
                                 </div>
+                            ))}
+                        </div>
+                        <div className="transform-pagination">
+                            {transformations.map((_, i) => (
+                                <div
+                                    key={i}
+                                    className={`pagination-dot ${activeTransform === i ? 'active' : ''}`}
+                                />
                             ))}
                         </div>
                     </div>
