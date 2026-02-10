@@ -162,7 +162,7 @@
 .title-secondary {
     display: inline;
     color: var(--text-main);
-    font-weight: inherit;
+    font-weight: 400;
 }
 
 .hero-subtitle-container {
@@ -757,7 +757,7 @@
 }
 
 .title-secondary {
-    font-weight: inherit;
+    font-weight: 400;
 }
 
 .price-divider {
