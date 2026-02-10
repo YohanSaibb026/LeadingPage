@@ -57,15 +57,15 @@
         },
         "pricing": {
             "consultation": "Precio promedio de una consulta por <1>sesión</1>",
-            "consultation_price": "R$ 180 - R$ 220",
+            "consultation_price": "US$ 40 - US$ 75",
             "app_access": "App <1>Sabores Exclusivos</1> con acceso libre",
-            "app_price": "R$ 40,00",
+            "app_price": "US$ 12.99",
             "promotion": {
                 "title": "La decisión que te separa de tu objetivo",
                 "subtitle": "Asegura tu transformación en los próximos 6 meses y conoce tu mejor versión.",
                 "label": "Promoción de inicio de enero de 2026",
-                "price_from": "De R$ 40,00",
-                "price_to": "por R$ 27,90"
+                "price_from": "De US$ 12.99",
+                "price_to": "por US$ 5.49"
             }
         },
         "calculator": {
