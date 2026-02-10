@@ -750,16 +750,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-.text-gradient {
-    background: linear-gradient(to right, var(--primary), #ff8a71);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: inherit;
-}
 
-.title-secondary {
-    font-weight: 400;
-}
 
 .price-divider {
     display: flex;
