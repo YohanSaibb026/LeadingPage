@@ -494,6 +494,10 @@ function App() {
                         <img src={appShowroom} alt="App Sabores Exclusivos Interface" className="showroom-img" draggable="false" />
                     </div>
                 </div>
+
+                <h2 className="showroom-caption reveal reveal-delay-1">
+                    Cafés da manhã e Smoothies deliciosos para ganhar massa muscular — simples, práticos e com ingredientes do dia a dia
+                </h2>
             </section>
 
             <BMRCalculator />
