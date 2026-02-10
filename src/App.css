@@ -1145,10 +1145,18 @@
 }
 
 .reviews-stories h2 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     text-align: center;
     margin-bottom: 2rem;
     color: var(--text-main);
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    background: linear-gradient(to right, #fff, var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .story-cards-grid {
@@ -1509,8 +1517,8 @@
 .video-wrapper {
     position: relative;
     width: 100%;
-    max-width: 1000px;
-    /* Constrain for a more premium centered feel */
+    max-width: 1200px;
+    /* Expanded for better presentation */
     aspect-ratio: 16 / 9;
     background: #000;
     border-radius: 24px;
@@ -1570,7 +1578,8 @@
 }
 
 .caption-title {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    /* Swapped hierarchy */
     font-family: 'Merriweather', serif;
     font-weight: 700;
     line-height: 1.3;
