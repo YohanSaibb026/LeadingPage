@@ -1,6 +1,15 @@
+```
 import React, { useState, useEffect } from 'react';
 // Build trigger: Reversion to 25/01 stable version
-import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart, ChevronDown, Lock, Clock } from 'lucide-react';
+import { ChefHat, Smartphone, Zap, ShieldCheck,    ArrowRight,
+    Star,
+    ChefHat,
+    Lock,
+    ShieldCheck,
+    Zap,
+    ChevronDown,
+    Globe
+} from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
 import appShowroom from './assets/app-showroom.png';
 import meal1 from './assets/meal-1.jpg';
@@ -214,13 +223,13 @@ const BMRCalculator = () => {
                         <label>{t('features.calculator.gender')}</label>
                         <div className="gender-toggle">
                             <button
-                                className={`gender-btn ${gender === 'male' ? 'active' : ''}`}
+                                className={`gender - btn ${ gender === 'male' ? 'active' : '' } `}
                                 onClick={() => setGender('male')}
                             >
                                 {t('features.calculator.male')}
                             </button>
                             <button
-                                className={`gender-btn ${gender === 'female' ? 'active' : ''}`}
+                                className={`gender - btn ${ gender === 'female' ? 'active' : '' } `}
                                 onClick={() => setGender('female')}
                             >
                                 {t('features.calculator.female')}
@@ -445,7 +454,7 @@ function App() {
 
                                 {/* Story User Info */}
                                 <div className="card-story-user">
-                                    <img src={story.avatar} alt={`Avatar de ${story.name}`} draggable="false" />
+                                    <img src={story.avatar} alt={`Avatar de ${ story.name } `} draggable="false" />
                                     <div className="user-details">
                                         <span className="user-name">{story.name}</span>
                                         <span className="post-time">8h</span>
@@ -456,7 +465,7 @@ function App() {
                                     </div>
                                 </div>
 
-                                <img src={story.content} alt={`Depoimento de ${story.name}`} className="card-story-content" draggable="false" />
+                                <img src={story.content} alt={`Depoimento de ${ story.name } `} className="card-story-content" draggable="false" />
 
                                 {/* Story Footer */}
                                 <div className="card-story-footer">
@@ -518,16 +527,16 @@ function App() {
                         <h3>{t('features.faq_section.title')}</h3>
                         <div className="faq-accordion">
                             {[0, 1, 2].map((idx) => (
-                                <div key={idx} className={`faq-item ${openFaq === idx ? 'open' : ''}`}>
+                                <div key={idx} className={`faq - item ${ openFaq === idx ? 'open' : '' } `}>
                                     <button
                                         className="faq-question"
                                         onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
                                     >
-                                        <span>{t(`features.faq_section.items.${idx}.q`)}</span>
+                                        <span>{t(`features.faq_section.items.${ idx }.q`)}</span>
                                         <ChevronDown size={18} className="faq-chevron" />
                                     </button>
                                     <div className="faq-answer">
-                                        <p>{t(`features.faq_section.items.${idx}.a`)}</p>
+                                        <p>{t(`features.faq_section.items.${ idx }.a`)}</p>
                                     </div>
                                 </div>
                             ))}
@@ -550,7 +559,7 @@ function App() {
                             {transformations.map((item, i) => (
                                 <div key={i} className="transform-item-wrapper">
                                     <div className="transform-item">
-                                        <img src={item.image} alt={`Resultado de transformação: ${item.name}`} draggable="false" />
+                                        <img src={item.image} alt={`Resultado de transformação: ${ item.name } `} draggable="false" />
                                     </div>
                                     <div className="transform-info">
                                         <span className="transform-name">{item.name}</span>
@@ -564,7 +573,7 @@ function App() {
                             {transformations.map((_, i) => (
                                 <div
                                     key={i}
-                                    className={`pagination-dot ${activeTransform === i ? 'active' : ''}`}
+                                    className={`pagination - dot ${ activeTransform === i ? 'active' : '' } `}
                                 />
                             ))}
                         </div>
@@ -628,16 +637,20 @@ function App() {
                     </button>
 
                     <div className="cta-guarantees">
+                        <div className="cta-guarantee-item highlight">
+                            <Globe size={14} />
+                            <span>{t('cta.guarantees.taxes')}</span>
+                        </div>
                         <div className="cta-guarantee-item">
-                            <Lock size={16} />
+                            <Lock size={14} />
                             <span>{t('cta.guarantees.secure')}</span>
                         </div>
                         <div className="cta-guarantee-item">
-                            <Zap size={16} />
+                            <Zap size={14} />
                             <span>{t('cta.guarantees.access')}</span>
                         </div>
                         <div className="cta-guarantee-item">
-                            <ShieldCheck size={16} />
+                            <ShieldCheck size={14} />
                             <span>{t('cta.guarantees.warranty')}</span>
                         </div>
                     </div>

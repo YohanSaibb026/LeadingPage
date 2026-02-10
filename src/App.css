@@ -920,34 +920,44 @@
 }
 
 .cta-card {
-    padding: 4rem 2rem;
-    border-radius: 32px;
+    padding: 3.5rem 1.5rem;
+    /* More compact */
+    border-radius: 40px;
     text-align: center;
     color: white;
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.3);
 }
 
 .cta-card h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    max-width: 800px;
+    font-size: 1.8rem;
+    /* Scaled down for elegance */
+    margin-bottom: 0.75rem;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.25;
 }
 
 .cta-card p {
-    font-size: 1.25rem;
-    opacity: 0.9;
-    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+    /* More refined */
+    opacity: 0.85;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn-cta-premium {
     background: white;
     color: var(--primary);
     border: none;
-    padding: 1.5rem 3rem;
+    padding: 1.25rem 2.5rem;
+    /* Slightly more compact */
     border-radius: 50px;
     font-weight: 800;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    /* More balanced */
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -955,40 +965,45 @@
     align-items: center;
     gap: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.btn-cta-premium:hover {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    background: #fff;
-    color: var(--primary-hover);
-}
-
-.btn-cta-premium:active {
-    transform: translateY(-1px);
+    letter-spacing: 0.05em;
 }
 
 .cta-guarantees {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 3rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* Stacked for a cleaner vertical rhythm in CTA */
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 2.5rem;
 }
 
 .cta-guarantee-item {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.9rem;
-    font-weight: 600;
-    opacity: 0.95;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    /* Smaller for professional look */
+    font-weight: 500;
+    opacity: 0.8;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.4rem 1rem;
     border-radius: 100px;
     backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+}
+
+.cta-guarantee-item.highlight {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    opacity: 0.9;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.cta-guarantee-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    opacity: 1;
 }
 
 @media (max-width: 640px) {
