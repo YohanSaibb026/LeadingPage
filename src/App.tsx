@@ -309,13 +309,13 @@ function App() {
     const [openFaq, setOpenFaq] = useState<number | null>(null);
 
     const stories = [
-        { name: 'Nicolás N.', avatar: avatarNicolas, content: meal2 },
-        { name: 'Dani C.', avatar: avatarDani, content: shakeStory },
-        { name: 'Thiago A.', avatar: avatarThiago, content: meal1 },
-        { name: 'Lucia S.', avatar: avatarLucia, content: meal3 },
-        { name: 'Pablo B.', avatar: avatarPablo, content: meal4 },
-        { name: 'Camilla B.', avatar: avatarCamilla, content: meal5 },
-        { name: 'Gina F.', avatar: avatarGina, content: mealGina },
+        { name: 'Nicolás N.', fullName: 'Nicolás Navas', avatar: avatarNicolas, content: meal2, quote: 'Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter' },
+        { name: 'Dani C.', fullName: 'Dani Castro', avatar: avatarDani, content: shakeStory, quote: 'Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter' },
+        { name: 'Thiago A.', fullName: 'Thiago Aguirre', avatar: avatarThiago, content: meal1, quote: 'Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter' },
+        { name: 'Lucia S.', fullName: 'Lucia Sánchez', avatar: avatarLucia, content: meal3, quote: 'Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter' },
+        { name: 'Pablo B.', fullName: 'Pablo Barrios', avatar: avatarPablo, content: meal4, quote: 'Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter' },
+        { name: 'Camilla B.', fullName: 'Camilla Beltrán', avatar: avatarCamilla, content: meal5, quote: 'Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter' },
+        { name: 'Gina F.', fullName: 'Gina Fonseca', avatar: avatarGina, content: mealGina, quote: 'Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter' },
     ];
 
     const transformations = [
@@ -433,38 +433,45 @@ function App() {
                 </div>
                 <div className="story-cards-grid">
                     {stories.map((story, index) => (
-                        <div key={index} className="story-card">
-                            {/* Instagram-style Bars */}
-                            <div className="card-story-progress">
-                                <div className="progress-segment active"></div>
-                                <div className="progress-segment"></div>
-                                <div className="progress-segment"></div>
+                        <div key={index} className="story-item">
+                            <div className="story-card">
+                                {/* Instagram-style Bars */}
+                                <div className="card-story-progress">
+                                    <div className="progress-segment active"></div>
+                                    <div className="progress-segment"></div>
+                                    <div className="progress-segment"></div>
+                                </div>
+
+                                {/* Story User Info */}
+                                <div className="card-story-user">
+                                    <img src={story.avatar} alt={`Avatar de ${story.name}`} draggable="false" />
+                                    <div className="user-details">
+                                        <span className="user-name">{story.name}</span>
+                                        <span className="post-time">8h</span>
+                                    </div>
+                                    <div className="header-actions">
+                                        <Pause size={16} color="white" fill="white" />
+                                        <MoreHorizontal size={18} color="white" />
+                                    </div>
+                                </div>
+
+                                <img src={story.content} alt={`Depoimento de ${story.name}`} className="card-story-content" draggable="false" />
+
+                                {/* Story Footer */}
+                                <div className="card-story-footer">
+                                    <div className="footer-input">
+                                        <span>Responder a {story.name}...</span>
+                                    </div>
+                                    <div className="footer-actions">
+                                        <Heart size={20} color="white" />
+                                        <Send size={20} color="white" />
+                                    </div>
+                                </div>
                             </div>
 
-                            {/* Story User Info */}
-                            <div className="card-story-user">
-                                <img src={story.avatar} alt={`Avatar de ${story.name}`} draggable="false" />
-                                <div className="user-details">
-                                    <span className="user-name">{story.name}</span>
-                                    <span className="post-time">8h</span>
-                                </div>
-                                <div className="header-actions">
-                                    <Pause size={16} color="white" fill="white" />
-                                    <MoreHorizontal size={18} color="white" />
-                                </div>
-                            </div>
-
-                            <img src={story.content} alt={`Depoimento de ${story.name}`} className="card-story-content" draggable="false" />
-
-                            {/* Story Footer */}
-                            <div className="card-story-footer">
-                                <div className="footer-input">
-                                    <span>Responder a {story.name}...</span>
-                                </div>
-                                <div className="footer-actions">
-                                    <Heart size={20} color="white" />
-                                    <Send size={20} color="white" />
-                                </div>
+                            <div className="story-text-content reveal reveal-delay-2">
+                                <p className="story-quote">"{story.quote}"</p>
+                                <span className="story-author">{story.fullName}</span>
                             </div>
                         </div>
                     ))}
