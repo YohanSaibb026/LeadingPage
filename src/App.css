@@ -155,8 +155,10 @@
 .text-gradient {
     background: linear-gradient(to right, var(--primary), #ff8a71);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: inherit;
+    font-size: 42px;
 }
 
 .title-secondary {

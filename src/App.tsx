@@ -328,28 +328,6 @@ function App() {
         { image: transform5, name: 'Juan R.', stats: '52kg - 74kg', duration: '1 ano 2 meses' },
     ];
 
-    const [isHeroVisible, setIsHeroVisible] = useState(false);
-    const heroCardRef = React.useRef<HTMLDivElement>(null);
-
-    React.useEffect(() => {
-        // Disable right-click
-        const handleContextMenu = (e: MouseEvent) => {
-            e.preventDefault();
-        };
-
-        // Disable specific shortcuts (F12, Ctrl+U, Ctrl+Shift+I, etc.)
-        const handleKeyDown = (e: KeyboardEvent) => {
-            if (
-                e.key === 'F12' ||
-                (e.ctrlKey && e.shiftKey && e.key === 'I') ||
-                (e.ctrlKey && e.shiftKey && e.key === 'J') ||
-                (e.ctrlKey && e.key === 'u') ||
-                (e.ctrlKey && e.key === 's')
-            ) {
-                e.preventDefault();
-            }
-        };
-
         document.addEventListener('contextmenu', handleContextMenu);
         document.addEventListener('keydown', handleKeyDown);
 
@@ -367,21 +345,10 @@ function App() {
             "font-family: sans-serif; font-size: 1em; color: gray;"
         );
 
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setIsHeroVisible(true);
-                    observer.disconnect(); // Animate once
-                }
-            },
-            { threshold: 0.2 } // Trigger when 20% visible
-        );
-
-        if (heroCardRef.current) {
-            observer.observe(heroCardRef.current);
-        }
-
-        return () => observer.disconnect();
+        return () => {
+            document.removeEventListener('contextmenu', handleContextMenu);
+            document.removeEventListener('keydown', handleKeyDown);
+        };
     }, []);
 
     return (
@@ -460,7 +427,7 @@ function App() {
 
                             {/* Story User Info */}
                             <div className="card-story-user">
-                                <img src={story.avatar} alt="" draggable="false" />
+                                <img src={story.avatar} alt={`Avatar de ${story.name}`} draggable="false" />
                                 <div className="user-details">
                                     <span className="user-name">{story.name}</span>
                                     <span className="post-time">8h</span>
@@ -471,7 +438,7 @@ function App() {
                                 </div>
                             </div>
 
-                            <img src={story.content} alt={story.name} className="card-story-content" draggable="false" />
+                            <img src={story.content} alt={`Depoimento de ${story.name}`} className="card-story-content" draggable="false" />
 
                             {/* Story Footer */}
                             <div className="card-story-footer">
@@ -545,7 +512,7 @@ function App() {
                             {transformations.map((item, i) => (
                                 <div key={i} className="transform-item-wrapper">
                                     <div className="transform-item">
-                                        <img src={item.image} alt={`Transformation ${i + 1}`} draggable="false" />
+                                        <img src={item.image} alt={`Resultado de transformação: ${item.name}`} draggable="false" />
                                     </div>
                                     <div className="transform-info">
                                         <span className="transform-name">{item.name}</span>
