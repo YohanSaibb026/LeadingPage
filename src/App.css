@@ -1145,7 +1145,8 @@
 }
 
 .reviews-stories h2 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    /* Swapped back */
     text-align: center;
     margin-bottom: 2rem;
     color: var(--text-main);
@@ -1153,10 +1154,6 @@
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: -0.01em;
-    background: linear-gradient(to right, #fff, var(--primary));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .story-cards-grid {
@@ -1578,8 +1575,8 @@
 }
 
 .caption-title {
-    font-size: 1.8rem;
-    /* Swapped hierarchy */
+    font-size: 2.2rem;
+    /* Swapped back to primary emphasis */
     font-family: 'Merriweather', serif;
     font-weight: 700;
     line-height: 1.3;
@@ -1593,13 +1590,18 @@
 }
 
 .caption-subtitle {
-    font-size: 1.25rem;
+    font-size: 2.0rem;
+    /* Increased size per user request */
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    color: var(--text-main);
+    font-weight: 600;
     margin: 0;
-    opacity: 0.7;
     letter-spacing: 0.02em;
+    background: linear-gradient(to right, #fff, #fb923c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+    /* Ensure gradient works on block if needed */
 }
 
 @media (max-width: 768px) {
