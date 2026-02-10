@@ -1328,6 +1328,9 @@
 .app-showroom {
     padding: 0 1rem 4rem;
     display: flex;
+    flex-direction: column;
+    /* Ensure headline stays below mockup */
+    align-items: center;
     justify-content: center;
     background-color: var(--hero-bg);
 }
@@ -1630,7 +1633,8 @@
 }
 
 .showroom-caption {
-    font-size: 2.2rem;
+    font-size: 2.0rem;
+    /* Reduced per user request */
     font-family: 'Merriweather', serif;
     font-weight: 700;
     line-height: 1.3;
