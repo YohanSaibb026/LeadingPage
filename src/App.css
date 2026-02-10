@@ -1380,6 +1380,8 @@
         text-align: center;
         padding: 80px 1rem 20px;
         gap: 2rem;
+        background: radial-gradient(circle at 50% 20%, rgba(251, 81, 59, 0.12) 0%, transparent 50%),
+            var(--hero-bg);
     }
 
     .hero-content {
@@ -1500,14 +1502,21 @@
     display: flex;
     justify-content: center;
     background-color: var(--hero-bg);
-    overflow: hidden;
+    padding: 2rem 1.5rem;
+    /* Space for the shadow and rounded corners to breathe */
 }
 
 .video-wrapper {
     position: relative;
     width: 100%;
+    max-width: 1000px;
+    /* Constrain for a more premium centered feel */
     aspect-ratio: 16 / 9;
     background: #000;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .video-wrapper::after {
@@ -1532,7 +1541,7 @@
 
 /* Video Caption Section */
 .video-caption-section {
-    padding: 4rem 1.5rem;
+    padding: 3rem 1.5rem 5rem;
     text-align: center;
     background-color: var(--hero-bg);
 }
@@ -1561,13 +1570,17 @@
 }
 
 .caption-title {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-family: 'Merriweather', serif;
     font-weight: 700;
-    line-height: 1.4;
+    line-height: 1.3;
     color: var(--text-main);
     margin: 0 0 1rem;
     letter-spacing: -0.01em;
+    background: linear-gradient(to right, #fff, var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .caption-subtitle {
@@ -1576,7 +1589,8 @@
     font-weight: 500;
     color: var(--text-main);
     margin: 0;
-    opacity: 0.9;
+    opacity: 0.7;
+    letter-spacing: 0.02em;
 }
 
 @media (max-width: 768px) {
