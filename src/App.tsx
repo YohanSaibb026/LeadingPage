@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 // Build trigger: Reversion to 25/01 stable version
-import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart, ChevronDown, CheckCircle2, Lock, Clock } from 'lucide-react';
+import { ChefHat, Smartphone, Zap, ShieldCheck, ArrowRight, Star, Send, Pause, MoreHorizontal, Heart, ChevronDown, Lock, Clock } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
-import heroDish from './assets/hero-dish.png';
-import heroApp from './assets/hero-app-mockup.png';
 import appShowroom from './assets/app-showroom.png';
 import meal1 from './assets/meal-1.jpg';
 import meal2 from './assets/meal-2.jpg';
@@ -327,6 +325,24 @@ function App() {
         { image: transform4, name: 'Rosa L.', stats: '52kg - 59kg', duration: '7 meses' },
         { image: transform5, name: 'Juan R.', stats: '52kg - 74kg', duration: '1 ano 2 meses' },
     ];
+    React.useEffect(() => {
+        // Disable right-click
+        const handleContextMenu = (e: MouseEvent) => {
+            e.preventDefault();
+        };
+
+        // Disable specific shortcuts (F12, Ctrl+U, Ctrl+Shift+I, etc.)
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (
+                e.key === 'F12' ||
+                (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+                (e.ctrlKey && e.shiftKey && e.key === 'J') ||
+                (e.ctrlKey && e.key === 'u') ||
+                (e.ctrlKey && e.key === 's')
+            ) {
+                e.preventDefault();
+            }
+        };
 
         document.addEventListener('contextmenu', handleContextMenu);
         document.addEventListener('keydown', handleKeyDown);
