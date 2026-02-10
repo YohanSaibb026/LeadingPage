@@ -387,19 +387,19 @@ function App() {
             {/* Hero Section */}
             <header className="hero">
                 <div className="hero-content">
-                    <h1>
+                    <h1 className="reveal">
                         <Trans i18nKey="hero.title">
                             <span className="text-gradient">8 em cada 10 pessoas desistem</span>
                             <span className="title-secondary">nos primeiros 2 meses ao tentar ganhar peso e construir músculos</span>
                         </Trans>
                     </h1>
-                    <div className="hero-subtitle-container">
+                    <div className="hero-subtitle-container reveal reveal-delay-1">
                         <div className="complaints-card">
                             <p className="subtitle-main">{t('hero.subtitle')}</p>
                             <ul className="complaints-list">
                                 {(t('hero.complaints', { returnObjects: true }) as string[]).map((item, index) => (
                                     <li key={index}>
-                                        <span className="bullet">.</span>
+                                        <Zap size={14} className="bullet-icon" fill="currentColor" />
                                         {item}
                                     </li>
                                 ))}
