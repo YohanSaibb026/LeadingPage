@@ -540,9 +540,11 @@ function App() {
 
             {/* Features Section */}
             <section id="features" className="features">
-                <h2 className="section-title">{t('features.title')}</h2>
+                <h2 className="section-title">
+                    <Trans i18nKey="features.title" components={{ 1: <span className="brand-highlight" /> }} />
+                </h2>
                 <div className="feature-grid">
-                    <div className="feature-card glass-morphism">
+                    <div className="feature-card glass-morphism intro-feature-card">
                         <div className="icon-wrapper"><Zap /></div>
                         <h3>{t('features.instant.title')}</h3>
                         <p>{t('features.instant.desc')}</p>
