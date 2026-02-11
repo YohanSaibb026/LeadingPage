@@ -654,29 +654,37 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.25rem;
+    gap: 0.15rem;
+    /* Tighter gap for premium feel */
     text-align: center;
 }
 
 .transform-name {
     font-family: 'Merriweather', serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    /* Slightly smaller for elegance */
     font-weight: 700;
     color: var(--text-main);
+    letter-spacing: -0.01em;
 }
 
 .transform-stats {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 800;
+    font-size: 1rem;
+    /* Scaled down */
+    font-weight: 700;
     color: var(--text-main);
+    opacity: 0.9;
 }
 
 .transform-duration {
     font-family: 'Inter', sans-serif;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
+    /* More subtle */
     font-weight: 500;
     color: var(--text-muted);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 .transform-pagination {
@@ -688,17 +696,20 @@
 }
 
 .pagination-dot {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    /* Slightly smaller */
+    height: 8px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.15);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .pagination-dot.active {
     background: var(--primary);
-    transform: scale(1.2);
+    transform: scale(1.3);
+    box-shadow: 0 0 10px rgba(251, 81, 59, 0.4);
 }
 
 
