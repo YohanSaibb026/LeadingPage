@@ -342,6 +342,7 @@ function App() {
     const { t } = useTranslation();
     const [openFaq, setOpenFaq] = useState<number | null>(null);
     const [activeTransform, setActiveTransform] = useState(0);
+    const [activeStory, setActiveStory] = useState(0);
 
     const stories = [
         { name: 'Nicolás N.', fullName: 'Nicolás Navas', avatar: avatarNicolas, content: meal2, quote: 'Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter' },
@@ -466,7 +467,16 @@ function App() {
                 <div className="stories-header">
                     <h2>{t('reviews.title')}</h2>
                 </div>
-                <div className="story-cards-grid">
+                <div
+                    className="story-cards-grid"
+                    onScroll={(e) => {
+                        const container = e.currentTarget;
+                        const scrollLeft = container.scrollLeft;
+                        const itemWidth = container.offsetWidth;
+                        const index = Math.round(scrollLeft / itemWidth);
+                        setActiveStory(index);
+                    }}
+                >
                     {stories.map((story, index) => (
                         <div key={index} className="story-item">
                             <div className="story-card">
@@ -507,6 +517,16 @@ function App() {
                             <div className="story-text-content reveal reveal-delay-2">
                                 <p className="story-quote">"{story.quote}"</p>
                                 <span className="story-author">{story.fullName}</span>
+
+                                {/* Story Pagination Dots */}
+                                <div className="story-pagination">
+                                    {stories.map((_, i) => (
+                                        <div
+                                            key={i}
+                                            className={`story-dot ${activeStory === i ? 'active' : ''}`}
+                                        />
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     ))}
@@ -549,7 +569,7 @@ function App() {
                         <h3>{t('features.instant.title')}</h3>
                         <p>{t('features.instant.desc')}</p>
                     </div>
-                    <div className="feature-card glass-morphism faq-card">
+                    <div className="feature-card glass-morphism faq-card faq-premium">
                         <div className="icon-wrapper"><Smartphone /></div>
                         <h3>{t('features.faq_section.title')}</h3>
                         <div className="faq-accordion">
