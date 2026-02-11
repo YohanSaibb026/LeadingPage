@@ -471,10 +471,16 @@ function App() {
                     className="story-cards-grid"
                     onScroll={(e) => {
                         const container = e.currentTarget;
-                        const scrollLeft = container.scrollLeft;
-                        const itemWidth = container.offsetWidth;
-                        const index = Math.round(scrollLeft / itemWidth);
-                        setActiveStory(index);
+                        const { scrollLeft, scrollWidth, clientWidth } = container;
+
+                        // Calculate progress percentage
+                        const scrollPercentage = scrollLeft / (scrollWidth - clientWidth);
+                        const index = Math.round(scrollPercentage * (stories.length - 1));
+
+                        // Safety check for empty or single item
+                        if (!isNaN(index)) {
+                            setActiveStory(index);
+                        }
                     }}
                 >
                     {stories.map((story, index) => (
@@ -597,10 +603,15 @@ function App() {
                             className="transformations-grid"
                             onScroll={(e) => {
                                 const container = e.currentTarget;
-                                const scrollLeft = container.scrollLeft;
-                                const itemWidth = container.offsetWidth;
-                                const index = Math.round(scrollLeft / itemWidth);
-                                setActiveTransform(index);
+                                const { scrollLeft, scrollWidth, clientWidth } = container;
+
+                                // Calculate progress percentage
+                                const scrollPercentage = scrollLeft / (scrollWidth - clientWidth);
+                                const index = Math.round(scrollPercentage * (transformations.length - 1));
+
+                                if (!isNaN(index)) {
+                                    setActiveTransform(index);
+                                }
                             }}
                         >
                             {transformations.map((item, i) => (
