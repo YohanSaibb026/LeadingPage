@@ -3,6 +3,9 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import ptTranslations from './locales/pt.json';
 import esTranslations from './locales/es.json';
+import esARTranslations from './locales/es-AR.json';
+import esMXTranslations from './locales/es-MX.json';
+import esCOTranslations from './locales/es-CO.json';
 
 i18n
     .use(LanguageDetector)
@@ -11,6 +14,9 @@ i18n
         resources: {
             pt: { translation: ptTranslations },
             es: { translation: esTranslations },
+            'es-AR': { translation: esARTranslations },
+            'es-MX': { translation: esMXTranslations },
+            'es-CO': { translation: esCOTranslations },
         },
         fallbackLng: 'pt',
         interpolation: {
