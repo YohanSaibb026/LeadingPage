@@ -14,7 +14,12 @@ import {
     ChevronDown,
     Lock,
     Clock,
-    Globe
+    Globe,
+    User,
+    Calendar,
+    Scale,
+    Ruler,
+    Activity
 } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
 import appShowroom from './assets/app-showroom.png';
