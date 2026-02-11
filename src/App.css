@@ -1758,13 +1758,16 @@
 }
 
 .calculator-container {
-    max-width: 600px;
+    max-width: 500px;
+    /* More compact */
     margin: 0 auto;
-    padding: 2rem 1.5rem;
-    background: var(--bg-card);
-    border-radius: 24px;
-    border: 1px solid var(--border-glass);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    background: rgba(21, 76, 84, 0.4);
+    /* Subtle glassmorphism */
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
 .calculator-header {
@@ -1773,10 +1776,11 @@
 }
 
 .calculator-header h2 {
-    font-size: 1.75rem;
+    font-family: 'Merriweather', serif;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
     color: var(--text-main);
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.2;
 }
 
@@ -1788,19 +1792,19 @@
 .calculator-grid {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.25rem;
 }
 
-.input-row {
+.input-row-compact {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 0.75rem;
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.4rem;
 }
 
 .input-group label {
@@ -1809,74 +1813,134 @@
     font-weight: 600;
 }
 
-.gender-toggle {
+.gender-toggle-premium {
     display: flex;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 0.25rem;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 4px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.gender-toggle .gender-btn {
+.gender-toggle-premium .gender-btn {
     flex: 1;
     padding: 0.6rem;
-    border-radius: 8px;
+    border-radius: 9px;
     border: none;
     background: transparent;
     color: var(--text-muted);
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
 }
 
-.gender-toggle .gender-btn.active {
+.gender-toggle-premium .gender-btn.active {
     background: var(--primary);
     color: white;
-    box-shadow: 0 4px 10px rgba(251, 81, 59, 0.2);
+    box-shadow: 0 4px 15px rgba(251, 81, 59, 0.3);
+}
+
+.female-icon {
+    transform: rotate(180deg);
+    /* Slight distinction if needed or use specific icon */
+}
+
+.input-wrapper-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    color: var(--text-muted);
+    opacity: 0.6;
+    pointer-events: none;
 }
 
 .input-group input,
 .input-group select {
+    width: 100%;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 0.8rem;
-    border-radius: 10px;
+    padding: 0.7rem 0.7rem 0.7rem 2.4rem;
+    /* Padding for icon */
+    border-radius: 12px;
     color: #ffffff;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     transition: all 0.2s ease;
 }
 
-.btn-calculate {
+.input-group input:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 0 15px rgba(251, 81, 59, 0.1);
+}
+
+.btn-calculate-premium {
     margin-top: 0.5rem;
-    padding: 1rem;
-    border-radius: 12px;
+    padding: 1.1rem;
+    border-radius: 14px;
     background: var(--primary-gradient);
     border: none;
     color: white;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.6rem;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: 0 8px 20px rgba(251, 81, 59, 0.2);
+}
+
+.btn-calculate-premium:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(251, 81, 59, 0.3);
+    filter: brightness(1.1);
+}
+
+.btn-calculate-premium:active {
+    transform: translateY(0);
 }
 
 .results-card {
     margin-top: 2rem;
-    padding: 1.5rem 1rem;
-    background: rgba(255, 255, 255, 0.02);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.results-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--primary-gradient);
 }
 
 .results-card h3 {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     color: var(--text-main);
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
 }
 
 .results-grid {
@@ -1886,14 +1950,15 @@
 }
 
 .result-item {
-    background: rgba(255, 255, 255, 0.03);
-    padding: 1rem 0.5rem;
-    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 1.25rem 0.5rem;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.25rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    gap: 0.4rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
 }
 
 .result-item.highlight {
@@ -1918,7 +1983,8 @@
 }
 
 .result-value {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    /* Slightly more balanced */
     font-weight: 800;
     color: var(--text-main);
 }
@@ -1928,16 +1994,18 @@
 }
 
 .result-value small {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 500;
+    opacity: 0.8;
 }
 
 .results-disclaimer {
     text-align: center;
     margin-top: 1.5rem;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     color: var(--text-muted);
-    opacity: 0.8;
+    opacity: 0.7;
+    line-height: 1.4;
 }
 
 @media (max-width: 640px) {

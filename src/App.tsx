@@ -227,66 +227,80 @@ const BMRCalculator = () => {
                 <div className="calculator-grid">
                     <div className="input-group">
                         <label>{t('features.calculator.gender')}</label>
-                        <div className="gender-toggle">
+                        <div className="gender-toggle-premium">
                             <button
-                                className={`gender - btn ${gender === 'male' ? 'active' : ''} `}
+                                className={`gender-btn ${gender === 'male' ? 'active' : ''}`}
                                 onClick={() => setGender('male')}
                             >
+                                <User size={16} />
                                 {t('features.calculator.male')}
                             </button>
                             <button
-                                className={`gender - btn ${gender === 'female' ? 'active' : ''} `}
+                                className={`gender-btn ${gender === 'female' ? 'active' : ''}`}
                                 onClick={() => setGender('female')}
                             >
+                                <User size={16} className="female-icon" />
                                 {t('features.calculator.female')}
                             </button>
                         </div>
                     </div>
 
-                    <div className="input-row">
+                    <div className="input-row-compact">
                         <div className="input-group">
                             <label>{t('features.calculator.age')}</label>
-                            <input
-                                type="number"
-                                value={age}
-                                onChange={(e) => setAge(e.target.value)}
-                                placeholder="25"
-                            />
+                            <div className="input-wrapper-icon">
+                                <Calendar size={16} className="input-icon" />
+                                <input
+                                    type="number"
+                                    value={age}
+                                    onChange={(e) => setAge(e.target.value)}
+                                    placeholder="25"
+                                />
+                            </div>
                         </div>
                         <div className="input-group">
                             <label>{t('features.calculator.weight')}</label>
-                            <input
-                                type="number"
-                                value={weight}
-                                onChange={(e) => setWeight(e.target.value)}
-                                placeholder="70"
-                            />
+                            <div className="input-wrapper-icon">
+                                <Scale size={16} className="input-icon" />
+                                <input
+                                    type="number"
+                                    value={weight}
+                                    onChange={(e) => setWeight(e.target.value)}
+                                    placeholder="70"
+                                />
+                            </div>
                         </div>
                         <div className="input-group">
                             <label>{t('features.calculator.height')}</label>
-                            <input
-                                type="number"
-                                value={height}
-                                onChange={(e) => setHeight(e.target.value)}
-                                placeholder="175"
-                            />
+                            <div className="input-wrapper-icon">
+                                <Ruler size={16} className="input-icon" />
+                                <input
+                                    type="number"
+                                    value={height}
+                                    onChange={(e) => setHeight(e.target.value)}
+                                    placeholder="175"
+                                />
+                            </div>
                         </div>
                     </div>
 
                     <div className="input-group">
                         <label>{t('features.calculator.activity')}</label>
-                        <select value={activity} onChange={(e) => setActivity(e.target.value)}>
-                            <option value="1.2">{t('features.calculator.activity_levels.sedentary')}</option>
-                            <option value="1.375">{t('features.calculator.activity_levels.light')}</option>
-                            <option value="1.55">{t('features.calculator.activity_levels.moderate')}</option>
-                            <option value="1.725">{t('features.calculator.activity_levels.active')}</option>
-                            <option value="1.9">{t('features.calculator.activity_levels.extra')}</option>
-                        </select>
+                        <div className="input-wrapper-icon">
+                            <Activity size={16} className="input-icon" />
+                            <select value={activity} onChange={(e) => setActivity(e.target.value)}>
+                                <option value="1.2">{t('features.calculator.activity_levels.sedentary')}</option>
+                                <option value="1.375">{t('features.calculator.activity_levels.light')}</option>
+                                <option value="1.55">{t('features.calculator.activity_levels.moderate')}</option>
+                                <option value="1.725">{t('features.calculator.activity_levels.active')}</option>
+                                <option value="1.9">{t('features.calculator.activity_levels.extra')}</option>
+                            </select>
+                        </div>
                     </div>
 
-                    <button className="btn-calculate" onClick={calculate}>
-                        {t('features.calculator.calculate')}
-                        <Zap size={18} />
+                    <button className="btn-calculate-premium" onClick={calculate}>
+                        <span>{t('features.calculator.calculate')}</span>
+                        <Zap size={18} fill="currentColor" />
                     </button>
                 </div>
 
