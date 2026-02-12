@@ -99,6 +99,10 @@
                 "unit": "kcal",
                 "disclaimer": "Valores estimados com base na fórmula de Mifflin-St Jeor."
             }
+        },
+        "video_caption": {
+            "title": "Tem dúvidas na hora de cozinhar?",
+            "subtitle": "Não perca tempo planejando o que comer"
         }
     },
     "cta": {

@@ -457,8 +457,8 @@ function App() {
                     <div className="caption-decorator">
                         <ChefHat size={32} strokeWidth={1.5} />
                     </div>
-                    <h3 className="caption-title">Tem dúvidas na hora de cozinhar?</h3>
-                    <p className="caption-subtitle">Não perca tempo planejando o que comer</p>
+                    <h3 className="caption-title">{t('features.video_caption.title')}</h3>
+                    <p className="caption-subtitle">{t('features.video_caption.subtitle')}</p>
                 </div>
             </section>
 
