@@ -1,7 +1,7 @@
 {
     "nav": {
         "features": "Recursos",
-        "pricing": "Preços",
+        "pricing": "Precios",
         "download": "Descargar App"
     },
     "hero": {
@@ -33,7 +33,7 @@
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
             "title": "Desayunos y Smoothies deliciosos para ganar masa muscular — simples, prácticos y con ingredientes del día a día",
-            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear um App con las recetas que más trajeron resultados reales."
+            "desc": "Tras escuchar a cientos de alumnos, entendemos que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear un App con las recetas que más trajeron resultados reales."
         },
         "showroom_caption": {
             "title": "Desayunos y Smoothies",
@@ -42,6 +42,34 @@
         "video_caption": {
             "title": "¿Tienes dudas a la hora de cocinar?",
             "subtitle": "No pierdas tiempo planeando qué comer"
+        },
+        "calculator": {
+            "title": "Descubre tu meta para crecer",
+            "subtitle": "Calcula tu Tasa Metabólica Basal y mira cuánto necesitas consumir para ganar músculo",
+            "gender": "Género",
+            "male": "Masculino",
+            "female": "Femenino",
+            "age": "Edad",
+            "weight": "Peso (kg)",
+            "height": "Altura (cm)",
+            "activity": "Nivel de Actividad",
+            "activity_levels": {
+                "sedentary": "Sedentario (poco o nada de ejercicio)",
+                "light": "Ligeramente activo (1-3 días/semana)",
+                "moderate": "Moderadamente activo (3-5 días/semana)",
+                "active": "Altamente activo (6-7 días/semana)",
+                "extra": "Extremadamente activo (entrenamiento pesado/atleta)"
+            },
+            "calculate": "Calcular Meta",
+            "results": {
+                "title": "Tus Resultados",
+                "bmr": "Tu cuerpo necesita:",
+                "tdee": "Mantener Peso:",
+                "bulk": "Para Crecer:",
+                "breakfast_recommendation": "Recomendación en el desayuno:",
+                "unit": "kcal",
+                "disclaimer": "Valores estimados basados en la fórmula Mifflin-St Jeor."
+            }
         }
     }
 }
