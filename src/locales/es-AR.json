@@ -15,5 +15,8 @@
     "video_caption": {
         "title": "¿Tenés dudas a la hora de cocinar?",
         "subtitle": "No pierdas tiempo planeando qué comer"
+    },
+    "reviews": {
+        "title": "Algunas experiencias de nuestros usuarios"
     }
 }
