@@ -5,7 +5,7 @@
         "download": "Descargar App"
     },
     "hero": {
-        "title": "<0>8 de cada 10 personas se rinden</0> <1>en los primeros 3 meses al intentar subir de peso y ganar masa muscular</1>",
+        "title": "<0>8 de cada 10 personas se rinden</0> <1>en los primeiros 3 meses al intentar subir de peso y ganar masa muscular</1>",
         "subtitle": "Las quejas más comunes que se escuchan en los consultorios son",
         "complaints": [
             "Sentirse desmotivado por falta de ideas de qué comer",
@@ -41,7 +41,7 @@
         },
         "video_caption": {
             "title": "¿Tienes dudas a la hora de cocinar?",
-            "subtitle": "No pierdas tempo planeando qué comer"
+            "subtitle": "No pierdas tiempo planeando qué comer"
         },
         "calculator": {
             "title": "Descubre tu meta para crecer",
@@ -54,10 +54,10 @@
             "height": "Altura (cm)",
             "activity": "Nivel de Actividad",
             "activity_levels": {
-                "sedentary": "Sedentario (poco o nada de ejercicio)",
-                "light": "Ligeramente activo (1-3 días/semana)",
-                "moderate": "Moderadamente activo (3-5 días/semana)",
-                "active": "Altamente activo (6-7 días/semana)",
+                "sedentary": "Sedentario (poco o ningún ejercicio)",
+                "light": "Ligeramente activo (1–3 días/semana)",
+                "moderate": "Moderadamente activo (3–5 días/semana)",
+                "active": "Altamente activo (6–7 días/semana)",
                 "extra": "Extremadamente activo (entrenamiento pesado/atleta)"
             },
             "calculate": "Calcular Meta",

@@ -33,7 +33,7 @@
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
             "title": "Desayunos y Smoothies deliciosos para ganar masa muscular — simples, prácticos y con ingredientes del día a día",
-            "desc": "Tras escuchar a cientos de alumnos, entendemos que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear un App con las recetas que más trajeron resultados reales."
+            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más trajeron resultados reales."
         },
         "showroom_caption": {
             "title": "Desayunos y Smoothies",
@@ -54,10 +54,10 @@
             "height": "Altura (cm)",
             "activity": "Nivel de Actividad",
             "activity_levels": {
-                "sedentary": "Sedentario (poco o nada de ejercicio)",
-                "light": "Ligeramente activo (1-3 días/semana)",
-                "moderate": "Moderadamente activo (3-5 días/semana)",
-                "active": "Altamente activo (6-7 días/semana)",
+                "sedentary": "Sedentario (poco o ningún ejercicio)",
+                "light": "Ligeramente activo (1–3 días/semana)",
+                "moderate": "Moderadamente activo (3–5 días/semana)",
+                "active": "Altamente activo (6–7 días/semana)",
                 "extra": "Extremadamente activo (entrenamiento pesado/atleta)"
             },
             "calculate": "Calcular Meta",
