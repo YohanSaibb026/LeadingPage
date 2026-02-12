@@ -12,7 +12,7 @@
             "Malestar después de comer en exceso alimentos no recomendados",
             "Pensar que una dieta para subir de peso cuesta caro"
         ],
-        "punchline": "Las recetas más recomendadas con los mismos ingredientes simples que ya tenés en casa",
+        "punchline": "Las recetas más recomendadas con los mesmos ingredientes simples que ya tenés en casa",
         "continue": "Continuar",
         "demo": "Ver Demostración",
         "social": "Usado por más de 500+ apasionados de la cocina"
@@ -32,8 +32,12 @@
     "features": {
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
-            "title": "Desayunos y Smoothies deliciosos para ganar masa muscular — simples, prácticos y con ingredientes del día a día",
-            "desc": "Tras escuchar a cientos de clientes, entendemos que la falta de tiempo y la dificultad para variar el menú son los mayores obstáculos de una dieta. Hemos unido toda nuestra experiencia en nutrición para que puedas dejar de preocuparte por la preparación y te centres en lo que realmente importa: Tus resultados."
+            "title": "Desayunos y Smoothies deliciosos para ganar masa muscular — simples, prácticos y con ingredientes del día a dia",
+            "desc": "Tras escuchar a cientos de alumnos, entendemos que el maior desafío es reinventarse dentro de una rutina. Unimos nosso conhecimento em nutrição para criar um App com as receitas que mais trouxeram resultados reais. "
+        },
+        "showroom_caption": {
+            "title": "Desayunos y Smoothies",
+            "subtitle": "deliciosos para ganar masa muscular — simples, prácticos y con ingredientes del día a día"
         },
         "video_caption": {
             "title": "¿Tenés dudas a la hora de cocinar?",

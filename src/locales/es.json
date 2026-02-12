@@ -5,7 +5,7 @@
         "download": "Descargar App"
     },
     "hero": {
-        "title": "<0>8 de cada 10 personas abandonan</0> <1>en los primeros 3 meses al intentar ganar peso y ganar músculo</1>",
+        "title": "<0>8 de cada 10 personas abandonan</0> <1>en los primeros 3 meses al intentar ganar peso e ganar músculo</1>",
         "subtitle": "Las quejas más comunes escuchadas en los consultorios son",
         "complaints": [
             "Sentirse desmotivado por falta de ideas sobre qué comer",
@@ -18,7 +18,16 @@
         "social": "Usado por más de 500+ chefs en casa"
     },
     "reviews": {
-        "title": "Algunas experiencias de nuestros usuarios"
+        "title": "Algunas experiencias de nuestros usuarios",
+        "stories": {
+            "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
+            "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
+            "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
+            "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
+            "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
+            "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
+            "gina": "Puedo decir que ya tengo mi comida favorita"
+        }
     },
     "features": {
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
@@ -26,94 +35,13 @@
             "title": "Los desayunos, meriendas y batidos más recomendados, en un solo lugar",
             "desc": "Tras escuchar a cientos de clientes, entendemos que la falta de tiempo y la dificultad para variar el menú son los mayores obstáculos de una dieta. Hemos unido toda nuestra experiencia en nutrición para que puedas dejar de preocuparte por la preparación y te centres en lo que realmente importa: Tus resultados."
         },
-        "faq_section": {
-            "title": "Siempre Contigo",
-            "items": {
-                "0": {
-                    "q": "¿Por qué desayunos, meriendas y batidos?",
-                    "a": "Mientras que las aplicaciones de cocina general se centran en comidas complejas con ingredientes caros, nosotros nos especializamos en la practicidad. Y como la primera comida del día influye directamente en tu capacidad para alcanzar el superávit calórico e influye en tus comidas posteriores, te traemos las mejores combinaciones para que crezcas con salud."
-                },
-                "1": {
-                    "q": "¿Cuesta caro tener una dieta?",
-                    "a": "¡De ninguna manera! Ganarás peso usando ingredientes que ya forman parte de tu día a día como plátano, avena y leche. El secreto de la App está en transformar estos artículos básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor y sin gastar un centavo más."
-                },
-                "2": {
-                    "q": "¿Es necesario comer en grandes quantidades para crecer?",
-                    "a": "Es un error pensar así. Comer grandes quantidades de alimentos inadecuados trae problemas a nuestro cuerpo, como falta de apetito, náuseas y malestar. Con nuestras recetas, te aseguras una comida nutritiva desde temprano, de forma ligera. Así, no necesitas obligarte a comer platos gigantescos en el almuerzo o la cena para cumplir tus objetivos."
-                }
-            }
-        },
-        "transformations": {
-            "title": "Transformaciones Reales",
-            "desc": "Más que recetas, entregamos resultados. Mira la evolución de quienes siguieron nuestros métodos."
-        },
-        "target_audience": {
-            "title": "¿Para quién es Sabores Exclusivos?",
-            "items": [
-                "Personas que desean eliminar la duda al cocinar, basta de perder tiempo planeando qué comer.",
-                "Para quienes desean sentirse cómodos, teniendo una gran variedad de recetas estratégicas en la palma de su mano para lograr su objetivo.",
-                "Para quienes buscan destacarse de los demás, dominando decenas de recetas deliciosas que pocos conocen, hechas con los mismos ingredientes simples."
-            ]
-        },
-        "pricing": {
-            "consultation": "Precio promedio de una consulta por <1>sesión</1>",
-            "consultation_price": "US$ 40 - US$ 75",
-            "app_access": "App <1>Sabores Exclusivos</1> con acceso libre",
-            "app_price": "US$ 12.99",
-            "promotion": {
-                "title": "La decisión que te separa de tu objetivo",
-                "subtitle": "Asegura tu transformación en los próximos 6 meses y conoce tu mejor versión.",
-                "label": "Promoción de inicio de enero de 2026",
-                "price_from": "De US$ 12.99",
-                "price_to": "por US$ 5.49"
-            }
-        },
-        "calculator": {
-            "title": "Descubre tu meta para crecer",
-            "subtitle": "Calcula tu Tasa Metabólica Basal y mira cuánto necesitas consumir para ganar músculo.",
-            "gender": "Género",
-            "male": "Masculino",
-            "female": "Femenino",
-            "age": "Edad",
-            "weight": "Peso (kg)",
-            "height": "Altura (cm)",
-            "activity": "Nivel de Actividad",
-            "activity_levels": {
-                "sedentary": "Sedentario (poco o nada de ejercicio)",
-                "light": "Ligeramente activo (1-3 días/semana)",
-                "moderate": "Moderadamente activo (3-5 días/semana)",
-                "active": "Altamente activo (6-7 días/semana)",
-                "extra": "Extremamente activo (entrenamiento pesado/atleta)"
-            },
-            "calculate": "Calcular Meta",
-            "results": {
-                "title": "Tus Resultados",
-                "bmr": "Tu cuerpo necesita:",
-                "tdee": "Mantener Peso:",
-                "bulk": "Para Crecer:",
-                "breakfast_recommendation": "Recomendación en el desayuno:",
-                "unit": "kcal",
-                "disclaimer": "Valores estimados basados en la fórmula Mifflin-St Jeor."
-            }
+        "showroom_caption": {
+            "title": "Desayunos y Smoothies",
+            "subtitle": "deliciosos para ganar masa muscular — simples, prácticos y con ingredientes del día a día"
         },
         "video_caption": {
             "title": "¿Tienes dudas a la hora de cocinar?",
             "subtitle": "No pierdas tiempo planeando qué comer"
         }
-    },
-    "cta": {
-        "title": "Eleva tu experiencia culinaria hoy",
-        "subtitle": "Acceso de por vida a Sabores Exclusivos. Todo lo que necesitas para ganar peso y desarrollar músculo de forma sabrosa y práctica.",
-        "button": "Quiero mi Acceso de Por Vida Ahora",
-        "guarantees": {
-            "taxes": "Pueden añadirse impuestos locales según el país",
-            "secure": "Pago 100% Seguro",
-            "access": "Acceso Inmediato",
-            "warranty": "Garantía de 7 días"
-        },
-        "urgency": "La oferta expira en:"
-    },
-    "footer": {
-        "rights": "© 2026 Sabores Exclusivos. Todos los derechos reservados."
     }
 }

@@ -20,13 +20,13 @@
     "reviews": {
         "title": "Algumas experiências de nossos usuários",
         "stories": {
-            "nicolas": "Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter",
-            "dani": "Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter",
-            "thiago": "Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter",
-            "lucia": "Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter",
-            "pablo": "Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter",
-            "camilla": "Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter",
-            "gina": "Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter"
+            "nicolas": "Estas comidas saudáveis mudaram completamente a forma como levo o meu dia",
+            "dani": "Os smoothies já se tornaram parte da minha rotina todos os dias na faculdade",
+            "thiago": "Conhecer os temperos deu sabores a alimentos simples que nunca imaginei que poderiam ter",
+            "lucia": "Sempre tive dificuldade em variar o café da manhã sem perder tempo. Hoje tornou-se tão fácil e tão delicioso que acabo fazendo para mim e para minha mãe também",
+            "pablo": "Sem dúvida, foi uma ótima escolha que fiz e me trouxe resultados",
+            "camilla": "As receitas são perfeitas, adiciono o meu toque e ficam maravilhosas",
+            "gina": "Posso dizer que já tenho a minha comida favorita"
         }
     },
     "features": {
@@ -35,98 +35,13 @@
             "title": "Os cafés da manhã, lanches e shakes mais recomendados, em um só lugar",
             "desc": "Com dois anos de experiência e centenas de feedbacks reais, pudemos entender que o maior desafio é se reinventar dentro de uma rotina. Unimos nossa bagagem em nutrição para criar um App com as receitas que mais trouxeram resultados reais para nossos alunos. "
         },
-        "faq_section": {
-            "title": "Sempre com Você",
-            "items": {
-                "0": {
-                    "q": "Porque cafés da manhã, lanches e shakes ?",
-                    "a": "Enquanto outros apps focam em refeições caras e complexas, nós focamos no que é prático. Como a primeira refeição do dia impacta diretamente sua meta de nutrientes, trazemos as melhores combinações para você não precisar 'correr atrás' de calorias no resto do dia"
-                },
-                "1": {
-                    "q": "Ter uma dieta custa caro ?",
-                    "a": "De jeito nenhum! Você vai ganhar músculos usando ingredientes que já fazem parte do seu dia a dia. O segredo do App está em transformar itens básicos em dezenas de combinações diferentes, para que você alcance seu objetivo sem enjoar do sabor"
-                },
-                "2": {
-                    "q": "É necessário comer tudo em grandes quantidades se quiser crescer ?",
-                    "a": "Este pensamento é um erro comum. Comer demais os alimentos errados causa enjoos, indisposição e falta de apetite. Nossas receitas são estratégicas, garantem uma carga alta de nutrientes de forma leve. Assim, você evita o sacrifício de ter que 'empurrar' pratos enormes no almoço ou jantar"
-                }
-            }
-        },
-        "always": {
-            "title": "Sempre com Você",
-            "desc": "Acesse suas receitas favoritas de qualquer lugar, online ou offline."
-        },
-        "transformations": {
-            "title": "Transformações Reais",
-            "desc": "Mais do que receitas, entregamos resultados. Veja a evolução de quem seguiu nossos métodos."
-        },
-        "target_audience": {
-            "title": "Para quem é o Sabores Exclusivos?",
-            "items": [
-                "Pessoas que desejam eliminar a dúvida na hora de cozinhar, chega de perder tempo planejando o que comer.",
-                "Para quem deseja se sentir confortável, tendo uma vasta variedade de receitas estratégicas na palma da mão para atingir seu objetivo.",
-                "Para quem busca destacar-se dos demais, dominando dezenas de receitas deliciosas que poucos conhecem, feitas com os mesmos ingredientes simples."
-            ]
-        },
-        "pricing": {
-            "consultation": "Preço médio de uma consulta por <1>sessão</1>",
-            "consultation_price": "US$ 40 - US$ 75",
-            "app_access": "App <1>Sabores Exclusivos</1> com livre acesso",
-            "app_price": "US$ 12.99",
-            "promotion": {
-                "title": "A decisão que separa você do seu objetivo",
-                "subtitle": "Garanta sua transformação nos próximos 6 meses e conheça sua melhor versão.",
-                "label": "Promoção de começo de janeiro de 2026",
-                "price_from": "De US$ 12.99",
-                "price_to": "por US$ 5.49"
-            }
-        },
-        "calculator": {
-            "title": "Descubra sua meta para crescer",
-            "subtitle": "Calcule sua Taxa Metabólica Basal e veja quanto você precisa consumir para ganhar músculos.",
-            "gender": "Gênero",
-            "male": "Masculino",
-            "female": "Feminino",
-            "age": "Idade",
-            "weight": "Peso (kg)",
-            "height": "Altura (cm)",
-            "activity": "Nível de Atividade",
-            "activity_levels": {
-                "sedentary": "Sedentário (pouco ou nenhum exercício)",
-                "light": "Levemente ativo (1-3 dias/semana)",
-                "moderate": "Moderadamente ativo (3-5 dias/semana)",
-                "active": "Altamente ativo (6-7 dias/semana)",
-                "extra": "Extremamente ativo (treino pesado/atleta)"
-            },
-            "calculate": "Calcular Meta",
-            "results": {
-                "title": "Seus Resultados",
-                "bmr": "Seu corpo necessita:",
-                "tdee": "Manter Peso:",
-                "bulk": "Para Crescer:",
-                "breakfast_recommendation": "Recomendação no café da manhã:",
-                "unit": "kcal",
-                "disclaimer": "Valores estimados com base na fórmula de Mifflin-St Jeor."
-            }
+        "showroom_caption": {
+            "title": "Cafés da manhã e Smoothies",
+            "subtitle": "deliciosos para ganhar massa muscular — simples, práticos e com ingredientes do dia a dia"
         },
         "video_caption": {
             "title": "Tem dúvidas na hora de cozinhar?",
             "subtitle": "Não perca tempo planejando o que comer"
         }
-    },
-    "cta": {
-        "title": "Eleve sua experiência culinária hoje",
-        "subtitle": "Acesso vitalício ao Sabores Exclusivos. Tudo o que você precisa para ganhar peso e construir músculos de forma saborosa e prática.",
-        "button": "Quero meu Acesso Vitalício Agora",
-        "guarantees": {
-            "taxes": "Impostos locais podem ser adicionados conforme o país",
-            "secure": "Pagamento 100% Seguro",
-            "access": "Acesso Imediato",
-            "warranty": "Garantia de 7 dias"
-        },
-        "urgency": "A oferta expira em:"
-    },
-    "footer": {
-        "rights": "© 2026 Sabores Exclusivos. Todos os direitos reservados."
     }
 }

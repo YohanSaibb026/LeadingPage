@@ -557,8 +557,8 @@ function App() {
                 </div>
 
                 <div className="reveal reveal-delay-1">
-                    <h2 className="showroom-caption-main">Cafés da manhã e Smoothies</h2>
-                    <p className="showroom-caption-detail">deliciosos para ganhar massa muscular — simples, práticos e com ingredientes do dia a dia</p>
+                    <h2 className="showroom-caption-main">{t('features.showroom_caption.title')}</h2>
+                    <p className="showroom-caption-detail">{t('features.showroom_caption.subtitle')}</p>
                 </div>
             </section>
 
