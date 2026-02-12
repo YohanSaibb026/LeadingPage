@@ -1,4 +1,9 @@
 {
+    "nav": {
+        "features": "Recursos",
+        "pricing": "Precios",
+        "download": "Descargar App"
+    },
     "hero": {
         "title": "<0>8 de cada 10 personas se rinden</0> <1>en los primeros 3 meses al intentar subir de peso y ganar masa muscular</1>",
         "subtitle": "Las quejas más comunes que se escuchan en los consultorios son",
@@ -12,10 +17,6 @@
         "demo": "Ver Demostración",
         "social": "Usado por más de 500+ aficionados a la cocina"
     },
-    "video_caption": {
-        "title": "¿Tienes dudas a la hora de cocinar?",
-        "subtitle": "No pierdas tiempo planeando qué comer"
-    },
     "reviews": {
         "title": "Algunas experiencias de nuestros usuarios",
         "stories": {
@@ -26,6 +27,17 @@
             "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
             "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
             "gina": "Puedo decir que ya tengo mi comida favorita"
+        }
+    },
+    "features": {
+        "title": "¿Por qué <1>Sabores Exclusivos</1>?",
+        "instant": {
+            "title": "Desayunos y Smoothies deliciosos para ganar masa muscular — simples, prácticos y con ingredientes del día a día",
+            "desc": "Tras escuchar a cientos de clientes, entendemos que la falta de tiempo y la dificultad para variar el menú son los mayores obstáculos de una dieta. Hemos unido toda nuestra experiencia en nutrición para que puedas dejar de preocuparte por la preparación y te centres en lo que realmente importa: Tus resultados."
+        },
+        "video_caption": {
+            "title": "¿Tienes dudas a la hora de cocinar?",
+            "subtitle": "No pierdas tiempo planeando qué comer"
         }
     }
 }
