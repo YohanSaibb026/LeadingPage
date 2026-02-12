@@ -345,13 +345,13 @@ function App() {
     const [activeStory, setActiveStory] = useState(0);
 
     const stories = [
-        { name: 'Nicolás N.', fullName: 'Nicolás Navas', avatar: avatarNicolas, content: meal2, quote: 'Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter' },
-        { name: 'Dani C.', fullName: 'Dani Castro', avatar: avatarDani, content: shakeStory, quote: 'Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter' },
-        { name: 'Thiago A.', fullName: 'Thiago Aguirre', avatar: avatarThiago, content: meal1, quote: 'Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter' },
-        { name: 'Lucia S.', fullName: 'Lucia Sánchez', avatar: avatarLucia, content: meal3, quote: 'Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter' },
-        { name: 'Pablo B.', fullName: 'Pablo Barrios', avatar: avatarPablo, content: meal4, quote: 'Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter' },
-        { name: 'Camilla B.', fullName: 'Camilla Beltrán', avatar: avatarCamilla, content: meal5, quote: 'Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter' },
-        { name: 'Gina F.', fullName: 'Gina Fonseca', avatar: avatarGina, content: mealGina, quote: 'Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter' },
+        { name: 'Nicolás N.', fullName: 'Nicolás Navas', avatar: avatarNicolas, content: meal2, quote: t('reviews.stories.nicolas') },
+        { name: 'Dani C.', fullName: 'Dani Castro', avatar: avatarDani, content: shakeStory, quote: t('reviews.stories.dani') },
+        { name: 'Thiago A.', fullName: 'Thiago Aguirre', avatar: avatarThiago, content: meal1, quote: t('reviews.stories.thiago') },
+        { name: 'Lucia S.', fullName: 'Lucia Sánchez', avatar: avatarLucia, content: meal3, quote: t('reviews.stories.lucia') },
+        { name: 'Pablo B.', fullName: 'Pablo Barrios', avatar: avatarPablo, content: meal4, quote: t('reviews.stories.pablo') },
+        { name: 'Camilla B.', fullName: 'Camilla Beltrán', avatar: avatarCamilla, content: meal5, quote: t('reviews.stories.camilla') },
+        { name: 'Gina F.', fullName: 'Gina Fonseca', avatar: avatarGina, content: mealGina, quote: t('reviews.stories.gina') },
     ];
 
     const transformations = [

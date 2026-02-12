@@ -18,7 +18,16 @@
         "social": "Usado por mais de 500+ chefs em casa"
     },
     "reviews": {
-        "title": "Algumas experiências de nossos usuários"
+        "title": "Algumas experiências de nossos usuários",
+        "stories": {
+            "nicolas": "Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter",
+            "dani": "Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter",
+            "thiago": "Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter",
+            "lucia": "Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter",
+            "pablo": "Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter",
+            "camilla": "Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter",
+            "gina": "Conhecer as especiarias deu sabores a alimentos simples que nunca imaginei que poderiam ter"
+        }
     },
     "features": {
         "title": "Por que <1>Sabores Exclusivos</1>?",
