@@ -4,8 +4,12 @@
         "subtitle": "Las quejas mais comuns que se escuchan en los consultorios son",
         "complaints": [
             "Sentirse desmotivado por falta de ideas de qué comer",
-            "Malestar después de comer en exceso alimentos no recomendados",
+            "Malestar después de comer en excesso alimentos no recomendados",
             "Pensar que uma dieta para subir de peso cuesta caro"
-        ]
+        ],
+        "punchline": "Las recetas más recomendadas con los mismos ingredientes simples que ya tienes en casa",
+        "continue": "Continuar",
+        "demo": "Ver Demostración",
+        "social": "Usado por más de 500+ aficionados a la cocina"
     }
 }

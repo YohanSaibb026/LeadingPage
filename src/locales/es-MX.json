@@ -1,11 +1,15 @@
 {
     "hero": {
-        "title": "<0>8 de cada 10 personas se rinden</0> <1>en los primeiros 3 meses al intentar subir de peso y ganar músculo</1>",
+        "title": "<0>8 de cada 10 personas se rinden</0> <1>en os primeiros 3 meses al intentar subir de peso y ganar músculo</1>",
         "subtitle": "Las quejas más comunes que se escuchan en los consultorios son",
         "complaints": [
             "Sentirse desmotivado por falta de ideas de qué comer",
-            "Malestar después de comer en exceso alimentos no recomendados",
-            "Pensar que una dieta para subir de peso cuesta caro"
-        ]
+            "Malestar después de comer en excesso alimentos no recomendados",
+            "Pensar que uma dieta para subir de peso cuesta caro"
+        ],
+        "punchline": "Las recetas más recomendadas con los mismos ingredientes sencillos que ya tienes en casa",
+        "continue": "Continuar",
+        "demo": "Ver Demostración",
+        "social": "Usado por más de 500+ aficionados a la cocina"
     }
 }
