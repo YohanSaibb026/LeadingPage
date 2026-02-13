@@ -5,7 +5,7 @@
         "download": "Descargar App"
     },
     "hero": {
-        "title": "<0>8 de cada 10 personas abandonan</0> <1>en los primeros 3 meses al intentar subir de peso y ganar músculo</1>",
+        "title": "<0>8 de cada 10 personas abandonan</0> <1>en los primeros 3 meses al intentar subir de peso e ganar músculo</1>",
         "subtitle": "Las quejas más comunes que se escuchan en los consultorios son",
         "complaints": [
             "Sentirse desmotivado por falta de ideas de qué comer",
@@ -23,8 +23,8 @@
             "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
             "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
-            "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoje se tornou tão fácil e tão delicioso que acabo fazendo para mim e para minha mãe também",
-            "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
+            "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
+            "pablo": "Sin duda, fue una gran elección la que hice e me trajo resultados",
             "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
             "gina": "Puedo decir que ya tengo mi comida favorita"
         }
@@ -48,7 +48,7 @@
             "items": [
                 {
                     "q": "¿Por qué desayunos, meriendas y shakes?",
-                    "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las mejores combinaciones para que no tengas que salir a buscar calorías el resto del día"
+                    "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las melhores combinaciones para que no tengas que salir a buscar calorías el resto del día"
                 },
                 {
                     "q": "¿Hacer una dieta cuesta caro?",
@@ -56,13 +56,26 @@
                 },
                 {
                     "q": "¿Es necesario comer en grandes cantidades para crecer?",
-                    "a": "Este pensamiento es un error común. Comer de más los alimentos equivocados causa náuseas, malestar y falta de apetito. Nuestras recetas son estratégicas y garantizan una alta carga de nutrientes de forma liviana. Así, evitás el sacrificio de tener que forzarte a comer platos enormes en el almuerzo o la cena"
+                    "a": "Este pensamiento es un error común. Comer de más los alimentos equivocados causa náuseas, malestar y falta de apetito. Nuestras recetas son estratégicas e garantizan una alta carga de nutrientes de forma liviana. Así, evitás el sacrificio de tener que forzarte a comer platos enormes en el almuerzo o la cena"
                 }
             ]
         },
         "transformations": {
             "title": "Transformaciones reales",
             "desc": "Más que recetas, entregamos resultados. Mira la evolución de quienes siguieron nuestros métodos"
+        },
+        "pricing": {
+            "consultation": "Precio promedio de <1>una consulta</1> por sesión",
+            "consultation_price": "US$ 40 - US$ 75",
+            "app_access": "Acceso completo a <1/>",
+            "app_price": "US$ 25.00",
+            "promotion": {
+                "title": "Oferta Especial de Lanzamiento",
+                "subtitle": "No pierdas esta oportunidad de transformar tu cuerpo con ingredientes simples",
+                "label": "ACCESO DE POR VIDA",
+                "price_from": "De US$ 25.00",
+                "price_to": "Por solo US$ 9.90"
+            }
         },
         "calculator": {
             "title": "Descubrí tu meta para crecer",
