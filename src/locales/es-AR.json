@@ -5,7 +5,7 @@
         "download": "Descargar App"
     },
     "hero": {
-        "title": "<0>8 de cada 10 personas abandonan</0> <1>en los primeiros 3 meses al intentar subir de peso y ganar músculo</1>",
+        "title": "<0>8 de cada 10 personas abandonan</0> <1>en los primeros 3 meses al intentar subir de peso y ganar músculo</1>",
         "subtitle": "Las quejas más comunes que se escuchan en los consultorios son",
         "complaints": [
             "Sentirse desmotivado por falta de ideas de qué comer",
@@ -23,7 +23,7 @@
             "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
             "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
-            "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
+            "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoje se tornou tão fácil e tão delicioso que acabo fazendo para mim e para minha mãe também",
             "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
             "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
             "gina": "Puedo decir que ya tengo mi comida favorita"
@@ -52,7 +52,7 @@
                 },
                 {
                     "q": "¿Hacer una dieta cuesta caro?",
-                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de the App está en transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor"
+                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de la App está en transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor"
                 },
                 {
                     "q": "¿Es necesario comer en grandes cantidades para crecer?",
@@ -60,9 +60,13 @@
                 }
             ]
         },
+        "transformations": {
+            "title": "Transformaciones reales",
+            "desc": "Más que recetas, entregamos resultados. Mira la evolución de quienes siguieron nuestros métodos"
+        },
         "calculator": {
             "title": "Descubrí tu meta para crecer",
-            "subtitle": "Calculá tu Tasa Metabólica Basal y mirá cuánto necesitás consumir para ganar músculo",
+            "subtitle": "Calculá tu Tasa Metabólica Basal e mirá cuánto necesitás consumir para ganar músculo",
             "gender": "Género",
             "male": "Masculino",
             "female": "Femenino",
