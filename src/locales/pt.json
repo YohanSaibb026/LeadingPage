@@ -25,7 +25,7 @@
             "thiago": "Conhecer os temperos deu sabores a alimentos simples que nunca imaginei que poderiam ter",
             "lucia": "Sempre tive dificuldade em variar o café da manhã sem perder tempo. Hoje tornou-se tão fácil e tão delicioso que acabo fazendo para mim e para minha mãe também",
             "pablo": "Sem dúvida, foi uma ótima escolha que fiz e me trouxe resultados",
-            "camilla": "As receitas são perfeitas, adiciono o meu toque e ficam maravilhosas",
+            "camilla": "As receitas são perfeitas, adiciono o meu toque e ficam maravidoras",
             "gina": "Posso dizer que já tenho a minha comida favorita"
         }
     },
@@ -33,7 +33,7 @@
         "title": "Por que <1>Sabores Exclusivos</1>?",
         "instant": {
             "title": "Os cafés da manhã, lanches e shakes mais recomendados, em um só lugar",
-            "desc": "Com dois anos de experiência e centenas de feedbacks reais, pudemos entender que o maior desafio é se reinventar dentro de uma rotina. Unimos nossa bagagem em nutrição para criar um App com as receitas que mais trouxeram resultados reais para nossos alunos. "
+            "desc": "Com dois anos de experiência e centenas de feedbacks reais, pudimos entender que o maior desafio é se reinventar dentro de uma rotina. Unimos nossa bagagem em nutrição para criar um App com as receitas que mais trouxeram resultados reais para nossos alunos. "
         },
         "showroom_caption": {
             "title": "Cafés da manhã e Smoothies",
@@ -42,6 +42,68 @@
         "video_caption": {
             "title": "Tem dúvidas na hora de cozinhar?",
             "subtitle": "Não perca tempo planejando o que comer"
+        },
+        "faq_section": {
+            "title": "Sempre com você",
+            "items": [
+                {
+                    "q": "Por que cafés da manhã, lanches e shakes?",
+                    "a": "Enquanto outros apps focam em comidas caras e complexas, nós focamos no prático. Como a primeira refeição do dia impacta diretamente sua meta de nutrientes, trazemos as melhores combinações para você não precisar sair correndo atrás de calorias o resto do dia."
+                },
+                {
+                    "q": "Fazer dieta custa caro?",
+                    "a": "De jeito nenhum! Você vai ganhar músculos usando ingredientes que já fazem parte do seu dia a dia. O segredo do App está em transformar ingredientes básicos em dezenas de combinações diferentes, para você atingir seu objetivo sem enjoar do sabor."
+                },
+                {
+                    "q": "É necessário comer em grandes quantidades para crescer?",
+                    "a": "Esse pensamento é um erro comum. Comer o excesso dos alimentos errados causa náuseas, mal-estar e falta de apetite. Nossas receitas são estratégicas e garantem uma alta carga de nutrientes de forma leve. Assim, você evita o sacrifício de ter que se forçar a comer pratos enormes no almoço ou jantar."
+                }
+            ]
+        },
+        "transformations": {
+            "title": "Transformações reais",
+            "desc": "Mais do que receitas, entregamos resultados. Veja a evolução de quem seguiu nossos métodos."
+        },
+        "pricing": {
+            "consultation": "Preço médio de uma consulta por <1>sessão</1>",
+            "consultation_price": "US$ 40 - US$ 75",
+            "app_access": "App <1/>\ncom livre acesso",
+            "app_price": "US$ 12.99",
+            "promotion": {
+                "title": "Oferta Especial de Lançamento",
+                "subtitle": "Não perca esta oportunidade de transformar seu corpo com ingredientes simples",
+                "label": "ACESSO VITALÍCIO",
+                "price_from": "De US$ 25.00",
+                "price_to": "Por apenas US$ 9.90"
+            }
+        },
+        "calculator": {
+            "title": "Descubra sua meta para crescer",
+            "subtitle": "Calcule sua Taxa Metabólica Basal e veja quanto você precisa consumir para ganhar músculos",
+            "gender": "Gênero",
+            "male": "Masculino",
+            "female": "Feminino",
+            "age": "Idade",
+            "weight": "Peso (kg)",
+            "height": "Altura (cm)",
+            "activity": "Nível de Atividade",
+            "activity_levels": {
+                "sedentary": "Sedentário (pouco ou nenhum exercício)",
+                "light": "Levemente ativo (1–3 dias/semana)",
+                "moderate": "Moderadamente ativo (3–5 dias/semana)",
+                "active": "Altamente ativo (6–7 dias/semana)",
+                "extra": "Extremadamente ativo (treino pesado/atleta)"
+            },
+            "calculate": "Calcular Meta",
+            "results": {
+                "title": "Seus Resultados",
+                "bmr": "Seu corpo precisa de:",
+                "tdee": "Para manter o peso:",
+                "bulk": "Para crescer:",
+                "breakfast_recommendation": "Recomendação no café da manhã:",
+                "unit": "kcal",
+                "disclaimer": "Valores estimados baseados na fórmula Mifflin-St Jeor."
+            }
         }
     }
 }
