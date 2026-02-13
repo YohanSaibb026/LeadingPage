@@ -25,7 +25,7 @@
             "thiago": "Conhecer os temperos deu sabores a alimentos simples que nunca imaginei que poderiam ter",
             "lucia": "Sempre tive dificuldade em variar o café da manhã sem perder tempo. Hoje tornou-se tão fácil e tão delicioso que acabo fazendo para mim e para minha mãe também",
             "pablo": "Sem dúvida, foi uma ótima escolha que fiz e me trouxe resultados",
-            "camilla": "As receitas são perfeitas, adiciono o meu toque e ficam maravidoras",
+            "camilla": "As receitas são perfeitas, adiciono o meu toque e ficam maravilhosas",
             "gina": "Posso dizer que já tenho a minha comida favorita"
         }
     },
@@ -33,7 +33,7 @@
         "title": "Por que <1>Sabores Exclusivos</1>?",
         "instant": {
             "title": "Os cafés da manhã, lanches e shakes mais recomendados, em um só lugar",
-            "desc": "Com dois anos de experiência e centenas de feedbacks reais, pudimos entender que o maior desafio é se reinventar dentro de uma rotina. Unimos nossa bagagem em nutrição para criar um App com as receitas que mais trouxeram resultados reais para nossos alunos. "
+            "desc": "Com dois anos de experiência e centenas de feedbacks reais, pudemos entender que o maior desafio é se reinventar dentro de uma rotina. Unimos nossa bagagem em nutrição para criar um App com as receitas que mais trouxeram resultados reais para nossos alunos. "
         },
         "showroom_caption": {
             "title": "Cafés da manhã e Smoothies",
@@ -56,7 +56,7 @@
                 },
                 {
                     "q": "É necessário comer em grandes quantidades para crescer?",
-                    "a": "Esse pensamento é um erro comum. Comer o excesso dos alimentos errados causa náuseas, mal-estar e falta de apetite. Nossas receitas são estratégicas e garantem uma alta carga de nutrientes de forma leve. Assim, você evita o sacrifício de ter que se forçar a comer pratos enormes no almoço ou jantar."
+                    "a": "Esse pensamento é um erro comum. Comer o excesso dos alimentos errados causa náuseas, mal-estar e falta de apetite. Nossas receitas são estratégicas e garantizam uma alta carga de nutrientes de forma leve. Assim, você evita o sacrifício de ter que se forçar a comer pratos enormes no almoço ou jantar."
                 }
             ]
         },
@@ -67,7 +67,7 @@
         "pricing": {
             "consultation": "Preço médio de uma consulta por <1>sessão</1>",
             "consultation_price": "US$ 40 - US$ 75",
-            "app_access": "App <1/>\ncom livre acesso",
+            "app_access": "App <1>Sabores Exclusivos</1>\ncom livre acesso",
             "app_price": "US$ 12.99",
             "promotion": {
                 "title": "Oferta Especial de Lançamento",
@@ -82,7 +82,7 @@
             "subtitle": "Calcule sua Taxa Metabólica Basal e veja quanto você precisa consumir para ganhar músculos",
             "gender": "Gênero",
             "male": "Masculino",
-            "female": "Feminino",
+            "female": "Femenino",
             "age": "Idade",
             "weight": "Peso (kg)",
             "height": "Altura (cm)",

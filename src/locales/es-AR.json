@@ -23,7 +23,7 @@
             "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
             "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
-            "lucia": "Siempre tuve dificuldade para variar el desayuno sin perder tiempo. Hoy se tornou tan fácil y tan delicioso que acabo haciéndolo para mí y para mi mamá también",
+            "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
             "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
             "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
             "gina": "Puedo decir que ya tengo mi comida favorita"
@@ -32,12 +32,12 @@
     "features": {
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
-            "title": "Los desayunos, meriendas y smoothies más recomendados, in solo lugar",
-            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales les trajeron a nuestros alumnos"
+            "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
+            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experienca en nutrición para crear una App con las recetas que más resultados reales les trajeron a nuestros alumnos"
         },
         "showroom_caption": {
             "title": "Desayunos y Smoothies",
-            "subtitle": "deliciosos para ganar masa muscular — simples, prácticos y con ingredientes del día a día"
+            "subtitle": "deliciosos para ganar masa muscular — simples, prácticos y con ingredientes del día a dia"
         },
         "video_caption": {
             "title": "¿Tenés dudas a la hora de cocinar?",
@@ -52,7 +52,7 @@
                 },
                 {
                     "q": "¿Hacer una dieta cuesta caro?",
-                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de a App está en transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor"
+                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de la App está en transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor"
                 },
                 {
                     "q": "¿Es necesario comer en grandes cantidades para crecer?",
@@ -67,7 +67,7 @@
         "pricing": {
             "consultation": "Precio promedio de <1>una consulta</1> por sesión",
             "consultation_price": "US$ 40 - US$ 75",
-            "app_access": "App <1/>\ncon acceso ilimitado",
+            "app_access": "App <1>Sabores Exclusivos</1>\ncon acceso ilimitado",
             "app_price": "US$ 12.99",
             "promotion": {
                 "title": "Oferta Especial de Lanzamiento",
@@ -83,12 +83,12 @@
             "gender": "Género",
             "male": "Masculino",
             "female": "Femenino",
-            "age": "Edad",
+            "age": "Idade",
             "weight": "Peso (kg)",
             "height": "Altura (cm)",
             "activity": "Nivel de Actividad",
             "activity_levels": {
-                "sedentary": "Sedentario (poco o nada de exercício)",
+                "sedentary": "Sedentario (poco o nada de ejercicio)",
                 "light": "Ligeramente activo (1–3 días/semana)",
                 "moderate": "Moderadamente activo (3–5 días/semana)",
                 "active": "Altamente activo (6–7 días/semana)",
@@ -100,7 +100,7 @@
                 "bmr": "Tu cuerpo necesita:",
                 "tdee": "Mantener Peso:",
                 "bulk": "Para Crecer:",
-                "breakfast_recommendation": "Recomendación en o desayuno:",
+                "breakfast_recommendation": "Recomendación en el desayuno:",
                 "unit": "kcal",
                 "disclaimer": "Valores estimados basados en la fórmula Mifflin-St Jeor."
             }
