@@ -24,7 +24,7 @@
             "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
             "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
-            "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
+            "pablo": "Sin duda, fue una gran escolha la que hice y me trajo resultados",
             "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
             "gina": "Puedo decir que ya tengo mi comida favorita"
         }
@@ -43,6 +43,23 @@
             "title": "¿Tenés dudas a la hora de cocinar?",
             "subtitle": "No pierdas tiempo planeando qué comer"
         },
+        "faq_section": {
+            "title": "Siempre contigo",
+            "items": [
+                {
+                    "q": "¿Por qué desayunos, meriendas y shakes?",
+                    "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las mejores combinaciones para que no tengas que salir a buscar calorías el resto del día"
+                },
+                {
+                    "q": "Pregunta frecuente 2",
+                    "a": "Respuesta en breve..."
+                },
+                {
+                    "q": "Pregunta frecuente 3",
+                    "a": "Respuesta en breve..."
+                }
+            ]
+        },
         "calculator": {
             "title": "Descubrí tu meta para crecer",
             "subtitle": "Calculá tu Tasa Metabólica Basal y mirá cuánto necesitás consumir para ganar músculo",
@@ -54,7 +71,7 @@
             "height": "Altura (cm)",
             "activity": "Nivel de Actividad",
             "activity_levels": {
-                "sedentary": "Sedentario (poco o ningún ejercicio)",
+                "sedentary": "Sedentario (poco o nada de ejercicio)",
                 "light": "Ligeramente activo (1–3 días/semana)",
                 "moderate": "Moderadamente activo (3–5 días/semana)",
                 "active": "Altamente activo (6–7 días/semana)",

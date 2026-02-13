@@ -33,7 +33,7 @@
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
             "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
-            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales han traído a nuestros alumnos"
+            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutricional para crear una App con las recetas que más resultados reales han traído a nuestros alumnos"
         },
         "showroom_caption": {
             "title": "Desayunos y Smoothies",
@@ -42,6 +42,23 @@
         "video_caption": {
             "title": "¿Tienes dudas a la hora de cocinar?",
             "subtitle": "No pierdas tiempo planeando qué comer"
+        },
+        "faq_section": {
+            "title": "Siempre contigo",
+            "items": [
+                {
+                    "q": "¿Por qué desayunos, meriendas y shakes?",
+                    "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las mejores combinaciones para que no tengas que andar buscando calorías el resto del día"
+                },
+                {
+                    "q": "Pregunta frecuente 2",
+                    "a": "Respuesta en breve..."
+                },
+                {
+                    "q": "Pregunta frecuente 3",
+                    "a": "Respuesta en breve..."
+                }
+            ]
         },
         "calculator": {
             "title": "Descubre tu meta para crecer",
@@ -54,7 +71,7 @@
             "height": "Altura (cm)",
             "activity": "Nivel de Actividad",
             "activity_levels": {
-                "sedentary": "Sedentario (poco o ningún ejercicio)",
+                "sedentary": "Sedentario (poco o nada de ejercicio)",
                 "light": "Ligeramente activo (1–3 días/semana)",
                 "moderate": "Moderadamente activo (3–5 días/semana)",
                 "active": "Altamente activo (6–7 días/semana)",

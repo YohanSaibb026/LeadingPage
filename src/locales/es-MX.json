@@ -15,7 +15,7 @@
         "punchline": "Las recetas más recomendadas con los mismos ingredientes sencillos que ya tienes en casa",
         "continue": "Continuar",
         "demo": "Ver Demostración",
-        "social": "Usado por más de 500+ aficionados a la cocina"
+        "social": "Usado por más de 500+ aficionados de la cocina"
     },
     "reviews": {
         "title": "Algunas experiencias de nuestros usuarios",
@@ -43,6 +43,23 @@
             "title": "¿Tienes dudas a la hora de cocinar?",
             "subtitle": "No pierdas tiempo planeando qué comer"
         },
+        "faq_section": {
+            "title": "Siempre contigo",
+            "items": [
+                {
+                    "q": "¿Por qué desayunos, meriendas y shakes?",
+                    "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las mejores combinaciones para que no tengas que andar buscando calorías el resto del día"
+                },
+                {
+                    "q": "Pregunta frecuente 2",
+                    "a": "Respuesta en breve..."
+                },
+                {
+                    "q": "Pregunta frecuente 3",
+                    "a": "Respuesta en breve..."
+                }
+            ]
+        },
         "calculator": {
             "title": "Descubre tu meta para crecer",
             "subtitle": "Calcula tu Tasa Metabólica Basal y mira cuánto necesitas consumir para ganar músculo",
@@ -54,7 +71,7 @@
             "height": "Altura (cm)",
             "activity": "Nivel de Actividad",
             "activity_levels": {
-                "sedentary": "Sedentario (poco o ningún ejercicio)",
+                "sedentary": "Sedentario (poco o nada de ejercicio)",
                 "light": "Ligeramente activo (1–3 días/semana)",
                 "moderate": "Moderadamente activo (3–5 días/semana)",
                 "active": "Altamente activo (6–7 días/semana)",
