@@ -5,14 +5,14 @@
         "download": "Descargar App"
     },
     "hero": {
-        "title": "<0>8 de cada 10 personas se rinden</0> <1>en los primeros 3 meses al intentar subir de peso y ganar masa muscular</1>",
+        "title": "<0>8 de cada 10 personas se rinden</0> <1>en los primeiros 3 meses al intentar subir de peso y ganar masa muscular</1>",
         "subtitle": "Las quejas más comunes que se escuchan en los consultorios son",
         "complaints": [
             "Sentirse desmotivado por falta de ideas de qué comer",
             "Malestar después de comer en exceso alimentos no recomendados",
             "Pensar que una dieta para subir de peso cuesta caro"
         ],
-        "punchline": "Las recetas más recomendadas con los mismos ingredientes sencillos que ya tienes en casa",
+        "punchline": "Las receitas más recomendadas con los mismos ingredientes sencillos que ya tienes en casa",
         "continue": "Continuar",
         "demo": "Ver Demostración",
         "social": "Usado por más de 500+ aficionados de la cocina"
@@ -23,9 +23,9 @@
             "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
             "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
-            "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
-            "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
-            "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
+            "lucia": "Siempre tive dificultad para variar el desayuno sin perder tiempo. Hoje se tornou tan fácil y tan delicioso que acabo haciéndolo para mí y para mi mamá también",
+            "pablo": "Sin duda, fue una gran elección la que hice e me trajo resultados",
+            "camilla": "Las receitas son perfectas, les agrego mi toque y quedan maravillosas",
             "gina": "Puedo decir que ya tengo mi comida favorita"
         }
     },
@@ -33,21 +33,21 @@
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
             "title": "Los desayunos, meriendas e smoothies más recomendados, en um solo lugar",
-            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales han traído a nuestros alumnos"
+            "desc": "Con dos años de experiencia e centenas de feedbacks reales, pudimos entender que o maior desafio es reinventarse dentro de una rutina. Unimos nuestra bagagem en nutrición para crear una App con las receitas que más resultados reales han traído a nuestros alumnos"
         },
         "showroom_caption": {
             "title": "Desayunos y Smoothies",
-            "subtitle": "deliciosos para ganar masa muscular — simples, prácticos y con ingredientes del día a día"
+            "subtitle": "deliciosos para ganhar masa muscular — simples, prácticos y con ingredientes del día a día"
         },
         "video_caption": {
             "title": "¿Tienes dudas a la hora de cocinar?",
-            "subtitle": "No pierdas tiempo planeando qué comer"
+            "subtitle": "No pierda tiempo planeando qué comer"
         },
         "faq_section": {
             "title": "Siempre contigo",
             "items": [
                 {
-                    "q": "¿Por qué desayunos, meriendas y shakes?",
+                    "q": "¿Por qué desayunos, meriendas y batidos?",
                     "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las mejores combinaciones para que no tengas que andar buscando calorías el resto del día"
                 },
                 {
@@ -61,7 +61,7 @@
             ]
         },
         "transformations": {
-            "title": "Transformaciones reales",
+            "title": "Transformações reales",
             "desc": "Más que recetas, entregamos resultados. Mira la evolución de quienes siguieron nuestros métodos"
         },
         "pricing": {
@@ -79,14 +79,14 @@
         },
         "calculator": {
             "title": "Descubre tu meta para crecer",
-            "subtitle": "Calcula tu Tasa Metabólica Basal y mira cuánto necesitas consumir para ganar músculo",
+            "subtitle": "Calcula tu Tasa Metabólica Basal e mirá cuánto necesitas consumir para ganar músculo",
             "gender": "Género",
             "male": "Masculino",
             "female": "Femenino",
             "age": "Edad",
             "weight": "Peso (kg)",
             "height": "Altura (cm)",
-            "activity": "Nivel de Actividad",
+            "activity": "Nivel de Actividade",
             "activity_levels": {
                 "sedentary": "Sedentario (poco o nada de ejercicio)",
                 "light": "Ligeramente activo (1–3 días/semana)",
@@ -100,7 +100,7 @@
                 "bmr": "Tu cuerpo necesita:",
                 "tdee": "Mantener Peso:",
                 "bulk": "Para Crecer:",
-                "breakfast_recommendation": "Recomendación en el desayuno:",
+                "breakfast_recommendation": "Recomendación no café da manhã:",
                 "unit": "kcal",
                 "disclaimer": "Valores estimados basados en la fórmula Mifflin-St Jeor."
             }
