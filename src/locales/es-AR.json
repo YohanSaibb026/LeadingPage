@@ -24,7 +24,7 @@
             "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
             "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
-            "pablo": "Sin duda, fue una gran escolha la que hice y me trajo resultados",
+            "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
             "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
             "gina": "Puedo decir que ya tengo mi comida favorita"
         }
@@ -33,7 +33,7 @@
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
             "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
-            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales les trajeron a nuestros alumnos"
+            "desc": "Con dos años de experiencia e cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales les trajeron a nuestros alumnos"
         },
         "showroom_caption": {
             "title": "Desayunos y Smoothies",
@@ -51,12 +51,12 @@
                     "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las mejores combinaciones para que no tengas que salir a buscar calorías el resto del día"
                 },
                 {
-                    "q": "Pregunta frecuente 2",
-                    "a": "Respuesta en breve..."
+                    "q": "¿Hacer una dieta cuesta caro?",
+                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de la App está en transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor"
                 },
                 {
-                    "q": "Pregunta frecuente 3",
-                    "a": "Respuesta en breve..."
+                    "q": "¿Es necesario comer en grandes cantidades para crecer?",
+                    "a": "Este pensamiento es un error común. Comer de más los alimentos equivocados causa náuseas, malestar y falta de apetito. Nuestras recetas son estratégicas y garantizan una alta carga de nutrientes de forma liviana. Así, evitás el sacrificio de tener que forzarte a comer platos enormes en el almuerzo o la cena"
                 }
             ]
         },
