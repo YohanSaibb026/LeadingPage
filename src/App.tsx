@@ -672,7 +672,14 @@ function App() {
                     <h3 className="promo-title">{t('features.pricing.promotion.title')}</h3>
                     <p className="promo-subtitle">{t('features.pricing.promotion.subtitle')}</p>
                     <div className="promo-divider"></div>
-                    <p className="promo-label">{t('features.pricing.promotion.label')}</p>
+                    <p className="promo-label">
+                        <Trans
+                            i18nKey="features.pricing.promotion.label"
+                            components={{
+                                1: <BrandBadge />
+                            }}
+                        />
+                    </p>
                     <div className="promo-price-container">
                         <span className="promo-from">{t('features.pricing.promotion.price_from')}</span>
                         <span className="promo-to">{t('features.pricing.promotion.price_to')}</span>
