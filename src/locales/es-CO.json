@@ -6,13 +6,13 @@
     },
     "hero": {
         "title": "<0>7 de cada 10 personas se rinden</0> <1>en los primeros 3 meses al intentar subir de peso y ganar músculo</1>",
-        "subtitle": "Las quejas más comunes que se escuchan en los consultorios son",
+        "subtitle": "Las quejas mais comunes que se escucham en los consultorios son",
         "complaints": [
             "Sentirse desmotivado por falta de ideas de qué comer",
-            "Malestar después de comer en exceso alimentos no recomendados",
+            "Malestar después de comer en excesso alimentos no recomendados",
             "Pensar que una dieta para subir de peso cuesta caro"
         ],
-        "punchline": "Las receitas mais recomendadas con los mesmos ingredientes simples que ya tienes en casa",
+        "punchline": "Las receitas mais recomendadas con los mesmos ingredientes sencillos que ya tienes en casa",
         "continue": "Continuar",
         "demo": "Ver Demostración",
         "social": "Usado por mais de 500+ aficionados de la cocina"
@@ -23,10 +23,10 @@
             "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
             "dani": "Los smoothies já se tornaram parte da minha rotina todos os dias na faculdade",
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
-            "lucia": "Sempre tive dificuldade em variar o café da manhã sem perder tempo. Hoje tornou-se tão fácil e tão delicioso que acabo fazendo para mim e para mi mamá también",
+            "lucia": "Siempre tive dificuldade em variar o café da manhã sem perder tempo. Hoje tornou-se tão fácil e tão delicioso que acabo fazendo para mim e para mi mamá también",
             "pablo": "Sin duda, fue uma grande escolha que fiz e me trouxe resultados",
             "camilla": "As receitas são perfeitas, adiciono o meu toque e ficam maravilhosas",
-            "gina": "Puedo decir que ya tengo mi comida favorita"
+            "gina": "Puedo dizer que já tenho minha comida favorita"
         }
     },
     "features": {
@@ -48,14 +48,14 @@
             "items": [
                 {
                     "q": "¿Por qué desayunos, meriendas y batidos?",
-                    "a": "Mientras otras apps se enfocan em comidas caras e complexas, nosotros nos enfocamos en lo práctico. Como la primeira comida do dia impacta diretamente sua meta de nutrientes, trazemos as melhores combinações para que não tenha que andar buscando calorias o resto do dia."
+                    "a": "Mientras otras apps se enfocan em comidas caras e complexas, nosotros nos enfocamos en lo práctico. Como a primeira comida do dia impacta diretamente sua meta de nutrientes, trazemos as melhores combinações para que não tenha que andar buscando calorias o resto do dia."
                 },
                 {
                     "q": "¿Hacer una dieta cuesta caro?",
-                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de a App está em transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte do sabor"
+                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que já fazem parte de tu dia a dia. El secreto de a App está em transformar ingredientes básicos en decenas de combinaciones differentes, para que alcances tu objetivo sin cansarte do sabor"
                 },
                 {
-                    "q": "¿Es necesario comer en grandes quantidades para crescer?",
+                    "q": "¿Es necessário comer em grandes quantidades para crescer?",
                     "a": "Este pensamento é um erro comum. Comer o excesso dos alimentos errados causa náuseas, mal-estar e falta de apetite. Nossas receitas são estratégicas e garantizan uma alta carga de nutrientes de forma leve. Assim, você evita o sacrifício de ter que se forçar a comer pratos enormes no almoço ou jantar."
                 }
             ]
@@ -65,9 +65,9 @@
             "desc": "Mais do que receitas, entregamos resultados. Veja a evolução de quem seguiu nossos métodos."
         },
         "pricing": {
-            "consultation": "Precio promedio de <1>una consulta</1> por sesión",
+            "consultation": "Precio promedio de <1>una consulta</1> por sessão",
             "consultation_price": "US$ 40 - US$ 75",
-            "app_access": "App <1>Sabores Exclusivos</1>\ncon acceso ilimitado",
+            "app_access": "App <1>Sabores Exclusivos</1>\ncon acesso ilimitado",
             "app_price": "US$ 12.99",
             "promotion": {
                 "title": "Oferta Especial de Lançamento",
