@@ -24,7 +24,7 @@
             "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
             "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
-            "pablo": "Sin duda, fue una gran escolha la que hice y me trajo resultados",
+            "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
             "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
             "gina": "Puedo decir que ya tengo mi comida favorita"
         }
@@ -32,8 +32,8 @@
     "features": {
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
-            "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
-            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales han traído a nuestros alumnos"
+            "title": "Los desayunos, meriendas e smoothies mais recomendados, en un solo lugar",
+            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el maior desafío es reinventarse dentro de uma rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales han traído a nuestros alumnos"
         },
         "showroom_caption": {
             "title": "Desayunos y Smoothies",
@@ -72,7 +72,7 @@
             "promotion": {
                 "title": "La decisión que te separa de tu objetivo",
                 "subtitle": "Asegura tu transformación en los próximos 6 meses y conoce tu mejor versión",
-                "label": "Tu oportunidade de probar <br/> <1>Sabores Exclusivos</1> <br/> con 58% OFF",
+                "label": "Tu oportunidad de probar <br/> <1>Sabores Exclusivos</1> <br/> con 58% OFF",
                 "price_from": "De US$ 12.99",
                 "price_to": "Por US$ 5.49"
             }
@@ -108,7 +108,7 @@
     },
     "cta": {
         "title": "Eleva tu experiencia culinaria hoy",
-        "subtitle": "Únete a las personas que ya están transformando sus vidas con recetas simples y deliciosas.",
+        "subtitle": "Acceso vitalicio a Sabores Exclusivos. Todo lo que necesitas para subir de peso y construir músculo de forma sabrosa y práctica",
         "urgency": "Oferta por tiempo limitado",
         "button": "¡Obtener Acceso Ahora!",
         "guarantees": {
