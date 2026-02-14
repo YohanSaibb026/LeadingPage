@@ -1011,12 +1011,38 @@
 }
 
 .promo-label {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 1.1rem;
+    text-transform: none;
+    letter-spacing: normal;
     color: #F97316;
+    font-weight: 700;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: underline;
+}
+
+.brand-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 1rem;
+    border: 1.5px solid white;
+    border-radius: 12px;
+    background: transparent;
+    color: white;
     font-weight: 800;
-    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    text-transform: none !important;
+    text-decoration: none !important;
+    margin: 0.2rem 0;
+}
+
+.brand-badge .badge-icon {
+    color: #fb923c;
+    flex-shrink: 0;
 }
 
 .promo-price-container {
