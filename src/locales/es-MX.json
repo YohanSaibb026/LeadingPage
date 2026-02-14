@@ -33,14 +33,6 @@
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
             "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
-            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App with las recetas que más resultados reales han traído a nuestros alumnos"
-        },
-        "instant_FIXED": {
-            "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
-            "desc": "Con dos años de experiencia e cientos de feedbacks reales, pudimos entender que o maior desafio é reinventar-se dentro de uma rotina. Unimos nossa experiência em nutrição para criar uma App com as receitas que mais resultados reais trouxeram aos nossos alunos"
-        },
-        "instant_CORRECTED": {
-            "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
             "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales han traído a nuestros alumnos"
         },
         "showroom_caption": {
@@ -56,7 +48,7 @@
             "items": [
                 {
                     "q": "¿Por qué desayunos, meriendas y shakes?",
-                    "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las mejores combinaciones para que no tengas que andar buscando calorías el resto del día"
+                    "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las melhores combinaciones para que no tengas que andar buscando calorías el resto del día"
                 },
                 {
                     "q": "¿Hacer una dieta cuesta caro?",
@@ -75,7 +67,7 @@
         "pricing": {
             "consultation": "Precio promedio de una consulta por <1>sesión</1>",
             "consultation_price": "US$ 40 - US$ 75",
-            "app_access": "App <1>Sabores Exclusivos</1>\ncon acceso ilimitado",
+            "app_access": "App <1>Sabores Exclusivos</1> con acceso ilimitado",
             "app_price": "US$ 12.99",
             "promotion": {
                 "title": "Oferta Especial de Lanzamiento",
