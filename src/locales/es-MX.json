@@ -5,7 +5,7 @@
         "download": "Descargar App"
     },
     "hero": {
-        "title": "<0>7 de cada 10 personas se rinden</0> <1>en los primeros 3 meses al intentar subir de peso y ganar músculo</1>",
+        "title": "<0>7 de cada 10 personas se rinden</0> <1>en los primeiros 3 meses al intentar subir de peso e ganar músculo</1>",
         "subtitle": "Las quejas más comunes que se escuchan en los consultorios son",
         "complaints": [
             "Sentirse desmotivado por falta de ideas de qué comer",
@@ -20,10 +20,10 @@
     "reviews": {
         "title": "Algunas experiencias de nuestros usuarios",
         "stories": {
-            "nicolas": "Estas comidas saludables cambiaron por completo la forma in que llevo mi día",
+            "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
             "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
-            "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
+            "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí e para mi mamá también",
             "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
             "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
             "gina": "Puedo decir que ya tengo mi comida favorita"
@@ -33,7 +33,7 @@
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
             "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
-            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales han traído a nuestros alumnos"
+            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales han traído a nossos alumnos"
         },
         "showroom_caption": {
             "title": "Desayunos y Smoothies",
@@ -48,7 +48,7 @@
             "items": [
                 {
                     "q": "¿Por qué desayunos, meriendas y shakes?",
-                    "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las mejores combinaciones para que no tengas que andar buscando calorías el resto del día"
+                    "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las melhores combinaciones para que no tengas que andar buscando calorías el resto del día"
                 },
                 {
                     "q": "¿Hacer una dieta cuesta caro?",
@@ -72,9 +72,9 @@
             "promotion": {
                 "title": "La decisión que te separa de tu objetivo",
                 "subtitle": "Asegura tu transformación en los próximos 6 meses y conoce tu mejor versión",
-                "label": "ACCESO DE POR VIDA",
-                "price_from": "De US$ 25.00",
-                "price_to": "Por apenas US$ 9.90"
+                "label": "Tu oportunidad de probar <1>Sabores Exclusivos</1> con 58% OFF",
+                "price_from": "De US$ 12.99",
+                "price_to": "Por US$ 5.49"
             }
         },
         "calculator": {

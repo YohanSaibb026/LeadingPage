@@ -5,7 +5,7 @@
         "download": "Descargar App"
     },
     "hero": {
-        "title": "<0>7 de cada 10 personas abandonan</0> <1>en los primeros 3 meses al intentar subir de peso e ganar músculo</1>",
+        "title": "<0>7 de cada 10 personas abandonan</0> <1>en los primeiros 3 meses al intentar subir de peso e ganhar músculo</1>",
         "subtitle": "Las quejas más comunes que se escuchan en los consultorios son",
         "complaints": [
             "Sentirse desmotivado por falta de ideas de qué comer",
@@ -33,7 +33,7 @@
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
             "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
-            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales les trajeron a nuestros alumnos"
+            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales les trajeron a nossos alunos"
         },
         "showroom_caption": {
             "title": "Desayunos y Smoothies",
@@ -56,7 +56,7 @@
                 },
                 {
                     "q": "¿Es necesario comer en grandes cantidades para crecer?",
-                    "a": "Este pensamiento es un error común. Comer de más los alimentos equivocados causa náuseas, malestar e falta de apetito. Nuestras recetas son estratégicas e garantizan una alta carga de nutrientes de forma liviana. Así, evitás el sacrificio de tener que forzarte a comer platos enormes en el almuerzo o la cena"
+                    "a": "Este pensamiento es un error común. Comer de más los alimentos equivocados causa náuseas, malestar e falta de apetito. Nuestras recetas son estratégicas e garantizan una alta carga de nutrientes de forma liviana. Así, evitás o sacrificio de tener que forzarte a comer platos enormes en el almuerzo o la cena"
                 }
             ]
         },
@@ -72,9 +72,9 @@
             "promotion": {
                 "title": "La decisión que te separa de tu objetivo",
                 "subtitle": "Asegurá tu transformación en los próximos 6 meses y conocé tu mejor versión",
-                "label": "ACCESO DE POR VIDA",
-                "price_from": "De US$ 25.00",
-                "price_to": "Por apenas US$ 9.90"
+                "label": "Tu oportunidad de probar <1>Sabores Exclusivos</1> con 58% OFF",
+                "price_from": "De US$ 12.99",
+                "price_to": "Por US$ 5.49"
             }
         },
         "calculator": {
