@@ -5,7 +5,7 @@
         "download": "Descargar App"
     },
     "hero": {
-        "title": "<0>7 de cada 10 personas abandonan</0> <1>en los primeros 3 meses al intentar subir de peso y ganar músculo</1>",
+        "title": "<0>7 de cada 10 personas abandonan</0> <1>en los primeros 3 meses al intentar subir de peso e ganar músculo</1>",
         "subtitle": "Las quejas más comunes que se escuchan en los consultorios son",
         "complaints": [
             "Sentirse desmotivado por falta de ideas de qué comer",
@@ -23,7 +23,7 @@
             "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
             "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
-            "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
+            "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí e para mi mamá también",
             "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
             "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
             "gina": "Puedo decir que ya tengo mi comida favorita"
@@ -56,7 +56,7 @@
                 },
                 {
                     "q": "¿Es necesario comer en grandes cantidades para crecer?",
-                    "a": "Este pensamiento es un error común. Comer de más los alimentos equivocados causa náuseas, malestar y falta de apetito. Nuestras recetas son estratégicas e garantizan una alta carga de nutrientes de forma liviana. Así, evitás el sacrificio de tener que forzarte a comer platos enormes en el almuerzo o la cena"
+                    "a": "Este pensamiento es un error común. Comer de más los alimentos equivocados causa náuseas, malestar e falta de apetito. Nuestras recetas son estratégicas e garantizan una alta carga de nutrientes de forma liviana. Así, evitás el sacrificio de tener que forzarte a comer platos enormes en el almuerzo o la cena"
                 }
             ]
         },
@@ -70,8 +70,8 @@
             "app_access": "App <1>Sabores Exclusivos</1> con acceso ilimitado",
             "app_price": "US$ 12.99",
             "promotion": {
-                "title": "Oferta Especial de Lanzamiento",
-                "subtitle": "No pierdas esta oportunidad de transformar tu cuerpo con ingredientes simples",
+                "title": "La decisión que te separa de tu objetivo",
+                "subtitle": "Asegurá tu transformación en los próximos 6 meses y conocé tu mejor versión",
                 "label": "ACCESO DE POR VIDA",
                 "price_from": "De US$ 25.00",
                 "price_to": "Por apenas US$ 9.90"

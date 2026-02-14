@@ -37,7 +37,7 @@
         },
         "showroom_caption": {
             "title": "Desayunos y Smoothies",
-            "subtitle": "deliciosos para ganar masa muscular — simples, prácticos y con ingredientes del día a día"
+            "subtitle": "deliciosos para ganar masa muscular — simples, prácticos y con ingredientes del día a dia"
         },
         "video_caption": {
             "title": "¿Tienes dudas a la hora de cocinar?",
@@ -48,7 +48,7 @@
             "items": [
                 {
                     "q": "¿Por qué desayunos, meriendas y shakes?",
-                    "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las mejores combinaciones para que no tengas que andar buscando calorías el resto del día"
+                    "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las melhores combinaciones para que no tengas que andar buscando calorías el resto del día"
                 },
                 {
                     "q": "¿Hacer una dieta cuesta caro?",
@@ -70,8 +70,8 @@
             "app_access": "App <1>Sabores Exclusivos</1> con acceso ilimitado",
             "app_price": "US$ 12.99",
             "promotion": {
-                "title": "Oferta Especial de Lanzamiento",
-                "subtitle": "No pierdas esta oportunidad de transformar tu cuerpo con ingredientes simples",
+                "title": "La decisión que te separa de tu objetivo",
+                "subtitle": "Asegura tu transformación en los próximos 6 meses y conoce tu mejor versión",
                 "label": "ACCESO DE POR VIDA",
                 "price_from": "De US$ 25.00",
                 "price_to": "Por apenas US$ 9.90"
