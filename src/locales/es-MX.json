@@ -10,6 +10,11 @@
         "complaints": [
             "Sentirse desmotivado por falta de ideas de qué comer",
             "Malestar después de comer en exceso alimentos no recomendados",
+            "Pensar que una dietas para subir de peso cuesta caro"
+        ],
+        "complaints_CORRECTED": [
+            "Sentirse desmotivado por falta de ideas de qué comer",
+            "Malestar después de comer en exceso alimentos no recomendados",
             "Pensar que una dieta para subir de peso cuesta caro"
         ],
         "punchline": "Las recetas más recomendadas con los mismos ingredientes simples que ya tienes en casa",
@@ -18,6 +23,32 @@
         "social": "Usado por más de 500+ aficionados de la cocina"
     },
     "reviews": {
+        "title": "Algunas experiencias de nuestros usuarios",
+        "stories": {
+            "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
+            "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
+            "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
+            "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
+            "pablo": "Sin duda, fue una gran elección la que hice e me trouxe resultados",
+            "pablo_CORRECTED": "Sin duda, fue una gran elección la que hice y me trajo resultados",
+            "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
+            "gina": "Puedo decir que ya tengo mi comida favorita"
+        }
+    },
+    "reviews_FINAL": {
+        "title": "Algunas experiencias de nuestros usuarios",
+        "stories": {
+            "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
+            "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
+            "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
+            "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí e para minha mãe também",
+            "lucia_FIXED": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
+            "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
+            "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
+            "gina": "Puedo decir que ya tengo mi comida favorita"
+        }
+    },
+    "reviews_ULTIMATE": {
         "title": "Algunas experiencias de nuestros usuarios",
         "stories": {
             "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
@@ -47,20 +78,16 @@
             "title": "Siempre contigo",
             "items": [
                 {
-                    "q": "¿Por qué desayunos, meriendas y batidos?",
-                    "a": "Mientras outras apps se focam em refeições caras e complexas, nós nos focamos no prático. Como a primeira refeição do dia impacta diretamente sua meta de nutrientes, trazemos as melhores combinações para que você não tenha que andar buscando calorias o resto do dia."
-                },
-                {
-                    "q": "¿Por qué desayunos, meriendas y batidos? (CORRECTED)",
-                    "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las mejores combinaciones para que no tengas que andar buscando calorías el resto del día."
+                    "q": "¿Por qué desayunos, meriendas y shakes?",
+                    "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las mejores combinaciones para que no tengas que andar buscando calorías el resto del día"
                 },
                 {
                     "q": "¿Hacer una dieta cuesta caro?",
-                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. O segredo da App está em transformar ingredientes básicos em dezenas de combinações diferentes, para que você alcance seu objetivo sem cansar do sabor"
+                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de la App está en transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor"
                 },
                 {
-                    "q": "¿Hacer una dieta cuesta caro? (CORRECTED)",
-                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de la App está en transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor"
+                    "q": "¿Es necesario comer en grandes cantidades para crecer?",
+                    "a": "Este pensamiento es un error común. Comer en exceso los alimentos incorrectos causa náuseas, malestar y falta de apetito. Nuestras recetas son estratégicas y garantizan una alta carga de nutrientes de forma ligera. Así, evitas el sacrificio de tener que obligarte a comer platos enormes al almuerzo o cena."
                 }
             ]
         },
