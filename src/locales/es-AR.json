@@ -32,10 +32,14 @@
     "features": {
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
-            "title": "Los desayunos, meriendas y batidos más recomendados, en un solo lugar",
-            "desc": "Con dos años de experiencia y cientos de comentarios reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra trajetória en nutrición para crear una App con las recetas que más resultados reales trajeron a nuestros alumnos."
+            "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
+            "desc": "Con dos años de experiencia y cientos de comentarios reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra trayectoria en nutrición para crear una App con las recetas que más resultados reales trajeron a nuestros alumnos."
         },
         "showroom_caption": {
+            "title": "Desayunos y Smoothies",
+            "subtitle": "delicious para ganar masa muscular — simples, prácticos y con ingredientes del día a día"
+        },
+        "showroom_caption_FINAL": {
             "title": "Desayunos y Smoothies",
             "subtitle": "deliciosos para ganar masa muscular — simples, prácticos y con ingredientes del día a día"
         },
@@ -52,10 +56,18 @@
                 },
                 {
                     "q": "¿Hacer una dieta cuesta caro?",
+                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de la App está en transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte do sabor"
+                },
+                {
+                    "q": "¿Hacer una dieta cuesta caro? (CORRECTED)",
                     "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de la App está en transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor"
                 },
                 {
                     "q": "¿Es necesario comer en grandes cantidades para crecer?",
+                    "a": "Este pensamiento es un error común. Comer em excesso dos alimentos incorretos causa náuseas, malestar y falta de apetite. Nuestras recetas son estratégicas y garantizan uma alta carga de nutrientes de forma ligera. Así, evitás el sacrificio de tener que obligarte a comer platos enormes al almuerzo o cena."
+                },
+                {
+                    "q": "¿Es necesario comer en grandes cantidades para crecer? (FINAL)",
                     "a": "Este pensamiento es un error común. Comer en exceso los alimentos incorrectos causa náuseas, malestar y falta de apetito. Nuestras recetas son estratégicas y garantizan una alta carga de nutrientes de forma ligera. Así, evitás el sacrificio de tener que obligarte a comer platos enormes al almuerzo o cena."
                 }
             ]
@@ -71,7 +83,7 @@
             "app_price": "US$ 12.99",
             "promotion": {
                 "title": "Oferta Especial de Lanzamiento",
-                "subtitle": "No pierda esta oportunidad de transformar su cuerpo con ingredientes simples",
+                "subtitle": "No pierdas esta oportunidad de transformar tu cuerpo con ingredientes simples",
                 "label": "ACCESO DE POR VIDA",
                 "price_from": "De US$ 25.00",
                 "price_to": "Por apenas US$ 9.90"
