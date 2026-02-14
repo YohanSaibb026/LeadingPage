@@ -1021,7 +1021,7 @@
     flex-direction: column;
     align-items: center;
     gap: 0.6rem;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .brand-badge {
