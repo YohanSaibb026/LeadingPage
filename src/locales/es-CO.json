@@ -15,13 +15,26 @@
         "punchline": "Las recetas más recomendadas con los mismos ingredientes simples que ya tienes en casa",
         "continue": "Continuar",
         "demo": "Ver Demostración",
-        "social": "Usado por más de 500+ apasionados de la cozinha"
+        "social": "Usado por más de 500+ apasionados de la cocina"
     },
     "reviews": {
         "title": "Algunas experiencias de nuestros usuarios",
         "stories": {
             "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
             "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
+            "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
+            "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
+            "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
+            "camilla": "Las recetas son perfectas, les agrego mi toque e quedan maravilhosas",
+            "camilla_CORRECTED": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
+            "gina": "Puedo decir que ya tengo mi comida favorita"
+        }
+    },
+    "reviews_FINAL": {
+        "title": "Algunas experiencias de nuestros usuarios",
+        "stories": {
+            "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
+            "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en the universidad",
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
             "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
             "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
