@@ -24,9 +24,9 @@
             "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
             "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
-            "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
+            "pablo": "Sin duda, fue una gran escolha la que hice y me trajo resultados",
             "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
-            "gina": "Puedo decir que já tengo mi comida favorita"
+            "gina": "Puedo decir que ya tengo mi comida favorita"
         }
     },
     "features": {
@@ -56,7 +56,7 @@
                 },
                 {
                     "q": "¿Es necesario comer en grandes cantidades para crecer?",
-                    "a": "Este pensamiento es un error común. Comer en exceso los alimentos incorrectos causa náuseas, malestar y falta de apetito. Nuestras recetas son estratégicas e garantizan una alta carga de nutrientes de forma ligera. Así, evitas el sacrificio de tener que forzarte a comer platos enormes en el almuerzo o la cena"
+                    "a": "Este pensamiento es un error común. Comer en exceso los alimentos incorrectos causa náuseas, malestar y falta de apetito. Nuestras recetas son estratégicas y garantizan una alta carga de nutrientes de forma ligera. Así, evitas el sacrificio de tener que forzarte a comer platos enormes en el almuerzo o la cena"
                 }
             ]
         },
@@ -72,14 +72,14 @@
             "promotion": {
                 "title": "La decisión que te separa de tu objetivo",
                 "subtitle": "Asegura tu transformación en los próximos 6 meses y conoce tu mejor versión",
-                "label": "Tu oportunidad de probar <br/> <1>Sabores Exclusivos</1> <br/> con 58% OFF",
+                "label": "Tu oportunidade de probar <br/> <1>Sabores Exclusivos</1> <br/> con 58% OFF",
                 "price_from": "De US$ 12.99",
                 "price_to": "Por US$ 5.49"
             }
         },
         "calculator": {
             "title": "Descubre tu meta para crecer",
-            "subtitle": "Calcula tu Tasa Metabólica Basal y mira cuanto necesitas consumir para ganar músculo",
+            "subtitle": "Calcula tu Tasa Metabólica Basal y mira cuánto necesitas consumir para ganar músculo",
             "gender": "Género",
             "male": "Masculino",
             "female": "Femenino",
@@ -105,5 +105,20 @@
                 "disclaimer": "Valores estimados basados en la fórmula Mifflin-St Jeor."
             }
         }
+    },
+    "cta": {
+        "title": "Eleva tu experiencia culinaria hoy",
+        "subtitle": "Únete a las personas que ya están transformando sus vidas con recetas simples y deliciosas.",
+        "urgency": "Oferta por tiempo limitado",
+        "button": "¡Obtener Acceso Ahora!",
+        "guarantees": {
+            "taxes": "Impuestos incluidos",
+            "secure": "Pago 100% seguro",
+            "access": "Acceso inmediato por e-mail",
+            "warranty": "Garantía de satisfacción"
+        }
+    },
+    "footer": {
+        "rights": "© 2024 Sabores Exclusivos. Todos los derechos reservados."
     }
 }
