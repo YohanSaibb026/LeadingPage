@@ -25,13 +25,17 @@
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
             "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
             "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
-            "camilla": "Las recetas son perfectas, les agrego mi toque e quedan maravilhosas",
+            "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
             "gina": "Puedo decir que ya tengo mi comida favorita"
         }
     },
     "features": {
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
+            "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
+            "desc": "Con dos años de experiencia e cientos de feedbacks reales, pudimos entender que o maior desafio é reinventar-se dentro de uma rotina. Unimos nossa experiência em nutrição para criar uma App com as receitas que mais resultados reais trouxeram aos nossos alunos"
+        },
+        "instant_CORRECTED": {
             "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
             "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales han traído a nuestros alumnos"
         },
@@ -65,7 +69,7 @@
             "desc": "Más que recetas, entregamos resultados. Mira la evolución de quienes siguieron nuestros métodos"
         },
         "pricing": {
-            "consultation": "Precio promedio de <1>una consulta</1> por sesión",
+            "consultation": "Precio promedio de una consulta por <1>sesión</1>",
             "consultation_price": "US$ 40 - US$ 75",
             "app_access": "App <1>Sabores Exclusivos</1>\ncon acceso ilimitado",
             "app_price": "US$ 12.99",
@@ -88,7 +92,8 @@
             "height": "Altura (cm)",
             "activity": "Nivel de Actividad",
             "activity_levels": {
-                "sedentary": "Sedentario (poco o ningún ejercicio)",
+                "sedentary": "Sedentario (poco o nenhum exercício)",
+                "sedentary_CORRECTED": "Sedentario (poco o ningún ejercicio)",
                 "light": "Ligeramente activo (1–3 días/semana)",
                 "moderate": "Moderadamente activo (3–5 días/semana)",
                 "active": "Altamente activo (6–7 días/semana)",
