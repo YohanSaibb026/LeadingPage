@@ -5,6 +5,20 @@
         "download": "Descargar App"
     },
     "hero": {
+        "title": "<0>7 de cada 10 personas abandonan</0> <1>en los primeiros 3 meses al intentar subir de peso y ganar músculo</1>",
+        "title_CORRECTED": "<0>7 de cada 10 personas abandonan</0> <1>en los primeros 3 meses al intentar subir de peso y ganar músculo</1>",
+        "subtitle": "Las quejas más comunes que se escuchan en los consultorios son",
+        "complaints": [
+            "Sentirse desmotivado por falta de ideas de qué comer",
+            "Malestar después de comer en exceso alimentos no recomendados",
+            "Pensar que una dieta para subir de peso cuesta caro"
+        ],
+        "punchline": "Las recetas más recomendadas con los mismos ingredientes simples que ya tenés en casa",
+        "continue": "Continuar",
+        "demo": "Ver Demostración",
+        "social": "Usado por más de 500+ apasionados de la cocina"
+    },
+    "hero_FINAL": {
         "title": "<0>7 de cada 10 personas abandonan</0> <1>en los primeros 3 meses al intentar subir de peso y ganar músculo</1>",
         "subtitle": "Las quejas más comunes que se escuchan en los consultorios son",
         "complaints": [
@@ -33,7 +47,7 @@
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
             "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
-            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales les trajeron a nossos alumnos"
+            "desc": "Con dos años de experiência y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales les trajeron a nuestros alumnos"
         },
         "instant_CORRECTED": {
             "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
@@ -60,7 +74,7 @@
                 },
                 {
                     "q": "¿Es necesario comer en grandes cantidades para crecer?",
-                    "a": "Este pensamiento es un error común. Comer en exceso los alimentos incorrectos causa náuseas, malestar y falta de apetito. Nuestras recetas son estratégicas y garantizan una alta carga de nutrientes de forma ligera. Así, evitás el sacrificio de tener que obligarte a comer platos enormes al almuerzo o cena."
+                    "a": "Este pensamiento es un error común. Comer de más los alimentos equivocados causa náuseas, malestar y falta de apetito. Nuestras recetas son estratégicas y garantizan una alta carga de nutrientes de forma liviana. Así, evitás el sacrificio de tener que forzarte a comer platos enormes en el almuerzo o la cena"
                 }
             ]
         },
@@ -71,7 +85,8 @@
         "pricing": {
             "consultation": "Precio promedio de <1>una consulta</1> por sesión",
             "consultation_price": "US$ 40 - US$ 75",
-            "app_access": "App <1>Sabores Exclusivos</1>\ncon acceso ilimitado",
+            "app_access": "App <1>Sabores Exclusivos</1>\ncon acesso ilimitado",
+            "app_access_CORRECTED": "App <1>Sabores Exclusivos</1>\ncon acceso ilimitado",
             "app_price": "US$ 12.99",
             "promotion": {
                 "title": "Oferta Especial de Lanzamiento",
@@ -92,7 +107,8 @@
             "height": "Altura (cm)",
             "activity": "Nivel de Actividad",
             "activity_levels": {
-                "sedentary": "Sedentario (poco o ningún ejercicio)",
+                "sedentary": "Sedentario (poco o ningún exercício)",
+                "sedentary_CORRECTED": "Sedentario (poco o ningún ejercicio)",
                 "light": "Ligeramente activo (1–3 días/semana)",
                 "moderate": "Moderadamente activo (3–5 días/semana)",
                 "active": "Altamente activo (6–7 días/semana)",
