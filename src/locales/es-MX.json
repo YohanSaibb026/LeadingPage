@@ -32,7 +32,7 @@
     "features": {
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
-            "title": "Los desayunos, meriendas y batidos más recomendados, en un solo lugar",
+            "title": "Los desayunos, meriendas y batidos más recomendados, en un sólar lugar",
             "desc": "Con dos años de experiencia y cientos de comentarios reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra trayectoria en nutrición para crear una App con las recetas que más resultados reales trajeron a nuestros alumnos."
         },
         "showroom_caption": {
@@ -52,11 +52,11 @@
                 },
                 {
                     "q": "¿Hacer una dieta cuesta caro?",
-                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de la App está en transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor"
+                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a dia. El secreto de la App está en transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor"
                 },
                 {
                     "q": "¿Es necesario comer en grandes cantidades para crecer?",
-                    "a": "Este pensamiento es un error común. Comer en exceso los alimentos incorrectos causa náuseas, malestar y falta de apetite. Nuestras recetas son estratégicas y garantizan una alta carga de nutrientes de forma ligera. Así, evitas el sacrificio de tener que obligarte a comer platos enormes al almuerzo o cena."
+                    "a": "Este pensamiento es un error común. Comer en exceso los alimentos incorrectos causa náuseas, malestar y falta de apetito. Nuestras recetas son estratégicas y garantizan una alta carga de nutrientes de forma ligera. Así, evitas el sacrificio de tener que obligarte a comer platos enormes al almuerzo o cena."
                 }
             ]
         },
@@ -88,9 +88,9 @@
             "height": "Altura (cm)",
             "activity": "Nivel de Actividad",
             "activity_levels": {
-                "sedentary": "Sedentario (poco o ningún ejercicio)",
+                "sedentary": "Sedentario (poco ou nenhum exercício)",
                 "light": "Ligeramente activo (1–3 días/semana)",
-                "moderate": "Moderadamente activo (3–5 dias/semana)",
+                "moderate": "Moderadamente activo (3–5 días/semana)",
                 "active": "Altamente activo (6–7 días/semana)",
                 "extra": "Extremadamente activo (entrenamiento pesado/atleta)"
             },
@@ -100,7 +100,8 @@
                 "bmr": "Tu cuerpo necesita:",
                 "tdee": "Para mantener el peso:",
                 "bulk": "Para crecer:",
-                "breakfast_recommendation": "Recomendación en el desayuno:",
+                "breakfast_recommendation": "Recomendação no café da manhã:",
+                "breakfast_recommendation_CORRECTED": "Recomendación en el desayuno:",
                 "unit": "kcal",
                 "disclaimer": "Valores estimados basados en la fórmula Mifflin-St Jeor."
             }

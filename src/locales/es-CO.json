@@ -48,7 +48,7 @@
             "items": [
                 {
                     "q": "¿Por qué desayunos, meriendas y batidos?",
-                    "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las mejores combinaciones para que no tengas que andar buscando calorías el resto del día."
+                    "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las melhores combinações para que não tenha que andar buscando calorias o resto do dia."
                 },
                 {
                     "q": "¿Hacer una dieta cuesta caro?",
@@ -78,19 +78,19 @@
             }
         },
         "calculator": {
-            "title": "Descubra su meta para crecer",
-            "subtitle": "Calcule su Tasa Metabólica Basal y vea cuánto necesita consumir para ganar músculo",
+            "title": "Descubre tu meta para crecer",
+            "subtitle": "Calcula tu Tasa Metabólica Basal e mira cuánto necesitas consumir para ganar músculo",
             "gender": "Género",
             "male": "Masculino",
             "female": "Femenino",
-            "age": "Idad",
+            "age": "Edad",
             "weight": "Peso (kg)",
             "height": "Altura (cm)",
-            "activity": "Nivel de Actividad",
+            "activity": "Nivel de Actividade",
             "activity_levels": {
-                "sedentary": "Sedentario (poco o ningún ejercicio)",
-                "light": "Levemente activo (1–3 días/semana)",
-                "moderate": "Moderadamente activo (3–5 dias/semana)",
+                "sedentary": "Sedentario (pouco ou nenhum exercício)",
+                "light": "Ligeramente activo (1–3 días/semana)",
+                "moderate": "Moderadamente activo (3–5 días/semana)",
                 "active": "Altamente activo (6–7 días/semana)",
                 "extra": "Extremadamente activo (entrenamiento pesado/atleta)"
             },
