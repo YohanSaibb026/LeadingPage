@@ -23,20 +23,6 @@
             "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
             "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
-            "lucia": "Siempre tuve dificuldade para variar o café da manhã sem perder tempo. Hoje tornou-se tão fácil e tão delicioso que acabo fazendo para mim e para mi mamá também",
-            "lucia_CORRECTED": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
-            "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
-            "camilla": "Las recetas son perfectas, les agrego mi toque e ficam maravilhosas",
-            "camilla_CORRECTED": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
-            "gina": "Puedo decir que ya tengo mi comida favorita"
-        }
-    },
-    "reviews_FINAL": {
-        "title": "Algunas experiencias de nuestros usuarios",
-        "stories": {
-            "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
-            "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
-            "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
             "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
             "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
             "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
@@ -47,8 +33,7 @@
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
             "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
-            "desc": "Con dos años de experiencia y cientos de comentarios reales, pudimos entender que o maior desafio é reinventar-se dentro de uma rotina. Unimos nossa trajetória em nutrição para criar uma App com as receitas que mais resultados reais trouxeram aos nossos alunos.",
-            "desc_FIXED": "Con dos años de experiencia y cientos de comentarios reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra trayectoria en nutrición para crear una App con las recetas que más resultados reales trajeron a nuestros alumnos."
+            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales han traído a nuestros alumnos"
         },
         "showroom_caption": {
             "title": "Desayunos y Smoothies",
@@ -63,27 +48,15 @@
             "items": [
                 {
                     "q": "¿Por qué desayunos, meriendas y batidos?",
-                    "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las melhores combinações para que não tenha que andar buscando calorias o resto do dia."
-                },
-                {
-                    "q": "¿Por qué desayunos, meriendas y batidos? (FINAL)",
                     "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las mejores combinaciones para que no tengas que andar buscando calorías el resto del día."
                 },
                 {
                     "q": "¿Hacer una dieta cuesta caro?",
-                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. O segredo da App está em transformar ingredientes básicos em dezenas de combinações diferentes, para que você alcance seu objetivo sem cansar do sabor"
-                },
-                {
-                    "q": "¿Hacer una dieta cuesta caro? (CORRECTED)",
                     "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de la App está en transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor"
                 },
                 {
                     "q": "¿Es necesario comer en grandes cantidades para crecer?",
-                    "a": "Este pensamiento es un error común. Comer em excesso dos alimentos incorretos causa náuseas, malestar y falta de apetite. Nuestras recetas son estratégicas e garantizan uma alta carga de nutrientes de forma leve. Así, evitas el sacrificio de tener que obligarte a comer platos enormes al almuerzo o cena."
-                },
-                {
-                    "q": "¿Es necesario comer en grandes cantidades para crecer? (FINAL)",
-                    "a": "Este pensamiento es un error comum. Comer en exceso los alimentos incorrectos causa náuseas, malestar y falta de apetito. Nuestras recetas son estratégicas y garantizan una alta carga de nutrientes de forma ligera. Así, evitas el sacrificio de tener que obligarte a comer platos enormes al almuerzo o cena."
+                    "a": "Este pensamiento es un error común. Comer en exceso los alimentos incorrectos causa náuseas, malestar y falta de apetito. Nuestras recetas son estratégicas y garantizan una alta carga de nutrientes de forma ligera. Así, evitas el sacrificio de tener que obligarte a comer platos enormes al almuerzo o cena."
                 }
             ]
         },

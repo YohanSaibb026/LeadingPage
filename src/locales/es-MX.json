@@ -33,7 +33,7 @@
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
             "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
-            "desc": "Con dos años de experiencia y cientos de comentarios reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra trayectoria en nutrición para crear una App con las recetas que más resultados reales trajeron a nuestros alumnos."
+            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales han traído a nuestros alumnos"
         },
         "showroom_caption": {
             "title": "Desayunos y Smoothies",
@@ -48,15 +48,19 @@
             "items": [
                 {
                     "q": "¿Por qué desayunos, meriendas y batidos?",
+                    "a": "Mientras outras apps se focam em refeições caras e complexas, nós nos focamos no prático. Como a primeira refeição do dia impacta diretamente sua meta de nutrientes, trazemos as melhores combinações para que você não tenha que andar buscando calorias o resto do dia."
+                },
+                {
+                    "q": "¿Por qué desayunos, meriendas y batidos? (CORRECTED)",
                     "a": "Mientras otras apps se enfocan en comidas caras y complejas, nosotros nos enfocamos en lo práctico. Como la primera comida del día impacta directamente tu meta de nutrientes, traemos las mejores combinaciones para que no tengas que andar buscando calorías el resto del día."
                 },
                 {
                     "q": "¿Hacer una dieta cuesta caro?",
-                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de la App está en transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor"
+                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. O segredo da App está em transformar ingredientes básicos em dezenas de combinações diferentes, para que você alcance seu objetivo sem cansar do sabor"
                 },
                 {
-                    "q": "¿Es necesario comer en grandes cantidades para crecer?",
-                    "a": "Este pensamiento es un error común. Comer en exceso los alimentos incorrectos causa náuseas, malestar y falta de apetito. Nuestras recetas son estratégicas y garantizan una alta carga de nutrientes de forma ligera. Así, evitas el sacrificio de tener que obligarte a comer platos enormes al almuerzo o cena."
+                    "q": "¿Hacer una dieta cuesta caro? (CORRECTED)",
+                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de la App está en transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor"
                 }
             ]
         },
