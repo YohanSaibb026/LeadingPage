@@ -15,7 +15,7 @@
         "punchline": "Las recetas más recomendadas con los mismos ingredientes simples que ya tienes en casa",
         "continue": "Continuar",
         "demo": "Ver Demostración",
-        "social": "Usado por más de 500+ aficionados de la cocina"
+        "social": "Usado por más de 500+ apasionados de la cocina"
     },
     "reviews": {
         "title": "Algunas experiencias de nuestros usuarios",
@@ -24,25 +24,15 @@
             "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
             "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
-            "pablo": "Sin duda, fue una gran elección la que hice e trajo resultados",
-            "pablo_CORRECTED": "Sin duda, fue una gran elección la que hice y me trajo resultados",
+            "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
             "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
             "gina": "Puedo decir que ya tengo mi comida favorita"
         }
     },
-    "stories_FIXED": {
-        "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
-        "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
-        "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
-        "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
-        "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
-        "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
-        "gina": "Puedo decir que ya tengo mi comida favorita"
-    },
     "features": {
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
-            "title": "Los desayunos, meriendas y batidos más recomendados, en un sólar lugar",
+            "title": "Los desayunos, meriendas y batidos más recomendados, en un solo lugar",
             "desc": "Con dos años de experiencia y cientos de comentarios reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra trayectoria en nutrición para crear una App con las recetas que más resultados reales trajeron a nuestros alumnos."
         },
         "showroom_caption": {
@@ -77,7 +67,8 @@
         "pricing": {
             "consultation": "Precio promedio de <1>una consulta</1> por sesión",
             "consultation_price": "US$ 40 - US$ 75",
-            "app_access": "App <1>Sabores Exclusivos</1>\ncon acceso ilimitado",
+            "app_access": "App <1>Sabores Exclusivos</1>\ncon acesso ilimitado",
+            "app_access_CORRECTED": "App <1>Sabores Exclusivos</1>\ncon acceso ilimitado",
             "app_price": "US$ 12.99",
             "promotion": {
                 "title": "Oferta Especial de Lanzamiento",
@@ -89,14 +80,14 @@
         },
         "calculator": {
             "title": "Descubre tu meta para crecer",
-            "subtitle": "Calcula tu Tasa Metabólica Basal e mira cuánto necesitas consumir para ganar músculo",
+            "subtitle": "Calcula tu Tasa Metabólica Basal y mira cuánto necesitas consumir para ganar músculo",
             "gender": "Género",
             "male": "Masculino",
             "female": "Femenino",
             "age": "Edad",
             "weight": "Peso (kg)",
             "height": "Altura (cm)",
-            "activity": "Nivel de Actividade",
+            "activity": "Nivel de Actividad",
             "activity_levels": {
                 "sedentary": "Sedentario (poco o ningún ejercicio)",
                 "light": "Ligeramente activo (1–3 días/semana)",
