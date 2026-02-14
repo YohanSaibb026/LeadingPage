@@ -25,7 +25,7 @@
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
             "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
             "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
-            "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
+            "camilla": "Las recetas son perfectas, les agrego mi toque e quedan maravillosas",
             "gina": "Puedo decir que ya tengo mi comida favorita"
         }
     },
@@ -33,7 +33,7 @@
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
             "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
-            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales les trajeron a nuestros alumnos"
+            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío é reinventarse dentro de uma rutina. Unimos nuestra experiencia en nutrición para crear una App con las receitas que más resultados reales les trajeron a nuestros alumnos"
         },
         "showroom_caption": {
             "title": "Desayunos y Smoothies",
@@ -56,7 +56,7 @@
                 },
                 {
                     "q": "¿Es necesario comer en grandes cantidades para crecer?",
-                    "a": "Este pensamiento es un error común. Comer de más los alimentos equivocados causa náuseas, malestar y falta de apetito. Nuestras recetas son estratégicas y garantizan una alta carga de nutrientes de forma liviana. Así, evitás el sacrificio de tener que forzarte a comer platos enormes en el almuerzo o la cena"
+                    "a": "Este pensamiento es un error común. Comer de más los alimentos equivocados causa náuseas, malestar y falta de apetito. Nuestras recetas son estratégicas e garantizan una alta carga de nutrientes de forma liviana. Así, evitás el sacrificio de tener que forzarte a comer platos enormes en el almuerzo o la cena"
                 }
             ]
         },
@@ -71,7 +71,7 @@
             "app_price": "US$ 12.99",
             "promotion": {
                 "title": "La decisión que te separa de tu objetivo",
-                "subtitle": "Asegurá tu transformación en los próximos 6 meses y conocé tu mejor versión",
+                "subtitle": "Asegurá tu transformación en los próximos 6 meses e conocé tu mejor versión",
                 "label": "Tu oportunidad de probar <br/> <1>Sabores Exclusivos</1> <br/> con 58% OFF",
                 "price_from": "De US$ 12.99",
                 "price_to": "Por US$ 5.49"
@@ -79,7 +79,7 @@
         },
         "calculator": {
             "title": "Descubrí tu meta para crecer",
-            "subtitle": "Calculá tu Tasa Metabólica Basal y mirá cuánto necesitás consumir para ganar músculo",
+            "subtitle": "Calculá tu Tasa Metabólica Basal e mirá cuánto necesitás consumir para ganar músculo",
             "gender": "Género",
             "male": "Masculino",
             "female": "Femenino",
@@ -112,10 +112,10 @@
         "urgency": "Oferta por tiempo limitado",
         "button": "Quiero aprovechar la promoción del 58% OFF ahora",
         "guarantees": {
-            "taxes": "Impuestos incluidos",
+            "taxes": "Los impuestos locales pueden aplicarse según el país",
             "secure": "Pago 100% seguro",
-            "access": "Acceso inmediato por e-mail",
-            "warranty": "Garantía de satisfacción"
+            "access": "Acceso inmediato",
+            "warranty": "Garantía de 7 días"
         }
     },
     "footer": {
