@@ -21,10 +21,10 @@
         "title": "Algunas experiencias de nuestros usuarios",
         "stories": {
             "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
-            "dani": "Los smoothies ya se volvieron parte de mi rutina todos los dias en la universidad",
+            "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
             "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
-            "pablo": "Sin duda, fue uma gran elección la que hice y me trajo resultados",
+            "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
             "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
             "gina": "Puedo decir que ya tengo mi comida favorita"
         }
@@ -33,7 +33,7 @@
         "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
             "title": "Los desayunos, meriendas y smoothies más recomendados, en un solo lugar",
-            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de uma rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales han traído a nuestros alumnos"
+            "desc": "Con dos años de experiencia y cientos de feedbacks reales, pudimos entender que el mayor desafío es reinventarse dentro de una rutina. Unimos nuestra experiencia en nutrición para crear una App con las recetas que más resultados reales han traído a nuestros alumnos"
         },
         "showroom_caption": {
             "title": "Desayunos y Smoothies",
@@ -52,7 +52,7 @@
                 },
                 {
                     "q": "¿Hacer una dieta cuesta caro?",
-                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de la App está en transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor"
+                    "a": "¡De ninguna manera! Vas a ganar músculo usando ingredientes que ya forman parte de tu día a día. El secreto de la App está em transformar ingredientes básicos en decenas de combinaciones diferentes, para que alcances tu objetivo sin cansarte del sabor"
                 },
                 {
                     "q": "¿Es necesario comer en grandes cantidades para crecer?",
@@ -88,7 +88,7 @@
             "height": "Altura (cm)",
             "activity": "Nivel de Actividad",
             "activity_levels": {
-                "sedentary": "Sedentario (poco o nenhum ejercicio)",
+                "sedentary": "Sedentario (poco o ningún ejercicio)",
                 "light": "Ligeramente activo (1–3 días/semana)",
                 "moderate": "Moderadamente activo (3–5 días/semana)",
                 "active": "Altamente activo (6–7 días/semana)",
@@ -110,7 +110,7 @@
         "title": "Eleva tu experiencia culinaria hoy",
         "subtitle": "Acceso vitalicio a Sabores Exclusivos. Todo lo que necesitas para subir de peso y construir músculo de forma sabrosa y práctica",
         "urgency": "Oferta por tiempo limitado",
-        "button": "¡Obtener Acceso Ahora!",
+        "button": "Quiero aprovechar la promoción del 58% OFF ahora",
         "guarantees": {
             "taxes": "Impuestos incluidos",
             "secure": "Pago 100% seguro",
