@@ -5,14 +5,14 @@
         "download": "Descargar App"
     },
     "hero": {
-        "title": "<0>7 de cada 10 personas se rinden</0> <1>en los primeros 3 meses al intentar subir de peso y ganar músculo</1>",
+        "title": "<0>7 de cada 10 personas se rinden</0> <1>en los primeiros 3 meses al intentar subir de peso y ganhar músculo</1>",
         "subtitle": "Las quejas mais comunes que se escucham en los consultorios son",
         "complaints": [
             "Sentirse desmotivado por falta de ideas de qué comer",
             "Malestar después de comer en excesso alimentos no recomendados",
             "Pensar que una dieta para subir de peso cuesta caro"
         ],
-        "punchline": "Las receitas mais recomendadas con los mesmos ingredientes sencillos que ya tienes en casa",
+        "punchline": "Las receitas mais recomendadas con los mesmos ingredientes sencillos que já tienes em casa",
         "continue": "Continuar",
         "demo": "Ver Demostración",
         "social": "Usado por mais de 500+ aficionados de la cocina"
@@ -23,7 +23,7 @@
             "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
             "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
             "thiago": "Conocer los condimentos le dio sabores a alimentos simples que nunca imaginé que podían tener",
-            "lucia": "Siempre tive dificuldade em variar o café da manhã sem perder tempo. Hoje tornou-se tão fácil e tão delicioso que acabo fazendo para mim e para mi mamá también",
+            "lucia": "Siempre tuve dificultad para variar el desayuno sin perder tiempo. Hoy se volvió tan fácil y tan delicioso que termino haciéndolo para mí y para mi mamá también",
             "pablo": "Sin duda, fue uma grande escolha que fiz e me trouxe resultados",
             "camilla": "As receitas são perfeitas, adiciono o meu toque e ficam maravilhosas",
             "gina": "Puedo dizer que já tenho minha comida favorita"
@@ -48,7 +48,7 @@
             "items": [
                 {
                     "q": "¿Por qué desayunos, meriendas y batidos?",
-                    "a": "Mientras otras apps se enfocan em comidas caras e complexas, nosotros nos enfocamos en lo práctico. Como a primeira comida do dia impacta diretamente sua meta de nutrientes, trazemos as melhores combinações para que não tenha que andar buscando calorias o resto do dia."
+                    "a": "Mientras outras apps se focam em comidas caras e complexas, nós nos focamos no que é prático. Como a primeira refeição do dia impacta diretamente sua meta de nutrientes, trazemos as melhores combinações para que não tenha que ficar buscando calorias o resto do dia."
                 },
                 {
                     "q": "¿Hacer una dieta cuesta caro?",
