@@ -21,6 +21,13 @@ import {
     Ruler,
     Activity
 } from 'lucide-react';
+
+declare global {
+    interface Window {
+        fbq: any;
+    }
+}
+
 import { useTranslation, Trans } from 'react-i18next';
 import appShowroom from './assets/app-showroom.png';
 import meal1 from './assets/meal-1.jpg';
@@ -703,6 +710,11 @@ function App() {
                         rel="noopener noreferrer"
                         className="btn-cta-premium"
                         style={{ textDecoration: 'none' }}
+                        onClick={() => {
+                            if (window.fbq) {
+                                window.fbq('track', 'InitiateCheckout');
+                            }
+                        }}
                     >
                         {t('cta.button')}
                         <ArrowRight size={20} />
