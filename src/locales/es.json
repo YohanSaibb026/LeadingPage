@@ -43,5 +43,25 @@
             "title": "¿Tienes dudas a la hora de cocinar?",
             "subtitle": "No pierdas tiempo planeando qué comer"
         }
+    },
+    "about": {
+        "badge": "El Creador",
+        "title": "¿Quién soy yo?",
+        "description": "Como nutricionista deportivo, creé esta aplicación para reunir las recetas que yo mismo utilizaba para transformar mi cuerpo y el de mis alumnos. Ingredientes simples, prácticos y resultados reales."
+    },
+    "cta": {
+        "title": "¿Listo para tu transformación?",
+        "subtitle": "Únete a cientos de personas que ya cambiaron sus cuerpos con nuestras recetas exclusivas.",
+        "urgency": "La oferta termina en:",
+        "button": "QUIERO EL ACCESO AHORA",
+        "guarantees": {
+            "taxes": "Sin cargos ocultos",
+            "secure": "Pago 100% seguro",
+            "access": "Acceso inmediato",
+            "warranty": "Garantía de 7 días"
+        }
+    },
+    "footer": {
+        "rights": "© 2026 Sabores Exclusivos. Todos los derechos reservados."
     }
 }

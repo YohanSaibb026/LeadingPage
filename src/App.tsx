@@ -728,6 +728,25 @@ function App() {
                 </div>
             </section>
 
+            {/* About Creator Section */}
+            <section className="about-creator reveal">
+                <div className="about-container glass-morphism">
+                    <div className="about-image-wrapper">
+                        <div className="profile-frame">
+                            <img src={avatarThiago} alt="Nutricionista" className="profile-img" />
+                        </div>
+                    </div>
+                    <div className="about-info">
+                        <div className="about-badge">
+                            <ChefHat size={16} />
+                            <span>{t('about.badge')}</span>
+                        </div>
+                        <h2 className="about-title">{t('about.title')}</h2>
+                        <p className="about-text">{t('about.description')}</p>
+                    </div>
+                </div>
+            </section>
+
             {/* Footer */}
             <footer className="footer">
                 <div className="footer-content">

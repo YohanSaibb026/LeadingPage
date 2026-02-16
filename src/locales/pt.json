@@ -105,5 +105,25 @@
                 "disclaimer": "Valores estimados baseados na fórmula Mifflin-St Jeor."
             }
         }
+    },
+    "about": {
+        "badge": "O Criador",
+        "title": "Quem sou eu?",
+        "description": "Como nutricionista esportivo, criei este App para reunir as receitas que eu mesmo utilizava para transformar meu corpo e o dos meus alunos. Ingredientes simples, práticos e resultados reais."
+    },
+    "cta": {
+        "title": "Pronto para sua transformação?",
+        "subtitle": "Junte-se a centenas de pessoas que já mudaram seus corpos com nossas receitas exclusivas.",
+        "urgency": "Oferta termina em:",
+        "button": "QUERO O ACESSO AGORA",
+        "guarantees": {
+            "taxes": "Sem taxas ocultas",
+            "secure": "Pagamento 100% seguro",
+            "access": "Acesso imediato",
+            "warranty": "Garantia de 7 dias"
+        }
+    },
+    "footer": {
+        "rights": "© 2026 Sabores Exclusivos. Todos os direitos reservados."
     }
 }
