@@ -42,6 +42,7 @@ import avatarLucia from './assets/avatar-lucia.jpg';
 import avatarPablo from './assets/avatar-pablo.jpg';
 import avatarCamilla from './assets/avatar-camilla.jpg';
 import avatarGina from './assets/avatar-gina.jpg';
+import creatorPhoto from './assets/creator.jpg';
 import mealGina from './assets/meal-gina.jpg';
 import videoCard from './assets/CARD.webm';
 import './App.css';
@@ -733,14 +734,10 @@ function App() {
                 <div className="about-container glass-morphism">
                     <div className="about-image-wrapper">
                         <div className="profile-frame">
-                            <img src={avatarThiago} alt="Nutricionista" className="profile-img" />
+                            <img src={creatorPhoto} alt="Nutricionista" className="profile-img" />
                         </div>
                     </div>
                     <div className="about-info">
-                        <div className="about-badge">
-                            <ChefHat size={16} />
-                            <span>{t('about.badge')}</span>
-                        </div>
                         <h2 className="about-title">{t('about.title')}</h2>
                         <p className="about-text">{t('about.description')}</p>
                     </div>
