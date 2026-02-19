@@ -347,7 +347,12 @@ const BMRCalculator = () => {
 };
 
 function App() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    React.useEffect(() => {
+        if (i18n.language) {
+            document.documentElement.lang = i18n.language.split('-')[0];
+        }
+    }, [i18n.language]);
     const [openFaq, setOpenFaq] = useState<number | null>(null);
     const [activeTransform, setActiveTransform] = useState(0);
     const [activeStory, setActiveStory] = useState(0);
