@@ -374,6 +374,7 @@ function App() {
         { image: transform4, name: 'Rosa L.', stats: '52kg - 59kg', duration: '7 meses' },
         { image: transform5, name: 'Juan R.', stats: '52kg - 74kg', duration: '1 ano 2 meses' },
     ];
+    /*
     React.useEffect(() => {
         // Disable right-click
         const handleContextMenu = (e: MouseEvent) => {
@@ -415,6 +416,7 @@ function App() {
             document.removeEventListener('keydown', handleKeyDown);
         };
     }, []);
+    */
 
     return (
         <div className="landing-container">
