@@ -36,17 +36,14 @@ const QuizFunnel = () => {
 
         const tdee = bmr * parseFloat(activity);
         setResults({ bmr: Math.round(bmr), tdee: Math.round(tdee) });
-        setStep(5); // Moved result display to step 5
+        setStep(6); // Moved result display to step 6
     };
 
     const nextStep = () => {
         if (step === 1 && age && weight && height) setStep(2);
         else if (step === 2) setStep(3);
-        else if (step === 3 && experience) {
-            // Placeholder for Step 4 logic
-            // calculateBMR(); // currently skipping step 4 for now until user defines it
-            setStep(4);
-        }
+        else if (step === 3 && experience) setStep(4);
+        else if (step === 4) setStep(5);
     };
 
     const handleExperienceSelection = (choice: string) => {
@@ -54,7 +51,7 @@ const QuizFunnel = () => {
         setStep(4); // Advance to step 4 automatically
     };
 
-    const progress = (step / 5) * 100;
+    const progress = (step / 6) * 100;
 
     return (
         <div className="quiz-funnel-container">
@@ -182,6 +179,29 @@ const QuizFunnel = () => {
                     )}
 
                     {step === 4 && (
+                        <div className="advice-step animate-fade-in">
+                            <div className="advice-card glass-morphism">
+                                <div className="advice-badge">ESTRATÉGIA RECOMENDADA</div>
+                                <h2 className="quiz-question" style={{ marginTop: '1rem' }}>Excelente decisão em começar agora!</h2>
+
+                                <div className="advice-content">
+                                    <p>
+                                        {experience === 'first_time' ? (
+                                            "A melhor estratégia é ter um superávit calórico inteligente, usando carboidratos como base e gorduras como complemento. Priorize as primeiras comidas do dia, especialmente desayuno e almoço."
+                                        ) : (
+                                            "Entendemos sua frustração. Muitas pessoas falham porque focam apenas em comer 'muito' sem a estratégia correta de densidade calórica. Vamos ajustar isso para você."
+                                        )}
+                                    </p>
+                                </div>
+
+                                <button className="btn-main-action" onClick={nextStep}>
+                                    CONTINUAR <ArrowRight size={20} />
+                                </button>
+                            </div>
+                        </div>
+                    )}
+
+                    {step === 5 && (
                         <div className="loading-step-bridge animate-fade-in">
                             <h2 className="quiz-question">Estamos preparando seu plano personalizado...</h2>
                             <p style={{ textAlign: 'center', opacity: 0.7 }}>Aguarde um momento enquanto calculamos os melhores resultados para você.</p>
@@ -194,7 +214,7 @@ const QuizFunnel = () => {
                         </div>
                     )}
 
-                    {step === 5 && results && (
+                    {step === 6 && results && (
                         <div className="results-bridge animate-fade-in">
                             <div className="outcome-card glass-morphism">
                                 <div className="outcome-icon animate-bounce">
