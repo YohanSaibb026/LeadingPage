@@ -10,7 +10,12 @@ import {
     Ruler,
     Activity,
     ChevronRight,
-    Lock
+    Lock,
+    Frown,
+    Clock,
+    HelpCircle,
+    TrendingDown,
+    AlertCircle
 } from 'lucide-react';
 import './QuizFunnel.css';
 
@@ -22,6 +27,7 @@ const QuizFunnel = () => {
     const [height, setHeight] = useState('');
     const [activity, setActivity] = useState('1.2');
     const [experience, setExperience] = useState<string | null>(null);
+    const [failureReason, setFailureReason] = useState<string | null>(null);
     const [results, setResults] = useState<{ bmr: number; tdee: number } | null>(null);
 
     const calculateBMR = () => {
@@ -36,22 +42,32 @@ const QuizFunnel = () => {
 
         const tdee = bmr * parseFloat(activity);
         setResults({ bmr: Math.round(bmr), tdee: Math.round(tdee) });
-        setStep(6); // Moved result display to step 6
+        setStep(7); // Results are now at step 7
     };
 
     const nextStep = () => {
         if (step === 1 && age && weight && height) setStep(2);
         else if (step === 2) setStep(3);
-        else if (step === 3 && experience) setStep(4);
-        else if (step === 4) setStep(5);
+        else if (step === 3 && experience) {
+            if (experience === 'first_time') setStep(5); // Skip step 4
+            else setStep(4);
+        }
+        else if (step === 4 && failureReason) setStep(5);
+        else if (step === 5) setStep(6);
     };
 
     const handleExperienceSelection = (choice: string) => {
         setExperience(choice);
-        setStep(4); // Advance to step 4 automatically
+        if (choice === 'first_time') setStep(5);
+        else setStep(4);
     };
 
-    const progress = (step / 6) * 100;
+    const handleFailureSelection = (choice: string) => {
+        setFailureReason(choice);
+        setStep(5);
+    };
+
+    const progress = (step / 7) * 100;
 
     return (
         <div className="quiz-funnel-container">
@@ -127,7 +143,7 @@ const QuizFunnel = () => {
 
                     {step === 2 && (
                         <div className="activity-selection animate-fade-in">
-                            <span className="step-tag">PASO 2 DE 4</span>
+                            <span className="step-tag">PASO 2 DE 7</span>
                             <h2 className="quiz-question">¿Cuál é o seu nível de atividade física?</h2>
                             <div className="quiz-options">
                                 {[
@@ -159,8 +175,8 @@ const QuizFunnel = () => {
 
                     {step === 3 && (
                         <div className="experience-step animate-fade-in">
-                            <span className="step-tag">PASO 3 DE 4</span>
-                            <h2 className="quiz-question">¿Você já tentou ganar peso e desenvolver músculos antes?</h2>
+                            <span className="step-tag">PASO 3 DE 7</span>
+                            <h2 className="quiz-question">¿Você já tentou ganhar peso e desenvolver músculos antes?</h2>
                             <div className="quiz-options">
                                 <button className="quiz-option-btn" onClick={() => handleExperienceSelection('first_time')}>
                                     <div className="option-content">
@@ -179,18 +195,57 @@ const QuizFunnel = () => {
                     )}
 
                     {step === 4 && (
+                        <div className="failure-step animate-fade-in">
+                            <span className="step-tag">PASO 4 DE 7</span>
+                            <h2 className="quiz-question">¿Qué crees que falló anteriormente?</h2>
+                            <div className="quiz-options">
+                                <button className="quiz-option-btn" onClick={() => handleFailureSelection('malestar')}>
+                                    <div className="option-content" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                                        <Frown color="#22c55e" size={24} />
+                                        <span className="option-text">A alimentação me causou mal estar</span>
+                                    </div>
+                                    <CheckCircle2 size={20} className="option-check" />
+                                </button>
+                                <button className="quiz-option-btn" onClick={() => handleFailureSelection('abandono')}>
+                                    <div className="option-content" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                                        <Clock color="#f97316" size={24} />
+                                        <span className="option-text">Abandonei o processo no meio do caminho</span>
+                                    </div>
+                                    <CheckCircle2 size={20} className="option-check" />
+                                </button>
+                                <button className="quiz-option-btn" onClick={() => handleFailureSelection('desonrientacion')}>
+                                    <div className="option-content" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                                        <HelpCircle color="#ef4444" size={24} />
+                                        <span className="option-text">Não sabia o que nem quanto comer</span>
+                                    </div>
+                                    <CheckCircle2 size={20} className="option-check" />
+                                </button>
+                                <button className="quiz-option-btn" onClick={() => handleFailureSelection('motivacion')}>
+                                    <div className="option-content" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                                        <TrendingDown color="#eab308" size={24} />
+                                        <span className="option-text">Não via resultados e perdi a motivação</span>
+                                    </div>
+                                    <CheckCircle2 size={20} className="option-check" />
+                                </button>
+                            </div>
+                        </div>
+                    )}
+
+                    {step === 5 && (
                         <div className="advice-step animate-fade-in">
                             <div className="advice-card glass-morphism">
-                                <div className="advice-badge">ESTRATÉGIA RECOMENDADA</div>
-                                <h2 className="quiz-question" style={{ marginTop: '1rem' }}>Excelente decisão em começar agora!</h2>
+                                <div className="advice-badge">
+                                    {experience === 'first_time' ? 'EXCELENTE DECISÃO' : 'TEMOS A SOLUÇÃO'}
+                                </div>
+                                <h2 className="quiz-question" style={{ marginTop: '1rem' }}>
+                                    {experience === 'first_time'
+                                        ? 'Sua jornada começa com a estratégia correta!'
+                                        : 'Vamos superar esses obstáculos juntos!'}
+                                </h2>
 
                                 <div className="advice-content">
                                     <p>
-                                        {experience === 'first_time' ? (
-                                            "A melhor estratégia é ter um superávit calórico inteligente, usando carboidratos como base e gorduras como complemento. Priorize as primeiras comidas do dia, especialmente desayuno e almoço."
-                                        ) : (
-                                            "Entendemos sua frustração. Muitas pessoas falham porque focam apenas em comer 'muito' sem a estratégia correta de densidade calórica. Vamos ajustar isso para você."
-                                        )}
+                                        A melhor estratégia é ter um superávit calórico inteligente, usando carboidratos como base e gorduras como complemento. Priorize as primeiras comidas do dia, especialmente desayuno e almoço.
                                     </p>
                                 </div>
 
@@ -201,7 +256,7 @@ const QuizFunnel = () => {
                         </div>
                     )}
 
-                    {step === 5 && (
+                    {step === 6 && (
                         <div className="loading-step-bridge animate-fade-in">
                             <h2 className="quiz-question">Estamos preparando seu plano personalizado...</h2>
                             <p style={{ textAlign: 'center', opacity: 0.7 }}>Aguarde um momento enquanto calculamos os melhores resultados para você.</p>
@@ -214,7 +269,7 @@ const QuizFunnel = () => {
                         </div>
                     )}
 
-                    {step === 6 && results && (
+                    {step === 7 && results && (
                         <div className="results-bridge animate-fade-in">
                             <div className="outcome-card glass-morphism">
                                 <div className="outcome-icon animate-bounce">
