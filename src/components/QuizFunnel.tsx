@@ -21,6 +21,7 @@ const QuizFunnel = () => {
     const [weight, setWeight] = useState('');
     const [height, setHeight] = useState('');
     const [activity, setActivity] = useState('1.2');
+    const [experience, setExperience] = useState<string | null>(null);
     const [results, setResults] = useState<{ bmr: number; tdee: number } | null>(null);
 
     const calculateBMR = () => {
@@ -35,15 +36,25 @@ const QuizFunnel = () => {
 
         const tdee = bmr * parseFloat(activity);
         setResults({ bmr: Math.round(bmr), tdee: Math.round(tdee) });
-        setStep(3);
+        setStep(5); // Moved result display to step 5
     };
 
     const nextStep = () => {
         if (step === 1 && age && weight && height) setStep(2);
-        else if (step === 2) calculateBMR();
+        else if (step === 2) setStep(3);
+        else if (step === 3 && experience) {
+            // Placeholder for Step 4 logic
+            // calculateBMR(); // currently skipping step 4 for now until user defines it
+            setStep(4);
+        }
     };
 
-    const progress = (step / 3) * 100;
+    const handleExperienceSelection = (choice: string) => {
+        setExperience(choice);
+        setStep(4); // Advance to step 4 automatically
+    };
+
+    const progress = (step / 5) * 100;
 
     return (
         <div className="quiz-funnel-container">
@@ -119,11 +130,11 @@ const QuizFunnel = () => {
 
                     {step === 2 && (
                         <div className="activity-selection animate-fade-in">
-                            <span className="step-tag">PASO 2 DE 2</span>
+                            <span className="step-tag">PASO 2 DE 4</span>
                             <h2 className="quiz-question">¿Cuál é o seu nível de atividade física?</h2>
                             <div className="quiz-options">
                                 {[
-                                    { val: "1.2", label: "Sedentario (poco o nada de ejercicio)", desc: "Trabalho em escritório, pouca movimentação" },
+                                    { val: "1.2", label: "Sedentario (poco o nada de exercício)", desc: "Trabalho em escritório, pouca movimentação" },
                                     { val: "1.375", label: "Leve (1-3 días a la semana)", desc: "Caminhadas leves, yoga ou esportes ocasionais" },
                                     { val: "1.55", label: "Moderado (3-5 días a la semana)", desc: "Musculação ou cardio regular" },
                                     { val: "1.725", label: "Activo (6-7 días a la semana)", desc: "Treinos intensos diários" },
@@ -132,7 +143,7 @@ const QuizFunnel = () => {
                                     <button
                                         key={opt.val}
                                         className={`quiz-option-btn ${activity === opt.val ? 'selected' : ''}`}
-                                        onClick={() => { setActivity(opt.val); setTimeout(calculateBMR, 300); }}
+                                        onClick={() => { setActivity(opt.val); setTimeout(nextStep, 300); }}
                                     >
                                         <div className="option-content">
                                             <div className="option-main">
@@ -149,7 +160,41 @@ const QuizFunnel = () => {
                         </div>
                     )}
 
-                    {step === 3 && results && (
+                    {step === 3 && (
+                        <div className="experience-step animate-fade-in">
+                            <span className="step-tag">PASO 3 DE 4</span>
+                            <h2 className="quiz-question">¿Você já tentou ganar peso e desenvolver músculos antes?</h2>
+                            <div className="quiz-options">
+                                <button className="quiz-option-btn" onClick={() => handleExperienceSelection('first_time')}>
+                                    <div className="option-content">
+                                        <span className="option-text">Não, é minha primeira vez</span>
+                                    </div>
+                                    <CheckCircle2 size={20} className="option-check" />
+                                </button>
+                                <button className="quiz-option-btn" onClick={() => handleExperienceSelection('tried_before')}>
+                                    <div className="option-content">
+                                        <span className="option-text">Já tentei, mas não consegui</span>
+                                    </div>
+                                    <CheckCircle2 size={20} className="option-check" />
+                                </button>
+                            </div>
+                        </div>
+                    )}
+
+                    {step === 4 && (
+                        <div className="loading-step-bridge animate-fade-in">
+                            <h2 className="quiz-question">Estamos preparando seu plano personalizado...</h2>
+                            <p style={{ textAlign: 'center', opacity: 0.7 }}>Aguarde um momento enquanto calculamos os melhores resultados para você.</p>
+                            <div className="pulsing-loader" style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
+                                <Zap size={48} className="animate-pulse" color="#f97316" />
+                            </div>
+                            <button className="btn-main-action" style={{ marginTop: '3rem' }} onClick={calculateBMR}>
+                                VER RESULTADOS <ChevronRight size={20} />
+                            </button>
+                        </div>
+                    )}
+
+                    {step === 5 && results && (
                         <div className="results-bridge animate-fade-in">
                             <div className="outcome-card glass-morphism">
                                 <div className="outcome-icon animate-bounce">
