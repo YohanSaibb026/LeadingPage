@@ -52,61 +52,9 @@ import avatarCamilla from '../assets/avatar-camilla.jpg';
 import avatarGina from '../assets/avatar-gina.jpg';
 import creatorPhoto from '../assets/creator.jpg';
 import mealGina from '../assets/meal-gina.jpg';
-import videoCard from '../assets/CARD.webm';
+
 import '../App.css';
 
-const VideoPlayer = () => {
-    const videoRef = React.useRef<HTMLVideoElement>(null);
-
-    const handlePlay = () => {
-        if (videoRef.current && videoRef.current.paused) {
-            videoRef.current.play().catch(console.error);
-        }
-    };
-
-    React.useEffect(() => {
-        const video = videoRef.current;
-        if (!video) return;
-
-        // Force playback on mount and visibility change
-        const checkPlayback = () => {
-            if (document.visibilityState === 'visible' && video.paused) {
-                video.play().catch(console.error);
-            }
-        };
-
-        document.addEventListener('visibilitychange', checkPlayback);
-        window.addEventListener('focus', checkPlayback);
-
-        // Initial play attempt
-        video.play().catch(console.error);
-
-        return () => {
-            document.removeEventListener('visibilitychange', checkPlayback);
-            window.removeEventListener('focus', checkPlayback);
-        };
-    }, []);
-
-    return (
-        <section className="video-section">
-            <div className="video-wrapper">
-                <video
-                    ref={videoRef}
-                    src={videoCard}
-                    loop
-                    muted
-                    autoPlay
-                    playsInline
-                    preload="auto"
-                    disablePictureInPicture
-                    onPause={handlePlay}
-                    onContextMenu={(e) => e.preventDefault()}
-                    className="video-element"
-                />
-            </div>
-        </section>
-    );
-};
 
 const BrandBadge = ({ children }: { children?: React.ReactNode }) => (
     <span className="brand-badge">
@@ -194,6 +142,7 @@ const CountdownTimer = ({ urgencyText }: { urgencyText: string }) => {
     );
 };
 
+/*
 const BMRCalculator = () => {
     const { t } = useTranslation();
     const [gender, setGender] = useState<'male' | 'female'>('male');
@@ -346,6 +295,7 @@ const BMRCalculator = () => {
         </section>
     );
 };
+*/
 
 const LandingPage = () => {
     const { t, i18n } = useTranslation();
@@ -353,11 +303,22 @@ const LandingPage = () => {
     const [activeTransform, setActiveTransform] = useState(0);
     const [activeStory, setActiveStory] = useState(0);
     const storiesRef = React.useRef<HTMLDivElement>(null);
+    const transformationsRef = React.useRef<HTMLDivElement>(null);
 
     const scrollStories = (direction: 'left' | 'right') => {
         if (storiesRef.current) {
             const scrollAmount = storiesRef.current.clientWidth * 0.8;
             storiesRef.current.scrollBy({
+                left: direction === 'left' ? -scrollAmount : scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    };
+
+    const scrollTransformations = (direction: 'left' | 'right') => {
+        if (transformationsRef.current) {
+            const scrollAmount = transformationsRef.current.clientWidth;
+            transformationsRef.current.scrollBy({
                 left: direction === 'left' ? -scrollAmount : scrollAmount,
                 behavior: 'smooth'
             });
@@ -417,11 +378,7 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="hero-image-wrapper">
-                </div>
             </header>
-
-            <VideoPlayer />
 
             <section className="video-caption-section reveal reveal-delay-2">
                 <div className="caption-content">
@@ -553,7 +510,9 @@ const LandingPage = () => {
                 </div>
             </section>
 
+            {/* 
             <BMRCalculator />
+            */}
 
             {/* Features Section */}
             <section id="features" className="features">
@@ -590,34 +549,55 @@ const LandingPage = () => {
                         <div className="icon-wrapper"><Star /></div>
                         <h3>{t('features.transformations.title')}</h3>
                         <p>{t('features.transformations.desc')}</p>
-                        <div
-                            className="transformations-grid"
-                            onScroll={(e) => {
-                                const container = e.currentTarget;
-                                const { scrollLeft, scrollWidth, clientWidth } = container;
 
-                                // Calculate progress percentage
-                                const scrollPercentage = scrollLeft / (scrollWidth - clientWidth);
-                                const index = Math.round(scrollPercentage * (transformations.length - 1));
+                        <div className="transformations-carousel-container">
+                            <button
+                                className="transform-nav-btn prev"
+                                onClick={() => scrollTransformations('left')}
+                                aria-label="Previous transformation"
+                            >
+                                <ChevronLeft size={24} />
+                            </button>
 
-                                if (!isNaN(index)) {
-                                    setActiveTransform(index);
-                                }
-                            }}
-                        >
-                            {transformations.map((item, i) => (
-                                <div key={i} className="transform-item-wrapper">
-                                    <div className="transform-item">
-                                        <img src={item.image} alt={`Resultado de transformação: ${item.name} `} draggable="false" />
+                            <div
+                                ref={transformationsRef}
+                                className="transformations-grid"
+                                onScroll={(e) => {
+                                    const container = e.currentTarget;
+                                    const { scrollLeft, scrollWidth, clientWidth } = container;
+
+                                    // Calculate progress percentage
+                                    const scrollPercentage = scrollLeft / (scrollWidth - clientWidth);
+                                    const index = Math.round(scrollPercentage * (transformations.length - 1));
+
+                                    if (!isNaN(index)) {
+                                        setActiveTransform(index);
+                                    }
+                                }}
+                            >
+                                {transformations.map((item, i) => (
+                                    <div key={i} className="transform-item-wrapper">
+                                        <div className="transform-item">
+                                            <img src={item.image} alt={`Resultado de transformação: ${item.name} `} draggable="false" />
+                                        </div>
+                                        <div className="transform-info">
+                                            <span className="transform-name">{item.name}</span>
+                                            <span className="transform-stats">{item.stats}</span>
+                                            <span className="transform-duration">{item.duration}</span>
+                                        </div>
                                     </div>
-                                    <div className="transform-info">
-                                        <span className="transform-name">{item.name}</span>
-                                        <span className="transform-stats">{item.stats}</span>
-                                        <span className="transform-duration">{item.duration}</span>
-                                    </div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
+
+                            <button
+                                className="transform-nav-btn next"
+                                onClick={() => scrollTransformations('right')}
+                                aria-label="Next transformation"
+                            >
+                                <ChevronRight size={24} />
+                            </button>
                         </div>
+
                         <div className="transform-pagination">
                             {transformations.map((_, i) => (
                                 <div
