@@ -5,7 +5,7 @@
         "download": "Descargar App"
     },
     "hero": {
-        "title": "<0>7 de cada 10 personas se rinden</0> <1>en los primeros 3 meses al intentar subir de peso y ganar músculos</1>",
+        "title": "<0>7 de cada 10 personas abandonan</0> <1>en los primeros 3 meses al intentar subir de peso y ganar masa muscular</1>",
         "subtitle": "Las quejas más comunes que se escuchan en los consultorios son",
         "complaints": [
             "Sentirse desmotivado por falta de ideas de qué comer",
@@ -37,7 +37,7 @@
         },
         "showroom_caption": {
             "title": "Desayunos y Batidos",
-            "subtitle": "deliciosos para ganar músculos. Simples, prácticos y con ingredientes del día a día"
+            "subtitle": "deliciosos para ganar masa muscular. Simples, prácticos y con ingredientes del día a día"
         },
         "video_caption": {
             "title": "¿Tienes dudas a la hora de cocinar?",
@@ -109,7 +109,7 @@
     "about": {
         "badge": "El Creador",
         "title": "¿Quién soy yo?",
-        "description": "Me llamo Álex Hernández. Soy graduado y resido en España, trabajando junto a un equipo especializado en nutrición clínica y deportiva.\n\nDesde hace dos años realizo consultas presenciales y online, aplicando protocolos basados en un superávit calórico estructurado para promover el aumento de peso y masa muscular.\n\nEsta aplicación nace de la experiencia práctica de estas consultas, reuniendo estrategias nutricionales eficaces en recetas simples y prácticas para el día a día."
+        "description": "Me llamo Álex Hernandez. Soy graduado y resido en España, trabajando junto a un equipo especializado en nutrición clínica y deportiva.\n\nDesde hace dos años realizo consultas presenciales y online, aplicando protocolos basados en un superávit calórico estructurado para promover el aumento de peso y masa muscular.\n\nEsta aplicación nace de la experiencia práctica de estas consultas, reuniendo estrategias nutricionales eficaces en recetas simples y prácticas para el día a día."
     },
     "cta": {
         "title": "Eleva tu experiencia culinaria hoy",
