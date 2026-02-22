@@ -1336,7 +1336,58 @@
 }
 
 .stories-header {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stories-carousel-wrapper {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.carousel-nav-btn {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(21, 76, 84, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 20;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-nav-btn:hover {
+    background: var(--primary);
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(251, 81, 59, 0.3);
+}
+
+.carousel-nav-btn.prev {
+    left: 0;
+}
+
+.carousel-nav-btn.next {
+    right: 0;
+}
+
+@media (max-width: 968px) {
+    .carousel-nav-btn {
+        display: none;
+    }
+
+    .stories-carousel-wrapper {
+        padding: 0;
+    }
 }
 
 .reviews-stories h2 {

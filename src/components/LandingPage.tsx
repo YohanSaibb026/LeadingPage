@@ -18,7 +18,9 @@ import {
     Calendar,
     Scale,
     Ruler,
-    Activity
+    Activity,
+    ChevronLeft,
+    ChevronRight
 } from 'lucide-react';
 
 declare global {
@@ -350,6 +352,17 @@ const LandingPage = () => {
     const [openFaq, setOpenFaq] = useState<number | null>(null);
     const [activeTransform, setActiveTransform] = useState(0);
     const [activeStory, setActiveStory] = useState(0);
+    const storiesRef = React.useRef<HTMLDivElement>(null);
+
+    const scrollStories = (direction: 'left' | 'right') => {
+        if (storiesRef.current) {
+            const scrollAmount = storiesRef.current.clientWidth * 0.8;
+            storiesRef.current.scrollBy({
+                left: direction === 'left' ? -scrollAmount : scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    };
 
     const stories = [
         { name: 'Nicolás N.', fullName: 'Nicolás Navas', avatar: avatarNicolas, content: meal2, quote: t('reviews.stories.nicolas') },
@@ -430,75 +443,95 @@ const LandingPage = () => {
                 <div className="stories-header">
                     <h2>{t('reviews.title')}</h2>
                 </div>
-                <div
-                    className="story-cards-grid"
-                    onScroll={(e) => {
-                        const container = e.currentTarget;
-                        const { scrollLeft, scrollWidth, clientWidth } = container;
 
-                        // Calculate progress percentage
-                        const scrollPercentage = scrollLeft / (scrollWidth - clientWidth);
-                        const index = Math.round(scrollPercentage * (stories.length - 1));
+                <div className="stories-carousel-wrapper">
+                    <button
+                        className="carousel-nav-btn prev"
+                        onClick={() => scrollStories('left')}
+                        aria-label="Previous story"
+                    >
+                        <ChevronLeft size={24} />
+                    </button>
 
-                        // Safety check for empty or single item
-                        if (!isNaN(index)) {
-                            setActiveStory(index);
-                        }
-                    }}
-                >
-                    {stories.map((story, index) => (
-                        <div key={index} className="story-item">
-                            <div className="story-card">
-                                {/* Instagram-style Bars */}
-                                <div className="card-story-progress">
-                                    <div className="progress-segment active"></div>
-                                    <div className="progress-segment"></div>
-                                    <div className="progress-segment"></div>
+                    <div
+                        ref={storiesRef}
+                        className="story-cards-grid"
+                        onScroll={(e) => {
+                            const container = e.currentTarget;
+                            const { scrollLeft, scrollWidth, clientWidth } = container;
+
+                            // Calculate progress percentage
+                            const scrollPercentage = scrollLeft / (scrollWidth - clientWidth);
+                            const index = Math.round(scrollPercentage * (stories.length - 1));
+
+                            // Safety check for empty or single item
+                            if (!isNaN(index)) {
+                                setActiveStory(index);
+                            }
+                        }}
+                    >
+                        {stories.map((story, index) => (
+                            <div key={index} className="story-item">
+                                <div className="story-card">
+                                    {/* Instagram-style Bars */}
+                                    <div className="card-story-progress">
+                                        <div className="progress-segment active"></div>
+                                        <div className="progress-segment"></div>
+                                        <div className="progress-segment"></div>
+                                    </div>
+
+                                    {/* Story User Info */}
+                                    <div className="card-story-user">
+                                        <img src={story.avatar} alt={`Avatar de ${story.name} `} draggable="false" />
+                                        <div className="user-details">
+                                            <span className="user-name">{story.name}</span>
+                                            <span className="post-time">8h</span>
+                                        </div>
+                                        <div className="header-actions">
+                                            <Pause size={16} color="white" fill="white" />
+                                            <MoreHorizontal size={18} color="white" />
+                                        </div>
+                                    </div>
+
+                                    <img src={story.content} alt={`Depoimento de ${story.name} `} className="card-story-content" draggable="false" />
+
+                                    {/* Story Footer */}
+                                    <div className="card-story-footer">
+                                        <div className="footer-input">
+                                            <span>Responder a {story.name}...</span>
+                                        </div>
+                                        <div className="footer-actions">
+                                            <Heart size={20} color="white" />
+                                            <Send size={20} color="white" />
+                                        </div>
+                                    </div>
                                 </div>
 
-                                {/* Story User Info */}
-                                <div className="card-story-user">
-                                    <img src={story.avatar} alt={`Avatar de ${story.name} `} draggable="false" />
-                                    <div className="user-details">
-                                        <span className="user-name">{story.name}</span>
-                                        <span className="post-time">8h</span>
-                                    </div>
-                                    <div className="header-actions">
-                                        <Pause size={16} color="white" fill="white" />
-                                        <MoreHorizontal size={18} color="white" />
-                                    </div>
-                                </div>
+                                <div className="story-text-content reveal reveal-delay-2">
+                                    <p className="story-quote">"{story.quote}"</p>
+                                    <span className="story-author">{story.fullName}</span>
 
-                                <img src={story.content} alt={`Depoimento de ${story.name} `} className="card-story-content" draggable="false" />
-
-                                {/* Story Footer */}
-                                <div className="card-story-footer">
-                                    <div className="footer-input">
-                                        <span>Responder a {story.name}...</span>
-                                    </div>
-                                    <div className="footer-actions">
-                                        <Heart size={20} color="white" />
-                                        <Send size={20} color="white" />
+                                    {/* Story Pagination Dots */}
+                                    <div className="story-pagination">
+                                        {stories.map((_, i) => (
+                                            <div
+                                                key={i}
+                                                className={`story-dot ${activeStory === i ? 'active' : ''}`}
+                                            />
+                                        ))}
                                     </div>
                                 </div>
                             </div>
+                        ))}
+                    </div>
 
-                            <div className="story-text-content reveal reveal-delay-2">
-                                <p className="story-quote">"{story.quote}"</p>
-                                <span className="story-author">{story.fullName}</span>
-
-                                {/* Story Pagination Dots */}
-                                <div className="story-pagination">
-                                    {stories.map((_, i) => (
-                                        <div
-                                            key={i}
-                                            className={`story-dot ${activeStory === i ? 'active' : ''}`}
-                                        />
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    ))}
+                    <button
+                        className="carousel-nav-btn next"
+                        onClick={() => scrollStories('right')}
+                        aria-label="Next story"
+                    >
+                        <ChevronRight size={24} />
+                    </button>
                 </div>
             </section>
 
