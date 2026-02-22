@@ -1163,135 +1163,136 @@
     opacity: 1;
 }
 
-@media (max-width: 640px) {
-    .cta-timer-wrapper {
-        margin-bottom: 2.5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.75rem;
+/* Countdown Timer Styles (Shared) */
+.cta-timer-wrapper {
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.timer-label {
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0 !important;
+}
+
+.cta-timer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-timer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.05),
+            transparent);
+    animation: shine 4s infinite linear;
+}
+
+@keyframes shine {
+    to {
+        left: 100%;
+    }
+}
+
+.animate-pop {
+    animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.5;
     }
 
-    .timer-label {
-        font-size: 0.95rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: rgba(255, 255, 255, 0.9);
-        margin-bottom: 0 !important;
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse-soft {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+.animate-pulse {
+    animation: pulse-soft 2s infinite ease-in-out;
+}
+
+.timer-unit {
+    display: flex;
+    align-items: baseline;
+    gap: 1px;
+}
+
+.timer-value {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    min-width: 1.5ch;
+    text-align: center;
+}
+
+.timer-suffix {
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 0.7;
+    text-transform: lowercase;
+}
+
+.timer-separator {
+    font-size: 1.5rem;
+    font-weight: 800;
+    opacity: 0.5;
+    margin-bottom: 4px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+    .timer-value {
+        font-size: 1.4rem;
     }
 
     .cta-timer {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        background: rgba(0, 0, 0, 0.4);
-        padding: 1rem 2rem;
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(12px);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        position: relative;
-        overflow: hidden;
-    }
-
-    .cta-timer::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 200%;
-        height: 100%;
-        background: linear-gradient(90deg,
-                transparent,
-                rgba(255, 255, 255, 0.05),
-                transparent);
-        animation: shine 4s infinite linear;
-    }
-
-    @keyframes shine {
-        to {
-            left: 100%;
-        }
-    }
-
-    .animate-pop {
-        animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-
-    @keyframes pop {
-        0% {
-            transform: scale(0.8);
-            opacity: 0.5;
-        }
-
-        100% {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-
-    @keyframes pulse-soft {
-
-        0%,
-        100% {
-            transform: scale(1);
-            opacity: 0.9;
-        }
-
-        50% {
-            transform: scale(1.1);
-            opacity: 1;
-        }
-    }
-
-    .animate-pulse {
-        animation: pulse-soft 2s infinite ease-in-out;
-    }
-
-    .timer-unit {
-        display: flex;
-        align-items: baseline;
-        gap: 1px;
-    }
-
-    .timer-value {
-        font-family: 'Inter', sans-serif;
-        font-size: 1.8rem;
-        font-weight: 800;
-        min-width: 1.5ch;
-        text-align: center;
-    }
-
-    .timer-suffix {
-        font-size: 0.8rem;
-        font-weight: 600;
-        opacity: 0.7;
-        text-transform: lowercase;
-    }
-
-    .timer-separator {
-        font-size: 1.5rem;
-        font-weight: 800;
-        opacity: 0.5;
-        margin-bottom: 4px;
-    }
-
-    @media (max-width: 640px) {
-        .timer-value {
-            font-size: 1.4rem;
-        }
-
-        .cta-timer {
-            padding: 0.5rem 1rem;
-        }
+        padding: 0.5rem 1rem;
     }
 
     .cta-guarantees {
         gap: 1rem;
+        margin-top: 2rem;
     }
 
     .cta-guarantee-item {

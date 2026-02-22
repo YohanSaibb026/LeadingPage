@@ -386,15 +386,10 @@ const LandingPage = () => {
         <div className="landing-container">
             {/* Navigation */}
             <nav className="navbar glass-morphism">
-                <div className="nav-content">
+                <div className="nav-content" style={{ justifyContent: 'center' }}>
                     <div className="logo">
                         <ChefHat className="logo-icon" />
                         <span>Sabores Exclusivos</span>
-                    </div>
-                    <div className="nav-links">
-                        <a href="#features">{t('nav.features')}</a>
-                        <a href="#pricing">{t('nav.pricing')}</a>
-                        <button className="btn-primary-small">{t('nav.download')}</button>
                     </div>
                 </div>
             </nav>
