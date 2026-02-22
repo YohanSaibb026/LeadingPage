@@ -117,23 +117,25 @@
 /* Hero */
 .hero {
     padding: 80px 2rem 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 4rem;
-    max-width: 1400px;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
     margin: 0 auto;
-    background: radial-gradient(circle at 20% 30%, rgba(251, 81, 59, 0.08) 0%, transparent 40%),
+    background: radial-gradient(circle at 50% 30%, rgba(251, 81, 59, 0.08) 0%, transparent 40%),
         var(--hero-bg);
     min-height: auto;
     position: relative;
     overflow: hidden;
+    text-align: center;
 }
 
 .hero-content {
-    padding-left: 2rem;
-    max-width: 600px;
-    text-align: left;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
 }
 
 .badge {
@@ -182,8 +184,9 @@
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 28px;
-    padding: 2rem;
-    max-width: 100%;
+    padding: 2.5rem;
+    max-width: 800px;
+    margin: 0 auto;
     box-shadow:
         0 4px 24px -1px rgba(0, 0, 0, 0.2),
         inset 0 0 20px rgba(255, 255, 255, 0.02);
@@ -500,12 +503,33 @@
     gap: 2rem;
 }
 
+/* Desktop-only: stack cards vertically as requested */
+@media (min-width: 969px) {
+    .feature-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+
 .feature-card {
     padding: 3rem 2rem;
     border-radius: 24px;
     text-align: center;
     transition: transform 0.3s ease;
 }
+
+@media (min-width: 969px) {
+    .feature-card {
+        padding: 3rem 2.5rem;
+        border-radius: 32px;
+        width: 100%;
+    }
+}
+
 
 .feature-card:hover {
     transform: translateY(-10px);
@@ -713,10 +737,15 @@
     grid-column: 1 / -1;
     text-align: center;
     max-width: 100%;
-    /* Prevent grid blowout */
     overflow: hidden;
-    /* Ensure no child overflow affects parent */
 }
+
+@media (min-width: 969px) {
+    .transformation-card {
+        width: 100%;
+    }
+}
+
 
 .transformation-card h3 {
     margin-bottom: 0.5rem;
@@ -726,17 +755,40 @@
     margin-bottom: 2rem;
 }
 
+.transform-carousel-wrapper {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.transform-nav {
+    display: flex;
+    /* Visible by default (merged with general carousel-nav-btn logic) */
+}
+
+@media (max-width: 968px) {
+    .transform-nav {
+        display: none;
+    }
+
+    .transform-carousel-wrapper {
+        padding: 0;
+    }
+}
+
 .transformations-grid {
     display: flex;
     overflow-x: auto;
     gap: 1.25rem;
-    padding: 1.5rem 2rem;
-    /* Vertical 1.5rem, Horizontal matches card padding */
-    margin: 1rem -2rem 0;
-    /* Bleed out of the card's 2rem padding */
+    padding: 1.5rem 0;
+    /* Vertical 1.5rem, removed side padding as it's now in wrapper */
+    margin: 1rem 0 0;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    width: auto;
+    width: 100%;
     box-sizing: border-box;
 }
 
