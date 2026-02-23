@@ -303,8 +303,20 @@ const LandingPage = () => {
     const [openFaq, setOpenFaq] = useState<number | null>(null);
     const [activeTransform, setActiveTransform] = useState(0);
     const [activeStory, setActiveStory] = useState(0);
+    const [activeTestimonial, setActiveTestimonial] = useState(0);
     const storiesRef = React.useRef<HTMLDivElement>(null);
     const transformationsRef = React.useRef<HTMLDivElement>(null);
+    const testimonialCarouselRef = React.useRef<HTMLDivElement>(null);
+
+    const scrollTestimonials = (direction: 'left' | 'right') => {
+        if (testimonialCarouselRef.current) {
+            const scrollAmount = 320; // card width + gap approx
+            testimonialCarouselRef.current.scrollBy({
+                left: direction === 'left' ? -scrollAmount : scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    };
 
     const scrollStories = (direction: 'left' | 'right') => {
         if (storiesRef.current) {
@@ -326,14 +338,14 @@ const LandingPage = () => {
         }
     };
 
-    const stories = [
-        { name: 'Nicolás N.', fullName: 'Nicolás Navas', avatar: avatarNicolas, content: meal2, quote: t('reviews.stories.nicolas') },
-        { name: 'Dani C.', fullName: 'Dani Castro', avatar: avatarDani, content: shakeStory, quote: t('reviews.stories.dani') },
-        { name: 'Thiago A.', fullName: 'Thiago Aguirre', avatar: avatarThiago, content: meal1, quote: t('reviews.stories.thiago') },
-        { name: 'Lucia S.', fullName: 'Lucia Sánchez', avatar: avatarLucia, content: meal3, quote: t('reviews.stories.lucia') },
-        { name: 'Pablo B.', fullName: 'Pablo Barrios', avatar: avatarPablo, content: meal4, quote: t('reviews.stories.pablo') },
-        { name: 'Camilla B.', fullName: 'Camilla Beltrán', avatar: avatarCamilla, content: meal5, quote: t('reviews.stories.camilla') },
-        { name: 'Gina F.', fullName: 'Gina Fonseca', avatar: avatarGina, content: mealGina, quote: t('reviews.stories.gina') },
+    const compactTestimonials = [
+        { name: 'Nicolás N.', fullName: 'Nicolás Navas', avatar: avatarNicolas, meal: meal1, quote: t('reviews.stories.nicolas') },
+        { name: 'Dani C.', fullName: 'Dani Castro', avatar: avatarDani, meal: meal2, quote: t('reviews.stories.dani') },
+        { name: 'Thiago A.', fullName: 'Thiago Aguirre', avatar: avatarThiago, meal: meal3, quote: t('reviews.stories.thiago') },
+        { name: 'Lucia S.', fullName: 'Lucia Sánchez', avatar: avatarLucia, meal: meal4, quote: t('reviews.stories.lucia') },
+        { name: 'Pablo B.', fullName: 'Pablo Barrios', avatar: avatarPablo, meal: meal5, quote: t('reviews.stories.pablo') },
+        { name: 'Camilla B.', fullName: 'Camilla Beltrán', avatar: avatarCamilla, meal: meal6, quote: t('reviews.stories.camilla') },
+        { name: 'Gina F.', fullName: 'Gina Fonseca', avatar: avatarGina, meal: mealGina, quote: t('reviews.stories.gina') },
     ];
 
     const transformations = [
@@ -372,7 +384,6 @@ const LandingPage = () => {
                             <ul className="complaints-list">
                                 {(t('hero.complaints', { returnObjects: true }) as string[]).map((item, index) => (
                                     <li key={index}>
-                                        <div style={{ width: '8px', height: '1px', background: 'var(--primary)', opacity: 0.6, marginTop: '10px' }}></div>
                                         {item}
                                     </li>
                                 ))}
@@ -504,11 +515,13 @@ const LandingPage = () => {
                     <img src={mockupTrans} alt="App Sabores Exclusivos Mockup" className="showroom-mockup-img" draggable="false" />
                 </div>
 
+                {/* 
                 <div className="showroom-caption-content reveal reveal-delay-2">
                     <span className="eyebrow" style={{ marginTop: '2rem' }}>Experiência Digital</span>
                     <h2 className="showroom-caption-main" style={{ marginTop: '1rem' }}>{t('features.showroom_caption.title')}</h2>
                     <p className="showroom-caption-detail">{t('features.showroom_caption.subtitle')}</p>
                 </div>
+                */}
             </section>
 
             {/* 
@@ -659,6 +672,57 @@ const LandingPage = () => {
                         <span className="promo-from">{t('features.pricing.promotion.price_from')}</span>
                         <span className="promo-to">{t('features.pricing.promotion.price_to')}</span>
                     </div>
+                </div>
+            </section>
+
+            {/* Compact Testimonial Carousel */}
+            <section className="testimonial-carousel-section reveal">
+                <h2 className="section-title" style={{ marginBottom: '1rem' }}>
+                    <span className="text-gradient">{t('reviews.compact_title')}</span>
+                </h2>
+                <div className="testimonial-carousel-container">
+                    <button
+                        className="testimonial-nav-btn prev"
+                        onClick={() => scrollTestimonials('left')}
+                        aria-label="Previous testimonial"
+                    >
+                        <ChevronLeft size={20} />
+                    </button>
+
+                    <div
+                        ref={testimonialCarouselRef}
+                        className="testimonial-grid"
+                        onScroll={(e) => {
+                            const container = e.currentTarget;
+                            const { scrollLeft, scrollWidth, clientWidth } = container;
+                            const scrollPercentage = scrollLeft / (scrollWidth - clientWidth);
+                            const index = Math.round(scrollPercentage * (compactTestimonials.length - 1));
+                            if (!isNaN(index)) {
+                                setActiveTestimonial(index);
+                            }
+                        }}
+                    >
+                        {compactTestimonials.map((testimonial, idx) => (
+                            <div key={idx} className="testimonial-card-compact">
+                                <img src={testimonial.meal} alt={`Receita preparada por ${testimonial.name} `} className="testimonial-meal-img" draggable="false" />
+                                <div className="testimonial-user-row">
+                                    <img src={testimonial.avatar} alt={`Avatar de ${testimonial.name} `} className="testimonial-avatar" draggable="false" />
+                                    <div className="testimonial-user-info">
+                                        <span className="testimonial-user-name">{testimonial.name}</span>
+                                    </div>
+                                </div>
+                                <p className="testimonial-quote">"{testimonial.quote}"</p>
+                            </div>
+                        ))}
+                    </div>
+
+                    <button
+                        className="testimonial-nav-btn next"
+                        onClick={() => scrollTestimonials('right')}
+                        aria-label="Next testimonial"
+                    >
+                        <ChevronRight size={20} />
+                    </button>
                 </div>
             </section>
 

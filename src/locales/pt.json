@@ -19,6 +19,7 @@
     },
     "reviews": {
         "title": "Algumas experiências de nossos usuários",
+        "compact_title": "Usuários que confiaram em nosso aplicativo",
         "stories": {
             "nicolas": "Estas comidas saudáveis mudaram completamente a forma como levo o meu dia",
             "dani": "Os smoothies já se tornaram parte da minha rotina todos os dias na faculdade",
