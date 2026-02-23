@@ -31,6 +31,7 @@ declare global {
 
 import { useTranslation, Trans } from 'react-i18next';
 import appShowroom from '../assets/app-showroom.png';
+import mockupTrans from '../assets/mockup-trans.png';
 import meal1 from '../assets/meal-1.jpg';
 import meal2 from '../assets/meal-2.jpg';
 import meal3 from '../assets/meal-3.jpg';
@@ -358,6 +359,7 @@ const LandingPage = () => {
             {/* Hero Section */}
             <header className="hero">
                 <div className="hero-content">
+                    <span className="eyebrow">A realidade do ganho de peso</span>
                     <h1 className="reveal">
                         <Trans i18nKey="hero.title">
                             <span className="text-gradient">8 em cada 10 pessoas desistem</span>
@@ -370,7 +372,7 @@ const LandingPage = () => {
                             <ul className="complaints-list">
                                 {(t('hero.complaints', { returnObjects: true }) as string[]).map((item, index) => (
                                     <li key={index}>
-                                        <Zap size={14} className="bullet-icon" fill="currentColor" />
+                                        <div style={{ width: '8px', height: '1px', background: 'var(--primary)', opacity: 0.6, marginTop: '10px' }}></div>
                                         {item}
                                     </li>
                                 ))}
@@ -385,12 +387,14 @@ const LandingPage = () => {
                     <div className="caption-decorator">
                         <ChefHat size={32} strokeWidth={1.5} />
                     </div>
+                    <span className="eyebrow">Acompanhamento Profissional</span>
                     <h3 className="caption-title">{t('features.video_caption.title')}</h3>
                     <p className="caption-subtitle">{t('features.video_caption.subtitle')}</p>
                 </div>
             </section>
 
             {/* Stories Section */}
+            {/* 
             <section className="reviews-stories reveal">
                 <div className="stories-header">
                     <h2>{t('reviews.title')}</h2>
@@ -425,14 +429,12 @@ const LandingPage = () => {
                         {stories.map((story, index) => (
                             <div key={index} className="story-item">
                                 <div className="story-card">
-                                    {/* Instagram-style Bars */}
                                     <div className="card-story-progress">
                                         <div className="progress-segment active"></div>
                                         <div className="progress-segment"></div>
                                         <div className="progress-segment"></div>
                                     </div>
 
-                                    {/* Story User Info */}
                                     <div className="card-story-user">
                                         <img src={story.avatar} alt={`Avatar de ${story.name} `} draggable="false" />
                                         <div className="user-details">
@@ -447,7 +449,6 @@ const LandingPage = () => {
 
                                     <img src={story.content} alt={`Depoimento de ${story.name} `} className="card-story-content" draggable="false" />
 
-                                    {/* Story Footer */}
                                     <div className="card-story-footer">
                                         <div className="footer-input">
                                             <span>Responder a {story.name}...</span>
@@ -463,7 +464,6 @@ const LandingPage = () => {
                                     <p className="story-quote">"{story.quote}"</p>
                                     <span className="story-author">{story.fullName}</span>
 
-                                    {/* Story Pagination Dots */}
                                     <div className="story-pagination">
                                         {stories.map((_, i) => (
                                             <div
@@ -486,26 +486,27 @@ const LandingPage = () => {
                     </button>
                 </div>
             </section>
+            */}
 
             {/* App Interface Showroom */}
             <section className="app-showroom">
-                <div className="showroom-card">
-                    <div className="showroom-evaluation">
-                        <span className="eval-score">4.9/5</span>
-                        <div className="eval-stars">
-                            {[1, 2, 3, 4, 5].map((star) => (
-                                <Star key={star} size={18} fill="#F59E0B" color="#F59E0B" />
-                            ))}
-                        </div>
-                        <p className="eval-text">{t('hero.social')}</p>
+                <div className="showroom-evaluation reveal">
+                    <span className="eval-score">4.9/5</span>
+                    <div className="eval-stars">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                            <Star key={star} size={18} fill="#F59E0B" color="#F59E0B" />
+                        ))}
                     </div>
-                    <div className="showroom-img-wrapper">
-                        <img src={appShowroom} alt="App Sabores Exclusivos Interface" className="showroom-img" draggable="false" />
-                    </div>
+                    <p className="eval-text">{t('hero.social')}</p>
                 </div>
 
-                <div className="reveal reveal-delay-1">
-                    <h2 className="showroom-caption-main">{t('features.showroom_caption.title')}</h2>
+                <div className="showroom-mockup-wrapper reveal reveal-delay-1">
+                    <img src={mockupTrans} alt="App Sabores Exclusivos Mockup" className="showroom-mockup-img" draggable="false" />
+                </div>
+
+                <div className="showroom-caption-content reveal reveal-delay-2">
+                    <span className="eyebrow" style={{ marginTop: '2rem' }}>Experiência Digital</span>
+                    <h2 className="showroom-caption-main" style={{ marginTop: '1rem' }}>{t('features.showroom_caption.title')}</h2>
                     <p className="showroom-caption-detail">{t('features.showroom_caption.subtitle')}</p>
                 </div>
             </section>
@@ -517,6 +518,7 @@ const LandingPage = () => {
             {/* Features Section */}
             <section id="features" className="features">
                 <h2 className="section-title">
+                    <span className="eyebrow">Recursos Exclusivos</span>
                     <Trans i18nKey="features.title" components={{ 1: <span className="brand-highlight" /> }} />
                 </h2>
                 <div className="feature-grid">
@@ -545,6 +547,7 @@ const LandingPage = () => {
                             ))}
                         </div>
                     </div>
+                    {/* 
                     <div className="feature-card glass-morphism transformation-card">
                         <div className="icon-wrapper"><Star /></div>
                         <h3>{t('features.transformations.title')}</h3>
@@ -607,6 +610,7 @@ const LandingPage = () => {
                             ))}
                         </div>
                     </div>
+                    */}
                 </div>
             </section>
 
@@ -671,7 +675,7 @@ const LandingPage = () => {
                         href="https://pay.hotmart.com/V104194764B"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn-cta-premium"
+                        className="btn-cta-premium btn-glint"
                         style={{ textDecoration: 'none' }}
                         onClick={() => {
                             if (window.fbq) {
