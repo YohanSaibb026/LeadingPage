@@ -19,6 +19,7 @@ import {
     Scale,
     Ruler,
     Activity,
+    Apple,
     ChevronLeft,
     ChevronRight
 } from 'lucide-react';
@@ -343,9 +344,7 @@ const LandingPage = () => {
         { name: 'Dani C.', fullName: 'Dani Castro', avatar: avatarDani, meal: meal2, quote: t('reviews.stories.dani') },
         { name: 'Thiago A.', fullName: 'Thiago Aguirre', avatar: avatarThiago, meal: meal3, quote: t('reviews.stories.thiago') },
         { name: 'Lucia S.', fullName: 'Lucia Sánchez', avatar: avatarLucia, meal: meal4, quote: t('reviews.stories.lucia') },
-        { name: 'Pablo B.', fullName: 'Pablo Barrios', avatar: avatarPablo, meal: meal5, quote: t('reviews.stories.pablo') },
         { name: 'Camilla B.', fullName: 'Camilla Beltrán', avatar: avatarCamilla, meal: meal6, quote: t('reviews.stories.camilla') },
-        { name: 'Gina F.', fullName: 'Gina Fonseca', avatar: avatarGina, meal: mealGina, quote: t('reviews.stories.gina') },
     ];
 
     const transformations = [
@@ -513,6 +512,16 @@ const LandingPage = () => {
 
                 <div className="showroom-mockup-wrapper reveal reveal-delay-1">
                     <img src={mockupTrans} alt="App Sabores Exclusivos Mockup" className="showroom-mockup-img" draggable="false" />
+                </div>
+
+                <div className="mockup-availability reveal reveal-delay-2">
+                    <div className="availability-badge glass-morphism">
+                        <div className="availability-icons">
+                            <Apple size={14} strokeWidth={2.5} />
+                            <Smartphone size={14} strokeWidth={2.5} />
+                        </div>
+                        <span>{t('features.showroom_caption.device_availability')}</span>
+                    </div>
                 </div>
 
                 {/* 

@@ -6,12 +6,12 @@
     },
     "hero": {
         "title": "<0>Um café da manhã adequado</0> <1>pode fornecer até 40% dos nutrientes que seu corpo precisa para ganhar massa muscular</1>",
-        "subtitle": "Veja o que o app pode fazer por você",
+        "subtitle": "Veja como o app facilita seus ganhos",
         "complaints": [
-            "Receitas fáceis e rápidas de preparar",
-            "Ideias prontas para todos os dias",
-            "Fáceis e rápidas de preparar",
-            "Receitas pensadas para homens e mulheres"
+            "Receitas planejadas com critérios nutricionais",
+            "Valores nutricionais claros em cada receita",
+            "Quantidades ajustáveis conforme seu objetivo",
+            "Ingredientes simples do dia a dia"
         ],
         "punchline": "As receitas mais recomendadas com os mesmos ingredientes simples que você já tem em casa",
         "continue": "Continuar",
@@ -20,7 +20,7 @@
     },
     "reviews": {
         "title": "Algumas experiências de nossos usuários",
-        "compact_title": "Faça como nossos usuários",
+        "compact_title": "Depoimentos reais de usuários do aplicativo",
         "stories": {
             "nicolas": "Estas comidas saudáveis mudaram completamente a forma como levo o meu dia",
             "dani": "Os smoothies já se tornaram parte da minha rotina todos os dias na faculdade",
@@ -39,11 +39,12 @@
         },
         "showroom_caption": {
             "title": "Cafés da manhã e Smoothies",
-            "subtitle": "deliciosos para ganhar massa muscular — simples, práticos e com ingredientes do dia a dia"
+            "subtitle": "deliciosos para ganhar massa muscular — simples, práticos e com ingredientes do dia a dia",
+            "device_availability": "Disponível para iOS e Android"
         },
         "video_caption": {
-            "title": "Tem dúvidas na hora de cozinhar?",
-            "subtitle": "Não perca tempo planejando o que comer"
+            "title": "Não perca tempo planejando o que comer",
+            "subtitle": "Tenha receitas prontas na palma de sua mão"
         },
         "faq_section": {
             "title": "Sempre com você",
@@ -58,7 +59,7 @@
                 },
                 {
                     "q": "O que acontece depois que eu adquirir o aplicativo?",
-                    "a": "Esse pensamento é um erro comum. Comer o excesso dos alimentos errados causa náuseas, mal-estar e falta de apetite. Nossas receitas são estratégicas e garantizam uma alta carga de nutrientes de forma leve. Assim, você evita o sacrifício de ter que se forçar a comer pratos enormes no almoço ou jantar."
+                    "a": "Após finalizar a compra, você receberá automaticamente no e-mail utilizado no pagamento um link de acesso ao aplicativo. Basta acessar o link, baixar o aplicativo, criar sua senha e começar a usar imediatamente. Você ainda terá 7 dias para testar o aplicativo e conhecer todas as receitas. Caso não fique satisfeito, poderá solicitar reembolso integral dentro desse período."
                 }
             ]
         },
