@@ -6,11 +6,12 @@
     },
     "hero": {
         "title": "<0>Um café da manhã adequado</0> <1>pode fornecer até 40% dos nutrientes que seu corpo precisa para ganhar massa muscular</1>",
-        "subtitle": "O que buscamos oferecer a você",
+        "subtitle": "Veja o que o app pode fazer por você",
         "complaints": [
-            "Sentir-se desmotivado por falta de ideias do que comer",
-            "Mal-estar após comer excesso de alimentos não aconselhados",
-            "Pensar que uma dieta para aumentar peso custa caro"
+            "Receitas fáceis e rápidas de preparar",
+            "Ideias prontas para todos os dias",
+            "Fáceis e rápidas de preparar",
+            "Receitas pensadas para homens e mulheres"
         ],
         "punchline": "As receitas mais recomendadas com os mesmos ingredientes simples que você já tem em casa",
         "continue": "Continuar",
@@ -19,7 +20,7 @@
     },
     "reviews": {
         "title": "Algumas experiências de nossos usuários",
-        "compact_title": "Usuários que confiaram em nosso aplicativo",
+        "compact_title": "Faça como nossos usuários",
         "stories": {
             "nicolas": "Estas comidas saudáveis mudaram completamente a forma como levo o meu dia",
             "dani": "Os smoothies já se tornaram parte da minha rotina todos os dias na faculdade",
@@ -33,8 +34,8 @@
     "features": {
         "title": "Por que <1>Sabores Exclusivos</1>?",
         "instant": {
-            "title": "Os cafés da manhã, lanches e shakes mais recomendados, em um só lugar",
-            "desc": "Com dois anos de experiência e centenas de feedbacks reais, pudemos entender que o maior desafio é se reinventar dentro de uma rotina. Unimos nossa bagagem em nutrição para criar um App com as receitas que mais trouxeram resultados reais para nossos alunos. "
+            "title": "Por que o café da manhã pode acelerar seus resultados",
+            "desc": "Além de repor os nutrientes após horas de jejum durante o sono, o café da manhã costuma ser a refeição em que é mais fácil consumir maiores quantidades de alimentos."
         },
         "showroom_caption": {
             "title": "Cafés da manhã e Smoothies",
@@ -48,11 +49,11 @@
             "title": "Sempre com você",
             "items": [
                 {
-                    "q": "Por que cafés da manhã, lanches e shakes?",
-                    "a": "Enquanto outros apps focam em comidas caras e complexas, nós focamos no prático. Como a primeira refeição do dia impacta diretamente sua meta de nutrientes, trazemos as melhores combinações para você não precisar sair correndo atrás de calorias o resto do dia."
+                    "q": "Por que cafés da manhã são importante?",
+                    "a": "Criadas com critérios nutricionais profissionais, nossas receitas foram planejadas para fornecer exatamente os valores nutricionais necessários para o crescimento muscular. Cada receita inclui opções ajustáveis de quantidades de ingredientes e valores nutricionais, permitindo que você adapte facilmente cada refeição ao seu objetivo."
                 },
                 {
-                    "q": "Fazer dieta custa caro?",
+                    "q": "Como acesso o App?",
                     "a": "De jeito nenhum! Você vai ganhar músculos usando ingredientes que já fazem parte do seu dia a dia. O segredo do App está em transformar ingredientes básicos em dezenas de combinações diferentes, para você atingir seu objetivo sem enjoar do sabor."
                 },
                 {
