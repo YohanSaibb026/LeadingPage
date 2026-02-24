@@ -501,13 +501,17 @@ const LandingPage = () => {
             {/* App Interface Showroom */}
             <section className="app-showroom">
                 <div className="showroom-evaluation reveal">
-                    <span className="eval-score">4.9/5</span>
-                    <div className="eval-stars">
-                        {[1, 2, 3, 4, 5].map((star) => (
-                            <Star key={star} size={18} fill="#F59E0B" color="#F59E0B" />
-                        ))}
+                    <div className="evaluation-rating">
+                        <span className="eval-score">{t('hero.rating_value')}</span>
+                        <div className="eval-stars">
+                            {[1, 2, 3, 4, 5].map((star) => (
+                                <Star key={star} size={16} fill="#F59E0B" color="#F59E0B" />
+                            ))}
+                        </div>
                     </div>
-                    <p className="eval-text">{t('hero.social')}</p>
+                    <p className="eval-context">{t('hero.rating_desc')}</p>
+                    <div className="eval-divider"></div>
+                    <p className="eval-total-users">{t('hero.social')}</p>
                 </div>
 
                 <div className="showroom-mockup-wrapper reveal reveal-delay-1">
