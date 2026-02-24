@@ -5,12 +5,13 @@
         "download": "Descargar App"
     },
     "hero": {
-        "title": "<0>Un desayuno adecuadon</0> <1>puede proporcionarte hasta el 40% de los nutrientes diarios que tu cuerpo necesita para ganar masa muscular",
-        "subtitle": "Las quejas más comunes que se escuchan en los consultorios son",
+        "title": "<0>Un desayuno adecuado</0> <1>puede proporcionarte hasta el 40% de los nutrientes diarios que tu cuerpo necesita para ganar masa muscular",
+        "subtitle": "Mira cómo la app facilita tu progreso",
         "complaints": [
-            "Sentirse desmotivado por falta de ideas de qué comer",
-            "Malestar después de comer en exceso alimentos no recomendados",
-            "Pensar que una dieta para subir de peso cuesta caro"
+            "Recetas elaboradas con criterios nutricionales",
+            "Información nutricional clara en cada receta",
+            "Cantidades ajustables según tu objetivo",
+            "Ingredientes simples del día a día"
         ],
         "punchline": "Las recetas más recomendadas con los mismos ingredientes simples que ya tienes en casa",
         "continue": "Continuar",
