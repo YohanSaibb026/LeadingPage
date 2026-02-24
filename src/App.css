@@ -1729,7 +1729,7 @@
 
 /* App Showroom & Floating Mockup */
 .app-showroom {
-    padding: 6rem 1rem;
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
