@@ -630,6 +630,7 @@ const LandingPage = () => {
 
             {/* Price Comparison Section */}
             <section className="pricing-comparison">
+                {/* 
                 <div className="price-container glass-morphism">
                     <div className="price-row old-price">
                         <p className="price-label">
@@ -654,6 +655,7 @@ const LandingPage = () => {
                         <p className="price-value strike">{t('features.pricing.app_price')}</p>
                     </div>
                 </div>
+                */}
 
                 {/* Promotion Card */}
                 <div className="promotion-card glass-morphism">
