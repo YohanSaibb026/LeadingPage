@@ -16,7 +16,9 @@
         "punchline": "Las recetas más recomendadas con los mismos ingredientes simples que tienes en casa",
         "continue": "Continuar",
         "demo": "Ver Demostración",
-        "social": "Usado por más de 500+ atletas en casa"
+        "social": "Más de 500 usuarios ya utilizan la aplicación",
+        "rating_value": "4.9/5",
+        "rating_desc": "Basado en las reseñas de los usuarios"
     },
     "reviews": {
         "title": "Algunas experiencias de nuestros usuarios",
@@ -48,8 +50,8 @@
             }
         },
         "video_caption": {
-            "title": "¿Tienes dudas a la hora de cocinar?",
-            "subtitle": "No pierdas tiempo planeando qué comer"
+            "title": "No pierdas tiempo planeando qué comer",
+            "subtitle": "Ten recetas listas en la palma de tu mano"
         },
         "faq_section": {
             "title": "Siempre contigo",

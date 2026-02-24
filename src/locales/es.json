@@ -16,7 +16,9 @@
         "punchline": "Las recetas más recomendadas con los mismos ingredientes simples que ya tienes en casa",
         "continue": "Continuar",
         "demo": "Ver Demostración",
-        "social": "Usado por más de 500+ chefs en casa"
+        "social": "Más de 500 usuarios ya utilizan la aplicación",
+        "rating_value": "4.9/5",
+        "rating_desc": "Basado en las reseñas de los usuarios"
     },
     "reviews": {
         "title": "Algunas experiencias de nuestros usuarios",
@@ -41,8 +43,8 @@
             "subtitle": "deliciosos para ganar masa muscular — simples, prácticos y con ingredientes del día a día"
         },
         "video_caption": {
-            "title": "¿Tienes dudas a la hora de cocinar?",
-            "subtitle": "No pierdas tiempo planeando qué comer"
+            "title": "No pierdas tiempo planeando qué comer",
+            "subtitle": "Ten recetas listas en la palma de tu mano"
         }
     },
     "about": {
