@@ -2034,7 +2034,7 @@
 
 /* Video Caption Section */
 .video-caption-section {
-    padding: 3rem 1.5rem 5rem;
+    padding: 3rem 1.5rem 2rem;
     text-align: center;
     background-color: var(--hero-bg);
 }
