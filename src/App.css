@@ -1918,10 +1918,16 @@
         margin-bottom: 1.5rem;
     }
 
+    .complaints-list {
+        align-items: flex-start;
+        padding-left: 0.5rem;
+    }
+
     .complaints-list li {
         font-size: 16px;
         padding: 0.65rem 0;
         justify-content: flex-start;
+        text-align: left;
     }
 
     .complaints-list li:first-child {
