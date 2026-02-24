@@ -52,7 +52,7 @@
             "items": [
                 {
                     "q": "¿Cómo saber si estas recetas son adecuadas para mi objetivo?",
-                    "a": "Creadas con criterios nutricionales profesionales, nuestras recetas fueron planificadas para proporcionar exactamente los valores nutricionales necesarios para el crecimiento muscular. Cada receta incluye opciones ajustables de cantidades de ingredientes y valores nutricionales, lo que te permite adaptar fácilmente cada comida a tu objetivo."
+                    "a": "Creadas con criterios nutricionales profesionales, nuestras recetas fueron planificadas para proporcionar exactamente los valores nutricionales necesarios para el crecimiento muscular.\nCada receta incluye opciones ajustables de cantidades de ingredientes y valores nutricionales, lo que te permite adaptar fácilmente cada comida a tu objetivo."
                 },
                 {
                     "q": "¿Las recetas usan ingredientes caros?",
@@ -60,7 +60,7 @@
                 },
                 {
                     "q": "¿Qué sucede después de comprar la app?",
-                    "a": "Después de finalizar la compra, recibirás automáticamente en el correo electrónico utilizado en el pago un enlace de acceso a la app. Solo tenés que acceder al enlace, descargar la app, crear tu contraseña y empezar a usarla inmediatamente. Además, tendrás 7 días para probar la app y conocer todas las recetas. Si no quedás satisfecho, podrás solicitar un reembolso completo dentro de ese período."
+                    "a": "Después de finalizar la compra, recibirás automáticamente en el correo electrónico utilizado en el pago un enlace de acceso a la app. Solo tenés que acceder al enlace, descargar la app, crear tu contraseña y empezar a usarla inmediatamente.\nAdemás, tendrás 7 días para probar la app y conocer todas las recetas. Si no quedás satisfecho, podrás solicitar un reembolso completo dentro de ese período."
                 }
             ]
         },
