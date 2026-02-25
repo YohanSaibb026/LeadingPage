@@ -22,7 +22,7 @@
     },
     "reviews": {
         "title": "Algunas experiencias de nuestros usuarios",
-        "compact_title": "Testimonios reales de usuarios de la app",
+        "compact_title": "Experiencias reales de quienes ya usan la app",
         "stories": {
             "nicolas": "Estas comidas saludables cambiaron por completo la forma en que llevo mi día",
             "dani": "Los smoothies ya se volvieron parte de mi rutina todos los días en la universidad",
@@ -75,8 +75,8 @@
             "app_access": "App <1>Sabores Exclusivos</1> con acceso ilimitado",
             "app_price": "US$ 12.99",
             "promotion": {
-                "title": "La decisión que te separa de tu objetivo",
-                "subtitle": "Asegura tu transformación en los próximos 6 meses y conoce tu mejor versión",
+                "title": "La decisión que puede acercarte a tus objetivos",
+                "subtitle": "Descubre cómo un desayuno bien planificado puede transformar tus resultados en los próximos meses",
                 "label": "Tu oportunidad de probar <1>Sabores Exclusivos</1> con 58% OFF",
                 "price_from": "De US$ 12.99",
                 "price_to": "Por US$ 5.49"
