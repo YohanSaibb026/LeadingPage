@@ -1549,14 +1549,18 @@
     margin-right: auto;
 }
 
-/*
 .bonus-benefits-list {
     list-style: none;
     padding: 0;
     display: inline-block;
     text-align: left;
 }
-*/
+
+.bonus-check-icon {
+    color: #10B981;
+    flex-shrink: 0;
+}
+
 .bonus-benefits-list li {
     font-size: 1.05rem;
     color: var(--text-main);

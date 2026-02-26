@@ -702,7 +702,7 @@ const LandingPage = () => {
                     <p className="bonus-description">{t('bonus.description')}</p>
                     <ul className="bonus-benefits-list">
                         {(t('bonus.benefits', { returnObjects: true }) as string[])?.map((benefit, index) => (
-                            <li key={index}>- {benefit}</li>
+                            <li key={index}><Check size={18} className="bonus-check-icon" /> {benefit}</li>
                         ))}
                     </ul>
                 </div>
