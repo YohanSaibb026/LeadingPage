@@ -5,7 +5,7 @@
         "download": "Descargar App"
     },
     "hero": {
-        "title": "<0>Un desayuno adecuado</0> <1>puede proporcionarte hasta el 40% de los nutrientes diarios que tu cuerpo necesita para ganar masa muscular",
+        "title": "<0>Un desayuno adecuado</0> <1>pode proporcionar até 40% dos nutrientes diários que seu corpo precisa para ganhar massa muscular",
         "subtitle": "Descubre cómo la app impulsa tu progreso",
         "complaints": [
             "Recetas elaboradas con criterios nutricionales",
@@ -44,7 +44,7 @@
             "subtitle": "deliciosos para ganar masa muscular — simples, prácticos y con ingredientes del día a día"
         },
         "video_caption": {
-            "title": "No pierdas tiempo planeando qué comer",
+            "title": "No pierdas tempo planeando qué comer",
             "subtitle": "Ten recetas listas en la palma de tu mano"
         }
     },
@@ -52,6 +52,15 @@
         "badge": "El Creador",
         "title": "¿Quién soy yo?",
         "description": "Me llamo Álex Hernandez. Soy graduado y residente en España, y trabajo junto a un equipo especializado en nutrición clínica y deportiva.\n\nDesde hace dos años realizo consultas presenciales y online, aplicando protocolos basados en un superávit calórico estruturado para promover el aumento de peso y de masa muscular.\n\nEsta aplicación nace de la experiencia práctica de estas consultas, reuniendo estrategias nutricionales eficaces en recetas simples y prácticas para el día a día."
+    },
+    "bonus": {
+        "title": "Bono: Sesión Especial de Smoothies",
+        "description": "Además de los desayunos estratégicos, también recibes acceso a smoothies enfocados en el bienestar, ligereza y equilibrio digestivo.",
+        "benefits": [
+            "Digestión y Confort",
+            "Energía y Disposición",
+            "Hidratación"
+        ]
     },
     "cta": {
         "title": "¿Listo para tu transformación?",
@@ -73,11 +82,11 @@
         "guarantees": {
             "taxes": "Sin cargos ocultos",
             "secure": "Pago 100% seguro",
-            "access": "Acceso inmediato",
-            "warranty": "Garantía de 7 días"
+            "access": "Acesso imediato",
+            "warranty": "Garantía de 7 dias"
         }
     },
     "footer": {
-        "rights": "© 2026 Sabores Exclusivos. Todos los derechos reservados."
+        "rights": "© 2026 Sabores Exclusivos. Todos os direitos reservados."
     }
 }

@@ -13,9 +13,9 @@
             "Cantidades ajustables según tu objetivo",
             "Ingredientes simples del día a día"
         ],
-        "punchline": "Las recetas más recomendadas con los mismos ingredientes simples que tienes en casa",
+        "punchline": "Las receitas mais recomendadas com os mesmos ingredientes simples que você já tem em casa",
         "continue": "Continuar",
-        "demo": "Ver Demostración",
+        "demo": "Ver Demonstração",
         "social": "Más de 500 usuarios ya utilizan la aplicación",
         "rating_value": "4.9/5",
         "rating_desc": "Basado en las reseñas de los usuarios"
@@ -122,6 +122,15 @@
         "badge": "El Creador",
         "title": "¿Quién soy yo?",
         "description": "Me llamo Álex Hernandez. Soy graduado y resido en España, trabajando junto a un equipo especializado en nutrición clínica y deportiva.\n\nDesde hace dos años realizo consultas presenciales y online, aplicando protocolos basados en un superávit calórico estructurado para promover el aumento de peso y masa muscular.\n\nEsta aplicación nace de la experiencia práctica de estas consultas, reuniendo estrategias nutricionales eficaces en recetas simples y prácticas para el día a día."
+    },
+    "bonus": {
+        "title": "Bono: Sesión Especial de Smoothies",
+        "description": "Además de los desayunos estratégicos, también recibes acceso a smoothies enfocados en el bienestar, ligereza y equilibrio digestivo.",
+        "benefits": [
+            "Digestión y Confort",
+            "Energía y Disposición",
+            "Hidratación"
+        ]
     },
     "cta": {
         "title": "Eleva tu experiencia culinaria hoy",

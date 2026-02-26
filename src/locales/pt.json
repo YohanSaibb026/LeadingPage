@@ -114,7 +114,16 @@
     "about": {
         "badge": "O Criador",
         "title": "Quem sou eu?",
-        "description": "Me llamo Álex Hernandez. Soy graduado y residente en España, y trabajo junto a un equipo especializado en nutrición clínica y deportiva.\nDesde hace dos años realizo consultas presenciales y online, aplicando protocolos basados en un superávit calórico estruturado para promover el aumento de peso y de masa muscular.\nEsta aplicación nace de la experiencia práctica de estas consultas, reuniendo estrategias nutricionales eficaces en recetas simples y prácticas para el día a día."
+        "description": "Meu nome é Álex Hernandez. Sou formado e resido na Espanha, trabalhando ao lado de uma equipe especializada em nutrição clínica e esportiva.\n\nHá dois anos realizo consultas presenciais e online, aplicando protocolos baseados em um superávit calórico estruturado para promover o aumento de peso e massa muscular.\n\nEste aplicativo nasce da experiência prática dessas consultas, reunindo estratégias nutricionais eficazes em receitas simples e práticas para o dia a dia."
+    },
+    "bonus": {
+        "title": "Bônus: Sessão Especial de Smoothies",
+        "description": "Além dos cafés da manhã estratégicos, você também recebe acesso a smoothies voltados para bem-estar, leveza e equilíbrio digestivo.",
+        "benefits": [
+            "Digestão e Conforto",
+            "Energia e Disposição",
+            "Hidratação"
+        ]
     },
     "cta": {
         "title": "Pronto para sua transformação?",
@@ -122,9 +131,9 @@
         "urgency": "Oferta termina em:",
         "button": "QUERO O ACESSO AGORA",
         "premium_card": {
-            "tag": "vitalício",
+            "tag": "Tu oportunidad de probar <1>Sabores Exclusivos</1> con 58% OFF",
             "price": "5.49",
-            "period": "/vitalício",
+            "period": "/vitalicio",
             "comparison": "Mais barato que um lanche de delivery",
             "benefits": [
                 "Cafés da manhã estratégicos para ganho de massa",

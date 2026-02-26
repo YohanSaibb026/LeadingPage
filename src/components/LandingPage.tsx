@@ -22,7 +22,8 @@ import {
     Apple,
     ChevronLeft,
     ChevronRight,
-    Check
+    Check,
+    Gift
 } from 'lucide-react';
 
 declare global {
@@ -691,6 +692,21 @@ const LandingPage = () => {
                 </div>
             </section>
 
+
+
+            {/* Exclusive Bonus Section */}
+            <section className="bonus-smoothie-section reveal">
+                <div className="bonus-card glass-morphism">
+                    <div className="bonus-gift-icon">🎁</div>
+                    <h2 className="bonus-title">{t('bonus.title')}</h2>
+                    <p className="bonus-description">{t('bonus.description')}</p>
+                    <ul className="bonus-benefits-list">
+                        {(t('bonus.benefits', { returnObjects: true }) as string[])?.map((benefit, index) => (
+                            <li key={index}>- {benefit}</li>
+                        ))}
+                    </ul>
+                </div>
+            </section>
 
             {/* Compact Testimonial Carousel */}
             <section className="testimonial-carousel-section reveal">

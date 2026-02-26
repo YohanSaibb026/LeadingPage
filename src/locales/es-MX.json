@@ -42,7 +42,7 @@
         "showroom_caption": {
             "title": "Desayunos y Batidos",
             "subtitle": "deliciosos para ganar masa muscular. Simples, prácticos y con ingredientes del día a día",
-            "device_availability": "Disponible en iOS y Android"
+            "device_availability": "Disponible en iOS and Android"
         },
         "video_caption": {
             "title": "No pierdas tiempo planeando qué comer",
@@ -91,7 +91,7 @@
             "age": "Edad",
             "weight": "Peso (kg)",
             "height": "Altura (cm)",
-            "activity": "Nivel de Actividad",
+            "activity": "Nivel de Atividade",
             "activity_levels": {
                 "sedentary": "Sedentario (poco o ningún ejercicio)",
                 "light": "Ligeramente activo (1–3 días/semana)",
@@ -116,6 +116,15 @@
         "title": "¿Quién soy yo?",
         "description": "Me llamo Álex Hernandez. Soy graduado y resido en España, trabajando junto a un equipo especializado en nutrición clínica y deportiva.\n\nDesde hace dos años realizo consultas presenciales y online, aplicando protocolos basados en un superávit calórico estructurado para promover el aumento de peso y masa muscular.\n\nEsta aplicación nace de la experiencia práctica de estas consultas, reuniendo estrategias nutricionales eficaces en recetas simples y prácticas para el día a día."
     },
+    "bonus": {
+        "title": "Bono: Sesión Especial de Smoothies",
+        "description": "Además de los desayunos estratégicos, también recibes acceso a smoothies enfocados en el bienestar, ligereza y equilibrio digestivo.",
+        "benefits": [
+            "Digestión y Confort",
+            "Energía y Disposición",
+            "Hidratación"
+        ]
+    },
     "cta": {
         "title": "Eleva tu experiencia culinaria hoy",
         "subtitle": "",
@@ -138,7 +147,7 @@
             "taxes": "Los impuestos locales pueden aplicarse según el país",
             "secure": "Pago 100% seguro",
             "access": "Acceso inmediato",
-            "warranty": "Garantía de 7 días"
+            "warranty": "Garantía de 7 dias"
         }
     },
     "footer": {
