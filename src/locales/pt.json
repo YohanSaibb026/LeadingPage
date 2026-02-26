@@ -122,16 +122,16 @@
         "urgency": "Oferta termina em:",
         "button": "QUERO O ACESSO AGORA",
         "premium_card": {
-            "tag": "Sua oportunidade de testar o <1>Sabores Exclusivos</1> com 58% OFF",
-            "price": "9.90",
+            "tag": "vitalício",
+            "price": "5.49",
             "period": "/vitalício",
             "comparison": "Mais barato que um lanche de delivery",
             "benefits": [
-                "Receitas para Ganho de Massa",
-                "Valores Nutricionais Claros",
-                "Ingredientes do Dia a Dia",
-                "Calculadora de Macros Inclusa",
-                "Garantia de Satisfação"
+                "Cafés da manhã estratégicos para ganho de massa",
+                "Planejamento nutricional fácil de aplicar",
+                "Receitas práticas com ingredientes acessíveis",
+                "Acesso imediato após pagamento",
+                "Garantia de 7 dias"
             ]
         },
         "guarantees": {
