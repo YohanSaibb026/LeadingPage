@@ -1504,6 +1504,7 @@
 /* Bonus Smoothie Section */
 .bonus-smoothie-section {
     padding: 0 1rem 2.5rem 1rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
 }
