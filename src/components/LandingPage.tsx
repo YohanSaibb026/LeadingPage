@@ -751,7 +751,11 @@ const LandingPage = () => {
 
                 <div className="cta-card-premium">
                     <div className="pricing-header">
-                        <span className="pricing-tag">{t('features.pricing.promotion.label')}</span>
+                        <span className="pricing-tag">
+                            <Trans i18nKey="cta.premium_card.tag">
+                                Tu oportunidad de probar <span style={{ color: 'var(--primary)' }}>Sabores Exclusivos</span> con 58% OFF
+                            </Trans>
+                        </span>
                         <div className="pricing-main">
                             <span className="price-currency">US$</span>
                             <span className="price-value">{t('cta.premium_card.price')}</span>

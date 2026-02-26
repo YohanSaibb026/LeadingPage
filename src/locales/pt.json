@@ -122,6 +122,7 @@
         "urgency": "Oferta termina em:",
         "button": "QUERO O ACESSO AGORA",
         "premium_card": {
+            "tag": "Sua oportunidade de testar o <1>Sabores Exclusivos</1> com 58% OFF",
             "price": "9.90",
             "period": "/vitalício",
             "comparison": "Mais barato que um lanche de delivery",

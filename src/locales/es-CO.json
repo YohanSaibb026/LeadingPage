@@ -129,6 +129,7 @@
         "urgency": "Oferta por tiempo limitado",
         "button": "Quiero aprovechar la promoción del 58% OFF ahora",
         "premium_card": {
+            "tag": "Tu oportunidad de probar <1>Sabores Exclusivos</1> con 58% OFF",
             "price": "5.49",
             "period": "/vitalicio",
             "comparison": "Más barato que un pedido de delivery",

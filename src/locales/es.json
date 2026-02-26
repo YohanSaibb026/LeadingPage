@@ -58,6 +58,7 @@
         "urgency": "La oferta termina en:",
         "button": "QUIERO EL ACCESO AHORA",
         "premium_card": {
+            "tag": "Tu oportunidad de probar <1>Sabores Exclusivos</1> con 58% OFF",
             "price": "9.90",
             "period": "/vitalicio",
             "comparison": "Más barato que un pedido de delivery",
