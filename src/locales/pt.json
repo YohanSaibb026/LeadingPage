@@ -116,6 +116,11 @@
         "title": "Quem sou eu?",
         "description": "Me llamo Álex Hernandez. Soy graduado y residente en España, y trabajo junto a un equipo especializado en nutrición clínica y deportiva.\nDesde hace dos años realizo consultas presenciales y online, aplicando protocolos basados en un superávit calórico estruturado para promover el aumento de peso y de masa muscular.\nEsta aplicación nace de la experiencia práctica de estas consultas, reuniendo estrategias nutricionales eficaces en recetas simples y prácticas para el día a día."
     },
+    "bonus": {
+        "title": "Bônus Exclusivo Incluso",
+        "highlight": "Seção de Smoothies no App",
+        "description": "Receitas especiais de shakes anabólicos para acelerar seus resultados de ganho de massa."
+    },
     "cta": {
         "title": "Pronto para sua transformação?",
         "subtitle": "Junte-se a centenas de pessoas que já mudaram seus corpos com nossas receitas exclusivas.",

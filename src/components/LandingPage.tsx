@@ -691,6 +691,25 @@ const LandingPage = () => {
                 </div>
             </section>
 
+            {/* Exclusive Bonus Section */}
+            <section className="bonus-smoothie-section reveal">
+                <div className="bonus-card glass-morphism">
+                    <div className="bonus-badge">
+                        <Star size={14} fill="currentColor" />
+                        <span>{t('bonus.title')}</span>
+                    </div>
+                    <div className="bonus-content">
+                        <div className="bonus-icon-wrapper">
+                            <Zap size={32} className="bonus-icon" />
+                        </div>
+                        <div className="bonus-text">
+                            <h3 className="bonus-highlight">{t('bonus.highlight')}</h3>
+                            <p className="bonus-description">{t('bonus.description')}</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Compact Testimonial Carousel */}
             <section className="testimonial-carousel-section reveal">
                 <h2 className="section-title" style={{ marginBottom: '1rem' }}>
