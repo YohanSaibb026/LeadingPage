@@ -121,6 +121,18 @@
         "subtitle": "Junte-se a centenas de pessoas que já mudaram seus corpos com nossas receitas exclusivas.",
         "urgency": "Oferta termina em:",
         "button": "QUERO O ACESSO AGORA",
+        "premium_card": {
+            "price": "9.90",
+            "period": "/vitalício",
+            "comparison": "Mais barato que um lanche de delivery",
+            "benefits": [
+                "Receitas para Ganho de Massa",
+                "Valores Nutricionais Claros",
+                "Ingredientes do Dia a Dia",
+                "Calculadora de Macros Inclusa",
+                "Garantia de Satisfação"
+            ]
+        },
         "guarantees": {
             "taxes": "Sem taxas ocultas",
             "secure": "Pagamento 100% seguro",

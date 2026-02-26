@@ -57,6 +57,18 @@
         "title": "¿Listo para tu transformación?",
         "urgency": "La oferta termina en:",
         "button": "QUIERO EL ACCESO AHORA",
+        "premium_card": {
+            "price": "9.90",
+            "period": "/vitalicio",
+            "comparison": "Más barato que un pedido de delivery",
+            "benefits": [
+                "Recetas para ganancia de masa",
+                "Valores nutricionales claros",
+                "Ingredientes del día a día",
+                "Calculadora de macros incluida",
+                "Garantía de satisfacción"
+            ]
+        },
         "guarantees": {
             "taxes": "Sin cargos ocultos",
             "secure": "Pago 100% seguro",

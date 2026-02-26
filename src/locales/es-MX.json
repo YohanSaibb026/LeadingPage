@@ -121,6 +121,18 @@
         "subtitle": "",
         "urgency": "Oferta por tiempo limitado",
         "button": "Quiero aprovechar la promoción del 58% OFF ahora",
+        "premium_card": {
+            "price": "5.49",
+            "period": "/vitalicio",
+            "comparison": "Más barato que un pedido de delivery",
+            "benefits": [
+                "Recetas para ganancia de masa",
+                "Valores nutricionales claros",
+                "Ingredientes del día a día",
+                "Calculadora de macros incluida",
+                "Garantía de satisfacción"
+            ]
+        },
         "guarantees": {
             "taxes": "Los impuestos locales pueden aplicarse según el país",
             "secure": "Pago 100% seguro",

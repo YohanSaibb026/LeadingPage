@@ -754,35 +754,21 @@ const LandingPage = () => {
                         <span className="pricing-tag">{t('features.pricing.promotion.label')}</span>
                         <div className="pricing-main">
                             <span className="price-currency">US$</span>
-                            <span className="price-value">9.90</span>
-                            <span className="price-period">/vitalício</span>
+                            <span className="price-value">{t('cta.premium_card.price')}</span>
+                            <span className="price-period">{t('cta.premium_card.period')}</span>
                         </div>
                         <p className="price-comparison">
-                            Mais barato que um lanche de delivery
+                            {t('cta.premium_card.comparison')}
                         </p>
                     </div>
 
                     <div className="cta-benefits-list">
-                        <div className="benefit-item">
-                            <Check size={20} className="check-icon" />
-                            <span>Receitas para Ganho de Massa</span>
-                        </div>
-                        <div className="benefit-item">
-                            <Check size={20} className="check-icon" />
-                            <span>Valores Nutricionais Claros</span>
-                        </div>
-                        <div className="benefit-item">
-                            <Check size={20} className="check-icon" />
-                            <span>Ingredientes do Dia a Dia</span>
-                        </div>
-                        <div className="benefit-item">
-                            <Check size={20} className="check-icon" />
-                            <span>Calculadora de Macros Inclusa</span>
-                        </div>
-                        <div className="benefit-item">
-                            <Check size={20} className="check-icon" />
-                            <span>Garantia de Satisfação</span>
-                        </div>
+                        {(t('cta.premium_card.benefits', { returnObjects: true }) as string[]).map((benefit, idx) => (
+                            <div key={idx} className="benefit-item">
+                                <Check size={20} className="check-icon" />
+                                <span>{benefit}</span>
+                            </div>
+                        ))}
                     </div>
 
                     <a
