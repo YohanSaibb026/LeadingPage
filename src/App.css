@@ -1227,98 +1227,157 @@
 }
 
 /* CTA */
-.cta-section {
-    padding: 100px 2rem;
-    max-width: 1200px;
+.cta-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cta-header h2 {
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.cta-subtitle {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    max-width: 500px;
     margin: 0 auto;
 }
 
-.cta-card {
-    padding: 3.2rem 1.5rem;
-    /* More compact */
-    border-radius: 40px;
-    text-align: center;
-    color: white;
-    background: var(--primary-gradient);
-    box-shadow: 0 20px 60px -15px rgba(251, 81, 59, 0.3);
-}
-
-.cta-card h2 {
-    font-size: 1.8rem;
-    /* Scaled down for elegance */
-    margin-bottom: 0.75rem;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.25;
-}
-
-.cta-card p {
-    font-size: 1rem;
-    /* More refined */
-    opacity: 0.85;
-    margin-bottom: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.btn-cta-premium {
-    background: white;
-    color: var(--primary);
-    border: none;
-    padding: 1.25rem 2.5rem;
-    /* Slightly more compact */
-    border-radius: 50px;
-    font-weight: 800;
-    font-size: 1.1rem;
-    /* More balanced */
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    display: inline-flex;
-    align-items: center;
-    gap: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.cta-guarantees {
+.cta-card-premium {
+    background: #ffffff;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 2.2rem 1.75rem;
+    border-radius: 32px;
+    border: 2px solid #ff7e5f;
+    box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.12);
     display: flex;
     flex-direction: column;
-    /* Stacked for a cleaner vertical rhythm in CTA */
     align-items: center;
-    gap: 0.75rem;
-    margin-top: 2.5rem;
+    position: relative;
+    overflow: hidden;
 }
 
-.cta-guarantee-item {
+.pricing-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.pricing-tag {
+    background: rgba(232, 92, 58, 0.1);
+    color: var(--primary);
+    padding: 0.35rem 0.85rem;
+    border-radius: 100px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+}
+
+.pricing-main {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.price-currency {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.price-value {
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: var(--text-main);
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+.price-period {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.price-comparison {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.cta-benefits-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin-bottom: 2rem;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.check-icon {
+    color: #2ecc71;
+    flex-shrink: 0;
+}
+
+.btn-cta-green {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    color: white;
+    font-weight: 800;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(46, 204, 113, 0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.btn-cta-green:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(46, 204, 113, 0.4);
+    filter: brightness(1.05);
+}
+
+.cta-guarantees-compact {
+    display: flex;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.guarantee-compact-item {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.85rem;
-    /* Smaller for professional look */
-    font-weight: 500;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 600;
     opacity: 0.8;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 0.4rem 1rem;
-    border-radius: 100px;
-    backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.2s ease;
-}
-
-.cta-guarantee-item.highlight {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.2);
-    opacity: 0.9;
-    font-size: 0.8rem;
-    font-style: italic;
-}
-
-.cta-guarantee-item:hover {
-    background: rgba(255, 255, 255, 0.15);
-    opacity: 1;
 }
 
 /* Countdown Timer Styles (Shared) */
@@ -1730,7 +1789,7 @@
 
 /* App Showroom & Floating Mockup */
 .app-showroom {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1750,7 +1809,7 @@
 .showroom-mockup-wrapper {
     position: relative;
     width: 100%;
-    max-width: 450px;
+    max-width: 320px;
     margin: 0 auto;
     filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.12));
 }
@@ -1991,8 +2050,17 @@
         padding: 60px 1rem;
     }
 
-    .cta-card {
-        padding: 3rem 1.5rem;
+    .cta-card-premium {
+        padding: 2.5rem 1.5rem;
+        border-radius: 32px;
+    }
+
+    .cta-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .price-value {
+        font-size: 3rem;
     }
 }
 

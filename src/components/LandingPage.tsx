@@ -21,7 +21,8 @@ import {
     Activity,
     Apple,
     ChevronLeft,
-    ChevronRight
+    ChevronRight,
+    Check
 } from 'lucide-react';
 
 declare global {
@@ -742,19 +743,53 @@ const LandingPage = () => {
             </section>
 
             {/* CTA Section */}
-            <section className="cta-section">
-                <div className="cta-card premium-gradient">
-                    <Zap size={48} className="cta-icon" style={{ marginBottom: '2rem', opacity: 0.8 }} />
+            <section className="cta-section reveal">
+                <div className="cta-header">
                     <h2>{t('cta.title')}</h2>
-                    <p>{t('cta.subtitle')}</p>
+                    <p className="cta-subtitle">{t('cta.subtitle')}</p>
+                </div>
 
-                    <CountdownTimer urgencyText={t('cta.urgency')} />
+                <div className="cta-card-premium">
+                    <div className="pricing-header">
+                        <span className="pricing-tag">{t('features.pricing.promotion.label')}</span>
+                        <div className="pricing-main">
+                            <span className="price-currency">US$</span>
+                            <span className="price-value">9.90</span>
+                            <span className="price-period">/vitalício</span>
+                        </div>
+                        <p className="price-comparison">
+                            Mais barato que um lanche de delivery
+                        </p>
+                    </div>
+
+                    <div className="cta-benefits-list">
+                        <div className="benefit-item">
+                            <Check size={20} className="check-icon" />
+                            <span>Receitas para Ganho de Massa</span>
+                        </div>
+                        <div className="benefit-item">
+                            <Check size={20} className="check-icon" />
+                            <span>Valores Nutricionais Claros</span>
+                        </div>
+                        <div className="benefit-item">
+                            <Check size={20} className="check-icon" />
+                            <span>Ingredientes do Dia a Dia</span>
+                        </div>
+                        <div className="benefit-item">
+                            <Check size={20} className="check-icon" />
+                            <span>Calculadora de Macros Inclusa</span>
+                        </div>
+                        <div className="benefit-item">
+                            <Check size={20} className="check-icon" />
+                            <span>Garantia de Satisfação</span>
+                        </div>
+                    </div>
 
                     <a
                         href="https://pay.hotmart.com/V104194764B"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn-cta-premium btn-glint"
+                        className="btn-cta-green btn-glint"
                         style={{ textDecoration: 'none' }}
                         onClick={() => {
                             if (window.fbq) {
@@ -763,25 +798,19 @@ const LandingPage = () => {
                         }}
                     >
                         {t('cta.button')}
-                        <ArrowRight size={20} />
+                        <ArrowRight size={22} />
                     </a>
 
-                    <div className="cta-guarantees">
-                        <div className="cta-guarantee-item highlight">
-                            <Globe size={14} />
-                            <span>{t('cta.guarantees.taxes')}</span>
-                        </div>
-                        <div className="cta-guarantee-item">
-                            <Lock size={14} />
-                            <span>{t('cta.guarantees.secure')}</span>
-                        </div>
-                        <div className="cta-guarantee-item">
-                            <Zap size={14} />
-                            <span>{t('cta.guarantees.access')}</span>
-                        </div>
-                        <div className="cta-guarantee-item">
+                    <CountdownTimer urgencyText={t('cta.urgency')} />
+
+                    <div className="cta-guarantees-compact">
+                        <div className="guarantee-compact-item">
                             <ShieldCheck size={14} />
                             <span>{t('cta.guarantees.warranty')}</span>
+                        </div>
+                        <div className="guarantee-compact-item">
+                            <Lock size={14} />
+                            <span>{t('cta.guarantees.secure')}</span>
                         </div>
                     </div>
                 </div>
