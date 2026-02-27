@@ -373,7 +373,7 @@ const LandingPage = () => {
             {/* Hero Section */}
             <header className="hero">
                 <div className="hero-content">
-                    <span className="eyebrow">A realidade do ganho de peso</span>
+                    <span className="eyebrow">Para ganar masa muscular</span>
                     <h1 className="reveal">
                         <Trans i18nKey="hero.title">
                             <span className="text-gradient">8 em cada 10 pessoas desistem</span>
@@ -400,7 +400,7 @@ const LandingPage = () => {
                     <div className="caption-decorator">
                         <ChefHat size={32} strokeWidth={1.5} />
                     </div>
-                    <span className="eyebrow">Acompanhamento Profissional</span>
+                    <span className="eyebrow">Elaborado por profesionales</span>
                     <h3 className="caption-title">{t('features.video_caption.title')}</h3>
                     <p className="caption-subtitle">{t('features.video_caption.subtitle')}</p>
                 </div>
