@@ -86,7 +86,8 @@
             "taxes": "Sin cargos ocultos",
             "secure": "Pago 100% seguro",
             "access": "Acesso imediato",
-            "warranty": "Garantía de 7 dias"
+            "warranty": "Garantía de 7 dias",
+            "tax_disclaimer": "Algunos países pueden aplicar impuestos locales en la compra"
         }
     },
     "footer": {

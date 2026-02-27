@@ -149,7 +149,8 @@
             "taxes": "Los impuestos locales pueden aplicarse según el país",
             "secure": "Pago 100% seguro",
             "access": "Acceso inmediato",
-            "warranty": "Garantía de 7 días"
+            "warranty": "Garantía de 7 días",
+            "tax_disclaimer": "Algunos países pueden aplicar impuestos locales en la compra"
         }
     },
     "footer": {

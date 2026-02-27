@@ -821,6 +821,7 @@ const LandingPage = () => {
                             <span>{t('cta.guarantees.secure')}</span>
                         </div>
                     </div>
+                    <p className="cta-tax-disclaimer">{t('cta.guarantees.tax_disclaimer')}</p>
                 </div>
             </section>
 
