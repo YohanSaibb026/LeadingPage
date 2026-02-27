@@ -41,6 +41,7 @@ import meal3 from '../assets/meal-3.jpg';
 import meal4 from '../assets/meal-4.jpg';
 import meal5 from '../assets/meal-5.jpg';
 import meal6 from '../assets/meal-6.jpg';
+import meal7 from '../assets/meal-7.jpg';
 import transform1 from '../assets/transform-1.jpg';
 import transform2 from '../assets/transform-2.jpg';
 import transform3 from '../assets/transform-3.jpg';
@@ -343,7 +344,7 @@ const LandingPage = () => {
 
     const compactTestimonials = [
         { name: 'Nicolás Navas', fullName: 'Nicolás Navas', avatar: avatarNicolas, meal: meal1, quote: t('reviews.stories.nicolas') },
-        { name: 'Daniel Castro', fullName: 'Dani Castro', avatar: avatarDani, meal: meal2, quote: t('reviews.stories.dani') },
+        { name: 'Daniel Castro', fullName: 'Dani Castro', avatar: avatarDani, meal: meal7, quote: t('reviews.stories.dani') },
         { name: 'Thiago Aguirre', fullName: 'Thiago Aguirre', avatar: avatarThiago, meal: meal3, quote: t('reviews.stories.thiago') },
         { name: 'Lucia Sánchez', fullName: 'Lucia Sánchez', avatar: avatarLucia, meal: meal4, quote: t('reviews.stories.lucia') },
         { name: 'Camilla Beltrán', fullName: 'Camilla Beltrán', avatar: avatarCamilla, meal: meal6, quote: t('reviews.stories.camilla') },
