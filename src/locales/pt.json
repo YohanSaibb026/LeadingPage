@@ -133,9 +133,9 @@
         "urgency": "Oferta termina em:",
         "button": "QUERO O ACESSO AGORA",
         "premium_card": {
-            "tag": "vitalicio",
+            "tag": "US$ 12.99",
             "price": "5.49",
-            "period": "/vitalicio",
+            "period": "vitalicio",
             "comparison": "",
             "benefits": [
                 "Cafés da manhã estratégicos para ganho de massa",

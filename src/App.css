@@ -276,12 +276,12 @@
     font-size: 1.15rem;
     color: var(--text-main);
     line-height: 1.6;
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif;*/
     display: flex;
     gap: 1.2rem;
     align-items: center;
     padding: 0.8rem 0;
-    font-weight: 550;
+    /*font-weight: 550;*/
     opacity: 0.85;
     justify-content: flex-start;
     text-align: left;
@@ -664,12 +664,13 @@
 
 
 .intro-feature-card p {
-    font-size: 1rem !important;
+    font-size: 1.03rem !important;
     line-height: 1.7;
     opacity: 0.85;
     letter-spacing: 0.01em;
     max-width: 90%;
     margin: 0 auto;
+    color: var(--text-main);
 }
 
 /* FAQ Premium Card Refinement */
@@ -694,11 +695,16 @@
 }
 
 .faq-premium .faq-question {
-    padding: 1.25rem 0;
     font-family: 'Playfair Display', serif;
-    font-size: 1.10rem;
-    font-weight: 725;
+    font-size: 1.35rem;
+    /* Slightly smaller */
+    font-weight: 500;
     color: var(--text-main);
+    margin-bottom: 0.6rem;
+    /* Reduced from 1rem */
+    line-height: 1.3;
+    /* Tighter line height */
+
 }
 
 .faq-premium .faq-question span {
@@ -706,13 +712,15 @@
 }
 
 .faq-premium .faq-answer p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 0.92rem !important;
-    color: var(--text-muted);
-    /* Premium Ice White */
+    font-size: 1rem !important;
     line-height: 1.6;
-    padding-bottom: 1.5rem;
+    opacity: 0.90;
+    letter-spacing: 0.01em;
+    max-width: 90%;
+    margin: 0 auto;
+    color: var(--text-main);
+
+
 }
 
 /* Story Pagination Styles */
@@ -771,9 +779,9 @@
     cursor: pointer;
     text-align: left;
     color: var(--text-main);
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif;
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 700;*/
     line-height: 1.4;
     transition: all 0.2s ease;
 }
@@ -814,7 +822,7 @@
     padding: 0 0 1.2rem 0;
     font-size: 0.95rem !important;
     line-height: 1.6;
-    color: var(--text-muted);
+    color: var(--text-main);
     margin: 0;
     text-align: left;
     white-space: pre-wrap;
@@ -1151,14 +1159,17 @@
 }
 
 .promo-subtitle {
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif;*/
     font-size: 1rem;
-    font-weight: 500;
+    /*font-weight: 500;*/
     /* Smaller for professionalism */
-    color: var(--text-secondary);
+    color: var(--text-main);
+    opacity: 0.85;
     margin-bottom: 1rem;
     /* Reduced from 1.5rem */
     line-height: 1.4;
+    gap: 1.2rem;
+    padding: 0.8rem 0;
 }
 
 .promo-divider {
@@ -1215,7 +1226,7 @@
 .promo-from {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #912020;
+    color: #C81E1E;
     text-decoration: line-through;
     opacity: 0.9;
 }
@@ -1246,8 +1257,8 @@
 
 .cta-subtitle {
     font-size: 1rem;
-    font-weight: 700;
-    font-family: 'Playfair Display', serif;
+    /*font-weight: 700;
+    font-family: 'Playfair Display', serif;*/
     color: var(--text-muted);
     max-width: 500px;
     margin: 0 auto;
@@ -1259,7 +1270,7 @@
     margin: 0 auto;
     padding: 2.2rem 1.75rem;
     border-radius: 32px;
-    border: 2px solid #ff7e5f;
+    border: 2px solid #10B981;
     box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.12);
     display: flex;
     flex-direction: column;
@@ -1275,12 +1286,13 @@
 
 .pricing-tag {
     background: rgba(232, 92, 58, 0.1);
-    color: var(--primary);
+    color: #C81E1E;
+    text-decoration: line-through;
     padding: 0.35rem 0.85rem;
     border-radius: 100px;
-    font-size: 1rem;
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
+    font-size: 1.25rem;
+    /*font-family: 'Playfair Display', serif;*/
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     display: inline-block;
@@ -1296,25 +1308,32 @@
 }
 
 .price-currency {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    font-weight: 700;
+    /*font-family: 'Playfair Display', serif;*/
+    font-size: 2rem;
+    font-weight: 600;
     color: var(--text-main);
 }
 
 .price-value {
     font-size: 3.2rem;
-    font-weight: 900;
+    font-weight: 700;
     color: var(--text-main);
     line-height: 1;
     letter-spacing: -0.02em;
 }
 
 .price-period {
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif;*/
     font-size: 1rem;
-    color: var(--text-muted);
-    font-weight: 700;
+    /*font-weight: 500;*/
+    /* Smaller for professionalism */
+    color: var(--text-main);
+    margin-bottom: 1rem;
+    /* Reduced from 1.5rem */
+
+    opacity: 0.90;
+    justify-content: flex-start;
+    text-align: left;
 }
 
 .price-comparison {
@@ -1328,18 +1347,22 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem;
     margin-bottom: 2rem;
 }
 
 .benefit-item {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
+    /*font-family: 'Playfair Display', serif;*/
+    font-size: 1rem;
+    /*font-weight: 500;*/
+    /* Smaller for professionalism */
     color: var(--text-main);
-    font-weight: 700;
-    font-size: 1.03rem;
-    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    /* Reduced from 1.5rem */
+
+    opacity: 0.90;
+    justify-content: flex-start;
+    text-align: left;
 }
 
 .check-icon {
@@ -1546,15 +1569,18 @@
 }
 
 .bonus-description {
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif;*/
     font-size: 1rem;
-    font-weight: 500;
+    /*font-weight: 500;*/
+    /* Smaller for professionalism */
+    color: var(--text-main);
+    opacity: 0.85;
+    margin-bottom: 1rem;
+    /* Reduced from 1.5rem */
     line-height: 1.4;
-    color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    gap: 1.2rem;
+    padding: 0.8rem 0;
+
 }
 
 .bonus-benefits-list {
@@ -1570,16 +1596,14 @@
 }
 
 .bonus-benefits-list li {
-    font-size: 1.05rem;
+    /*font-family: 'Playfair Display', serif;*/
+    font-size: 1rem;
+    /*font-weight: 500;*/
+    /* Smaller for professionalism */
     color: var(--text-main);
-    line-height: 1.6;
-    font-family: 'Playfair Display', serif;
-    display: flex;
-    gap: 1.2rem;
-    align-items: center;
-    padding: 0.2rem 0;
-    font-weight: 600;
-    opacity: 0.90;
+    margin-bottom: 1rem;
+    /* Reduced from 1.5rem */
+
     justify-content: flex-start;
     text-align: left;
 }
@@ -2678,11 +2702,12 @@
 }
 
 .about-text {
-    font-size: 1.05rem;
+    font-size: 1rem;
     line-height: 1.6;
-    font-weight: 600;
-    color: var(--text-muted);
+    color: var(--text-main);
+    opacity: 0.85;
     white-space: pre-wrap;
+
 }
 
 @media (max-width: 968px) {
