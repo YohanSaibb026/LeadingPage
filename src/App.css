@@ -276,12 +276,12 @@
     font-size: 1.15rem;
     color: var(--text-main);
     line-height: 1.6;
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif;*/
     display: flex;
     gap: 1.2rem;
     align-items: center;
     padding: 0.8rem 0;
-    font-weight: 550;
+    /*font-weight: 550;*/
     opacity: 0.85;
     justify-content: flex-start;
     text-align: left;
