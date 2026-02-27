@@ -342,11 +342,11 @@ const LandingPage = () => {
     };
 
     const compactTestimonials = [
-        { name: 'Nicolás N.', fullName: 'Nicolás Navas', avatar: avatarNicolas, meal: meal1, quote: t('reviews.stories.nicolas') },
-        { name: 'Dani C.', fullName: 'Dani Castro', avatar: avatarDani, meal: meal2, quote: t('reviews.stories.dani') },
-        { name: 'Thiago A.', fullName: 'Thiago Aguirre', avatar: avatarThiago, meal: meal3, quote: t('reviews.stories.thiago') },
-        { name: 'Lucia S.', fullName: 'Lucia Sánchez', avatar: avatarLucia, meal: meal4, quote: t('reviews.stories.lucia') },
-        { name: 'Camilla B.', fullName: 'Camilla Beltrán', avatar: avatarCamilla, meal: meal6, quote: t('reviews.stories.camilla') },
+        { name: 'Nicolás Navas', fullName: 'Nicolás Navas', avatar: avatarNicolas, meal: meal1, quote: t('reviews.stories.nicolas') },
+        { name: 'Daniel Castro', fullName: 'Dani Castro', avatar: avatarDani, meal: meal2, quote: t('reviews.stories.dani') },
+        { name: 'Thiago Aguirre', fullName: 'Thiago Aguirre', avatar: avatarThiago, meal: meal3, quote: t('reviews.stories.thiago') },
+        { name: 'Lucia Sánchez', fullName: 'Lucia Sánchez', avatar: avatarLucia, meal: meal4, quote: t('reviews.stories.lucia') },
+        { name: 'Camilla Beltrán', fullName: 'Camilla Beltrán', avatar: avatarCamilla, meal: meal6, quote: t('reviews.stories.camilla') },
     ];
 
     const transformations = [
