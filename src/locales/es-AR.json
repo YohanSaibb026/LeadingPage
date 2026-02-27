@@ -133,16 +133,16 @@
         "urgency": "Oferta por tiempo limitado",
         "button": "Quiero aprovechar la promoción del 58% OFF ahora",
         "premium_card": {
-            "tag": "vitalicio",
+            "tag": "US$ 12.99",
             "price": "5.49",
-            "period": "/vitalicio",
+            "period": "vitalicio",
             "comparison": "Más barato que un pedido de delivery",
             "benefits": [
                 "Desayunos estratégicos para ganar masa muscular",
                 "Planificación nutricional fácil de aplicar",
-                "Recetas prácticas con ingredientes accesibles",
                 "Acceso inmediato después del pago",
-                "Garantía de 7 días"
+                "Garantía de 7 días",
+                "Obtén un bono exclusivo"
             ]
         },
         "guarantees": {

@@ -70,9 +70,9 @@
         "urgency": "La oferta termina en:",
         "button": "QUIERO EL ACCESO AHORA",
         "premium_card": {
-            "tag": "vitalicio",
+            "tag": "US$ 12.99",
             "price": "5.49",
-            "period": "/vitalicio",
+            "period": "vitalicio",
             "comparison": "Más barato que un pedido de delivery",
             "benefits": [
                 "Desayunos estratégicos para ganar masa muscular",
