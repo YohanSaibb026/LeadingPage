@@ -1285,7 +1285,8 @@
 }
 
 .pricing-tag {
-    background: rgba(232, 92, 58, 0.1);
+    /*background: rgba(232, 92, 58, 0.1);*/
+    background: rgba(248, 113, 113, 0.1);
     color: #C81E1E;
     text-decoration: line-through;
     padding: 0.35rem 0.85rem;
