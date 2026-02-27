@@ -1039,10 +1039,10 @@
 /* ... brand-badge styles ... */
 
 .promo-label {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #F97316;
+    color: #c75a12;
     font-weight: 800;
     margin-bottom: 0.5rem;
     text-decoration: underline;
@@ -1068,7 +1068,7 @@
 }
 
 .badge-icon {
-    color: #F97316;
+    color: #c75a12;
     /* Orange brand color */
 }
 
@@ -1087,17 +1087,17 @@
 }
 
 .new-price .price-value.strike {
-    color: #10B981;
+    color: #0a6e4d;
     /* Green for the app price as requested */
     opacity: 0.8;
 }
 
 .price-value.highlight {
-    color: #10B981;
+    color: #0a6e4d;
     /* Success Green */
     font-size: 2.2rem;
     /* Decreased from 2.5rem */
-    background: linear-gradient(to right, #10B981, #34D399);
+    background: linear-gradient(to right, #0a6e4d, #10B981);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1174,7 +1174,7 @@
     font-size: 1.1rem;
     text-transform: none;
     letter-spacing: normal;
-    color: #F97316;
+    color: #e35c02;
     font-weight: 700;
     margin: 0.8rem 0;
     display: flex;
@@ -1214,13 +1214,14 @@
 
 .promo-from {
     font-size: 1.4rem;
-    color: var(--text-secondary);
+    font-weight: 700;
+    color: #912020;
     text-decoration: line-through;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .promo-to {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 800;
     color: #10B981;
     background: linear-gradient(to right, #10B981, #34D399);
@@ -1244,7 +1245,9 @@
 }
 
 .cta-subtitle {
-    font-size: 0.95rem;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
     color: var(--text-muted);
     max-width: 500px;
     margin: 0 auto;
@@ -1275,7 +1278,8 @@
     color: var(--primary);
     padding: 0.35rem 0.85rem;
     border-radius: 100px;
-    font-size: 0.7rem;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -1292,6 +1296,7 @@
 }
 
 .price-currency {
+    font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-main);
@@ -1306,9 +1311,10 @@
 }
 
 .price-period {
+    font-family: 'Playfair Display', serif;
     font-size: 1rem;
     color: var(--text-muted);
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .price-comparison {
@@ -1322,7 +1328,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 0.65rem;
+    gap: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -1331,8 +1337,9 @@
     align-items: center;
     gap: 0.75rem;
     color: var(--text-main);
-    font-weight: 500;
-    font-size: 0.9rem;
+    font-weight: 700;
+    font-size: 1.03rem;
+    font-family: 'Playfair Display', serif;
 }
 
 .check-icon {
@@ -2671,8 +2678,9 @@
 }
 
 .about-text {
-    font-size: 1.0rem;
+    font-size: 1.05rem;
     line-height: 1.6;
+    font-weight: 600;
     color: var(--text-muted);
     white-space: pre-wrap;
 }
