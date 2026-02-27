@@ -232,7 +232,7 @@
 .title-secondary {
     display: inline;
     color: var(--text-main);
-    font-weight: 450;
+    font-weight: 575;
     font-size: 34px;
 }
 
@@ -2306,12 +2306,12 @@
 
 .caption-subtitle {
     font-family: 'Playfair Display', serif;
-    font-size: 2.0rem;
+    font-size: 1.2rem;
     /* Increased size per user request */
     font-weight: 700;
     margin: 0;
     letter-spacing: 0.02em;
-    color: var(--text-muted);
+    color: var(--text-main);
     opacity: 1;
     text-shadow: none;
     display: block;
@@ -2324,7 +2324,7 @@
     }
 
     .caption-title {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 
     .caption-subtitle {
