@@ -84,7 +84,7 @@ const CountdownTimer = ({ urgencyText }: { urgencyText: string }) => {
 
         // Calculate new target: 2 days and 6 hours from now
         const newTarget = new Date();
-        newTarget.setDate(newTarget.getDate() + 2);
+        newTarget.setDate(newTarget.getDate() + 5);
         newTarget.setHours(newTarget.getHours() + 6);
         newTarget.setMinutes(newTarget.getMinutes() + 0);
         newTarget.setSeconds(newTarget.getSeconds() + 0);
