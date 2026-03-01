@@ -1,78 +1,85 @@
 {
     "nav": {
         "features": "Recursos",
-        "pricing": "Preços",
-        "download": "Baixar App"
+        "pricing": "Precios",
+        "download": "Descargar App"
     },
     "hero": {
-        "title": "<0>Um café da manhã adequado</0> <1>pode fornecer até 40% dos nutrientes diários que seu corpo precisa para ganhar massa muscular</1>",
-        "subtitle": "Veja como o app facilita seus ganhos",
+        "title": "<0>Un desayuno adecuado</0> <1>puede proporcionarte hasta el 40% de los nutrientes diarios que tu cuerpo necesita para ganar masa muscular",
+        "subtitle": "Descubre cómo la app impulsa tu progreso",
         "complaints": [
-            "Receitas planejadas com critérios nutricionais",
-            "Valores nutricionais claros em cada receita",
-            "Quantidades ajustáveis conforme seu objetivo",
-            "Ingredientes simples do dia a dia"
+            "Recetas elaboradas con criterios nutricionales",
+            "Información nutricional clara en cada receta",
+            "Cantidades ajustables según tu objetivo",
+            "Ingredientes simples del día a día"
         ],
-        "punchline": "As receitas mais recomendadas com os mesmos ingredientes simples que você já tem em casa",
+        "punchline": "Las receitas mais recomendadas com os mesmos ingredientes simples que você já tem em casa",
         "continue": "Continuar",
         "demo": "Ver Demonstração",
-        "social": "Mais de 500 usuários já utilizam o aplicativo",
-        "rating_value": "4.9/5",
-        "rating_desc": "Baseado nas avaliações dos usuários"
+        "social": "Más de 500 usuarios ya utilizan la aplicación",
+        "rating_value": "4.8/5",
+        "rating_desc": "Basado en las reseñas de los usuarios"
     },
     "reviews": {
-        "title": "Algumas experiências de nossos usuários",
-        "compact_title": "Depoimentos reais de usuários do aplicativo",
+        "title": "Algunas experiencias de nuestros usuarios",
+        "compact_title": "Experiencias reales de quienes ya usan la app",
         "stories": {
-            "nicolas": "Estas comidas saudáveis mudaram completamente a forma como levo o meu dia",
-            "dani": "Os smoothies já se tornaram parte da minha rotina todos os dias na faculdade",
-            "thiago": "Conhecer os temperos deu sabores a alimentos simples que nunca imaginei que poderiam ter",
-            "lucia": "Sempre tive dificuldade em variar o café da manhã sem perder tempo. Hoje tornou-se tão fácil e tão delicioso que acabo fazendo para mim e para minha mãe também",
-            "pablo": "Sem dúvida, foi uma ótima escolha que fiz e me trouxe resultados",
-            "camilla": "As receitas são perfeitas, adiciono o meu toque e ficam maravilhosas",
-            "gina": "Posso dizer que já tenho a minha comida favorita"
+            "nicolas": "Estas comidas saludables cambiaron la manera en que organizo mi día",
+            "dani": "Los batidos ya se volvieron parte de mi rutina en la universidad",
+            "thiago": "Saber preparar diversas recetas con ingredientes que ya tengo en casa es muy bueno",
+            "lucia": "Siempre tuve dificultad para variar el desayuno. Hoy se volvió tan fácil y delicioso que termino haciéndolo para mí y para mi mamá también",
+            "pablo": "Sin duda, fue una gran elección la que hice y me trajo resultados",
+            "camilla": "Las recetas son perfectas, les agrego mi toque y quedan maravillosas",
+            "gina": "Puedo decir que ya tengo mi comida favorita"
         }
     },
     "features": {
-        "title": "Por que <1>Sabores Exclusivos</1>?",
+        "title": "¿Por qué <1>Sabores Exclusivos</1>?",
         "instant": {
-            "title": "Por que o café da manhã pode acelerar seus resultados",
-            "desc": "Um café da manhã bem completo ajuda a repor os nutrientes após horas de jejum durante o sono e fornece energia para começar o dia. Além disso, costuma ser a refeição em que é mais fácil consumir maiores quantidades de alimentos e, quando bem planejado, pode contribuir para refeições mais leves ao longo do dia."
+            "title": "Por qué el desayuno puede potenciar tus resultados",
+            "desc": "Un desayuno completo ayuda a reponer los nutrientes tras horas de ayuno durante el sueño y proporciona energía para empezar el día. Además, suele ser la comida en la que es más fácil consumir mayores cantidades de alimentos y, cuando está bien planificada, puede contribuir a comidas más ligeras a lo largo del día."
         },
         "showroom_caption": {
-            "title": "Cafés da manhã e Smoothies",
-            "subtitle": "deliciosos para ganhar massa muscular — simples, práticos e com ingredientes do dia a dia",
-            "device_availability": "Disponível para iOS e Android"
+            "device_availability": "Disponible en iOS y Android",
+            "title": "Desayunos y Batidos",
+            "subtitle": "deliciosos para ganar masa muscular. Simples, prácticos y con ingredientes del día a día",
+            "activity_levels": {
+                "sedentary": "Sedentario (poco o ningún ejercicio)",
+                "light": "Ligeramente activo (1–3 días/semana)",
+                "moderate": "Moderadamente activo (3–5 días/semana)",
+                "active": "Altamente activo (6–7 días/semana)",
+                "extra": "Extremadamente activo (entrenamiento pesado/atleta)"
+            }
         },
         "video_caption": {
-            "title": "Não perca tempo planejando o que comer",
-            "subtitle": "Tenha receitas prontas na palma de sua mão"
+            "title": "No pierdas tiempo planeando qué comer",
+            "subtitle": "Ten recetas listas en la palma de tu mano"
         },
         "faq_section": {
-            "title": "Sempre com você",
+            "title": "Siempre contigo",
             "items": [
                 {
-                    "q": "Como sei se essas receitas são ideais para o meu objetivo?",
-                    "a": "Criadas com critérios nutricionais profissionais, nossas receitas foram planejadas para fornecer exatamente os valores nutricionais necessários para o crescimento muscular. Cada receita inclui opções ajustáveis de quantidades de ingredientes e valores nutricionais, permitindo que você adapte facilmente cada refeição ao seu objetivo."
+                    "q": "¿Cómo saber si estas recetas son adecuadas para mi objetivo?",
+                    "a": "Creadas con criterios nutricionales profesionales, nuestras recetas fueron planificadas para proporcionar exactamente los valores nutricionales necesarios para el crecimiento muscular.\nCada receta incluye opciones ajustables de cantidades de ingredientes y valores nutricionales, lo que te permite adaptar fácilmente cada comida a tu objetivo."
                 },
                 {
-                    "q": "As receitas usam ingredientes caros?",
-                    "a": "Não. O diferencial do app está em transformar ingredientes básicos do dia a dia, comuns na alimentação de quem busca ganhar massa muscular, em diversas combinações de receitas. Assim, com várias opções de receitas, você pode atingir seu objetivo utilizando alimentos acessíveis e sem enjoar dos sabores."
+                    "q": "¿Las recetas usan ingredientes caros?",
+                    "a": "No. El diferencial de la app está en transformar ingredientes básicos del día a día, comunes en la alimentación de quienes buscan ganar masa muscular, en diversas combinaciones de recetas. Así, con varias opciones de recetas, puedes alcanzar tu objetivo utilizando alimentos accesibles y sin aburrirte de los sabores."
                 },
                 {
-                    "q": "O que acontece depois que eu adquirir o aplicativo?",
-                    "a": "Após finalizar a compra, você receberá automaticamente no e-mail utilizado no pagamento um link de acesso ao aplicativo. Basta acessar o link, baixar o aplicativo, criar sua senha e começar a usar imediatamente. Você ainda terá 7 dias para testar o aplicativo e conhecer todas as receitas. Caso não fique satisfeito, poderá solicitar reembolso integral dentro desse período."
+                    "q": "¿Qué sucede después de comprar la app?",
+                    "a": "Después de finalizar la compra, recibirás automáticamente en el correo electrónico utilizado en el pago un enlace de acceso a la app. Solo tienes que acceder al enlace, descargar la app, crear tu contraseña y empezar a usarla inmediatamente.\nAdemás, tendrás 7 días para probar la app y conocer todas las recetas. Si no quedas satisfecho, podrás solicitar un reembolso completo dentro de ese período."
                 }
             ]
         },
         "transformations": {
-            "title": "Transformações reais",
-            "desc": "Mais do que receitas, entregamos resultados. Veja a evolução de quem seguiu nossos métodos."
+            "title": "Transformaciones reales",
+            "desc": "Más que recetas, entregamos resultados. Mira la evolución de quienes siguieron nuestros métodos"
         },
         "pricing": {
-            "consultation": "Preço médio de uma consulta por <1>sessão</1>",
+            "consultation": "Precio promedio de una consulta por <1>sesión</1>",
             "consultation_price": "US$ 40 - US$ 75",
-            "app_access": "App <1>Sabores Exclusivos</1>\ncom livre acesso",
+            "app_access": "App <1>Sabores Exclusivos</1> con acceso ilimitado",
             "app_price": "US$ 12.99",
             "promotion": {
                 "title": "La decisión que puede acercarte a tus objetivos",
@@ -83,77 +90,77 @@
             }
         },
         "calculator": {
-            "title": "Descubra sua meta para crescer",
-            "subtitle": "Calcule sua Taxa Metabólica Basal e veja quanto você precisa consumir para ganhar músculos",
-            "gender": "Gênero",
+            "title": "Descubre tu meta para crecer",
+            "subtitle": "Únase a cientos de personas que ya utilizan nuestras recetas exclusivas",
+            "gender": "Género",
             "male": "Masculino",
             "female": "Femenino",
-            "age": "Idade",
+            "age": "Edad",
             "weight": "Peso (kg)",
             "height": "Altura (cm)",
-            "activity": "Nível de Atividade",
+            "activity": "Nivel de Actividad",
             "activity_levels": {
-                "sedentary": "Sedentário (pouco ou nenhum exercício)",
-                "light": "Levemente ativo (1–3 dias/semana)",
-                "moderate": "Moderadamente ativo (3–5 dias/semana)",
-                "active": "Altamente ativo (6–7 dias/semana)",
-                "extra": "Extremadamente ativo (treino pesado/atleta)"
+                "sedentary": "Sedentario (poco o ningún ejercicio)",
+                "light": "Ligeramente activo (1–3 días/semana)",
+                "moderate": "Moderadamente activo (3–5 días/semana)",
+                "active": "Altamente activo (6–7 días/semana)",
+                "extra": "Extremadamente activo (entrenamiento pesado/atleta)"
             },
             "calculate": "Calcular Meta",
             "results": {
-                "title": "Seus Resultados",
-                "bmr": "Seu corpo precisa de:",
-                "tdee": "Para manter o peso:",
-                "bulk": "Para crescer:",
-                "breakfast_recommendation": "Recomendação no café da manhã:",
+                "title": "Sus Resultados",
+                "bmr": "Tu cuerpo necesita:",
+                "tdee": "Para mantener el peso:",
+                "bulk": "Para crecer:",
+                "breakfast_recommendation": "Recomendación en el desayuno:",
                 "unit": "kcal",
-                "disclaimer": "Valores estimados baseados na fórmula Mifflin-St Jeor."
+                "disclaimer": "Valores estimados basados en la fórmula Mifflin-St Jeor."
             }
         }
     },
     "about": {
-        "badge": "O Criador",
-        "title": "Quem sou eu?",
-        "description": "Meu nome é Álex Hernandez. Sou formado e resido na Espanha, trabalhando ao lado de uma equipe especializada em nutrição clínica e esportiva.\n\nHá dois anos realizo consultas presenciais e online, aplicando protocolos baseados em um superávit calórico estruturado para promover o aumento de peso e massa muscular.\n\nEste aplicativo nasce da experiência prática dessas consultas, reunindo estratégias nutricionais eficazes em receitas simples e práticas para o dia a dia."
+        "badge": "El Creador",
+        "title": "¿Quién soy yo?",
+        "description": "Me llamo Álex Hernandez. Soy graduado y resido en España, trabajando junto a un equipo especializado en nutrición clínica y deportiva.\n\nDesde hace dos años realizo consultas presenciales y online, aplicando protocolos basados en un superávit calórico estructurado para promover el aumento de peso y masa muscular.\n\nEsta aplicación nace de la experiencia práctica de estas consultas, reuniendo estrategias nutricionales eficaces en recetas simples y prácticas para el día a día."
     },
     "bonus": {
-        "title": "Bônus Exclusivo",
-        "description": "Ao garantir seu acesso vitalício, você também desbloqueia uma seleção exclusiva de smoothies pensados para promover equilíbrio, saúde e bem-estar.",
+        "title": "Bono exclusivo",
+        "description": "Al asegurar tu acceso vitalicio, también desbloqueas una selección exclusiva de batidos pensados para promover el equilibrio, la salud y el bienestar.",
         "benefits": [
-            "Leveza e conforto digestivo",
-            "Hidratação e refrescância",
-            "Energia leve e equilibrada",
-            "Vitaminas e fibras naturais",
-            "Complemento funcional à rotina"
+            "Ligereza y confort digestivo",
+            "Hidratación y frescura",
+            "Energía ligera y equilibrada",
+            "Vitaminas y fibras naturales",
+            "Complemento funcional para la rutina"
         ]
     },
     "cta": {
-        "title": "Pronto para sua transformação?",
-        "subtitle": "Junte-se a centenas de pessoas que já mudaram seus corpos com nossas receitas exclusivas.",
-        "urgency": "Oferta termina em:",
-        "button": "QUERO O ACESSO AGORA",
+        "title": "Eleva tu experiencia culinaria hoy",
+        "subtitle": "Acceso vitalicio a Sabores Exclusivos. Todo lo que necesitas para subir de peso y construir músculos de forma sabrosa y práctica",
+        "urgency": "Oferta por tiempo limitado",
+        "button": "Quiero aprovechar la promoción del 58% OFF ahora",
         "premium_card": {
             "tag": "US$ 12.99",
             "price": "5.49",
             "period": "vitalicio",
-            "comparison": "",
+            "comparison": "Tu versión más fuerte empieza aquí",
             "benefits": [
-                "Cafés da manhã estratégicos para ganho de massa",
-                "Planejamento nutricional fácil de aplicar",
-                "Receitas práticas com ingredientes acessíveis",
-                "Acesso imediato após pagamento",
-                "Garantia de 7 dias"
+                "Desayunos estratégicos para ganar masa muscular",
+                "Planificación nutricional fácil de aplicar",
+                "Acceso inmediato después del pago",
+                "Garantía de 7 días",
+                "+ Bono especial incluido"
             ]
         },
         "guarantees": {
-            "taxes": "Sem taxas ocultas",
-            "secure": "Pagamento 100% seguro",
-            "access": "Acesso imediato",
-            "warranty": "Garantia de 7 dias",
-            "tax_disclaimer": "Alguns países podem aplicar impostos locais na compra"
+            "taxes": "Los impuestos locales pueden aplicarse según el país",
+            "secure": "Pago 100% seguro",
+            "access": "Acceso inmediato",
+            "warranty": "Garantía de 7 días",
+            "tax_disclaimer": "Algunos países pueden aplicar impuestos locales en el momento de la compra"
         }
     },
     "footer": {
-        "rights": "© 2026 Sabores Exclusivos. Todos os direitos reservados."
+        "rights": "© 2024 Club Sabores Exclusivos. Todos los derechos reservados."
     }
 }
