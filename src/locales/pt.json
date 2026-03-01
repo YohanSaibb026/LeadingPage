@@ -75,11 +75,11 @@
             "app_access": "App <1>Sabores Exclusivos</1>\ncom livre acesso",
             "app_price": "US$ 12.99",
             "promotion": {
-                "title": "Oferta Especial de Lançamento",
-                "subtitle": "Não perca esta oportunidade de transformar seu corpo com ingredientes simples",
-                "label": "ACESSO VITALÍCIO",
-                "price_from": "De US$ 25.00",
-                "price_to": "Por apenas US$ 9.90"
+                "title": "La decisión que puede acercarte a tus objetivos",
+                "subtitle": "Descubre cómo un desayuno bien planificado puede transformar tus resultados en los próximos meses",
+                "label": "Tu oportunidad de probar <1>Sabores Exclusivos</1> con 58% OFF",
+                "price_from": "De US$ 12.99",
+                "price_to": "Por US$ 5.49"
             }
         },
         "calculator": {
