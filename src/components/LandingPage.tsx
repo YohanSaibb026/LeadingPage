@@ -794,7 +794,7 @@ const LandingPage = () => {
                     </div>
 
                     <a
-                        href="https://pay.hotmart.com/V104194764B"
+                        href="https://pay.hotmart.com/V104194764B?checkoutMode=10"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-cta-green btn-glint"
