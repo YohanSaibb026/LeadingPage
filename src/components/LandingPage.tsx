@@ -775,7 +775,7 @@ const LandingPage = () => {
                             </Trans>
                         </span>
                         <div className="pricing-main">
-                            <span className="price-currency">US$</span>
+                            <span className="price-currency"></span>
                             <span className="price-value">{t('cta.premium_card.price')}</span>
                             <span className="price-period">{t('cta.premium_card.period')}</span>
                         </div>
@@ -794,7 +794,7 @@ const LandingPage = () => {
                     </div>
 
                     <a
-                        href="https://pay.hotmart.com/J104723841N"
+                        href="https://pay.hotmart.com/J104723841N?checkoutMode=10"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-cta-green btn-glint"
