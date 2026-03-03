@@ -85,8 +85,8 @@
                 "title": "La decisión que puede acercarte a tus objetivos",
                 "subtitle": "Descubre cómo un desayuno bien planificado puede transformar tus resultados en los próximos meses",
                 "label": "Tu oportunidad de probar <1>Sabores Exclusivos</1> con 58% OFF",
-                "price_from": "De $46.900",
-                "price_to": "Por $19.900"
+                "price_from": "De US$ 12.99",
+                "price_to": "Por US$ 5.49"
             }
         },
         "calculator": {
@@ -140,8 +140,8 @@
         "urgency": "Oferta por tiempo limitado",
         "button": "Quiero aprovechar la promoción del 58% OFF ahora",
         "premium_card": {
-            "tag": "$46.900",
-            "price": "$19.900",
+            "tag": "US$ 12.99",
+            "price": "US$ 5.49",
             "period": "vitalicio",
             "comparison": "Tu versión más fuerte empieza aquí",
             "benefits": [
